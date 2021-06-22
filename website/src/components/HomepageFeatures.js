@@ -4,12 +4,12 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Google Season of Documentation',
     Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        moja global actively performs in open source events and one of them is Google Season of Documentation. We welcome contributors who
+        have a love for documentation like us and can help it improve it to make it easier for new contributors.
       </>
     ),
   },
@@ -24,12 +24,11 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Linux Foundation',
     Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+       moja global is a Linux Foundation organisation and therefore participates in the LFX mentorship program as well. We welcome new contributors who can help program FLINT and make it better for the world!
       </>
     ),
   },
