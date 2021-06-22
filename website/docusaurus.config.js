@@ -1,7 +1,7 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Community Website',
-  tagline: 'Some tagline to explain what the site is about',
+  title: 'Moja Global Community',
+  tagline: `Learn about moja global's projects and join our ever-growing community`,
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
@@ -11,10 +11,10 @@ module.exports = {
   projectName: 'Community Website', // Usually your repo name.
   themeConfig: {
     navbar: {
-      title: 'Community Website',
+      title: 'Community',
       logo: {
         alt: 'moja global Logo',
-        src: 'img/logo.svg',
+        src: 'img/logo.png',
       },
       items: [
         {
@@ -32,6 +32,11 @@ module.exports = {
       ],
     },
     footer: {
+      logo: {
+        alt: 'moja global light logo',
+        src: 'static/img/logo-light.png',
+        href: 'https://moja.global'
+      },
       style: 'dark',
       links: [
         {
@@ -52,11 +57,11 @@ module.exports = {
             },
             {
               label: 'Official Website',
-              href: 'https://discordapp.com/invite/docusaurus',
+              href: 'https://moja.global',
             },
             {
               label: 'Twitter',
-              href: 'https://twitter.com/docusaurus',
+              href: 'https://twitter.com/mojaglobal',
             },
           ],
         },
@@ -71,8 +76,16 @@ module.exports = {
               label: 'GitHub',
               href: 'https://github.com/moja-global',
             },
+            {
+              label: 'LinkedIn',
+              href: 'https://www.linkedin.com/company/moja-global/'
+            },
+           
           ],
         },
+        {
+          title: 'News'
+        }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
     },

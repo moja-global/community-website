@@ -4,8 +4,8 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Google Season of Documentation',
-    Svg: require('../../static/img/undraw_docusaurus_mountain.svg').default,
+    title: 'Code',
+    Svg: require('../../static/img/code.svg').default,
     description: (
       <>
         moja global actively performs in open source events and one of them is Google Season of Documentation. We welcome contributors who
@@ -14,18 +14,18 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('../../static/img/undraw_docusaurus_tree.svg').default,
+    title: 'Know Our Projects',
+    Svg: require('../../static/img/learn-more.svg').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+       moja global has many projects apart from FLINT. Be a part of one of those projects by writing code, improving 
+       documentation or just suggest us features that you think will be helpful to the users.
       </>
     ),
   },
   {
-    title: 'Linux Foundation',
-    Svg: require('../../static/img/undraw_docusaurus_react.svg').default,
+    title: 'Write Blogs',
+    Svg: require('../../static/img/write.svg').default,
     description: (
       <>
        moja global is a Linux Foundation organisation and therefore participates in the LFX mentorship program as well. We welcome new contributors who can help program FLINT and make it better for the world!
