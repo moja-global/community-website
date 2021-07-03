@@ -1,0 +1,24 @@
+{
+  "files": [
+    "README.md"
+  ],
+  "imageSize": 100,
+  "commit": false,
+  "contributors": [
+    {
+      "login": "Abhishek-kumar09",
+      "name": "Abhishek Kumar",
+      "avatar_url": "https://avatars.githubusercontent.com/u/48255244?v=4",
+      "profile": "https://www.linkedin.com/in/abhishek-kr09/",
+      "contributions": [
+        "infra"
+      ]
+    }
+  ],
+  "contributorsPerLine": 7,
+  "projectName": "contributor-website-v2",
+  "projectOwner": "moja-global",
+  "repoType": "github",
+  "repoHost": "https://github.com",
+  "skipCi": true
+}
