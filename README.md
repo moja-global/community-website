@@ -4,6 +4,8 @@
 [![All Contributors](https://img.shields.io/badge/all_contributors-1-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
+![Powered by Vercel](website/static/img/powered-by-vercel.svg)
+
 Contributors website is for people to get a glimpse of moja global's projects and their working. The website also holds blogs and guides by the moja family to help you better understand our work and hopefully learn from others experience.
 
 ## What is moja global?
