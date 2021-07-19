@@ -35,7 +35,7 @@ module.exports = {
     footer: {
       logo: {
         alt: 'moja global light logo',
-        src: 'static/img/logo-light.png',
+        src: '/img/logo-light.png',
         href: 'https://moja.global'
       },
       style: 'dark',
@@ -85,7 +85,16 @@ module.exports = {
           ],
         },
         {
-          title: 'News'
+          title: 'Sponsors',
+          items: [
+            {
+              html: `
+                <a href="https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
+                  <img src="/img/powered-by-vercel.svg" alt="Powered by Vercel" />
+                </a>
+              `,
+            },
+          ]
         }
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
