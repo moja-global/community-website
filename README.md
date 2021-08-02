@@ -29,7 +29,7 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 3. Go into the directory containing the project.
 
 ```
-    cd contributor-website/website
+    cd community-website/website
 ```
 
 4. Install all the dependencies
