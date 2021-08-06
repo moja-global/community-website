@@ -20,7 +20,4 @@ jobs:
           npm
           npm build
           npm test 
-          npm;
-          npm build;
-          npm test
           | 
