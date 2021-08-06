@@ -1,6 +1,5 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-
   title: 'Moja Global Community',
   tagline: `Learn about moja global's projects and join our ever-growing community `,
   url: 'https://your-docusaurus-test-site.com',
@@ -16,6 +15,7 @@ module.exports = {
       logo: {
         alt: 'moja global Logo',
         src: 'img/logo.png',
+        srcDark: 'img/logo-light.png',
       },
       items: [
         {
@@ -24,7 +24,7 @@ module.exports = {
           position: 'left',
           label: 'Projects',
         },
-        {to: '/blog', label: 'Blogs', position: 'left'},
+        { to: '/blog', label: 'Blogs', position: 'left' },
         {
           href: 'https://github.com/moja-global',
           label: 'GitHub',
@@ -36,7 +36,7 @@ module.exports = {
       logo: {
         alt: 'moja global light logo',
         src: '/img/logo-light.png',
-        href: 'https://moja.global'
+        href: 'https://moja.global',
       },
       style: 'dark',
       links: [
@@ -79,9 +79,8 @@ module.exports = {
             },
             {
               label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/moja-global/'
+              href: 'https://www.linkedin.com/company/moja-global/',
             },
-           
           ],
         },
         {
@@ -94,8 +93,8 @@ module.exports = {
                 </a>
               `,
             },
-          ]
-        }
+          ],
+        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
     },
@@ -107,14 +106,12 @@ module.exports = {
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
         },
         blog: {
           showReadingTime: true,
           // Please change this to your repo.
-          editUrl:
-            'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
