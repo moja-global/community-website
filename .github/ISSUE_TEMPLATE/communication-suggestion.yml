@@ -1,0 +1,59 @@
+name: 📄 Communication Suggestion
+description: Propose a better way to communicate a feature.
+title: '[]: '
+labels: '[feature]'
+body:
+  - type: markdown
+    attributes:
+      value: >-
+        Thanks for taking the time to fill out this communication suggestion
+        report!
+  - type: checkboxes
+    attributes:
+      label: Is there an existing issue for this?
+      description: >-
+        Please search to see if an issue already exists for the suggestion you
+        want to propose.
+      options:
+        - label: I have searched the existing issues.
+          required: true
+  - type: textarea
+    attributes:
+      label: Describe how we are communicating and why it is not optimal.
+      description: >-
+        A clear and concise description of what the problem is. Ex. When I reach
+        this point, I cannot...
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe the solution you'd like.
+      description: A clear and concise description of what you want to happen.
+    validations:
+      required: true
+  - type: textarea
+    attributes:
+      label: Describe alternatives you've considered
+      description: >-
+        A clear and concise description of any alternative solutions or features
+        you've considered.
+  - type: textarea
+    attributes:
+      label: Anything else?
+      description: >-
+        Anything other than the above mentioned to support your suggestion here.
+        Links? References? Screenshots? Anything that will give us more context
+        about your suggestion!
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: >-
+        By submitting this issue, you agree to follow our [Code of
+        Conduct](https://github.com/moja-global/About_moja_global/blob/master/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
+
+
+  
