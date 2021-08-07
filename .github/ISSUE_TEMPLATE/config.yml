@@ -1,0 +1,8 @@
+blank_issues_enabled: true
+contact_links:
+  - name: Want to Discuss something?
+    url: https://github.com/moja-global/About_moja_global/discussions/118
+    about: For any Discussion, Query.
+  - name: Guidelines
+    url: https://github.com/moja-global/About_moja_global/blob/master/CONTRIBUTING.md
+    about: Our contribution guidelines!
