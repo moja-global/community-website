@@ -13,10 +13,22 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "Siddhant-K-code",
+      "name": "Siddhant Khare",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55068936?v=4",
+      "profile": "https://siddhant-k-code.github.io/",
+      "contributions": [
+        "code",
+        "review",
+        "mentoring",
+        "question"
+      ]
     }
   ],
   "contributorsPerLine": 7,
-  "projectName": "contributor-website-v2",
+  "projectName": "community-website",
   "projectOwner": "moja-global",
   "repoType": "github",
   "repoHost": "https://github.com",
