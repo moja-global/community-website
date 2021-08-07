@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
 
-  title: 'Moja Global Community',
-  tagline: `Learn about moja global's projects and join our ever-growing community`,
+  title: 'Introduction to FLINT',
+  tagline: `Learn more about FLINT and how to install it locally`,
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
   onBrokenLinks: 'throw',
