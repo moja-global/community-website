@@ -14,37 +14,37 @@ description: Introduction to Flint
 <!--truncate-->
 
 ### What is FLINT?
-FLINT stands for (Full Lands Integration Tool) which is a C++ framework that combines the data acquired from the satellites & ground in a way that it meets the reqiurements of the policy. FLINT is an *open-source library* maintained under **moja-global**, a project under the **LINUX Foundation** 
+FLINT stands for (Full Lands Integration Tool) which is a C++ framework that combines the data acquired from the satellites & ground in a way that meets the requirements of the policy. FLINT is an *open-source library* maintained under **moja-global**, a project under the **LINUX Foundation** 
 
 ### Why FLINT?
 FLINT enables all countries to develop and operate advanced systems. It is based on more than 20 years of experience in building and operating integrated tools in Australia and Canada. It is a universal platform with a modular structure, allowing countries to attach any kind of models or data to build a country-specific system. The platform handles complex computer science tasks, such as storing and processing large data sets, allowing users to focus on monitoring, reporting, and scenario analysis.
 
 ### What distinguishes FLINT from other integrating tools?
-FLINT integrates data from remote sensing, ground observations and other sources to estimate fluxes and stocks of greenhouse gasses in different pools consistent with the guidance from the Intergovernmental Panel on Climate Change (IPCC).
+FLINT integrates data from remote sensing, ground observations, and other sources to estimate fluxes and stocks of greenhouse gasses in different pools consistent with the guidance from the Intergovernmental Panel on Climate Change (IPCC).
 
 FLINT is using the lessons learned from the first generation of tools to build a new framework that meets current and future needs. Compared with the first-generation tools, the main improvements include:
 
-- A flexible and modular approach that allows specific countries from IPCC Tier 1 to 3 to implement a comprehensive, sample-based, jurisdictional and supply chain-based approach.
-- The ability to cover all land uses and land use changes, and activity-based reporting such as REDD+.
+- A flexible and modular approach that allows specific countries from IPCC Tier 1 to 3 to implement a comprehensive, sample-based, jurisdictional, and supply chain-based approach.
+- The ability to cover all land uses and land-use changes, and activity-based reporting such as REDD+.
 - Scenario analysis systems to allow the development of projections.
 - Potential for a variety of other purposes, including economics, water, and biodiversity.
-- Development managed using a true open source approach under moja global, which will allow users (countries, companies and organizations) to direct strategy and control the budget.
+- Development is managed using a true open-source approach under moja global, which will allow users (countries, companies, and organizations) to direct strategy and control the budget.
 - Software that allows data processing on local desktops or cloud-based systems.
 
 ### Let's get started with FLINT : 
 
 ### How it works?
-FLINT works by bringing together multiple streams of data. FLINT combines remote sensing, models and ground data and produces outputs in a wide range of formats, including maps, tables and reports. It is designed to be the engine of an operational MRV system for the AFOLU sector that can respond to policy and planning needs. FLINT is consistent with the IPCC guidelines. 
-You can checkout the [**video**](https://www.youtube.com/watch?v=eUa9ficyOPg)
+FLINT works by bringing together multiple streams of data. FLINT combines remote sensing, models, and ground data and produces outputs in a wide range of formats, including maps, tables, and reports. It is designed to be the engine of an operational MRV system for the AFOLU sector that can respond to policy and planning needs. FLINT is consistent with the IPCC guidelines. 
+You can check out the [**video**](https://www.youtube.com/watch?v=eUa9ficyOPg)
 
 ### How to implement FLINT?
 Below given are instructions for quick installation. 
 
-**NOTE :** These instructions are for building the FLINT on Windows using Visual Studio 2017, or Visual Studio 2019.
+**NOTE:** These instructions are for building the FLINT on Windows using Visual Studio 2017, or Visual Studio 2019.
 
 1] Install CMake: 
 ```
-cmake-3.15.2-win64-x64.msi
+CMake-3.15.2-win64-x64.msi
 ```
 2] Using *vcpkg* to install required libraries
 
@@ -89,4 +89,4 @@ The Visual Studio moja solution can be used to install compiled versions of the 
 
 - SQLite Studio 
 - [**Tortoise Git**](https://tortoisegit.org/)
-- Using Docker for Ubuntu 18:04
+- Using Docker for Ubuntu 18:04 

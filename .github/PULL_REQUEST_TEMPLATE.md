@@ -2,7 +2,7 @@
 
 ## Description
 
-Done with the introduction to flint blog
+Please include a summary of the change. Please also include relevant motivation and context. List any dependencies that are required for this change.
 
 Fixes # (issue)
 
@@ -10,8 +10,10 @@ Fixes # (issue)
 
 Please delete options that are not relevant.
 
+- [ ] Bug fix (non-breaking change which fixes an issue).
 - [ ] New feature (non-breaking change which adds functionality).
-
+- [ ] Breaking change (fix or feature that would cause existing functionality to not work as expected).
+- [ ] This change requires a documentation update.
 
 ## How Has This Been Tested?
 
@@ -31,3 +33,4 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] I have signed the commit message to agree to Developer Certificate of Origin (DCO) (to certify that you wrote or otherwise have the right to submit your contribution to the project.) by adding "--signoff" to my git commit command.
 
 <!--- Thanks for opening this pull request! If the tests fail, please feel free to reach out to us by leaving a comment down below and we will be happy to take a look --->
+
