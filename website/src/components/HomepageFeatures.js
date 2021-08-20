@@ -24,7 +24,7 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Write Blogs',
+    title: 'Write Blogs for Us',
     Svg: require('../../static/img/write.svg').default,
     description: (
       <>
