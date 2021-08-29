@@ -1,0 +1,31 @@
+name: 'Merge Conflict Watcher'
+on:
+  pull_request:
+    types: [opened, synchronize, edited]
+    branches:
+      - main
+  pull_request_review_comment:
+    types: [created, deleted]
+jobs:
+  triage:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: mschilde/auto-label-merge-conflicts@master
+        with:
+          CONFLICT_LABEL_NAME: 'merge-conflicts'
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          MAX_RETRIES: 5
+          WAIT_MS: 5000
+  create_comment:
+    needs: triage
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-ecosystem/action-create-comment@v1
+        if: contains(github.event.pull_request.labels.*.name, 'merge-conflicts')
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          body: |
+            Hello, @${{ github.actor }}!
+
+            I'm a bot that watches for merge conflicts and automatically adds a comment to the PR. Your pull request has merge conflicts with the base branch. You can resolve those conflicts by following the instructions [here.](https://docs.github.com/en/github/collaborating-with-issues-and-pull-requests/resolving-a-merge-conflict-using-the-command-line)
