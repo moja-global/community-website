@@ -1,0 +1,22 @@
+name: 'Close stale issues and Pull Requests'
+on:
+  schedule:
+    - cron: '30 1 * * *'
+
+jobs:
+  stale:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/stale@v4
+        with:
+          stale-issue-message: 'This issue has not seen any activity for the past 30 days. If this Issue would not see any further updates in the next 7 days, it would be automatically closed. Please comment on the issue if you would like to discuss on this further.'
+          stale-pr-message: 'This Pull Request has not seen any activity for the past 45 days. If this Pull Request would not see any further updates in the next 10 days, it would be automatically closed. Please tag a maintainer to have it reviewed and merged for you. We truly appreciate your contributions and would love to hear your thoughts on the same!'
+          close-issue-message: 'Thanks for raising an issue! We at moja global appreciate your concerns and views to help us improve. We capitalize on fostering a welcoming environment for all our contributors. This issue was closed because it has been stalled for 7 days with no activity. If you would like to discuss it further, please create another issue or reach out to a maintainer on the prospects of getting it resolved.'
+          close-pr-message: 'Thanks for raising a Pull Request! We at moja global appreciate your contributions. We capitalize on fostering a welcoming environment for all our contributors. This Pull Request was closed because it has been stalled for 10 days with no activity. If you would like to discuss it further, please reach out to a maintainer to have it opened and reviewed. We truly appreciate your contributions and would love to hear your thoughts on the same!'
+          days-before-issue-stale: 30
+          days-before-pr-stale: 45
+          days-before-issue-close: 7
+          days-before-pr-close: 10
+          stale-issue-label: 'Issue:No-Activity'
+          stale-pr-label: 'PR:No-Activity'
+          exempt-all-pr-assignees: true
