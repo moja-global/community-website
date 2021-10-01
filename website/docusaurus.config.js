@@ -98,6 +98,20 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
     },
+    image: "https://community.moja.global/img/logo.png",
+    metadatas: [
+      { name: "twitter:card", content: "summary_large_image" },
+      {
+        name: "twitter:image",
+        content:
+          "https://community.moja.global/img/logo.png",
+      },
+      { name: "twitter:title", content: "Moja Global Community" },
+      {
+        name: "twitter:description",
+        content: "Learn about moja global's projects and join our ever-growing community",
+      },
+    ],
   },
   presets: [
     [
