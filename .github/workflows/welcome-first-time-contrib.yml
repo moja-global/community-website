@@ -16,7 +16,7 @@ jobs:
       with:
         repo-token: ${{ secrets.GITHUB_TOKEN }}
         issue-message: |
-          Hello there @{{ github.actor }} 👋
+          Hello there ${{ github.actor }} 👋
 
           Welcome to moja global!💖
 
@@ -27,7 +27,7 @@ jobs:
           Feel free to join us on [moja global Slack](https://mojaglobal.slack.com/) by dropping an email [here](mailto:info@moja.global).👩‍💻 We would love to hear your interesting ideas and engage in discussions.💖
 
         pr-message: |
-          Hello there @{{ github.actor }} 👋
+          Hello there ${{ github.actor }} 👋
 
           Thank you and congrats 🎉 for opening your first PR on this project.✨
 
