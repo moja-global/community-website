@@ -1,24 +1,24 @@
-name: Feature Request
-description: Suggest an idea for this project
-title: "Feature Request: "
-labels: [enhancement]
+name: Science Contribution and Review
+description: Suggest how the science behind the code can be improved
+title: "Science Contribution and Review: "
+labels: [science-review]
 
 body:
   - type: markdown
     attributes:
-      value: Thank you for taking the time to file a Feature Request report.
+      value: Thank you for taking the time to file a Science Contribution and Review report.
   - type: textarea
     attributes:
-      label: Is your feature request related to a problem? Please describe.
-      description: 'A clear and concise description of what the problem is. Ex. I am always frustrated when [...]'
+      label: Please describe the problem.
+      description: 'A clear and concise description of what the problem is.'
   - type: textarea
     attributes:
-      label: Describe the solution you'd like.
+      label: Describe the correct or improved scientific approach.
       description: 'A clear and concise description of what you want to happen.'
   - type: textarea
     attributes:
-      label: Describe alternatives you've considered
-      description: 'A clear and concise description of any alternative solutions or features you have considered.'
+      label: Describe alternatives that could be considered
+      description: 'A clear and concise description of any alternative solutions that would be scientifically correct.'
   - type: textarea
     attributes:
       label: Additional context.
