@@ -25,6 +25,7 @@ module.exports = {
           label: 'Projects',
         },
         { to: '/blog', label: 'Blogs', position: 'left' },
+        { to: '/community', label: 'Community', position: 'left' },
         {
           href: 'https://github.com/moja-global',
           label: 'GitHub',
