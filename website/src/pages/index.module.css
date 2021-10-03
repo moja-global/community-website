@@ -9,6 +9,8 @@
   min-height: calc(100vh - 60px);
   background-image: url('/img/banner-image.png');
   overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .heroContainer {
