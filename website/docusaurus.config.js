@@ -1,8 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
   title: 'Moja Global Community',
-  tagline: `Learn about moja global's projects and join our ever-growing community `,
-  url: 'https://your-docusaurus-test-site.com',
+  tagline: `Learn about moja global's projects and join our ever-growing community`,
+  url: 'https://community.moja.global',
   baseUrl: '/',
   onBrokenLinks: 'throw',
   onBrokenMarkdownLinks: 'warn',
@@ -130,6 +130,11 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
+        },
+        sitemap: {
+          changefreq: 'weekly',
+          priority: 0.5,
+          trailingSlash: false,
         },
       },
     ],
