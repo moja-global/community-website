@@ -4,7 +4,7 @@ module.exports = {
   tagline: `Learn about moja global's projects and join our ever-growing community`,
   url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'moja global', // Usually your GitHub org/user name.
