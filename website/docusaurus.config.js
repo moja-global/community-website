@@ -121,7 +121,7 @@ module.exports = {
           title: 'Social',
           items: [
             {
-              label: 'Twitter',
+              label: 'Twitter ',
               href: 'https://twitter.com/mojaglobal',
             },
             {
