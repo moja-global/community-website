@@ -98,17 +98,16 @@ module.exports = {
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
     },
-    image: "https://community.moja.global/img/logo.png",
+    image: 'https://community.moja.global/img/logo.png',
     metadatas: [
-      { name: "twitter:card", content: "summary_large_image" },
+      { name: 'twitter:card', content: 'summary_large_image' },
       {
-        name: "twitter:image",
-        content:
-          "https://community.moja.global/img/logo.png",
+        name: 'twitter:image',
+        content: 'https://community.moja.global/img/logo.png',
       },
-      { name: "twitter:title", content: "Moja Global Community" },
+      { name: 'twitter:title', content: 'Moja Global Community' },
       {
-        name: "twitter:description",
+        name: 'twitter:description',
         content: "Learn about moja global's projects and join our ever-growing community",
       },
     ],
@@ -117,6 +116,10 @@ module.exports = {
     [
       '@docusaurus/preset-classic',
       {
+        googleAnalytics: {
+          trackingID: 'UA-195907568-1',
+          anonymizeIP: true,
+        },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
           // Please change this to your repo.
