@@ -2,9 +2,9 @@
 module.exports = {
   title: 'Moja Global Community',
   tagline: `Learn about moja global's projects and join our ever-growing community`,
-  url: 'https://community.moja.global',
+  url: 'https://your-docusaurus-test-site.com',
   baseUrl: '/',
-  onBrokenLinks: 'throw',
+  onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
   favicon: 'img/favicon.ico',
   organizationName: 'moja global', // Usually your GitHub org/user name.
@@ -41,11 +41,35 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Docs',
+          title: 'Projects',
           items: [
             {
               label: 'Projects',
               to: '/docs/test',
+            },
+            {
+              label: 'FLINT',
+              href: 'https://moja.global/flint/',
+            },
+            {
+              label: 'FLINT UI',
+              href: 'https://docs.moja.global/projects/flint-ui/en/latest/index.html',
+            },
+            {
+              label: 'FLINT Reporting Tool',
+              href: 'https://github.com/moja-global/FLINT.Reporting',
+            },
+            {
+              label: 'Taswira',
+              href: 'https://github.com/moja-global/GCBM.Visualisation_Tool',
+            },
+            {
+              label: 'FLINT JSON Editor',
+              href: 'https://github.com/moja-global/FLINT.JSON_Interface',
+            },
+            {
+              label: 'FLINT Cloud',
+              href: 'https://docs.moja.global/projects/flintcloud/en/latest/index.html#',
             },
           ],
         },
@@ -53,25 +77,52 @@ module.exports = {
           title: 'Community',
           items: [
             {
+              label: 'Blogs',
+              href: 'https://community.moja.global/blog',
+            },
+            {
+              label: 'News',
+              href: 'https://moja.global/news/',
+            },
+            {
+              label: 'Programs',
+              href: 'https://docs.moja.global/en/latest/contact.html#outreach-and-student-programs',
+            },
+            {
+              label: 'FAQs',
+              href: 'https://docs.moja.global/en/latest/faq.html',
+            },
+            {
               label: 'Slack',
               href: 'https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw',
             },
+            
+            
+          ],
+        },
+        {
+          title: 'Getting Started',
+          items: [
             {
-              label: 'Official Website',
-              href: 'https://moja.global',
+              label: 'What is FLINT?',
+              href: 'https://moja.global/flint/',
             },
             {
-              label: 'Twitter',
-              href: 'https://twitter.com/mojaglobal',
+              label: 'About moja global',
+              href: 'https://github.com/moja-global',
+            },
+            {
+              label: 'Newsletter',
+              href: ' https://global.us13.list-manage.com/subscribe?u=d8a187fa0dfae0bafe4bc69cc&id=cbfdc2d476',
             },
           ],
         },
         {
-          title: 'More',
+          title: 'Social',
           items: [
             {
-              label: 'Blogs',
-              to: '/blog',
+              label: 'Twitter ',
+              href: 'https://twitter.com/mojaglobal',
             },
             {
               label: 'GitHub',
@@ -129,11 +180,6 @@ module.exports = {
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
-        },
-        sitemap: {
-          changefreq: 'weekly',
-          priority: 0.5,
-          trailingSlash: false,
         },
       },
     ],
