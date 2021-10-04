@@ -17,6 +17,19 @@ module.exports = {
       content:
         'If you would like to contribute, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/moja-global/community-website">GitHub</a> ⭐ and take a look at the open issues!',
     },
+    colorMode: {
+      defaultMode: 'light',
+      switchConfig: {
+        darkIcon: '🌙',
+        darkIconStyle: {
+          marginLeft: '2px',
+        },
+        lightIcon: '💡',
+        lightIconStyle: {
+          marginLeft: '1px',
+        },
+      }
+    },
     navbar: {
       title: 'Community',
       logo: {
