@@ -37,6 +37,7 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
+        { to: '/roadmap', label: 'Roadmap', position: 'left' },
       ],
     },
     footer: {
