@@ -10,6 +10,10 @@ module.exports = {
   organizationName: 'moja global', // Usually your GitHub org/user name.
   projectName: 'Community Website', // Usually your repo name.
   themeConfig: {
+    prism: {
+      theme: require('prism-react-renderer/themes/github'),
+      darkTheme: require('prism-react-renderer/themes/dracula'),
+    },
     announcementBar: {
       id: 'announcementBar',
       backgroundColor: '#74e8a3',
@@ -18,7 +22,7 @@ module.exports = {
         'If you would like to contribute, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/moja-global/community-website">GitHub</a> ⭐ and take a look at the open issues!',
     },
     colorMode: {
-      defaultMode: 'light',
+      defaultMode: 'dark',
       switchConfig: {
         darkIcon: '🌙',
         darkIconStyle: {
@@ -32,6 +36,7 @@ module.exports = {
     },
     navbar: {
       title: 'Community',
+      hideOnScroll: true,
       logo: {
         alt: 'moja global Logo',
         src: 'img/logo.png',
@@ -48,7 +53,7 @@ module.exports = {
         {
           to: '/community/support',
           label: 'Community',
-          position: 'left',
+          position: 'right',
           activeBaseRegex: '/community/'
         },
         {
@@ -65,7 +70,7 @@ module.exports = {
         src: '/img/logo-light.png',
         href: 'https://moja.global',
       },
-      style: 'dark',
+      style: 'light',
       links: [
         {
           title: 'Docs',
@@ -162,6 +167,13 @@ module.exports = {
         {
           title: 'Sponsors',
           items: [
+            {
+              html: `
+                <a href="https://www.linuxfoundation.org/" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
+                  <img src="/img/linux-foundation.svg" alt="Backed by the Linux Foundation" />
+                </a>
+              `,
+            },
             {
               html: `
                 <a href="https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
