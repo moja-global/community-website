@@ -62,9 +62,28 @@ function HomepageHeader() {
         <p className="hero__subtitle">{siteConfig.tagline}</p>
         <div className={styles.buttons}>
           <Link
-            className="button button--secondary button--lg"
+            className={clsx(
+              'button button--outline button--secondary button--lg',
+              styles.getStarted,
+              )}
             to="/docs/">
-            Learn More
+            Know our Projects
+          </Link>
+          <Link
+          className={clsx(
+            'button button--outline button--secondary button--lg',
+            styles.getStarted,
+          )}
+          to="https://docs.moja.global/">
+          Read the Docs
+          </Link>
+          <Link
+          className={clsx(
+            'button button--outline button--secondary button--lg',
+            styles.getStarted,
+          )}
+          to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists">
+          Watch the tutorials
           </Link>
         </div>
       </div>
