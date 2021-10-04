@@ -53,9 +53,9 @@ module.exports = {
         { to: '/community', label: 'Community', position: 'left' },
         {
           to: '/community/support',
-          label: 'Community',
-          position: 'right',
-          activeBaseRegex: '/community/'
+          label: 'Support',
+          position: 'left',
+          activeBaseRegex: '/community/',
         },
         {
           href: 'https://github.com/moja-global',
