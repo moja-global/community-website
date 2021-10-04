@@ -93,8 +93,6 @@ module.exports = {
               label: 'Slack',
               href: 'https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw',
             },
-            
-            
           ],
         },
         {
