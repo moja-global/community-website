@@ -26,6 +26,12 @@ module.exports = {
         },
         { to: '/blog', label: 'Blogs', position: 'left' },
         {
+          to: '/community/support',
+          label: 'Community',
+          position: 'left',
+          activeBaseRegex: '/community/'
+        },
+        {
           href: 'https://github.com/moja-global',
           label: 'GitHub',
           position: 'right',
@@ -197,6 +203,15 @@ module.exports = {
         hashed: true,
         language: ["en"],
       }
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+          id: 'community',
+          path: 'community',
+          routeBasePath: 'community',
+          sidebarPath: require.resolve('./sidebarsCommunity.js')
+      },
     ],
   ]
 };
