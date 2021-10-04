@@ -26,3 +26,36 @@
   margin: 0 calc(-1 * var(--ifm-pre-padding));
   padding: 0 var(--ifm-pre-padding);
 }
+
+.contributors {
+  text-align: center;
+  padding: 40px 10px;
+}
+
+.contributor-avatar {
+  border: 1px solid rgb(255, 255, 255);
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 1px solid rgb(182, 178, 178);
+  overflow: hidden;
+  -o-object-fit: contain;
+  object-fit: contain;
+  padding: 5px;
+  margin: 5px;
+  border: 1px solid #74e8a3;
+}
+
+.pluginsHeader {
+  font-size: 200%;
+  line-height: 100%;
+  padding: 0 0 30px;
+  text-align: center;
+  font-weight: bold;
+}
+@media only screen and (max-width: 736px) {
+  .pluginsHeader {
+    padding-top: 30px;
+  }
+}
