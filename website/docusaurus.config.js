@@ -10,6 +10,13 @@ module.exports = {
   organizationName: 'moja global', // Usually your GitHub org/user name.
   projectName: 'Community Website', // Usually your repo name.
   themeConfig: {
+    announcementBar: {
+      id: 'announcementBar',
+      backgroundColor: '#74e8a3',
+      isCloseable: true,
+      content:
+        'If you would like to contribute, give it a star on <a target="_blank" rel="noopener noreferrer" href="https://github.com/moja-global/community-website">GitHub</a> ⭐ and take a look at the open issues!',
+    },
     navbar: {
       title: 'Community',
       logo: {
