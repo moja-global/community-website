@@ -1,3 +1,27 @@
 ---
 id: About
+title: About FLINT Cloud
 ---
+
+## Purpose and Overview
+
+The Full Lands INtegration Tool (FLINT) is a platform for estimating greenhouse gas emissions at local, national and global scales.
+
+This project aims to build a cloud deployment framework for rapid deployment of FLINT implementations. This framework will be used in a continuous deployment pipeline (CD) for integration testing and the delivery of FLINT as a service (FLINTcloud) for demonstration purposes.
+
+We hope to offer an easy entry point for new users to evaluate the FLINT platform and provide a blueprint for new users to roll their own FLINTcloud deployments. This is critical to help drive the adoption of FLINT and help scale up the monitoring, reporting and validation of carbon emissions and sequestration from land use and land use change around the world.
+
+## Project Goals
+
+1.	Publishing a design for the complete FLINTcloud solution, detailing the required components, technologies and endpoints to be exposed.
+2.	Exposing the core FLINT routines by wrapping the existing command line interface in a REST API.
+3.	Creating a simple script to install the prerequisite libraries, FLINT and its modules as a standalone microservice.
+4.	Creating the deployment framework and setting up a CD pipeline on commodity cloud hardware, favouring automation wherever possible (e.g. infrastructure-as-code). 
+5.	Providing new documentation for the cloud deployment procedure.
+
+## Project Features
+
+FLINT.Cloud is a cloud-based service for FLINT. It allows users to run simulations on the cloud and get results back along with simplifying the installation and configuration of FLINT.
+
+The project builds a build a continuous deployment pipeline to offer FLINT as a SaaS over cloud. The FLINT-GCBM scripts are converted to a REST API service built using Flask. This API Service is designed to be consumed by the FLINT UI and the infrastructure has been deployed using Google Cloud.
+
