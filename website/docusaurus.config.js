@@ -41,23 +41,19 @@ module.exports = {
       style: 'dark',
       links: [
         {
-          title: 'Projects',
+          title: 'Docs',
           items: [
-            {
-              label: 'Projects',
-              to: '/docs/test',
-            },
             {
               label: 'FLINT',
               href: 'https://moja.global/flint/',
             },
             {
               label: 'FLINT UI',
-              href: 'https://docs.moja.global/projects/flint-ui/en/latest/index.html',
+              href: 'https://docs.moja.global/projects/flint-ui/en/latest/',
             },
             {
               label: 'FLINT Reporting Tool',
-              href: 'https://github.com/moja-global/FLINT.Reporting',
+              href: 'https://docs.moja.global/projects/flint-reporting/en/latest/',
             },
             {
               label: 'Taswira',
@@ -69,7 +65,7 @@ module.exports = {
             },
             {
               label: 'FLINT Cloud',
-              href: 'https://docs.moja.global/projects/flintcloud/en/latest/index.html#',
+              href: 'https://docs.moja.global/projects/flintcloud/en/latest',
             },
           ],
         },
@@ -123,6 +119,10 @@ module.exports = {
             {
               label: 'Twitter ',
               href: 'https://twitter.com/mojaglobal',
+            },
+             {
+              label: 'Youtube ',
+              href: 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ',
             },
             {
               label: 'GitHub',
