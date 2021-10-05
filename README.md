@@ -46,6 +46,11 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
     npm run start
 ```
 
+## Contribution Guides
+- [How to write and publish a blog](https://github.com/moja-global/community-website/blob/main/website/blog.md)
+- [How to write and publish documentation](https://github.com/moja-global/community-website/blob/main/website/documentation.md)
+- [How to add meetings](https://github.com/moja-global/community-website/blob/main/website/meetings.md)
+
 ## How to Get Involved?
 
 moja global welcomes a wide range of contributions as explained in [Contributing document](https://github.com/moja-global/About-moja-global/blob/master/CONTRIBUTING.md) and in the [About moja-global Wiki](https://github.com/moja-global/.github/wiki).
