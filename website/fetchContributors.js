@@ -22,7 +22,7 @@ request(
     // Basic validation
     let content = JSON.parse(body);
 
-    if (!Array.isArray(content)) throw new Error('contributors info is not an array');
+    // FIXME: if (!Array.isArray(content)) throw new Error('contributors info is not an array');
 
     for (const item of content) {
       for (const key of REQUIRED_KEYS) {

@@ -47,8 +47,9 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 ```
 
 ## Contribution Guides
-- [How to write and publish a blog](https://github.com/moja-global/community-website/blob/main/website/blog.md)
-- [How to write and publish documentation](https://github.com/moja-global/community-website/blob/main/website/documentation.md)
+
+- [How to write and publish a blog](https://community.moja.global/community/contributing#writing-new-blogs)
+- [How to write and publish documentation](https://community.moja.global/community/contributing#adding-new-documentation)
 - [How to add meetings](https://github.com/moja-global/community-website/blob/main/website/meetings.md)
 
 ## How to Get Involved?
