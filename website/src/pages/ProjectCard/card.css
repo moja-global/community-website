@@ -70,6 +70,7 @@
     right: 0;
     padding: 50px;
     overflow: auto;
+    color:white;
 }
 .modal_links{
     display: flex;
