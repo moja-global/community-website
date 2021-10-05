@@ -4,5 +4,6 @@ module.exports = {
         'support',
         'technical-steering-committee',
         'contributing',
+        'mentorship',
     ]
 }
