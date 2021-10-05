@@ -1,0 +1,67 @@
+---
+id: FLINT-Changelog
+title: FLINT Changelog
+---
+
+## Upcoming release
+
+### Features
+
+- Integrated methods to assist large data aggregations.
+- Added `shrink_to_fit` for the RecordAccumulator2.
+- Added support for outputting properties of DynamicObject-style variables.
+- Added a tuple collection.
+- Added pre-allocated tuple and persistable vectors in the `recordaccumulator`.
+- Migrated to the SQLite open mode to explicitly read-only / no-mutex to improve read-only performance over NFS.
+
+### Bug Fixes
+
+- Fixing bugs around the GCBM compatibility.
+- Fixing issues on the Linux compilation.
+- Fixed environment variable issue.
+- Fixed issues with the column data when null values are present.
+- Fixed error in the Cmake setup in the base Docker file.
+- Fixed minmax windows macro issue.
+- Fix for OutputerStreamFlux.
+
+### Minor Chores/Improvements
+
+- Migrated to C++ 17.
+- Cleaned up exceptions for the next release.
+- Migrated to `std::filesystem` for the next release.
+- Removal of of Poco for `std::filesystem`.
+- Cleaned up OutputerStream and OutputerStreamFlux for the next release.
+- Removed ublas template class library.
+- Changes made to the `std::mutex` class.
+- Cleaned up Dockerfile for installation.
+
+## FLINT 1.1.0
+
+### Bug Fixes
+
+- Fixing issues with sleek.
+- Fixing the bug when no provider configuration is passed to the CLI.
+- Fixing missing link library.
+- Fixing issues on the Linux build.
+- Fixing issues with the `FLINT.Test` project.
+- Fixing issues with the external headers.
+- Fixing internal FLINT library loader for providers.
+
+### Minor Chores/Improvements
+
+- Upgrading the CMake files and fixing issues with CMake and Zipper files.
+- Renaming `MojaConfig.cmake.in` to `mojaConfig.cmake.in`.
+
+## FLINT 1.0.1
+
+### Bug Fixes
+
+- Fixing folly compilation on Linux.
+- Fixing the Docker compile.
+- Fixing the `Poco::Nullable` namespace.
+- Fixing the hasher namespace.
+
+## FLINT 1.0.0
+
+- Initial release of the FLINT framework.
+
