@@ -1,6 +1,6 @@
 import React, { forwardRef } from 'react';
 import Layout from '@theme/Layout';
-import styles from './community.module.css';
+import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
 import { FixedSizeList as List } from 'react-window';
 import MeetingCard from '../components/PastMeetingCard';

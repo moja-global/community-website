@@ -50,10 +50,10 @@ module.exports = {
           label: 'Projects',
         },
         { to: '/blog', label: 'Blogs', position: 'left' },
-        { to: '/community', label: 'Community', position: 'left' },
+        { to: '/initiatives', label: 'Initiatives', position: 'left' },
         {
           to: '/community/support',
-          label: 'Support',
+          label: 'Community',
           position: 'left',
           activeBaseRegex: '/community/',
         },
@@ -62,7 +62,7 @@ module.exports = {
           label: 'GitHub',
           position: 'right',
         },
-        { to: '/roadmap', label: 'Roadmap', position: 'left' },
+        { to: '/roadmap', label: 'Roadmap', position: 'right' },
       ],
     },
     footer: {
