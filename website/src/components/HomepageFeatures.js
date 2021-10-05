@@ -18,8 +18,8 @@ const FeatureList = [
     Svg: require('../../static/img/learn-more.svg').default,
     description: (
       <>
-       moja global has many projects apart from FLINT. Be a part of one of those projects by writing code, improving 
-       documentation or just suggest us features that you think will be helpful to the users.
+        moja global has many projects apart from FLINT. Be a part of one of those projects by writing code, improving
+        documentation or just suggest us features that you think will be helpful to the users.
       </>
     ),
   },
@@ -28,7 +28,7 @@ const FeatureList = [
     Svg: require('../../static/img/write.svg').default,
     description: (
       <>
-       moja global is a Linux Foundation organisation and therefore participates in the LFX mentorship program as well. We welcome new contributors who can help program FLINT and make it better for the world!
+        moja global is a Linux Foundation organisation and therefore participates in the LFX mentorship program as well. We welcome new contributors who can help program FLINT and make it better for the world!
       </>
     ),
   },
@@ -36,13 +36,13 @@ const FeatureList = [
 
 function Feature({ Svg, title, description }) {
   return (
-    <div className={clsx('col col--4')}>
-      <div className="text--center">
+    <div className={clsx('col col--4', styles.featureRow)}>
+      <div className={styles.featureImage}>
         <Svg className={styles.featureSvg} alt={title} />
       </div>
-      <div className="text--center padding-horiz--md">
-        <h3>{title}</h3>
-        <p>{description}</p>
+      <div className={styles.featureText}>
+        <h3 className={styles.featureTitle}>{title}</h3>
+        <p className={styles.featureDescription}>{description}</p>
       </div>
     </div>
   );
@@ -52,7 +52,7 @@ export default function HomepageFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
-        <div className="row">
+        <div className="col">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
           ))}
