@@ -58,6 +58,12 @@ module.exports = {
           activeBaseRegex: '/community/',
         },
         {
+          to: '/case-studies/introduction',
+          label: 'Case Studies',
+          position: 'left',
+          activeBaseRegex: '/case-studies/'
+        },
+        {
           href: 'https://github.com/moja-global',
           label: 'GitHub',
           position: 'right',
@@ -245,6 +251,15 @@ module.exports = {
           path: 'community',
           routeBasePath: 'community',
           sidebarPath: require.resolve('./sidebarsCommunity.js')
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+          id: 'case-studies',
+          path: 'case-studies',
+          routeBasePath: 'case-studies',
+          sidebarPath: require.resolve('./sidebarsCaseStudies.js')
       },
     ],
   ]
