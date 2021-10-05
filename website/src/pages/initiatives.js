@@ -11,19 +11,21 @@ const Community = () => {
     <Layout title='Community'>
       <div className={styles.communityBody}>
         <div>
-          <h1 className={styles.communityTitle}>Community</h1>
+          <h1 className={styles.communityTitle}>Community Initiatives</h1>
         </div>
         <section id='initiatives'>
-          <h3 className={styles.communitySubtitle}>Our Community Initiatives</h3>
           <div className={styles.communityRow}>
             <div className={styles.communityItem}>
-              <CommunityCard title='LFX' description='The Linux Foundation is the parent organisation of moja global. Therefore, we actively participate and host our projects for the LFX Mentorship programme.' btnText='Learn More' />
+              <CommunityCard title='Linux Foundation Mentorship' description='The Linux Foundation is the parent organisation of moja global. Therefore, we actively participate and host our projects for the LFX Mentorship programme.' btnLink = '/community/mentorship#linux-foundation-mentorship/' btnText='Learn More' />
             </div>
             <div className={styles.communityItem}>
-              <CommunityCard title='GSoD' description='moja global actively participates in Google Season of Documentation. We love technical writers who can bring in clarity about our projects with good documentation.' btnText='Learn More' />
+              <CommunityCard title='Google Season of Docs' description='moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about our projects with good documentation.' btnLink = '/community/mentorship#google-season-of-docs/' btnText='Learn More' />
             </div>
             <div className={styles.communityItem}>
-              <CommunityCard title='Outreachy' description='moja global actively participates in Outreachy. We love to host brilliant minds who can help accelerate our project growth.' btnText='Learn More' />
+              <CommunityCard title='Outreachy Internships' description='moja global participates in Outreachy. We love to support under-represented groups in technology who can help accelerate our project growth.' btnLink = '/community/mentorship#outreachy-internships/' btnText='Learn More' />
+            </div>
+            <div className={styles.communityItem}>
+              <CommunityCard title='Google Summer of Code' description='moja global participates in Google Summer of Code. We love to host a wide range of contributors to help us accelerate our project growth.' btnLink = '/community/mentorship#google-summer-of-code/' btnText='Learn More' />
             </div>
           </div>
         </section>
