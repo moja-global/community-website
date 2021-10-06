@@ -1,165 +1,97 @@
 ---
 id: contributing
-title: Contributing
+title: Contributing Guidelines
 ---
 
-Community Website is currently under development. We have early users who have already started using it to provide feedback and suggestions. We are also working on a new design and new features and we are looking for help from the community. To get started with the collaboration, please join the **#community-website** channel on our [Slack workspace](https://mojaglobal.slack.com).
+We're so glad that you're thinking about contributing to moja global. We welcome your contributions!
 
-## Contribution scope
+Here are some guidelines and instructions for contributing to our projects. Please go through them before making a contribution.
 
-We use GitHub to collaborate and contribute. All changes will be public from the beginning. We use various CI services and bots to help us manage and validate the contributions.
+## Code of Conduct
 
-### Adding new documentation
+moja global governs its participants according to the Contributor Covenant Code of Conduct. As a contributor, you agree to uphold this code. Please report unacceptable behavior to info@moja.global. If you want your report to be handled confidentially, please report to andrew@moja.global.
 
-In this section we will go in detail on how to write, submit and publish documentation, or more specifically project specific documentation on the moja global community website. Publishing documentation consists of four steps which are:
 
-1. Selecting a topic.
-2. Researching the project.
-3. Writing the documentation.
-4. Adding it to the website.
+## FAQ and General Questions
 
-#### Selecting a topic
+Before asking any questions, please have a look at [**about moja global**](../docs/about-moja-global/). If your question isn't answered there, please write to info@moja.global.
 
-On the moja global community website's [Github issues page](https://github.com/moja-global/community-website/issues), you can find issues related to project specific documentation. Use the filter with the `PSF` tag which stands for project specific documentation to find the specific issues. Pick an issue which has not been picked by someone else, request yourself to be assigned the same and start the work on the same.
+If your question concerns the code of a project, then you should create a [new issue] in the relevant project's repository.
 
-#### Researching the project
+You can also join moja global and then ask your question(s) in the relevant channel of our private [Slack workspace](https://mojaglobal.slack.com/).
 
-We have some good first steps to follow while going about researching a topic, which would benefit your research:
 
-1. Go to the project specific Read The Docs (RTD) documentation websute and read it's exhaustive documentation.
-2. Talk to the project's maintainers on Slack or by joining the catchup meetings/emailing them.
-3. Try setting up the project locally and playing around with it, to make sense of the RTD docs.
-4. Talk to people who are contributing to the project.
+## How To Get Credit for Your Contribution?
 
-#### Writing the Documentaion
+We use the [All Contributors Bot](https://allcontributors.org/) to recognize contributors.
 
-There are somethings that are quite important and must be kept in mind while writting the documentation:
+To get recognized, just add the following line to a comment after making your contribution (like submitting a pull request, replying to a question, resolving an issue, etc.):
 
-1. Do multiple iterataions over the content to remove any typos, mistakes and inconsistencies.
-2. Don't assume that the reader knows about the project and keep it as simple as possible for readers to understand the nits and grits of the project.
-3. Keep the documentation piece concise, crisp and to the point.
-4. Avoid using technical jargon and prefer to use simple language and vocabulary..
-
-#### Additing it to the website
-
-Every document has a unique ID attached to it which is by default the `name of the document`. It can be overriden by defining the ID explicitly at the top of the document like.
-
-```
----
-id: example-id
----
+```sh
+@all-contributors please add <@username> for <contributions>
 ```
 
-This will overwrite the document's ID to `example-id` instead of whatever was the name of the file.
+Replace `<@username>` with your GitHub username and `<contributions>` with any word from [this list](https://allcontributors.org/docs/en/emoji-key).
 
-Creating a document on the community website is fairly easy. All you have to do is to go into the respective project directory inside the `docs` directory wherein you want the documentation to be visible and create a markdown file `.md`. You can also create a `.mdx` file if you want to add some JSX code in your documentation but that's an complex use-case and does not need to be addressed here.
+After that, the @all-contributors bot will submit a PR to include you in the list of contributors. Once this PR gets accepted, you'll get added to the Contributors table in the relevant project's `README`.
 
-At the top of the file, specify ID and the title in the front matter, so that our configurations will pick them up correctly while generating your site.
+## How to Contribute Code?
 
-```
----
-id: test-1
-name: Testing documentation
----
-```
+Bug fixes, performance improvements, code formatting, ...
+There are a lot ways in which you can contribute code!
+The issues list of a project is a great place to find something that you can help us with.
 
-You can also reference other pieces of documentation from your documentation by referencing it's relative path inside that file. You can read more about it [on the Docusaurus documentation](https://docusaurus.io/docs/docs-markdown-features#referencing-other-documents)
+To increase the chances of your code getting merged, please ensure that:
 
-Unlike blogs where we prefer you to make a pull request as soon as possible. We expect you to take your time, verify your research and then submit the perfect piece of documentation. After the submission, it will go for a thorough review from the project's maintainers and requested changes would be expected to be addressed. Once those are acknowledged and adhered, the documentation will be published on the moja global's Community website.
+- You satisfy our contribution criteria.
+- Your code follows our coding guidelines.
+- Your submission follows [Vincent Driessen's Git Branching](https://nvie.com/posts/a-successful-git-branching-model/) System.
+- Your code's documentation follows our rules.
+- Your pull request:
+    - Passes all checks and has no conflicts.
+    - Has a well-written title and message that briefly explains your proposed changes.
 
-### Writing new blogs
-
-In this section we will go in detail on how to write, submit and publish your blog on the moja global community website. To publish a blog, we need to undergo three simple steps:
-
-1. Selecting a topic.
-2. Writing the blog.
-3. Adding it to the website.
-
-We will go in detail into all of these steps one-by-one and by the end of this section you'll have all the knowledge needed to write stellar blogs regarding your experience with moja global.
-
-#### Selecting a topic
-
-This step is fairly easy. If you have any topic in mind regarding which you'd like to write a blog and publish on the website, you can open up an issue for the same on the Community website's Github repository with the `Blog` tag. On the other hand, if there's already an issue on the repository for a specific topic on which the maintainers would like a blog, you can claim the issue by commenting on it. Once the issue is assigned to you, you can start working on the same and follow the steps given below.
-
-#### Writing the Blog
-
-There are somethings that are quite important and must be kept in mind while submitting a blog:
-
-1. The content should not be in any way plagiarised from any source on the internet. We will run each blog through a plagiarism detector, to make sure there are no copyright infringements.
-2. Try avoiding a biased opinion on a topic, mention both sides of the argument.
-3. Keep the blogs concise, crisp and to the point.
-
-#### Publishing the Blog
-
-If you have not already, follow [these instructions](https://github.com/moja-global/community-website/blob/main/FAQ.md#how-to-contribute-to-the-community-website) to setup the Community website locally before publishing the same. You must be familiar with the basic Git & GitHub workflow to be able to clone and setup the website and push your changes.
-
-Once the community website has been setup, navigate to the `blog` directory and create a Markdown file with the name of your blog. The name of the file should be in the format `YYYY-MM-DD-TITLE.md`. The purpose of the naming convention is to make sure that the blogs are sorted in chronological order.
-
-Let's take an example of a blog that we would like to submit. Create a file at `website/blog/2019-09-05-test.md` and write the following content in it:
+Lastly, sign all your commits with a line like this:
 
 ```
----
-title: Testing Community Website
-description: Trying to write my first blog post on moja global's community website.
-slug: test
-authors:
-  - name: Sarthak Kundra
-    title: Maintainer of community website
-    url: https://github.com/sarthakkundra
-    image_url: https://github.com/sarthakkundra.png
-tags: [test, test blog]
-hide_table_of_contents: false
----
-Welcome to this blog. This blog is created with [**Docusaurus 2**](https://docusaurus.io/).
-
-<!--truncate-->
-
-This is my first blog about moja global.
-
+Signed-off-by: Random J Developer <random@developer.example.org>
 ```
 
-Use the marker to demarcate the summary from the rest of the post. The matter above the marker will be shown as summary. You can further edit the file to add more content and add images as per the Markdown syntax.
+This shows that you agree to the [Developer Certificate of Origin (DCO)](https://developercertificate.org/). It certifies that you wrote (or otherwise have the right to submit) your contribution to the project.
 
-#### Customizing the Blog
 
-Although, each blog list page shows ten blog posts, you can use posts per page option in the plugin option to control the pagination. For example, if you set the postsPerPage to ‘ALL’, all the posts will be displayed on the blog list page. Meta description can also be added to the blog list page.
+## How to Report Bugs, Provide Feedback or Request Features?
 
-```
-module.exports = {
-  // ...
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        blog: {
-          blogTitle: 'Docusaurus blog!',
-          blogDescription: 'A Docusaurus powered blog!',
-          postsPerPage: 'ALL',
-        },
-      },
-    ],
-  ],
-};
-```
+We welcome all kinds of bug reports, user feedback and feature requests!
 
-Recent blog posts are displayed on the blog sidebar. By default, the sidebar shows five items, but you can disable this feature by setting the `bolgsSidebarCount` to infinity. This also increases the width of the main container. If you want to change the sidebar heading text, go to the `blogSidebarTitle` option and make the necessary changes. For example, you could change it from Recent Posts to All Posts.
+We've created some issue templates to assist you in this. Please use them to create a [new issue] in the relevant project's repository.
 
-```
-module.exports = {
-  presets: [
-    [
-      '@docusaurus/preset-classic',
-      {
-        blog: {
-          blogSidebarTitle: 'All posts',
-          blogSidebarCount: 'ALL',
-        },
-      },
-    ],
-  ],
-};
-```
+## How to Review & Contribute Science Design?
 
-#### Submitting the blog
+Most of our code is informed by an underlying Science Design. We develop these designs collaboratively and your contributions are most welcome!
 
-Once you're finished writing, we encourage you to make a pull request. It doesn't need to be perfect, all it needs to clarify is that the direction in which the blog post is going is acceptable by the maintainers and the chairs of the `Documentation Working Group`. From there our maintainers will go through the submission, suggest some changes and once those changes are adhered and submitted, the post will be live on the website!
+Every science-based project contains Science Designs under a directory named **Science**. There you can find:
+
+- PDFs that contain completed Science Designs.
+- Markdown (or `.md`) files that contain link to a Science Design document that is still under development.
+
+## How to Suggest UI/UX Improvements?
+
+One of the most important areas of improvement to our flagship software FLINT is the user interface. We really need your help with this!
+
+If you have ideas on how we can improve, please share them with us by creating a [new issue]. We could then start a new project for your idea!
+
+## How to Contribute Translations?
+
+Right now our interfaces do not support translations and we also don't have a translation strategy in place. But we want to change this. We want our projects to be accessible to non-English speakers. If you have any ideas then please share them with us by creating a [new issue].
+
+
+## Are There Other Ways of Contributing?
+
+Yes, there are a lot of other ways in which you can help us!
+
+You can coach new contributors, answer user questions, organize events, help us in administration, fundraising, website development, communication/outreach. You can also offer strategy advice. You can even join our strategy board!
+
+If there's some other way, not listed above, in which you'd like to help, then please drop us a line at info@moja.global. We'll get in touch with you!
+
+[new issue]: https://github.com/moja-global/About_moja_global/issues/new/
