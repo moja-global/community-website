@@ -1,0 +1,98 @@
+{
+  "link.title.Docs": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=Docs in the footer"
+  },
+  "link.title.Community": {
+    "message": "Community",
+    "description": "The title of the footer links column with title=Community in the footer"
+  },
+  "link.title.Getting Started": {
+    "message": "Getting Started",
+    "description": "The title of the footer links column with title=Getting Started in the footer"
+  },
+  "link.title.Social": {
+    "message": "Social",
+    "description": "The title of the footer links column with title=Social in the footer"
+  },
+  "link.title.Sponsors": {
+    "message": "Sponsors",
+    "description": "The title of the footer links column with title=Sponsors in the footer"
+  },
+  "link.item.label.FLINT": {
+    "message": "FLINT",
+    "description": "The label of footer link with label=FLINT linking to https://moja.global/flint/"
+  },
+  "link.item.label.FLINT UI": {
+    "message": "FLINT UI",
+    "description": "The label of footer link with label=FLINT UI linking to https://docs.moja.global/projects/flint-ui/en/latest/"
+  },
+  "link.item.label.FLINT Reporting Tool": {
+    "message": "FLINT Reporting Tool",
+    "description": "The label of footer link with label=FLINT Reporting Tool linking to https://docs.moja.global/projects/flint-reporting/en/latest/"
+  },
+  "link.item.label.Taswira": {
+    "message": "Taswira",
+    "description": "The label of footer link with label=Taswira linking to https://github.com/moja-global/GCBM.Visualisation_Tool"
+  },
+  "link.item.label.FLINT JSON Editor": {
+    "message": "FLINT JSON Editor",
+    "description": "The label of footer link with label=FLINT JSON Editor linking to https://github.com/moja-global/FLINT.JSON_Interface"
+  },
+  "link.item.label.FLINT Cloud": {
+    "message": "FLINT Cloud",
+    "description": "The label of footer link with label=FLINT Cloud linking to https://docs.moja.global/projects/flintcloud/en/latest"
+  },
+  "link.item.label.Blogs": {
+    "message": "Blogs",
+    "description": "The label of footer link with label=Blogs linking to https://community.moja.global/blog"
+  },
+  "link.item.label.News": {
+    "message": "News",
+    "description": "The label of footer link with label=News linking to https://moja.global/news/"
+  },
+  "link.item.label.Programs": {
+    "message": "Programs",
+    "description": "The label of footer link with label=Programs linking to https://docs.moja.global/en/latest/contact.html#outreach-and-student-programs"
+  },
+  "link.item.label.FAQs": {
+    "message": "FAQs",
+    "description": "The label of footer link with label=FAQs linking to https://docs.moja.global/en/latest/faq.html"
+  },
+  "link.item.label.Slack": {
+    "message": "Slack",
+    "description": "The label of footer link with label=Slack linking to https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw"
+  },
+  "link.item.label.What is FLINT?": {
+    "message": "What is FLINT?",
+    "description": "The label of footer link with label=What is FLINT? linking to https://moja.global/flint/"
+  },
+  "link.item.label.About moja global": {
+    "message": "About moja global",
+    "description": "The label of footer link with label=About moja global linking to https://github.com/moja-global"
+  },
+  "link.item.label.Newsletter": {
+    "message": "Newsletter",
+    "description": "The label of footer link with label=Newsletter linking to  https://global.us13.list-manage.com/subscribe?u=d8a187fa0dfae0bafe4bc69cc&id=cbfdc2d476"
+  },
+  "link.item.label.Twitter ": {
+    "message": "Twitter ",
+    "description": "The label of footer link with label=Twitter  linking to https://twitter.com/mojaglobal"
+  },
+  "link.item.label.Youtube ": {
+    "message": "Youtube ",
+    "description": "The label of footer link with label=Youtube  linking to https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ"
+  },
+  "link.item.label.GitHub": {
+    "message": "GitHub",
+    "description": "The label of footer link with label=GitHub linking to https://github.com/moja-global"
+  },
+  "link.item.label.LinkedIn": {
+    "message": "LinkedIn",
+    "description": "The label of footer link with label=LinkedIn linking to https://www.linkedin.com/company/moja-global/"
+  },
+  "copyright": {
+    "message": "Copyright © 2021 moja global.",
+    "description": "The footer copyright"
+  }
+}
