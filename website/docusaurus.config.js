@@ -154,7 +154,7 @@ module.exports = {
             },
             {
               label: 'Newsletter',
-              href: ' https://global.us13.list-manage.com/subscribe?u=d8a187fa0dfae0bafe4bc69cc&id=cbfdc2d476',
+              href: 'https://global.us13.list-manage.com/subscribe?u=d8a187fa0dfae0bafe4bc69cc&id=cbfdc2d476',
             },
           ],
         },
