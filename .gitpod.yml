@@ -4,8 +4,8 @@ ports:
     onOpen: open-preview
 tasks:
   - before: cd website
-    init: npm install
-    command: npm run start
+    init: yarn
+    command: yarn start
 github:
   prebuilds:
     # enable for the default branch (defaults to true)
