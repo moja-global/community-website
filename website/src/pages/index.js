@@ -12,16 +12,13 @@ const ContributorAvatar = ({ author = {}, lastContribution, total }) => {
     <a
       className={`contributor-item`}
       title={`${author.login} made ${total} commit${
-        total > 1 ? "s" : ""
+        total > 1 ? 's' : ''
       }. Last commit was ${new Date(lastContribution * 1000).toDateString()}`}
       target="_blank"
       href={`https://github.com/${author.login}`}
+      rel="noreferrer"
     >
-      <img
-        className="contributor-avatar"
-        src={author.avatar_url}
-        alt={author.login}
-      />
+      <img className="contributor-avatar" src={author.avatar_url} alt={author.login} />
     </a>
   );
 };
@@ -64,26 +61,29 @@ function HomepageHeader() {
           <Link
             className={clsx(
               'button button--outline button--secondary button--lg',
-              styles.getStarted,
-              )}
-            to="/docs/">
+              styles.getStarted
+            )}
+            to="/docs/"
+          >
             Know our Projects
           </Link>
           <Link
-          className={clsx(
-            'button button--outline button--secondary button--lg',
-            styles.getStarted,
-          )}
-          to="https://docs.moja.global/">
-          Read the Docs
+            className={clsx(
+              'button button--outline button--secondary button--lg',
+              styles.getStarted
+            )}
+            to="https://docs.moja.global/"
+          >
+            Read the Docs
           </Link>
           <Link
-          className={clsx(
-            'button button--outline button--secondary button--lg',
-            styles.getStarted,
-          )}
-          to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists">
-          Watch the tutorials
+            className={clsx(
+              'button button--outline button--secondary button--lg',
+              styles.getStarted
+            )}
+            to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists"
+          >
+            Watch the tutorials
           </Link>
         </div>
       </div>
@@ -95,16 +95,16 @@ export default function Home() {
   const { siteConfig } = useDocusaurusContext();
   return (
     <>
-    <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />"
-    >
-      <HomepageHeader />
-      <main>
-        <HomepageFeatures />
-      </main>
-      <Contributors />
-    </Layout>
+      <Layout
+        title={`Hello from ${siteConfig.title}`}
+        description="Description will go into a meta tag in <head />"
+      >
+        <HomepageHeader />
+        <main>
+          <HomepageFeatures />
+        </main>
+        <Contributors />
+      </Layout>
     </>
   );
 }
