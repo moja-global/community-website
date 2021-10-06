@@ -1,15 +1,10 @@
 import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
-import Link from '@docusaurus/Link';
-import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './roadmap.module.css';
-import HomepageFeatures from '../components/HomepageFeatures';
 import ProjectCard from './ProjectCard/ProjectCard';
-import { m } from 'framer-motion';
 
 const RoadmapHeader = () => {
-  const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.banner)}>
       <div className="container">
