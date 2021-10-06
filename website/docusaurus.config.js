@@ -36,7 +36,7 @@ module.exports = {
         lightIconStyle: {
           marginLeft: '1px',
         },
-      }
+      },
     },
     navbar: {
       title: 'Community',
@@ -69,7 +69,7 @@ module.exports = {
           to: '/case-studies/introduction',
           label: 'Case Studies',
           position: 'left',
-          activeBaseRegex: '/case-studies/'
+          activeBaseRegex: '/case-studies/',
         },
         {
           href: 'https://github.com/moja-global',
@@ -165,7 +165,7 @@ module.exports = {
               label: 'Twitter ',
               href: 'https://twitter.com/mojaglobal',
             },
-             {
+            {
               label: 'Youtube ',
               href: 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ',
             },
@@ -246,29 +246,29 @@ module.exports = {
   ],
   plugins: [
     [
-      require.resolve("@easyops-cn/docusaurus-search-local"),
+      require.resolve('@easyops-cn/docusaurus-search-local'),
       {
         hashed: true,
-        language: ["en"],
-      }
-    ],
-    [
-      '@docusaurus/plugin-content-docs',
-      {
-          id: 'community',
-          path: 'community',
-          routeBasePath: 'community',
-          sidebarPath: require.resolve('./sidebarsCommunity.js')
+        language: ['en'],
       },
     ],
     [
       '@docusaurus/plugin-content-docs',
       {
-          id: 'case-studies',
-          path: 'case-studies',
-          routeBasePath: 'case-studies',
-          sidebarPath: require.resolve('./sidebarsCaseStudies.js')
+        id: 'community',
+        path: 'community',
+        routeBasePath: 'community',
+        sidebarPath: require.resolve('./sidebarsCommunity.js'),
       },
     ],
-  ]
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+        id: 'case-studies',
+        path: 'case-studies',
+        routeBasePath: 'case-studies',
+        sidebarPath: require.resolve('./sidebarsCaseStudies.js'),
+      },
+    ],
+  ],
 };
