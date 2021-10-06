@@ -1,0 +1,30 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.tutorialSidebar.category.About": {
+    "message": "About",
+    "description": "The label for category About in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FLINT": {
+    "message": "FLINT",
+    "description": "The label for category FLINT in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FLINT-Cloud": {
+    "message": "FLINT-Cloud",
+    "description": "The label for category FLINT-Cloud in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FLINT-Reporting-Tool": {
+    "message": "FLINT-Reporting-Tool",
+    "description": "The label for category FLINT-Reporting-Tool in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.FLINT-Visualization-Tool": {
+    "message": "FLINT-Visualization-Tool",
+    "description": "The label for category FLINT-Visualization-Tool in sidebar tutorialSidebar"
+  },
+  "sidebar.tutorialSidebar.category.Predictive-Deforestation": {
+    "message": "Predictive-Deforestation",
+    "description": "The label for category Predictive-Deforestation in sidebar tutorialSidebar"
+  }
+}

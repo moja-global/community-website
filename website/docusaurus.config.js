@@ -9,6 +9,10 @@ module.exports = {
   favicon: 'img/favicon.ico',
   organizationName: 'moja global', // Usually your GitHub org/user name.
   projectName: 'Community Website', // Usually your repo name.
+  i18n: {
+    defaultLocale: 'en',
+    locales: ['en', 'es'],
+  },
   themeConfig: {
     prism: {
       theme: require('prism-react-renderer/themes/github'),
@@ -43,6 +47,10 @@ module.exports = {
         srcDark: 'img/logo-light.png',
       },
       items: [
+        {
+          type: 'localeDropdown',
+          position: 'right',
+        },
         {
           type: 'doc',
           docId: 'intro',
