@@ -1,0 +1,34 @@
+{
+  "title": {
+    "message": "Community",
+    "description": "The title in the navbar"
+  },
+  "item.label.Projects": {
+    "message": "Projects",
+    "description": "Navbar item with label Projects"
+  },
+  "item.label.Blogs": {
+    "message": "Blogs",
+    "description": "Navbar item with label Blogs"
+  },
+  "item.label.Initiatives": {
+    "message": "Initiatives",
+    "description": "Navbar item with label Initiatives"
+  },
+  "item.label.Community": {
+    "message": "Community",
+    "description": "Navbar item with label Community"
+  },
+  "item.label.Case Studies": {
+    "message": "Case Studies",
+    "description": "Navbar item with label Case Studies"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub",
+    "description": "Navbar item with label GitHub"
+  },
+  "item.label.Roadmap": {
+    "message": "Roadmap",
+    "description": "Navbar item with label Roadmap"
+  }
+}
