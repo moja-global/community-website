@@ -7,6 +7,7 @@ module.exports = {
         'community-website-contributions',
         'code-contribution',
         'docs-contribution',
+        'management-contribution',
         'mentorship',
     ]
 }
