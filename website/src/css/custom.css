@@ -54,6 +54,43 @@
   text-align: center;
   font-weight: bold;
 }
+
+@media only screen and (max-width: 996px) {
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+  }
+
+  .footer {
+    padding: 5%;
+  }
+}
+
+@media only screen and (max-width: 852px) {
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(4, auto);
+  }
+}
+
+@media only screen and (max-width: 648px) {
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+  }
+}
+
+@media only screen and (max-width: 373px) {
+  .footer__links {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+  }
+
+  .footer__col {
+    text-align: center;
+  }
+}
+
 @media only screen and (max-width: 736px) {
   .pluginsHeader {
     padding-top: 30px;
