@@ -13,6 +13,8 @@ The Outreachy internship at moja global for the December 2021 to March 2022 roun
 
 ### Current Project: **Climate change: extend models of forest carbon pools**.
 
+> Puedes leer la descripción del proyecto en español aquí: https://community.moja.global/es/community/mentorship#outreachy-internships/
+
 Land plays an important role in global cycles of greenhouse gases (GHG). Land use activities result in emissions and removals of GHG to the atmosphere. The Fifth Assessment report of the Intergovernmental Panel on Climate Change (IPCC) indicates that the Agriculture, Forestry and Other Land Use (AFOLU) sector is responsible for almost a quarter (~10–12 Gt CO2eq/yr) of anthropogenic GHG emissions mainly from activities such as deforestation, forest degradation and also from livestock, soil, nutrient management and agricultural burning.
 
 Moja global's Full Lands Integration Tool (FLINT) has been developed to support the GHG inventories development and the implementation of mitigation actions in the AFOLU sector. But, some functions and features of the FLINT need to be refined or added in order to fully support mitigation actions and establishment and maintenance of sustainable GHG inventory management systems in developing countries.
