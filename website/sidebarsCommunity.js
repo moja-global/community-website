@@ -10,5 +10,6 @@ module.exports = {
         'docs-contribution',
         'management-contribution',
         'mentorship',
+        'code-of-conduct',
     ]
 }
