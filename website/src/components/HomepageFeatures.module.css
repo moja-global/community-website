@@ -56,3 +56,11 @@
     text-align: center;
   }
 }
+
+.pluginsHeader {
+  font-size: 200%;
+  line-height: 100%;
+  padding: 0 0 30px;
+  text-align: center;
+  font-weight: bold;
+}
