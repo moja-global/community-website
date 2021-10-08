@@ -77,6 +77,12 @@ module.exports = {
           position: 'right',
         },
         { to: '/roadmap', label: 'Roadmap', position: 'right' },
+        {
+          to: '/tutorial/tutorial-introduction',
+          label: 'Tutorial',
+          position: 'left',
+          activeBaseRegex: '/tutorial/'
+        },
       ],
     },
     footer: {
@@ -288,6 +294,15 @@ module.exports = {
         path: 'case-studies',
         routeBasePath: 'case-studies',
         sidebarPath: require.resolve('./sidebarsCaseStudies.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+          id: 'tutorial-introduction',
+          path: 'tutorial',
+          routeBasePath: 'tutorial',
+          sidebarPath: require.resolve('./sidebarsTutorial.js')
       },
     ],
   ],
