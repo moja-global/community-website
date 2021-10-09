@@ -77,6 +77,12 @@ module.exports = {
           position: 'right',
         },
         { to: '/roadmap', label: 'Roadmap', position: 'right' },
+        {
+          to: '/tutorial/tutorial-introduction',
+          label: 'Tutorial',
+          position: 'left',
+          activeBaseRegex: '/tutorial/'
+        },
       ],
     },
     footer: {
@@ -114,48 +120,68 @@ module.exports = {
               label: 'FLINT Cloud',
               href: 'https://docs.moja.global/projects/flintcloud/en/latest',
             },
+            {
+              label: 'FAQs',
+              href: 'https://docs.moja.global/en/latest/faq.html',
+            },
           ],
         },
         {
           title: 'Community',
           items: [
             {
+              label: 'Projects',
+              href: '/docs',
+            },
+            {
               label: 'Blogs',
-              href: 'https://community.moja.global/blog',
+              href: '/blog',
             },
             {
               label: 'News',
               href: 'https://moja.global/news/',
             },
             {
-              label: 'Programs',
-              href: 'https://docs.moja.global/en/latest/contact.html#outreach-and-student-programs',
-            },
-            {
-              label: 'FAQs',
-              href: 'https://docs.moja.global/en/latest/faq.html',
+              label: 'Mentorship',
+              href: '/community/mentorship',
             },
             {
               label: 'Slack',
-              href: 'https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw',
+              href: 'https://mojaglobal.slack.com/',
             },
+            {
+              label: 'Initiatives',
+              href: '/initiatives',
+            },
+            {
+              label: 'Roadmap',
+              href: '/roadmap',
+            },
+            {
+              label: 'Case Studies',
+              href: '/case-studies/introduction',
+            }
           ],
         },
         {
           title: 'Getting Started',
           items: [
             {
-              label: 'What is FLINT?',
-              href: 'https://moja.global/flint/',
+              label: 'About moja global',
+              href: '/docs/about-moja-global',
             },
             {
-              label: 'About moja global',
-              href: 'https://github.com/moja-global',
+              label: 'Governance model',
+              href: '/community/governance'
             },
             {
               label: 'Newsletter',
               href: 'https://global.us13.list-manage.com/subscribe?u=d8a187fa0dfae0bafe4bc69cc&id=cbfdc2d476',
             },
+            {
+              label: 'Contributing guidelines',
+              href: '/community/contributing-guidelines',
+            }
           ],
         },
         {
@@ -268,6 +294,15 @@ module.exports = {
         path: 'case-studies',
         routeBasePath: 'case-studies',
         sidebarPath: require.resolve('./sidebarsCaseStudies.js'),
+      },
+    ],
+    [
+      '@docusaurus/plugin-content-docs',
+      {
+          id: 'tutorial-introduction',
+          path: 'tutorial',
+          routeBasePath: 'tutorial',
+          sidebarPath: require.resolve('./sidebarsTutorial.js')
       },
     ],
   ],
