@@ -20,6 +20,10 @@
   font-family: 'Poppins', sans-serif;
 }
 
+html[data-theme='light'] .button.button--secondary.button--outline:not(.button--active):not(:hover)  {
+  color: #f5f6f7;
+}
+
 .docusaurus-highlight-code-line {
   background-color: rgb(72, 77, 91);
   display: block;
