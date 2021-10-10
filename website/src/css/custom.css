@@ -55,6 +55,32 @@
   font-weight: bold;
 }
 
+html[data-theme='light'] {
+  background-color: #e3f2e8;
+  color: #2e382b;
+}
+
+html[data-theme='light'] a {
+  color: #475447;
+}
+
+html[data-theme='light'] .navbar {
+  background-color: #f7f5f7;
+}
+
+html[data-theme='light'] .contributors {
+  background-color: #f7f5f7;
+}
+
+html[data-theme='light'] .footer {
+  background-color: #2e382b;
+  color: #e3f2e8;
+}
+
+html[data-theme='light'] .footer__link-item {
+  color: #e3f2e8;
+}
+
 @media only screen and (max-width: 996px) {
   .footer__links {
     display: grid;
