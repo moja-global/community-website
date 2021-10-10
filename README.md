@@ -1,7 +1,7 @@
 # Community Website
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-3-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-4-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Powered by Vercel](website/static/img/powered-by-vercel.svg)
@@ -77,6 +77,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://www.linkedin.com/in/abhishek-kr09/"><img src="https://avatars.githubusercontent.com/u/48255244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhishek Kumar</b></sub></a><br /><a href="#infra-Abhishek-kumar09" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://siddhant-k-code.github.io/"><img src="https://avatars.githubusercontent.com/u/55068936?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Siddhant-K-code" title="Code">💻</a> <a href="https://github.com/moja-global/community-website/pulls?q=is%3Apr+reviewed-by%3ASiddhant-K-code" title="Reviewed Pull Requests">👀</a> <a href="#mentoring-Siddhant-K-code" title="Mentoring">🧑‍🏫</a> <a href="#question-Siddhant-K-code" title="Answering Questions">💬</a></td>
     <td align="center"><a href="https://github.com/eemike07"><img src="https://avatars.githubusercontent.com/u/2515617?v=4?s=100" width="100px;" alt=""/><br /><sub><b>eemike07</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=eemike07" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/faisaljamil25"><img src="https://avatars.githubusercontent.com/u/69186619?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Faisal Jamil</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=faisaljamil25" title="Code">💻</a></td>
   </tr>
 </table>
 
