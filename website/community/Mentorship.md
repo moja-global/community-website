@@ -9,7 +9,7 @@ Help fight climate change from your keyboard! moja global specialises in softwar
 
 Outreachy provides paid, remote, three-month internships to applicants who identify themselves as women (both cis and trans), trans men, non-binary people, and genderqueer. The aim of this internship is to support diversity in Free and Open Source Software (FOSS) and uplift the under-represented sections of the society.
 
-The Outreachy internship at moja global for the December 2021 to March 2022 round will be coordinated by [Andrew O'Reilly-Nugent](https://github.com/aornugent) and [Yo Yehudi](https://github.com/yochannah).
+The Outreachy internship at moja global for the December 2021 to March 2022 round will be coordinated by [Andrew O'Reilly-Nugent](https://github.com/aornugent).
 
 ### Current Project: **Climate change: extend models of forest carbon pools**.
 

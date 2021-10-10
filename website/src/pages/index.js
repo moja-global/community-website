@@ -245,19 +245,13 @@ const features = [
     description: (
       <>
         <li>
-          <a href="https://www.nrcan.gc.ca/climate-change/impacts-adaptations/climate-change-impacts-forests/carbon-accounting/carbon-budget-model/13107">
-            {' '}
-            Canadian Carbon Budget Model (CBM)
-          </a>
-        </li>
-        <li>
-          <a href="https://www.industry.gov.au/data-and-publications/full-carbon-accounting-model-fullcam">
-            Australian Full Carbon Accounting Model (FullCAM)
-          </a>
-        </li>
-        <li>
           <a href="https://www.researchgate.net/publication/341041237_Modelling_forest_carbon_dynamics_for_REDD_using_the_Generic_Carbon_Budget_Model_GCBM_Pilot_Project_Los_Rios_Region_-_Chile">
             Modelling forest carbon dynamics for REDD+
+          </a>
+        </li>
+        <li>
+          <a href="https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-020-00155-2">
+          Climate change mitigation in British Columbia’s forest sector
           </a>
         </li>
       </>
