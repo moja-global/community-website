@@ -1,7 +1,7 @@
 # Community Website
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-14-orange.svg?style=flat-square)](#contributors-)
+[![All Contributors](https://img.shields.io/badge/all_contributors-15-orange.svg?style=flat-square)](#contributors-)
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Powered by Vercel](website/static/img/powered-by-vercel.svg)
@@ -90,6 +90,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/rutujaingole"><img src="https://avatars.githubusercontent.com/u/72335505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=rutujaingole" title="Documentation">📖</a> <a href="#infra-rutujaingole" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="http://iamrajiv.github.io"><img src="https://avatars.githubusercontent.com/u/42106787?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rajiv Singh</b></sub></a><br /><a href="#infra-iamrajiv" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://mizanxali.github.io/"><img src="https://avatars.githubusercontent.com/u/59915742?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mizan Ali</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=mizanxali" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://www.juliancabezas.com"><img src="https://avatars.githubusercontent.com/u/17553010?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Julián Cabezas</b></sub></a><br /><a href="#translation-juliancabezas" title="Translation">🌍</a></td>
   </tr>
 </table>
 

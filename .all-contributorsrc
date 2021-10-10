@@ -134,6 +134,15 @@
       "contributions": [
         "code"
       ]
+    },
+    {
+      "login": "juliancabezas",
+      "name": "Julián Cabezas",
+      "avatar_url": "https://avatars.githubusercontent.com/u/17553010?v=4",
+      "profile": "http://www.juliancabezas.com",
+      "contributions": [
+        "translation"
+      ]
     }
   ],
   "contributorsPerLine": 7,
