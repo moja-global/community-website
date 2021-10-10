@@ -180,7 +180,7 @@ module.exports = {
             },
             {
               label: 'Contributing guidelines',
-              href: '/community/contributing-guidelines',
+              href: '/community/contributing',
             }
           ],
         },
