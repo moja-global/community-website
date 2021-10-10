@@ -116,6 +116,15 @@
         "doc",
         "infra"
       ]
+    },
+    {
+      "login": "iamrajiv",
+      "name": "Rajiv Singh",
+      "avatar_url": "https://avatars.githubusercontent.com/u/42106787?v=4",
+      "profile": "http://iamrajiv.github.io",
+      "contributions": [
+        "infra"
+      ]
     }
   ],
   "contributorsPerLine": 7,
