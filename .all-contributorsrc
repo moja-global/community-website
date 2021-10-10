@@ -125,6 +125,15 @@
       "contributions": [
         "infra"
       ]
+    },
+    {
+      "login": "mizanxali",
+      "name": "Mizan Ali",
+      "avatar_url": "https://avatars.githubusercontent.com/u/59915742?v=4",
+      "profile": "https://mizanxali.github.io/",
+      "contributions": [
+        "code"
+      ]
     }
   ],
   "contributorsPerLine": 7,
