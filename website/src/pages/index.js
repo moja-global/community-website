@@ -251,7 +251,7 @@ const features = [
         </li>
         <li>
           <a href="https://cbmjournal.biomedcentral.com/articles/10.1186/s13021-020-00155-2">
-          Climate change mitigation in British Columbia’s forest sector
+            Climate change mitigation in British Columbia’s forest sector
           </a>
         </li>
       </>
@@ -297,26 +297,28 @@ export default function Home() {
       >
         <HomepageHeader />
         <main>
-          <br></br>
-          <br></br>
-          <br></br>
-          <h1 align="center">Know the Community</h1>
-          <br></br>
-          <br></br>
-          {features && features.length > 0 && (
-            <section className={styles.features}>
-              <div className="container">
-                <div className="row">
-                  {features.map((props, idx) => (
-                    <Feature key={idx} {...props} />
-                  ))}
+          <div className="maindiv">
+            <br></br>
+            <br></br>
+            <br></br>
+            <h1 align="center">Know the Community</h1>
+            <br></br>
+            <br></br>
+            {features && features.length > 0 && (
+              <section className={styles.features}>
+                <div className="container">
+                  <div className="row">
+                    {features.map((props, idx) => (
+                      <Feature key={idx} {...props} />
+                    ))}
+                  </div>
                 </div>
-              </div>
-              <br></br>
-              <br></br>
-            </section>
-          )}
-          <HomepageFeatures />
+                <br></br>
+                <br></br>
+              </section>
+            )}
+            <HomepageFeatures />
+          </div>
         </main>
         <Contributors />
       </Layout>
