@@ -31,6 +31,11 @@
   margin: 5px;
 }
 
+html[data-theme='light'] .getStarted {
+  background-color: rgb(73, 131, 90);
+  color: white;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;

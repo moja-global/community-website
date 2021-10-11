@@ -13,6 +13,8 @@
 }
 .card_container{
     padding: 10px;
+    min-height: 180px;
+    max-height: 185px;
     overflow-y: auto;    
 }
 .card_container h3{
