@@ -13,7 +13,7 @@ cd community-website/website
 yarn
 ```
 
-The Project has [`postinstall` script](/fetchContributors.js) configured that fetches latest contributors. A `contributors.json` will be written/updated.
+The Project has [postinstall script](https://github.com/moja-global/community-website/blob/main/website/fetchContributors.js) configured that fetches latest contributors. A `contributors.json` will be written/updated.
 
 ## Local Development
 
