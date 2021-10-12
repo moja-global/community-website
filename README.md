@@ -1,7 +1,9 @@
 # Community Website
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Powered by Vercel](website/static/img/powered-by-vercel.svg)
@@ -37,13 +39,13 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 4. Install all the dependencies
 
 ```
-    npm install
+    yarn
 ```
 
 5. Start the development server.
 
 ```
-    npm run start
+    yarn start
 ```
 
 ## Contribution Guides
