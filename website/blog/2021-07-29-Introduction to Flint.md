@@ -1,25 +1,28 @@
 ---
-slug: intro to flint
+slug: introduction to flint.md
 title: Introduction to FLINT
 author: Ruchi Pakhle
 author_url: https://github.com/Ruchip16
-author_title: Passionate programmer, coder & a web-developer 
-tags: [Intro to Flint, docusaurus]
+author_title: open-source contributor at moja-global
+tags: [flint, moja-global]
 description: Introduction to Flint
 ---
 <!-- Summary -->
 
-**The Full Lands Integration Tool (FLINT)** is moja global’s flagship software. FLINT is a modular and highly flexible open-source software technology designed to meet the needs of governments, the private sector and other users in measuring, reporting and verifying (MRV) – or forecasting – greenhouse gas emissions and removals from forestry, agriculture and other land uses (AFOLU).
+**The Full Lands Integration Tool (FLINT)** is moja global’s flagship software. FLINT is an open-source software tool that is meant to help governments, the commercial sector, and other users measure, report, and verify (MRV) or predict greenhouse gas emissions and removals from forestry, agricultural, and other land uses (AFOLU).
  
 <!--truncate-->
 
 ### What is FLINT?
-FLINT stands for (Full Lands Integration Tool) which is a C++ framework that combines the data acquired from the satellites & ground in a way that meets the requirements of the policy. FLINT is an *open-source library* maintained under **moja-global**, a project under the **LINUX Foundation** 
+
+FLINT stands for (Full Lands Integration Tool), a C++ framework that integrates data from satellites and the ground in a way that fulfils the policy's criteria. FLINT is an *open-source* library maintained by **moja-global**, a **LINUX Foundation** initiative.
 
 ### Why FLINT?
-FLINT enables all countries to develop and operate advanced systems. It is based on more than 20 years of experience in building and operating integrated tools in Australia and Canada. It is a universal platform with a modular structure, allowing countries to attach any kind of models or data to build a country-specific system. The platform handles complex computer science tasks, such as storing and processing large data sets, allowing users to focus on monitoring, reporting, and scenario analysis.
+
+FLINT enables all countries to design and run advanced land-use and land-use-change monitoring systems. It is built on more than 20 years of experience in Australia and Canada developing and managing integrated systems for national greenhouse-gas inventories. The FLINT is a global platform with a modular framework that allows countries to attach any type of model or data to create a system that is tailored to their needs. Users may focus on monitoring, reporting, and scenario analysis while the platform performs difficult computer science activities like storing and analysing massive data volumes.
 
 ### What distinguishes FLINT from other integrating tools?
+
 FLINT integrates data from remote sensing, ground observations, and other sources to estimate fluxes and stocks of greenhouse gasses in different pools consistent with the guidance from the Intergovernmental Panel on Climate Change (IPCC).
 
 FLINT is using the lessons learned from the first generation of tools to build a new framework that meets current and future needs. Compared with the first-generation tools, the main improvements include:
@@ -34,10 +37,12 @@ FLINT is using the lessons learned from the first generation of tools to build a
 ### Let's get started with FLINT : 
 
 ### How it works?
+
 FLINT works by bringing together multiple streams of data. FLINT combines remote sensing, models, and ground data and produces outputs in a wide range of formats, including maps, tables, and reports. It is designed to be the engine of an operational MRV system for the AFOLU sector that can respond to policy and planning needs. FLINT is consistent with the IPCC guidelines. 
 You can check out the [**video**](https://www.youtube.com/watch?v=eUa9ficyOPg)
 
 ### How to implement FLINT?
+
 Below given are instructions for quick installation. 
 
 **NOTE:** These instructions are for building the FLINT on Windows using Visual Studio 2017, or Visual Studio 2019.
