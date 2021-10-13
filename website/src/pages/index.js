@@ -63,15 +63,6 @@ function HomepageHeader() {
               'button button--outline button--secondary button--lg',
               styles.getStarted
             )}
-            to="/docs/"
-          >
-            Know our Projects
-          </Link>
-          <Link
-            className={clsx(
-              'button button--outline button--secondary button--lg',
-              styles.getStarted
-            )}
             to="https://docs.moja.global/"
           >
             Read the Docs

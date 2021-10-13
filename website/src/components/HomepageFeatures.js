@@ -15,17 +15,6 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Know Our Projects',
-    Svg: require('../../static/img/learn-more.svg').default,
-    description: (
-      <>
-        moja global has many projects apart from FLINT. Be a part of one of those projects by
-        writing code, improving documentation or just suggest us features that you think will be
-        helpful to the users.
-      </>
-    ),
-  },
-  {
     title: 'Write Blogs for Us',
     Svg: require('../../static/img/write.svg').default,
     description: (
