@@ -142,3 +142,27 @@ html[data-theme='dark'] .footer__link-item:hover {
     padding-top: 30px;
   }
 }
+
+@media only screen and (max-width: 1279px){
+  .navbar__toggle {
+    display: inherit;
+  }
+
+  .navbar__item {
+    display: none;
+  }
+
+  .navbar__search-input {
+    width: 9rem;
+  }
+
+  .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
+    display: none !important;
+  }
+} 
+
+@media only screen and (min-width: 1280px){
+  .navbar__brand{
+    display: none;
+  }
+}
