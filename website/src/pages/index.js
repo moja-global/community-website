@@ -72,15 +72,6 @@ function HomepageHeader() {
               'button button--outline button--secondary button--lg',
               styles.getStarted
             )}
-            to="https://docs.moja.global/"
-          >
-            Read the Docs
-          </Link>
-          <Link
-            className={clsx(
-              'button button--outline button--secondary button--lg',
-              styles.getStarted
-            )}
             to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists"
           >
             Watch the tutorials
