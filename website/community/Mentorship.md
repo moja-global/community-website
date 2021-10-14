@@ -31,7 +31,7 @@ Skills in Python, R or C++ are desirable and any code developed under this proje
 
 ## Linux Foundation Mentorship
 
-[Linux Foundation Mentorship](https://lfx.linuxfoundation.org/tools/mentorship/)
+The [Linux Foundation Mentorship](https://lfx.linuxfoundation.org/tools/mentorship/) is designed to help developers with the necessary skills–many of whom are first-time open source contributors–experiment, learn, and contribute effectively to open source communities.
 
 ### Current Project: **Cloud native measurement, reporting and validation of carbon emissions**
 
