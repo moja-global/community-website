@@ -16,14 +16,13 @@ request(
       'User-Agent': 'request contributors for moja global',
     },
   },
-  (err, response, body) => {
+  async (err, response, body) => {
     if (err) console.error('Failed to fetch contributors: ', err);
 
     // Basic validation
-    let content = JSON.parse(body);
+    let content = await JSON.parse(body);
 
     // FIXME: if (!Array.isArray(content)) throw new Error('contributors info is not an array');
-
     for (const item of content) {
       for (const key of REQUIRED_KEYS) {
         if (!item || typeof item !== 'object')
@@ -32,7 +31,7 @@ request(
           throw new Error(`contributors info item (${JSON.stringify(item)} doesn't include ${key}`);
       }
       if (item.weeks) {
-        lastContribution = 0;
+        let lastContribution = 0;
         if (Array.isArray(item.weeks)) {
           item.weeks.forEach((data) => {
             if (data.a + data.d + data.c > 0 && data.w > lastContribution) {
