@@ -29,5 +29,3 @@ Please describe the tests that you ran to verify your changes. Provide instructi
 - [ ] I have added corresponding tests.
 - [ ] Any dependent changes have been merged and published in downstream modules.
 - [ ] I have signed the commit message to agree to Developer Certificate of Origin (DCO) (to certify that you wrote or otherwise have the right to submit your contribution to the project.) by adding "--signoff" to my git commit command.
-
-<!--- Thanks for opening this pull request! If the tests fail, please feel free to reach out to us by leaving a comment down below and we will be happy to take a look --->
