@@ -31,6 +31,10 @@
   margin: 5px;
 }
 
+li > a:hover{
+  text-decoration: none;
+}
+
 @media screen and (max-width: 966px) {
   .heroBanner {
     padding: 2rem;
