@@ -27,12 +27,12 @@
   margin: 30px 0 0;
 }
 
-.buttons > a {
-  margin: 5px;
-}
-
 li > a:hover{
   text-decoration: none;
+}
+
+.buttons > a {
+  margin: 5px;
 }
 
 @media screen and (max-width: 966px) {
