@@ -29,7 +29,12 @@
 
 .contributors {
   text-align: center;
-  padding: 40px 10px;
+  padding: 5rem;
+}
+
+.features__list {
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .contributor-avatar {
@@ -140,6 +145,9 @@ html[data-theme='dark'] .footer__link-item:hover {
 @media only screen and (max-width: 736px) {
   .pluginsHeader {
     padding-top: 30px;
+  }
+  .hero__title {
+    font-size: 2.5rem;
   }
 }
 
