@@ -81,7 +81,7 @@ module.exports = {
           to: '/tutorial/tutorial-introduction',
           label: 'Tutorial',
           position: 'left',
-          activeBaseRegex: '/tutorial/'
+          activeBaseRegex: '/tutorial/',
         },
       ],
     },
@@ -160,7 +160,7 @@ module.exports = {
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
-            }
+            },
           ],
         },
         {
@@ -172,7 +172,7 @@ module.exports = {
             },
             {
               label: 'Governance model',
-              href: '/community/governance'
+              href: '/community/governance',
             },
             {
               label: 'Newsletter',
@@ -181,7 +181,7 @@ module.exports = {
             {
               label: 'Contributing guidelines',
               href: '/community/contributing',
-            }
+            },
           ],
         },
         {
@@ -299,10 +299,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-          id: 'tutorial-introduction',
-          path: 'tutorial',
-          routeBasePath: 'tutorial',
-          sidebarPath: require.resolve('./sidebarsTutorial.js')
+        id: 'tutorial-introduction',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: require.resolve('./sidebarsTutorial.js'),
       },
     ],
   ],

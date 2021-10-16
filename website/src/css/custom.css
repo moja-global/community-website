@@ -35,8 +35,8 @@
 .contributor-avatar {
   border: 1px solid rgb(255, 255, 255);
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   border: 1px solid rgb(182, 178, 178);
   overflow: hidden;
@@ -143,7 +143,7 @@ html[data-theme='dark'] .footer__link-item:hover {
   }
 }
 
-@media only screen and (max-width: 1279px){
+@media only screen and (max-width: 1279px) {
   .navbar__toggle {
     display: inherit;
   }
@@ -159,4 +159,4 @@ html[data-theme='dark'] .footer__link-item:hover {
   .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
     display: none !important;
   }
-} 
+}

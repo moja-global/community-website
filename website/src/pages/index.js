@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import contributors from '../contributors.json';
+import LazyLoad from 'react-lazyload';
 
 const ContributorAvatar = ({ author = {}, lastContribution, total }) => {
   return (
@@ -18,7 +19,13 @@ const ContributorAvatar = ({ author = {}, lastContribution, total }) => {
       href={`https://github.com/${author.login}`}
       rel="noreferrer"
     >
-      <img className="contributor-avatar" src={author.avatar_url} alt={author.login} />
+      <img
+        width="75"
+        height="75"
+        className="contributor-avatar"
+        src={author.avatar_url}
+        alt={author.login}
+      />
     </a>
   );
 };
@@ -37,13 +44,13 @@ const Contributors = (props) => {
       <div className="pluginsHeader">Contributors</div>
       <div>
         {sortedContributors.length > 0 && (
-          <React.Fragment>
+          <LazyLoad height={200}>
             <div>
               {sortedContributors.map((data, i) => (
                 <ContributorAvatar key={i} {...data} />
               ))}
             </div>
-          </React.Fragment>
+          </LazyLoad>
         )}
       </div>
     </div>
@@ -311,6 +318,7 @@ export default function Home() {
             <HomepageFeatures />
           </div>
         </main>
+
         <Contributors />
       </Layout>
     </>
