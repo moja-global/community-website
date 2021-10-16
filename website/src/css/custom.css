@@ -159,10 +159,8 @@ html[data-theme='dark'] .footer__link-item:hover {
   .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
     display: none !important;
   }
-} 
-
-@media only screen and (min-width: 1280px){
+  
   .navbar__brand{
     display: none;
   }
-}
+} 
