@@ -13,6 +13,10 @@
   background-size: cover;
 }
 
+.features__description {
+  list-style-type: none;
+}
+
 .heroContainer {
   width: 50%;
   margin-left: 8%;

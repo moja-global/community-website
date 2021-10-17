@@ -44,7 +44,7 @@ const Feature = ({ title, description }) => {
   return (
     <div className={clsx('col col--4', styles.feature)}>
       <h2>{title}</h2>
-      <div style={{ listStyleType: 'none' }}>{description}</div>
+      <div className={styles.feature__description}>{description}</div>
     </div>
   );
 };
