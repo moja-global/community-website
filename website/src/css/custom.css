@@ -29,14 +29,19 @@
 
 .contributors {
   text-align: center;
-  padding: 40px 10px;
+  padding: 5rem;
+}
+
+.features__list {
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .contributor-avatar {
   border: 1px solid rgb(255, 255, 255);
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   border: 1px solid rgb(182, 178, 178);
   overflow: hidden;
@@ -141,9 +146,12 @@ html[data-theme='dark'] .footer__link-item:hover {
   .pluginsHeader {
     padding-top: 30px;
   }
+  .hero__title {
+    font-size: 2.5rem;
+  }
 }
 
-@media only screen and (max-width: 1279px){
+@media only screen and (max-width: 1279px) {
   .navbar__toggle {
     display: inherit;
   }
@@ -159,4 +167,4 @@ html[data-theme='dark'] .footer__link-item:hover {
   .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
     display: none !important;
   }
-} 
+}

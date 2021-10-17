@@ -46,7 +46,7 @@ function Feature({ Svg, title, description }) {
           <Svg className={styles.featureSvg} alt={title} />
         </div>
         <div className={styles.featureText}>
-          <h3 className={styles.featureTitle}>{title}</h3>
+          <h2 className={styles.featureTitle}>{title}</h2>
           <p className={styles.featureDescription}>{description}</p>
         </div>
       </div>

@@ -6,6 +6,7 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomepageFeatures';
 import contributors from '../contributors.json';
+import LazyLoad from 'react-lazyload';
 
 const ContributorAvatar = ({ author = {}, lastContribution, total }) => {
   return (
@@ -18,7 +19,13 @@ const ContributorAvatar = ({ author = {}, lastContribution, total }) => {
       href={`https://github.com/${author.login}`}
       rel="noreferrer"
     >
-      <img className="contributor-avatar" src={author.avatar_url} alt={author.login} />
+      <img
+        width="75"
+        height="75"
+        className="contributor-avatar"
+        src={author.avatar_url}
+        alt={author.login}
+      />
     </a>
   );
 };
@@ -37,13 +44,13 @@ const Contributors = (props) => {
       <div className="pluginsHeader">Contributors</div>
       <div>
         {sortedContributors.length > 0 && (
-          <React.Fragment>
+          <LazyLoad height={200}>
             <div>
               {sortedContributors.map((data, i) => (
                 <ContributorAvatar key={i} {...data} />
               ))}
             </div>
-          </React.Fragment>
+          </LazyLoad>
         )}
       </div>
     </div>
@@ -86,7 +93,7 @@ const features = [
   {
     title: 'Getting Started',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="/docs/">Introduction to moja global</a>
         </li>
@@ -99,13 +106,13 @@ const features = [
         <li>
           <a href="/community/governance">Governance model</a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Projects',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="/docs/FLINT/About">FLINT</a>
         </li>
@@ -121,13 +128,13 @@ const features = [
         <li>
           <a href="/docs/Predictive-Deforestation/About">Predictive Deforestation</a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Contributing',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="/community/contributing">Contributing guidelines</a>
         </li>
@@ -140,13 +147,13 @@ const features = [
         <li>
           <a href="/community/management-contribution">Management contributions</a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'How To Guides',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="https://docs.moja.global/en/latest/prerequisites/index.html">
             FLINT Prerequisites
@@ -172,13 +179,13 @@ const features = [
             Writing documentation
           </a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Mentorship & Initiatives',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="/initiatives">Community initiatives</a>
         </li>
@@ -191,26 +198,26 @@ const features = [
         <li>
           <a href="/community/mentorship#google-summer-of-code">Google Summer of Code</a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Safety & Support',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="/community/code-of-conduct">Community Code of Conduct</a>
         </li>
         <li>
           <a href="/community/support">Community support</a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Documentation',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="https://docs.moja.global/">moja global technical documentation</a>
         </li>
@@ -228,13 +235,13 @@ const features = [
             GCBM Chile Pre-Processing Tools
           </a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Scientific Impact',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="https://www.researchgate.net/publication/341041237_Modelling_forest_carbon_dynamics_for_REDD_using_the_Generic_Carbon_Budget_Model_GCBM_Pilot_Project_Los_Rios_Region_-_Chile">
             Modelling forest carbon dynamics for REDD+
@@ -245,13 +252,13 @@ const features = [
             Climate change mitigation in British Columbia’s forest sector
           </a>
         </li>
-      </>
+      </ul>
     ),
   },
   {
     title: 'Miscellaneous',
     description: (
-      <>
+      <ul className="features__list">
         <li>
           <a href="https://docs.moja.global/en/latest/faq.html">Frequently Asked Questions</a>
         </li>
@@ -264,7 +271,7 @@ const features = [
         <li>
           <a href="/case-studies/introduction">Case studies</a>
         </li>
-      </>
+      </ul>
     ),
   },
 ];
@@ -272,8 +279,8 @@ const features = [
 function Feature({ title, description }) {
   return (
     <div className={clsx('col col--4', styles.feature)}>
-      <h3>{title}</h3>
-      <p style={{ listStyleType: 'none' }}>{description}</p>
+      <h2>{title}</h2>
+      <div style={{ listStyleType: 'none' }}>{description}</div>
     </div>
   );
 }
@@ -311,6 +318,7 @@ export default function Home() {
             <HomepageFeatures />
           </div>
         </main>
+
         <Contributors />
       </Layout>
     </>
