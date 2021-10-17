@@ -6,8 +6,7 @@ const path = require('path');
 
 const REQUIRED_KEYS = ['total', 'author'];
 
-const BLACKLIST = [
-];
+const BLACKLIST = [];
 
 request(
   {
