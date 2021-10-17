@@ -5,7 +5,7 @@ const index = ({ text, link }) => {
   return (
     <div className="card-container">
       <div>
-        <h3>{text}</h3>
+        <h2>{text}</h2>
         {link && <a>{link}</a>}
       </div>
     </div>

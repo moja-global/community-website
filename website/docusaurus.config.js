@@ -1,9 +1,8 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-
-  title: 'Introduction to FLINT',
-  tagline: `Learn more about FLINT and how to install it locally`,
-  url: 'https://your-docusaurus-test-site.com',
+  title: `Moja Global Community`,
+  tagline: `Learn about moja global's projects and join our ever-growing community`,
+  url: 'https://community.moja.global',
   baseUrl: '/',
   onBrokenLinks: 'ignore',
   onBrokenMarkdownLinks: 'warn',
@@ -82,7 +81,7 @@ module.exports = {
           to: '/tutorial/tutorial-introduction',
           label: 'Tutorial',
           position: 'left',
-          activeBaseRegex: '/tutorial/'
+          activeBaseRegex: '/tutorial/',
         },
       ],
     },
@@ -161,7 +160,7 @@ module.exports = {
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
-            }
+            },
           ],
         },
         {
@@ -173,7 +172,7 @@ module.exports = {
             },
             {
               label: 'Governance model',
-              href: '/community/governance'
+              href: '/community/governance',
             },
             {
               label: 'Newsletter',
@@ -182,7 +181,7 @@ module.exports = {
             {
               label: 'Contributing guidelines',
               href: '/community/contributing',
-            }
+            },
           ],
         },
         {
@@ -212,14 +211,14 @@ module.exports = {
             {
               html: `
                 <a href="https://www.linuxfoundation.org/" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img src="/img/linux-foundation.svg" alt="Backed by the Linux Foundation" />
+                  <img width="150" height="50" src="/img/linux-foundation.svg" alt="Backed by the Linux Foundation" />
                 </a>
               `,
             },
             {
               html: `
                 <a href="https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img src="/img/powered-by-vercel.svg" alt="Powered by Vercel" />
+                  <img width="225" height="75" src="/img/powered-by-vercel.svg" alt="Powered by Vercel" />
                 </a>
               `,
             },
@@ -300,10 +299,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-          id: 'tutorial-introduction',
-          path: 'tutorial',
-          routeBasePath: 'tutorial',
-          sidebarPath: require.resolve('./sidebarsTutorial.js')
+        id: 'tutorial-introduction',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: require.resolve('./sidebarsTutorial.js'),
       },
     ],
   ],
