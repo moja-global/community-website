@@ -72,6 +72,11 @@ module.exports = {
           activeBaseRegex: '/case-studies/',
         },
         {
+          to: '/team',
+          label: 'Team',
+          position: 'left',
+        },
+        {
           href: 'https://github.com/moja-global',
           label: 'GitHub',
           position: 'right',
