@@ -22,7 +22,9 @@ In order to set up the community website locally, make sure you have a [Github](
 
 Here are the steps you can follow while setting up the website locally.
 
-1. Fork the repository <br/>
+1. Fork the repository 
+
+<br/>
 
 2. Clone the repository with the following command. Replace the <GITHUB_USERNAME> with your username
 
