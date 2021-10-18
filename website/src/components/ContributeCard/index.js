@@ -1,7 +1,7 @@
 import React from 'react';
 import './styles.css';
 
-const index = ({ text, link }) => {
+const ContributeCard = ({ text, link }) => {
   return (
     <div className="card-container">
       <div>
@@ -12,4 +12,4 @@ const index = ({ text, link }) => {
   );
 };
 
-export default index;
+export default ContributeCard;

@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './communitycard.module.css';
+import styles from './CommunityCard.module.css';
 import Link from '@docusaurus/Link';
 
 const CommunityCard = ({ title, description, btnLink, btnText }) => {
