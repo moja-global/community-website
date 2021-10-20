@@ -5,7 +5,7 @@ import styles from './HomepageFeatures.module.css';
 const FeatureList = [
   {
     title: 'Code',
-    Svg: require('../../static/img/code.svg').default,
+    Svg: require('../../../static/img/code.svg').default,
     description: (
       <>
         moja global actively performs in open source events and one of them is Google Season of
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Know Our Projects',
-    Svg: require('../../static/img/learn-more.svg').default,
+    Svg: require('../../../static/img/learn-more.svg').default,
     description: (
       <>
         moja global has many projects apart from FLINT. Be a part of one of those projects by
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Write Blogs for Us',
-    Svg: require('../../static/img/write.svg').default,
+    Svg: require('../../../static/img/write.svg').default,
     description: (
       <>
         moja global is a Linux Foundation organisation and therefore participates in the LFX
@@ -38,7 +38,7 @@ const FeatureList = [
   },
 ];
 
-function Feature({ Svg, title, description }) {
+const Feature = ({ Svg, title, description }) => {
   return (
     <>
       <div className={clsx('col col--4', styles.featureRow)}>
@@ -46,15 +46,15 @@ function Feature({ Svg, title, description }) {
           <Svg className={styles.featureSvg} alt={title} />
         </div>
         <div className={styles.featureText}>
-          <h3 className={styles.featureTitle}>{title}</h3>
+          <h2 className={styles.featureTitle}>{title}</h2>
           <p className={styles.featureDescription}>{description}</p>
         </div>
       </div>
     </>
   );
-}
+};
 
-export default function HomepageFeatures() {
+const HomepageFeatures = () => {
   return (
     <>
       <h1 align="center">Engage with Community</h1>
@@ -69,4 +69,6 @@ export default function HomepageFeatures() {
       </section>
     </>
   );
-}
+};
+
+export default HomepageFeatures;

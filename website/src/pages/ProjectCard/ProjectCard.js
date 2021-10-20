@@ -10,9 +10,9 @@ const ProjectCard = (props) => {
     <div className="container">
       <div className="card">
         <div className="card_container">
-          <h3>
+          <h2>
             <b>{props.projectTitle}</b>
-          </h3>
+          </h2>
           <p className="card_body">{props.projectBody}</p>
         </div>
         <button className="card_button" onClick={() => modalRef.current.open()}>
