@@ -205,25 +205,6 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'Sponsors',
-          items: [
-            {
-              html: `
-                <a href="https://www.linuxfoundation.org/" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img width="150" height="50" src="/img/linux-foundation.svg" alt="Backed by the Linux Foundation" />
-                </a>
-              `,
-            },
-            {
-              html: `
-                <a href="https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img width="225" height="75" src="/img/powered-by-vercel.svg" alt="Powered by Vercel" />
-                </a>
-              `,
-            },
-          ],
-        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
     },

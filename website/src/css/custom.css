@@ -1,170 +1,194 @@
 /* stylelint-disable docusaurus/copyright-header */
+
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
+/* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 :root {
-  --ifm-color-primary: #07903e;
-  --ifm-color-primary-dark: rgb(13, 126, 101);
-  --ifm-color-primary-darker: rgb(13, 100, 81);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(12, 173, 138);
-  --ifm-color-primary-lighter: rgb(7, 77, 61);
-  --ifm-color-primary-lightest: rgb(10, 117, 96);
-  --ifm-code-font-size: 120%;
-  font-family: 'Poppins', sans-serif;
+    --ifm-color-primary: #07903e;
+    --ifm-color-primary-dark: rgb(13, 126, 101);
+    --ifm-color-primary-darker: rgb(13, 100, 81);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(12, 173, 138);
+    --ifm-color-primary-lighter: rgb(7, 77, 61);
+    --ifm-color-primary-lightest: rgb(10, 117, 96);
+    --ifm-code-font-size: 120%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }
 
-.contributors {
-  text-align: center;
-  padding: 5rem;
+.contributors,
+.sponsors {
+    text-align: center;
+    padding: 5rem;
+}
+
+.sponsor-div {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #67ca8f;
+    display: flex;
+}
+
+.sponsor-avatar {
+    width: 120px;
+}
+
+.sponsor-content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 
 .features__list {
-  list-style-type: none;
-  padding-inline-start: 0;
+    list-style-type: none;
+    padding-inline-start: 0;
 }
 
 .contributor-avatar {
-  border: 1px solid rgb(255, 255, 255);
-  display: inline-block;
-  width: 75px;
-  height: 75px;
-  border-radius: 50%;
-  border: 1px solid rgb(182, 178, 178);
-  overflow: hidden;
-  -o-object-fit: contain;
-  object-fit: contain;
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid #74e8a3;
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid rgb(182, 178, 178);
+    overflow: hidden;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #74e8a3;
 }
 
 .pluginsHeader {
-  font-size: 200%;
-  line-height: 100%;
-  padding: 0 0 30px;
-  text-align: center;
-  font-weight: bold;
+    font-size: 200%;
+    line-height: 100%;
+    padding: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
 }
+
 
 /* Custom Light */
 
-html[data-theme='light']
-  .button.button--secondary.button--outline:not(.button--active):not(:hover) {
-  color: #f5f6f7;
+html[data-theme='light'] .button.button--secondary.button--outline:not(.button--active):not(:hover) {
+    color: #f5f6f7;
 }
 
 html[data-theme='light'] {
-  background-color: #e3f2e8;
-  color: #2e382b;
+    background-color: #e3f2e8;
+    color: #2e382b;
 }
 
 html[data-theme='light'] a {
-  color: #475447;
+    color: #475447;
 }
 
 html[data-theme='light'] .navbar {
-  background-color: #f7f5f7;
+    background-color: #f7f5f7;
 }
 
 html[data-theme='light'] .contributors {
-  background-color: #f7f5f7;
+    background-color: #f7f5f7;
+}
+
+html[data-theme='light'] .sponsors {
+    background-color: #f7f5f7;
 }
 
 html[data-theme='light'] .footer {
-  background-color: #2e382b;
-  color: #e3f2e8;
+    background-color: #2e382b;
+    color: #e3f2e8;
 }
 
 html[data-theme='light'] .footer__link-item {
-  color: #e3f2e8;
+    color: #e3f2e8;
 }
+
 
 /* Custom Dark */
 
 html[data-theme='dark'] {
-  --ifm-color-primary: #73e8a3;
+    --ifm-color-primary: #73e8a3;
 }
 
 html[data-theme='dark'] .footer__link-item {
-  color: #e3f2e8;
+    color: #e3f2e8;
 }
+
 html[data-theme='dark'] .footer__link-item:hover {
-  color: #73e8a3;
+    color: #73e8a3;
 }
 
 @media only screen and (max-width: 996px) {
-  .footer__links {
-    display: grid;
-    grid-template-columns: repeat(5, auto);
-  }
-
-  .footer {
-    padding: 5%;
-  }
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(5, auto);
+    }
+    .footer {
+        padding: 5%;
+    }
 }
 
 @media only screen and (max-width: 852px) {
-  .footer__links {
-    display: grid;
-    grid-template-columns: repeat(4, auto);
-  }
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(4, auto);
+    }
 }
 
 @media only screen and (max-width: 648px) {
-  .footer__links {
-    display: grid;
-    grid-template-columns: repeat(2, auto);
-  }
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(2, auto);
+    }
 }
 
 @media only screen and (max-width: 373px) {
-  .footer__links {
-    display: grid;
-    grid-template-columns: repeat(1, auto);
-  }
-
-  .footer__col {
-    text-align: center;
-  }
+    .footer__links {
+        display: grid;
+        grid-template-columns: repeat(1, auto);
+    }
+    .footer__col {
+        text-align: center;
+    }
 }
 
 @media only screen and (max-width: 736px) {
-  .pluginsHeader {
-    padding-top: 30px;
-  }
-  .hero__title {
-    font-size: 2.5rem;
-  }
+    .pluginsHeader {
+        padding-top: 30px;
+    }
+    .hero__title {
+        font-size: 2.5rem;
+    }
 }
 
 @media only screen and (max-width: 1279px) {
-  .navbar__toggle {
-    display: inherit;
-  }
-
-  .navbar__item {
-    display: none;
-  }
-
-  .navbar__search-input {
-    width: 9rem;
-  }
-
-  .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
-    display: none !important;
-  }
+    .navbar__toggle {
+        display: inherit;
+    }
+    .navbar__item {
+        display: none;
+    }
+    .navbar__search-input {
+        width: 9rem;
+    }
+    .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
+        display: none !important;
+    }
 }
