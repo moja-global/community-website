@@ -36,18 +36,19 @@
     padding: 5rem;
 }
 
-.sponsor-div {
+.sponsor_wrapper {
     padding: 5px;
     margin: 10px;
     border: 1px solid #67ca8f;
     display: flex;
 }
 
-.sponsor-avatar {
+.sponsor_avatar {
     width: 120px;
+    height: auto;
 }
 
-.sponsor-content {
+.sponsor_content {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
