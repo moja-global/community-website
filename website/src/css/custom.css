@@ -16,6 +16,7 @@
   --ifm-color-primary-light: rgb(12, 173, 138);
   --ifm-color-primary-lighter: rgb(7, 77, 61);
   --ifm-color-primary-lightest: rgb(10, 117, 96);
+  
   --ifm-code-font-size: 120%;
   font-family: 'Poppins', sans-serif;
 }

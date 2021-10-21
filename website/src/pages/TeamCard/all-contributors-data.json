@@ -1,166 +1,158 @@
 [
     {
       
-      "id":1,
-      "login": "AnirudhPanda",
+      "github_username": "AnirudhPanda",
       "name": "Anirudh Panda",
       "avatar_url": "https://avatars.githubusercontent.com/u/66218496?v=4",
       "profile": "https://anirudhpanda.me/",
-      "contributions": [
+      "projects": [
         "bug"
       ]
     },
     {
-      "id":2,
-      "login": "HarshCasper",
+      "github_username": "HarshCasper",
       "name": "Hash Mishra",
       "avatar_url": "https://avatars.githubusercontent.com/u/47351025?v=4",
       "profile": "https://github.com/HarshCasper",
-      "contributions": [
-        "mentoring"
+      "projects": ["mentoring",
+            
+
+        "code",
+        "review",
+        "question"
       ]
     },
     {
-      "id":3,
-      "login": "eemike07",
+      "github_username": "eemike07",
       "name": "eemike07",
-      "avatar_url": "https://avatars.githubusercontent.com/u/2515617?v=4",
+      "avatar_url": "https://github.com/eemike07.png",
       "profile": "https://github.com/eemike07",
-      "contributions": [
+      "projects": [
         "code"
       ]
     },
     {
-      "id":4,
-      "login": "faisaljamil25",
+      "github_username": "faisaljamil25",
       "name": "Faisal Jamil",
       "avatar_url": "https://avatars.githubusercontent.com/u/69186619?v=4",
       "profile": "http://www.linkedin.com/in/faisaljamil25",
-      "contributions": [
+      "projects": [
         "code"
       ]
     },
     {
-      "id":5,
-      "login": "utkarsh1311",
+      "github_username": "utkarsh1311",
       "name": "Utkarsh Maurya",
       "avatar_url": "https://avatars.githubusercontent.com/u/70108561?v=4",
       "profile": "https://github.com/utkarsh1311",
-      "contributions": [
+      "projects": [
         "bug"
       ]
     },
     {
-      "id":6,
-      "login": "17bcs1837",
+      "github_username": "17bcs1837",
       "name": "Aman Kumar",
       "avatar_url": "https://avatars.githubusercontent.com/u/62862321?v=4",
       "profile": "https://github.com/17bcs1837",
-      "contributions": [
+      "projects": [
         "bug"
       ]
     },
     {
-      "id":7,
-      "login": "romasinha",
+      "github_username": "romasinha",
       "name": "Roma Sinha",
       "avatar_url": "https://avatars.githubusercontent.com/u/65072006?v=4",
       "profile": "https://github.com/romasinha",
-      "contributions": [
+      "projects": [
         "doc"
       ]
     },
     {
-      "id":8,
-      "login": "Devesh21700Kumar",
+      "github_username": "Devesh21700Kumar",
       "name": "Devesh Kumar",
       "avatar_url": "https://avatars.githubusercontent.com/u/59202075?v=4",
       "profile": "https://github.com/Devesh21700Kumar",
-      "contributions": [
+      "projects": [
         "bug"
       ]
       
     },
     {
-      "id":9,
-      "login": "padmajabhol",
+      "github_username": "padmajabhol",
       "name": "Padmaja Bhol",
       "avatar_url": "https://avatars.githubusercontent.com/u/75530516?v=4",
       "profile": "https://github.com/padmajabhol",
-      "contributions": [
+      "projects": [
         "bug"
       ]
     },
     {
-      "id":10,
-      "login": "Ishika414",
+      "github_username": "Ishika414",
       "name": "Ishika414",
       "avatar_url": "https://avatars.githubusercontent.com/u/78595001?v=4",
       "profile": "https://github.com/Ishika414",
-      "contributions": [
+      "projects": [
         "code"
       ]
     },
     {
-      "id":11,
-      "login": "Megatank58",
+      "github_username": "Megatank58",
       "name": "Megatank58",
       "avatar_url": "https://avatars.githubusercontent.com/u/51410502?v=4",
       "profile": "https://megatank58.me/",
-      "contributions": [
+      "projects": [
         "doc"
       ]
     },
     {
-      "id":12,
-      "login": "rutujaingole",
+      "github_username": "rutujaingole",
       "name": "rutujaingole",
       "avatar_url": "https://avatars.githubusercontent.com/u/72335505?v=4",
       "profile": "https://github.com/rutujaingole",
-      "contributions": [
+      "projects": [
         "doc",
         "infra"
       ]
     },
     {
-      "id":13,
-      "login": "iamrajiv",
+      "github_username": "iamrajiv",
       "name": "Rajiv Singh",
       "avatar_url": "https://avatars.githubusercontent.com/u/42106787?v=4",
       "profile": "http://iamrajiv.github.io",
-      "contributions": [
+      "projects": [
         "infra"
       ]
     },
     {
-      "id":14,
-      "login": "mizanxali",
+      "github_username": "mizanxali",
       "name": "Mizan Ali",
       "avatar_url": "https://avatars.githubusercontent.com/u/59915742?v=4",
       "profile": "https://mizanxali.github.io/",
-      "contributions": [
+      "projects": [
         "code"
       ]
     },
     {
-      "id":15,
-      "login": "juliancabezas",
+      "github_username": "juliancabezas",
       "name": "Julián Cabezas",
       "avatar_url": "https://avatars.githubusercontent.com/u/17553010?v=4",
       "profile": "http://www.juliancabezas.com",
-      "contributions": [
+      "projects": [
         "translation"
       ]
     },
     {
-      "id":16,
-      "login": "Abhishek-kumar09",
+      "github_username": "Abhishek-kumar09",
       "name": "Abhishek Kumar",
       "avatar_url": "https://avatars.githubusercontent.com/u/48255244?v=4",
       "profile": "https://www.linkedin.com/in/abhishek-kr09/",
-      "contributions": [
+      "projects": [
         "infra"
       ]
       
     }
   ]
+
+
+
+  

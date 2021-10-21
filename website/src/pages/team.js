@@ -3,15 +3,13 @@ import Layout from '@theme/Layout';
 import JsonDataDisplay from './TeamCard/teamcard';
 import styles from './team.css';
 
-function Team() {
+  const Team = () => {
   return (
     <Layout>
     <div className="wrapper">
       <h1>Contributors</h1>
       <div class="subtitle">
-      <h3>
       Thanks to everyone involved in Contributing to The Moja-Global.
-      </h3>
       </div>
       
     <div className="card-list">
