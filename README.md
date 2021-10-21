@@ -48,6 +48,13 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
     yarn start
 ```
 
+
+## Building
+
+   `yarn build`- This will run `docusaurus build` which eventually creates build folder in the directory. This folder is `gitignored` and thus not to be pushed.
+
+   `yarn serve`-This will serve the optimized production build created by `yarn build` on local web server.
+
 ## Contribution Guides
 
 - [How to write and publish a blog](https://community.moja.global/community/community-website-contributions#writing-new-blogs)
