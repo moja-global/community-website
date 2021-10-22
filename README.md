@@ -48,12 +48,17 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
     yarn start
 ```
 
+6. Build the Community website:
 
-## Building
+```sh
+    yarn build
+```
 
-   `yarn build`- This will run `docusaurus build` which eventually creates build folder in the directory.
+7. Serve an optimized production build:
 
-   `yarn serve`-This will serve the optimized production build created by `yarn build` on local web server.
+```sh
+    yarn serve
+```
 
 ## Contribution Guides
 
