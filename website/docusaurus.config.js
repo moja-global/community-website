@@ -14,6 +14,11 @@ module.exports = {
     locales: ['en', 'es'],
   },
   themeConfig: {
+    algolia: {
+      appId: 'BH4D9OD16A',
+      apiKey: '2227dd7224b78071d191aff9cbf1a6c5',
+      indexName: 'moja',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
@@ -252,13 +257,6 @@ module.exports = {
     ],
   ],
   plugins: [
-    [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        language: ['en'],
-      },
-    ],
     [
       '@docusaurus/plugin-content-docs',
       {
