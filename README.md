@@ -51,7 +51,7 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 
 ## Building
 
-   `yarn build`- This will run `docusaurus build` which eventually creates build folder in the directory. This folder is `gitignored` and thus not to be pushed.
+   `yarn build`- This will run `docusaurus build` which eventually creates build folder in the directory.
 
    `yarn serve`-This will serve the optimized production build created by `yarn build` on local web server.
 
