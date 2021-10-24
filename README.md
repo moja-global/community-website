@@ -48,6 +48,18 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
     yarn start
 ```
 
+6. Build the Community website:
+
+```sh
+    yarn build
+```
+
+7. Serve an optimized production build:
+
+```sh
+    yarn serve
+```
+
 ## Contribution Guides
 
 - [How to write and publish a blog](https://community.moja.global/community/community-website-contributions#writing-new-blogs)
