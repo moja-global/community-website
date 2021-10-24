@@ -7,6 +7,7 @@ import styles from './index.module.css';
 import HomepageFeatures from '../components/HomePageFeatures';
 import Contributors from '../components/Contributors';
 import features from '../../websiteData/features';
+import Sponsors from '../components/Sponsors';
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -84,6 +85,7 @@ const Home = () => {
         </main>
 
         <Contributors />
+        <Sponsors />
       </Layout>
     </>
   );
