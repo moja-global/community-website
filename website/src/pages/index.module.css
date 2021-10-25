@@ -1,4 +1,4 @@
-/* stylelint-disable docusaurus/copyright-header */
+/* stylelint-disable docusaurus/copyright-header */ 
 
 /**
  * CSS files with the .module.css suffix will be treated as CSS modules
@@ -11,10 +11,6 @@
   overflow: hidden;
   background-repeat: no-repeat;
   background-size: cover;
-}
-
-.features__description {
-  list-style-type: none;
 }
 
 .heroContainer {
@@ -31,8 +27,9 @@
   margin: 30px 0 0;
 }
 
-li > a:hover{
-  text-decoration: none;
+html[data-theme='dark']  li > a:hover {
+    text-decoration: none;
+    color: #ecf0f1;
 }
 
 .buttons > a {
