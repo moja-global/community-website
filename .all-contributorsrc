@@ -152,6 +152,15 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "helper-",
+      "name": "Chris Stringham",
+      "avatar_url": "https://avatars.githubusercontent.com/u/726390?v=4",
+      "profile": "https://github.com/Helper-",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
