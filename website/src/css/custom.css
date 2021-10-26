@@ -17,6 +17,7 @@
     --ifm-color-primary-darker: rgb(13, 100, 81);
     --ifm-color-primary-darkest: rgb(26, 136, 112);
     --ifm-color-primary-light: rgb(12, 173, 138);
+    --ifm-color-primary-light-white: #f5f6f7;
     --ifm-color-primary-lighter: rgb(7, 77, 61);
     --ifm-color-primary-lightest: rgb(10, 117, 96);
     --ifm-code-font-size: 120%;
@@ -93,11 +94,11 @@
 
 html[data-theme='light']
   .button.button--secondary.button--outline:not(.button--active):not(:hover) {
-  color: #f5f6f7;
+  color: var(--ifm-color-primary-light-white);
 }
 
 html[data-theme='light'] {
-  background-color: #e3f2e8;
+  background-color: #e3f2e8;;
   color: #2e382b;
 }
 
@@ -111,16 +112,16 @@ html[data-theme='light'] a:hover {
 }
 
 html[data-theme='light'] .navbar {
-  background-color: #f7f5f7;
+  background-color: var(--ifm-color-primary-light-white);
 }
 
 html[data-theme='light'] .contributors {
-  background-color: #f7f5f7;
+  background-color: var(--ifm-color-primary-light-white);
 }
 
 html[data-theme='light'] .footer {
   background-color: #2e382b;
-  color: #e3f2e8;
+  color: var(--ifm-color-primary-light-white);
 }
 
 html[data-theme='light'] .footer__link-item {
