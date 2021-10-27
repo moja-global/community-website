@@ -10,15 +10,18 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 :root {
-  --ifm-color-primary: #07903e;
-  --ifm-color-primary-dark: rgb(13, 126, 101);
-  --ifm-color-primary-darker: rgb(13, 100, 81);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(12, 173, 138);
-  --ifm-color-primary-lighter: rgb(7, 77, 61);
-  --ifm-color-primary-lightest: rgb(10, 117, 96);
-  --ifm-code-font-size: 120%;
-  font-family: 'Poppins', sans-serif;
+
+    --ifm-color-primary: #07903e;
+    --ifm-color-primary-white: #f5f6f7;
+    --ifm-color-primary-dark: rgb(13, 126, 101);
+    --ifm-color-primary-darker: rgb(13, 100, 81);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(12, 173, 138);
+    --ifm-color-primary-lighter: rgb(7, 77, 61);
+    --ifm-color-primary-lightest: rgb(10, 117, 96);
+    --ifm-code-font-size: 120%;
+    font-family: 'Poppins', sans-serif;
+
 }
 
 .docusaurus-highlight-code-line {
@@ -90,7 +93,7 @@
 
 html[data-theme='light']
   .button.button--secondary.button--outline:not(.button--active):not(:hover) {
-  color: #f5f6f7;
+  color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] {
@@ -102,27 +105,34 @@ html[data-theme='light'] a {
   color: #475447;
 }
 
+
+html[data-theme='light'] a:hover {
+  text-decoration: none;
+  color: #07903e;
+}
+
 html[data-theme='light'] .navbar {
-  background-color: #f7f5f7;
+  background-color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] .contributors {
-  background-color: #f7f5f7;
-}
+  background-color: var(--ifm-color-primary-white);
 
-html[data-theme='light'] .sponsors {
-  background-color: #f7f5f7;
 }
 
 html[data-theme='light'] .footer {
   background-color: #2e382b;
-  color: #e3f2e8;
+  color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] .footer__link-item {
-  color: #e3f2e8;
+  color: #bdc3c7;
+  text-decoration: none;
 }
 
+html[data-theme='light'] .footer__link-item:hover {
+  color: #ecf0f1;
+}
 /* Custom Dark */
 
 html[data-theme='dark'] {
@@ -130,11 +140,11 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='dark'] .footer__link-item {
-  color: #e3f2e8;
+  color: #bdc3c7;
 }
 
 html[data-theme='dark'] .footer__link-item:hover {
-  color: #73e8a3;
+  color: #ecf0f1;
 }
 
 @media only screen and (max-width: 996px) {
