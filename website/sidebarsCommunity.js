@@ -5,6 +5,7 @@ module.exports = {
         'technical-steering-committee',
         'governance',
         'contributing',
+        'docs-working-group',
         'community-website-contributions',
         'code-contribution',
         'docs-contribution',
