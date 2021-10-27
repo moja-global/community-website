@@ -1,6 +1,6 @@
 import React from 'react';
-import { pastMeetings, upcomingMeetings } from '../../../communityData/meetings';
-import styles from './meetingcard.module.css';
+import { pastMeetings, upcomingMeetings } from '../../../websiteData/meetings';
+import styles from './MeetingCard.module.css';
 
 const MeetingCard = ({ index, style, data }) => {
   const meeting = data.isCompleted ? pastMeetings[index] : upcomingMeetings[index];

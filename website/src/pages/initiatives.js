@@ -4,7 +4,7 @@ import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
 import { FixedSizeList as List } from 'react-window';
 import MeetingCard from '../components/PastMeetingCard';
-import { pastMeetings, upcomingMeetings } from '../../communityData/meetings';
+import { pastMeetings, upcomingMeetings } from '../../websiteData/meetings';
 
 const Community = () => {
   return (
@@ -57,6 +57,7 @@ const Community = () => {
                 title="GitHub"
                 description="We have a ton of open issues which could use your help and expertise. "
                 btnText="Learn More"
+                btnLink="https://github.com/moja-global"
               />
             </div>
             <div className={styles.communityItem}>
@@ -64,6 +65,7 @@ const Community = () => {
                 title="Slack"
                 description="We would love to know you better. Hop on and chat with the community."
                 btnText="Join Us"
+                btnLink="https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw"
               />
             </div>
           </div>

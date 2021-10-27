@@ -1,61 +1,153 @@
 /* stylelint-disable docusaurus/copyright-header */
+
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
  * work well for content-centric websites.
  */
 
-/* You can override the default Infima variables here. */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
+/* You can override the default Infima variables here. */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 :root {
-  --ifm-color-primary: #07903e;
-  --ifm-color-primary-dark: rgb(13, 126, 101);
-  --ifm-color-primary-darker: rgb(13, 100, 81);
-  --ifm-color-primary-darkest: rgb(26, 136, 112);
-  --ifm-color-primary-light: rgb(12, 173, 138);
-  --ifm-color-primary-lighter: rgb(7, 77, 61);
-  --ifm-color-primary-lightest: rgb(10, 117, 96);
-  --ifm-code-font-size: 120%;
-  font-family: 'Poppins', sans-serif;
+    --ifm-color-primary: #07903e;
+    --ifm-color-primary-white: #f5f6f7;
+    --ifm-color-primary-dark: rgb(13, 126, 101);
+    --ifm-color-primary-darker: rgb(13, 100, 81);
+    --ifm-color-primary-darkest: rgb(26, 136, 112);
+    --ifm-color-primary-light: rgb(12, 173, 138);
+    --ifm-color-primary-lighter: rgb(7, 77, 61);
+    --ifm-color-primary-lightest: rgb(10, 117, 96);
+    --ifm-code-font-size: 120%;
+    font-family: 'Poppins', sans-serif;
 }
 
 .docusaurus-highlight-code-line {
-  background-color: rgb(72, 77, 91);
-  display: block;
-  margin: 0 calc(-1 * var(--ifm-pre-padding));
-  padding: 0 var(--ifm-pre-padding);
+    background-color: rgb(72, 77, 91);
+    display: block;
+    margin: 0 calc(-1 * var(--ifm-pre-padding));
+    padding: 0 var(--ifm-pre-padding);
 }
 
-.contributors {
-  text-align: center;
-  padding: 40px 10px;
+.contributors,
+.sponsors {
+    text-align: center;
+    padding: 5rem;
+}
+
+.sponsor_wrapper {
+    padding: 5px;
+    margin: 10px;
+    border: 1px solid #67ca8f;
+    display: flex;
+}
+
+.sponsor_avatar {
+    width: 120px;
+    height: auto;
+}
+
+.sponsor_content {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.features__list {
+    list-style-type: none;
+    padding-inline-start: 0;
 }
 
 .contributor-avatar {
-  border: 1px solid rgb(255, 255, 255);
-  display: inline-block;
-  width: 100px;
-  height: 100px;
-  border-radius: 50%;
-  border: 1px solid rgb(182, 178, 178);
-  overflow: hidden;
-  -o-object-fit: contain;
-  object-fit: contain;
-  padding: 5px;
-  margin: 5px;
-  border: 1px solid #74e8a3;
+    border: 1px solid rgb(255, 255, 255);
+    display: inline-block;
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    border: 1px solid rgb(182, 178, 178);
+    overflow: hidden;
+    -o-object-fit: contain;
+    object-fit: contain;
+    padding: 5px;
+    margin: 5px;
+    border: 1px solid #74e8a3;
 }
 
 .pluginsHeader {
-  font-size: 200%;
-  line-height: 100%;
-  padding: 0 0 30px;
-  text-align: center;
-  font-weight: bold;
+    font-size: 200%;
+    line-height: 100%;
+    padding: 0 0 30px;
+    text-align: center;
+    font-weight: bold;
+}
+
+
+.row {
+  padding-left: 10%;
+}
+
+/* Custom Light */
+
+html[data-theme='light']
+  .button.button--secondary.button--outline:not(.button--active):not(:hover) {
+  color: var(--ifm-color-primary-white);
+}
+
+html[data-theme='light'] {
+  background-color: #e3f2e8;;
+  color: #2e382b;
+}
+
+html[data-theme='light'] a {
+  color: #475447;
+}
+
+html[data-theme='light'] a:hover {
+  text-decoration: none;
+  color: #07903e;
+}
+
+html[data-theme='light'] .navbar {
+  background-color: var(--ifm-color-primary-white);
+}
+
+html[data-theme='light'] .contributors {
+  background-color: var(--ifm-color-primary-white);
+}
+
+html[data-theme='light'] .footer {
+  background-color: #2e382b;
+  color: var(--ifm-color-primary-white);
+}
+
+html[data-theme='light'] .footer__link-item {
+  color: #bdc3c7;
+  text-decoration: none;
+}
+
+html[data-theme='light'] .footer__link-item:hover {
+  color: #ecf0f1;
+}
+/* Custom Dark */
+
+html[data-theme='dark'] {
+  --ifm-color-primary: #73e8a3;
+}
+
+html[data-theme='dark'] .footer__link-item {
+  color: #bdc3c7;
+}
+
+html[data-theme='dark'] .footer__link-item:hover {
+  color: #ecf0f1;
 }
 
 @media only screen and (max-width: 996px) {
+
   .footer__links {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -64,6 +156,12 @@
   .footer {
     padding: 5%;
   }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-left: 1%;
+  }
 }
 
 @media only screen and (max-width: 852px) {
@@ -71,12 +169,24 @@
     display: grid;
     grid-template-columns: repeat(4, auto);
   }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-left: 17%;
+  }
 }
 
 @media only screen and (max-width: 648px) {
   .footer__links {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    padding-left: 15px;
   }
 }
 
@@ -89,10 +199,35 @@
   .footer__col {
     text-align: center;
   }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    padding-left: 15px;
+  }
+
 }
 
 @media only screen and (max-width: 736px) {
-  .pluginsHeader {
-    padding-top: 30px;
-  }
+    .pluginsHeader {
+        padding-top: 30px;
+    }
+    .hero__title {
+        font-size: 2.5rem;
+    }
+}
+
+@media only screen and (max-width: 1279px) {
+    .navbar__toggle {
+        display: inherit;
+    }
+    .navbar__item {
+        display: none;
+    }
+    .navbar__search-input {
+        width: 9rem;
+    }
+    .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
+        display: none !important;
+    }
 }

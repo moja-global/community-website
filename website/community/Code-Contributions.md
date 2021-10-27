@@ -3,7 +3,6 @@ id: code-contribution
 title: Code Contributions
 ---
 
-## Code Contributions
 
 We would like to thank you for your interest in contributing. You can find below how you can get started with knowing and contributing to moja global. The first few steps are always crucial but signify how you wish to involve with the community.
 
@@ -165,8 +164,6 @@ We would also like the users to review the following if they are not familiar wi
 
 ## Feature Request
 
-## Feature Request:
-
 moja global is increasingly looking for new scientists, developers and researchers to join us and help improve our processes. We are also looking for constructive feature development via feature requests to help us improve our software, workflows and processes. Please have a look at the below steps to get started with requesting a new feature as a user:
 
 1. Navigate to the main page of the repository for which you want to propose a new feature or functionality. If you want to propose a new tool or module, please navigate to the `.github` repository.
@@ -179,8 +176,6 @@ moja global is increasingly looking for new scientists, developers and researche
 8. Click the green button "Submit New Issue" at the bottom right corner.
 
 If you would also like to build the proposed feature, please also review [how to start a new project](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Start-a-New-Project.md).
-
-## Standard tests
 
 ## Standard tests
 
@@ -217,8 +212,6 @@ Two Integration Tools have been identified for Continuous Integration with moja 
 - [AppVeyor](https://www.appveyor.com/) supports Continous Integration and testing for Windows.
 
 Both services offer free packages for open-source projects. Please send us an email at [tsc@moja.global](mailto:tsc@moja.global) if you would like to contribute towards the same.
-
-## moja global versioning
 
 ## moja global Versioning
 

@@ -1,7 +1,9 @@
 # Community Website
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
-[![All Contributors](https://img.shields.io/badge/all_contributors-2-orange.svg?style=flat-square)](#contributors-)
+
+[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Powered by Vercel](website/static/img/powered-by-vercel.svg)
@@ -37,19 +39,31 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 4. Install all the dependencies
 
 ```
-    npm install
+    yarn
 ```
 
 5. Start the development server.
 
 ```
-    npm run start
+    yarn start
+```
+
+6. Build the Community website:
+
+```sh
+    yarn build
+```
+
+7. Serve an optimized production build:
+
+```sh
+    yarn serve
 ```
 
 ## Contribution Guides
 
-- [How to write and publish a blog](https://community.moja.global/community/contributing#writing-new-blogs)
-- [How to write and publish documentation](https://community.moja.global/community/contributing#adding-new-documentation)
+- [How to write and publish a blog](https://community.moja.global/community/community-website-contributions#writing-new-blogs)
+- [How to write and publish documentation](https://community.moja.global/community/community-website-contributions#adding-new-documentation)
 - [How to add meetings](https://github.com/moja-global/community-website/blob/main/website/meetings.md)
 
 ## How to Get Involved?
@@ -76,6 +90,24 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="https://www.linkedin.com/in/abhishek-kr09/"><img src="https://avatars.githubusercontent.com/u/48255244?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Abhishek Kumar</b></sub></a><br /><a href="#infra-Abhishek-kumar09" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
     <td align="center"><a href="https://siddhant-k-code.github.io/"><img src="https://avatars.githubusercontent.com/u/55068936?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Siddhant Khare</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Siddhant-K-code" title="Code">💻</a> <a href="https://github.com/moja-global/community-website/pulls?q=is%3Apr+reviewed-by%3ASiddhant-K-code" title="Reviewed Pull Requests">👀</a> <a href="#mentoring-Siddhant-K-code" title="Mentoring">🧑‍🏫</a> <a href="#question-Siddhant-K-code" title="Answering Questions">💬</a></td>
+    <td align="center"><a href="https://github.com/eemike07"><img src="https://avatars.githubusercontent.com/u/2515617?v=4?s=100" width="100px;" alt=""/><br /><sub><b>eemike07</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=eemike07" title="Code">💻</a></td>
+    <td align="center"><a href="http://www.linkedin.com/in/faisaljamil25"><img src="https://avatars.githubusercontent.com/u/69186619?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Faisal Jamil</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=faisaljamil25" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/utkarsh1311"><img src="https://avatars.githubusercontent.com/u/70108561?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Utkarsh Maurya</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3Autkarsh1311" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/17bcs1837"><img src="https://avatars.githubusercontent.com/u/62862321?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aman Kumar</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3A17bcs1837" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/romasinha"><img src="https://avatars.githubusercontent.com/u/65072006?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Roma Sinha</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=romasinha" title="Documentation">📖</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://anirudhpanda.me/"><img src="https://avatars.githubusercontent.com/u/66218496?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Anirudh Panda</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3AAnirudhPanda" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/padmajabhol"><img src="https://avatars.githubusercontent.com/u/75530516?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Padmaja Bhol</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3Apadmajabhol" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/Ishika414"><img src="https://avatars.githubusercontent.com/u/78595001?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Ishika414</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Ishika414" title="Code">💻</a></td>
+    <td align="center"><a href="https://megatank58.me/"><img src="https://avatars.githubusercontent.com/u/51410502?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Megatank58</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Megatank58" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/rutujaingole"><img src="https://avatars.githubusercontent.com/u/72335505?v=4?s=100" width="100px;" alt=""/><br /><sub><b>rutujaingole</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=rutujaingole" title="Documentation">📖</a> <a href="#infra-rutujaingole" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="http://iamrajiv.github.io"><img src="https://avatars.githubusercontent.com/u/42106787?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Rajiv Singh</b></sub></a><br /><a href="#infra-iamrajiv" title="Infrastructure (Hosting, Build-Tools, etc)">🚇</a></td>
+    <td align="center"><a href="https://mizanxali.github.io/"><img src="https://avatars.githubusercontent.com/u/59915742?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Mizan Ali</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=mizanxali" title="Code">💻</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="http://www.juliancabezas.com"><img src="https://avatars.githubusercontent.com/u/17553010?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Julián Cabezas</b></sub></a><br /><a href="#translation-juliancabezas" title="Translation">🌍</a></td>
+    <td align="center"><a href="https://github.com/Devesh21700Kumar"><img src="https://avatars.githubusercontent.com/u/59202075?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devesh Kumar</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3ADevesh21700Kumar" title="Bug reports">🐛</a></td>
   </tr>
 </table>
 

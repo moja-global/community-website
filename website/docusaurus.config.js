@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Moja Global Community',
+  title: `Moja Global Community`,
   tagline: `Learn about moja global's projects and join our ever-growing community`,
   url: 'https://community.moja.global',
   baseUrl: '/',
@@ -14,6 +14,11 @@ module.exports = {
     locales: ['en', 'es'],
   },
   themeConfig: {
+    algolia: {
+      appId: 'BH4D9OD16A',
+      apiKey: '2227dd7224b78071d191aff9cbf1a6c5',
+      indexName: 'moja',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
@@ -81,7 +86,7 @@ module.exports = {
           to: '/tutorial/tutorial-introduction',
           label: 'Tutorial',
           position: 'left',
-          activeBaseRegex: '/tutorial/'
+          activeBaseRegex: '/tutorial/',
         },
       ],
     },
@@ -160,7 +165,7 @@ module.exports = {
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
-            }
+            },
           ],
         },
         {
@@ -172,7 +177,7 @@ module.exports = {
             },
             {
               label: 'Governance model',
-              href: '/community/governance'
+              href: '/community/governance',
             },
             {
               label: 'Newsletter',
@@ -180,8 +185,8 @@ module.exports = {
             },
             {
               label: 'Contributing guidelines',
-              href: '/community/contributing-guidelines',
-            }
+              href: '/community/contributing',
+            },
           ],
         },
         {
@@ -202,25 +207,6 @@ module.exports = {
             {
               label: 'LinkedIn',
               href: 'https://www.linkedin.com/company/moja-global/',
-            },
-          ],
-        },
-        {
-          title: 'Sponsors',
-          items: [
-            {
-              html: `
-                <a href="https://www.linuxfoundation.org/" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img src="/img/linux-foundation.svg" alt="Backed by the Linux Foundation" />
-                </a>
-              `,
-            },
-            {
-              html: `
-                <a href="https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img src="/img/powered-by-vercel.svg" alt="Powered by Vercel" />
-                </a>
-              `,
             },
           ],
         },
@@ -272,13 +258,6 @@ module.exports = {
   ],
   plugins: [
     [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        language: ['en'],
-      },
-    ],
-    [
       '@docusaurus/plugin-content-docs',
       {
         id: 'community',
@@ -299,10 +278,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-          id: 'tutorial-introduction',
-          path: 'tutorial',
-          routeBasePath: 'tutorial',
-          sidebarPath: require.resolve('./sidebarsTutorial.js')
+        id: 'tutorial-introduction',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: require.resolve('./sidebarsTutorial.js'),
       },
     ],
   ],
