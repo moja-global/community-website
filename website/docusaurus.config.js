@@ -223,7 +223,7 @@ module.exports = {
       { name: 'twitter:title', content: 'Moja Global Community' },
       {
         name: 'twitter:description',
-        content: "Learn about moja global's projects and join our ever-growing community",
+        content: "moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software that allows users to accurately and affordably estimate greenhouse gas emissions and removals from the AFOLU sector. The project’s members aim to support the widest possible use of credible emissions estimation software.",
       },
     ],
   },

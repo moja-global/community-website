@@ -1,31 +1,32 @@
-[{
-        "name": "The Linux Foundation",
-        "url": "https://www.linuxfoundation.org/",
-        "logo": "/img/linux-foundation.svg"
-    },
-    {
-        "name": "Natural Resources Canada",
-        "url": "https://www.nrcan.gc.ca/home",
-        "logo": "/img/canada.png"
-    },
-    {
-        "name": "Mullion Group",
-        "url": "https://www.mulliongroup.com.au/meet-flintpro/",
-        "logo": "/img/mullion.jpeg"
-    },
-    {
-        "name": "UNFCCC",
-        "url": "https://unfccc.int/",
-        "logo": "/img/unfccc.png"
-    },
-    {
-        "name": "Climate Advisers",
-        "url": "https://climateadvisers.org/",
-        "logo": "/img/climate-advisers.png"
-    },
-    {
-        "name": "Vercel (Infrastructure)",
-        "url": "https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss/",
-        "logo": "/img/powered-by-vercel.svg"
-    }
+[
+  {
+    "name": "The Linux Foundation",
+    "url": "https://www.linuxfoundation.org/",
+    "logo": "/img/linuxFoundation.jpeg"
+  },
+  {
+    "name": "Natural Resources Canada",
+    "url": "https://www.nrcan.gc.ca/home",
+    "logo": "/img/nrcanada.png"
+  },
+  {
+    "name": "Mullion Group",
+    "url": "https://www.mulliongroup.com.au/meet-flintpro/",
+    "logo": "/img/mulliong.png"
+  },
+  {
+    "name": "UNFCCC",
+    "url": "https://unfccc.int/",
+    "logo": "/img/uncc.png"
+  },
+  {
+    "name": "Climate Advisers",
+    "url": "https://climateadvisers.org/",
+    "logo": "/img/climate-advisers.png"
+  },
+  {
+    "name": "Vercel (Infrastructure)",
+    "url": "https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss/",
+    "logo": "/img/powered-by-vercel.svg"
+  }
 ]
