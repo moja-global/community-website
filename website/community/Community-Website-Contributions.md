@@ -142,7 +142,7 @@ module.exports = {
 };
 ```
 
-Recent blog posts are displayed on the blog sidebar. By default, the sidebar shows five items, but you can disable this feature by setting the `bolgsSidebarCount` to infinity. This also increases the width of the main container. If you want to change the sidebar heading text, go to the `blogSidebarTitle` option and make the necessary changes. For example, you could change it from Recent Posts to All Posts.
+Recent blog posts are displayed on the blog sidebar. By default, the sidebar shows five items, but you can disable this feature by setting the `blogsSidebarCount` to infinity. This also increases the width of the main container. If you want to change the sidebar heading text, go to the `blogSidebarTitle` option and make the necessary changes. For example, you could change it from Recent Posts to All Posts.
 
 ```
 module.exports = {

@@ -1,7 +1,9 @@
 # Community Website
 
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 
 ![Powered by Vercel](website/static/img/powered-by-vercel.svg)
@@ -37,19 +39,31 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 4. Install all the dependencies
 
 ```
-    npm install
+    yarn
 ```
 
 5. Start the development server.
 
 ```
-    npm run start
+    yarn start
+```
+
+6. Build the Community website:
+
+```sh
+    yarn build
+```
+
+7. Serve an optimized production build:
+
+```sh
+    yarn serve
 ```
 
 ## Contribution Guides
 
-- [How to write and publish a blog](https://community.moja.global/community/contributing#writing-new-blogs)
-- [How to write and publish documentation](https://community.moja.global/community/contributing#adding-new-documentation)
+- [How to write and publish a blog](https://community.moja.global/community/community-website-contributions#writing-new-blogs)
+- [How to write and publish documentation](https://community.moja.global/community/community-website-contributions#adding-new-documentation)
 - [How to add meetings](https://github.com/moja-global/community-website/blob/main/website/meetings.md)
 
 ## How to Get Involved?
