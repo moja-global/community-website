@@ -2,11 +2,30 @@
 id: powering-deforestation-prediction-using-artificial-intelligence
 title: Powering Deforestation prediction using Artificial Intelligence
 slug: /powering-deforestation-prediction-using-artificial-intelligence.md
+keywords:
+    - deforestation
+    - deforestation prediction
+    - deforestation prediction using machine learning
+    - deforestation prediction using neural networks
+    - data preprocessing
+    - neural networks
+    - myanmar
+    - phillipines
+    - artificial intelligence
+    - convolutinal neural networks
+desciption: Powering Deforestation prediction using Artificial Intelligence at Myanmar and Philippines
+image: https://i.imgur.com/KXEayXx.png
 ---
 
-Today, Agriculture, forestry, and other land use account for 23% of the global greenhouse gas emissions. Moja global’s mission is to support ambitious climate action by developing open-source software and helping remove greenhouse gases (GHG) from the land sector. One of the primary sources of greenhouse gas emissions from the land sector stems from deforestation. With nearly 6-17% of the global carbon dioxide emissions stemming from deforestation, we might reach the level of current afforestation (about 0.13%) a few years after 2030.
+![image](../static/img/powering-deforestation-prediction-using-artificial-intelligence.png)
 
-Moja global develops and maintains FLINT, a tool to estimate emissions and sinks of greenhouse gasses from forestry and agriculture. FLINT is ideal for projecting the carbon impact of baseline scenarios that differ by locality and between countries. The project involves a novel development of a machine-learning algorithm to predict the likelihood of a particular pixel in the landscape being deforested over the projection period. The results retrieved are compatible with emissions monitoring, reporting and validation software conforming with the UNFCCC and IPCC guidelines.
+Agriculture, forestry, and other land-use types account for 23% of global greenhouse gas emissions. Moja global provides tools for estimating emissions and removals of greenhouse gases (GHG) from the land sector. Deforestation is one of the primary sources of GHG emissions from the land sector. Large amounts of carbon are stored in trees, absorbed from the atmosphere over decades, if not centuries. When the trees are cut down and used as firewood (or other short-term uses), the carbon stored in the trees is released into the atmosphere. Moreover, the dead trees stop removing CO2 from the atmosphere.
+
+Investment to avoid deforestation is essential to reduce climate change, and it becomes more important as we reduce other emissions. Such investment is currently hampered because accurate predictions of deforestation are not available. This project proposes to develop an algorithm based on machine learning (ML) to predict the likelihood of a particular pixel in the landscape being deforested over the projection period. The predicted deforestation for each pixel can be aggregated to obtain expected deforestation for a project area, administrative region, or a whole country, which is more informative for the policy-building agencies.
+
+AI forms the backbone of our entire project proposal. To make accurate forest-cover change predictions at the pixel level using multi-spectral time-series satellite image data that is huge (1 TB) in size, deep learning is the best available solution.
+
+What makes this project unique? Our approach of combining multi-spectral satellite data of forest cover with on-ground images and implementing State-of-the-Art Deep Learning models to predict deforestation is unique and has not been tried before. Additionally, Uganda has never been covered by a similar machine learning approach for deforestation analysis. Previous methods either use retrospective accounting of forest loss or statistical estimates, which are not accurate. We believe that a predictive approach driven by AI would be more accurate and better for decision-making.
 
 ## Approach
 
@@ -34,7 +53,7 @@ The extracted data from the Google Earth Landsat consisted of bands that allowed
 
 ## Baseline model implementation
 
-After data collection, pre-processing, and feature extraction, we paved the path forward to utilize standard machine learning algorithms. The base model implementation will further pave the way forward for use with deep learning algorithms and architecture. The results obtained after implementing a standard machine learning pipeline are showcased below:
+After data collection, pre-processing, and feature extraction, we paved the path forward to utilize standard machine learning algorithms. The base model implementation further paves the way forward for use with deep learning algorithms and architecture. The results obtained after implementing a standard machine learning pipeline are showcased below:
 
 | Without resampling | Logistic Regression | Random Forest | SGD   |
 | ------------------ | ------------------- | ------------- | ----- |
@@ -64,117 +83,23 @@ A Hierarchical Bayesian Framework model was also implemented, which achieved an 
 
 > Results obtained for Myanmar by implementing Hierarchical Bayesian Framework.
 
+| ![Diagram depicting the broad methodology followed in this project](../static/img/deforestation-algorithm-machine-learning-architecture.png) |
+|:--:|
+| Diagram depicting the broad methodology followed in this project |
+
 ## Deep learning model implementation
 
 ### Myanmar
 
 We implemented the model architecture after signifying an Area of Interest (AoI) selection, accounting for the class imbalance and dimensionality reduction using PCA. A Convolutional Neural Network processed the time-series data to capture the spatial relations in the dataset. It is followed by parallel implementation of Long Short Term Memory and Auto-Regressive Integrated Moving Average to capture the time-series component of the data. We did the hyperparameter tuning along with a lot of hit-and-trials, and we measured the performance accordingly.
 
-The shortlisted model had the following architecture in place:
-
-```sh
-Layer (type) Output Shape Param #
-=========================================================
-conv_lst_m2d_4 (ConvLSTM2D) (None, 5, 20, 32, 32) 16640
-_________________________________________________________________
-batch_normalization_2 (None, 5, 20, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_5 (ConvLSTM2D) (None, 5, 15, 32, 32) 18960
-_________________________________________________________________
-batch_normalization_3 (None, 5, 15, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_6 (ConvLSTM2D) (None, 5, 12, 32, 32) 11712
-_________________________________________________________________
-batch_normalization_4 (None, 5, 12, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_7 (ConvLSTM2D) (None, 5, 10, 32, 32) 7960
-_________________________________________________________________
-batch_normalization_5 (None, 5, 10, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_8 (ConvLSTM2D) (None, 5, 8, 32, 32) 5216
-_________________________________________________________________
-batch_normalization_6 (None, 5, 8, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_9 (ConvLSTM2D) (None, 5, 6, 32, 32) 3048
-_________________________________________________________________
-batch_normalization_7 (None, 5, 6, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_10 (ConvLSTM2D) (None, 5, 4, 32, 32) 1456
-_________________________________________________________________
-batch_normalization_8 (None, 5, 4, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_11 (ConvLSTM2D) (None, 5, 3, 32, 32) 768
-_________________________________________________________________
-batch_normalization_9 (None, 5, 3, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_12 (ConvLSTM2D) (None, 5, 2, 32, 32) 368
-_________________________________________________________________
-batch_normalization_10 (None, 5, 2, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_13 (ConvLSTM2D) (None, 1, 32, 32) 112
-_________________________________________________________________
-batch_normalization_11 (None, 1, 32, 32) 128
-_________________________________________________________________
-conv2d (Conv2D) (None, 1, 32, 32) 10
-```
-
-It included some 67,530 parameters, out of which 66,890 were trainable and 640 were non-trainable.
-
 ### Philippines
 
-Similarly, for the Philippines, the dataset pre-processing involved removing null patches, resampling, and applying principal component analysis for creating shards.
+Similarly, for the Philippines, the dataset pre-processing involved removing null patches, resampling, and applying principal component analysis for creating shards. We utilized continuous probabilistic target variables since the loss (RMSE) converged quickly around Epoch 9, which we quickly discovered to be an issue with the architecture.
 
-We utilized continuous probabilistic target variables since the loss (RMSE) converged quickly around Epoch 9, which we quickly discovered to be an issue with the architecture. The shortlisted model had the following architecture in place, with the total number of parameters were 67,530, out of which 66,890 were trainable and 640 non-trainable:
-
-```sh
-Layer (type) Output Shape Param #
-=================================================================
-conv_lst_m2d_20 (ConvLSTM2D) (None, 5, 20, 32, 32) 16640
-_________________________________________________________________
-batch_normalization_20 (Batc (None, 5, 20, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_21 (ConvLSTM2D) (None, 5, 15, 32, 32) 18960
-_________________________________________________________________
-batch_normalization_21 (Batc (None, 5, 15, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_22 (ConvLSTM2D) (None, 5, 12, 32, 32) 11712
-_________________________________________________________________
-batch_normalization_22 (Batc (None, 5, 12, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_23 (ConvLSTM2D) (None, 5, 10, 32, 32) 7960
-_________________________________________________________________
-batch_normalization_23 (Batc (None, 5, 10, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_24 (ConvLSTM2D) (None, 5, 8, 32, 32) 5216
-_________________________________________________________________
-batch_normalization_24 (Batc (None, 5, 8, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_25 (ConvLSTM2D) (None, 5, 6, 32, 32) 3048
-_________________________________________________________________
-batch_normalization_25 (Batc (None, 5, 6, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_26 (ConvLSTM2D) (None, 5, 4, 32, 32) 1456
-_________________________________________________________________
-batch_normalization_26 (Batc (None, 5, 4, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_27 (ConvLSTM2D) (None, 5, 3, 32, 32) 768
-_________________________________________________________________
-batch_normalization_27 (Batc (None, 5, 3, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_28 (ConvLSTM2D) (None, 5, 2, 32, 32) 368
-_________________________________________________________________
-batch_normalization_28 (Batc (None, 5, 2, 32, 32) 128
-_________________________________________________________________
-conv_lst_m2d_29 (ConvLSTM2D) (None, 1, 32, 32) 112
-_________________________________________________________________
-batch_normalization_29 (Batc (None, 1, 32, 32) 128
-_________________________________________________________________
-permute_4 (Permute) (None, 32, 32, 1) 0
-_________________________________________________________________
-conv2d_2 (Conv2D) (None, 32, 32, 1) 10
-_________________________________________________________________
-permute_5 (Permute) (None, 1, 32, 32) 0
-```
+| ![Deep Learning workflow used for this project](../static/img/deforestation-algorithm-deep-learning-architecture.png) |
+|:--:|
+| Deep Learning workflow used for this project |
 
 ## Reports
 
@@ -184,11 +109,10 @@ The visualisation of CNN Predictions as well as the Ground Truth can be seen bel
 |:--:|
 | Ground Truth (left) vs Model prediction (right) for Myanmar from 1995-2015 |
 
-
 For the Philippines, we obtained a best-case train AUC of 0.8316 and a test AUC of 0.7706. It was made possible after normalizing the dataset with global min-max values of the band values in the Philippines and including a Conv2D layer via permute.
 
 ## Conclusion
 
 The current scope of work successfully demonstrates the effectiveness of Conv-LSTM for accurately predicting forest cover change for Myanmar and the Philippines. The model aims at improving the performance of GHG estimation models, which rely on accurate deforestation prediction to estimate the GHG emissions from the land sector. International organizations like IPCC and local governments can utilize the results to estimate GHG emissions from the land-use sector.
 
-In the future, the project can include Spatio-temporal models, which might give good results, such as GAN-LSTMs. It also includes universal models that are trained for one country and can be extended to another country. We also have an added scope of working with an on-ground team in the region. We have sufficient satellite and forest-cover change data and combine ground reports with the satellite image data for better predictions.
+In the future, the project can include Spatio-temporal models, which might give good results, such as GAN-LSTMs. It also includes universal models that are trained for one country and can be extended to another country. We also have an added scope of working with an on-ground team in the region with the satellite and forest-cover change data and combined ground reports for better predictions.
