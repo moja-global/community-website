@@ -1,7 +1,7 @@
 .card {
   border: 2px solid var(--ifm-color-primary-dark);
-  margin: 10px;
-  padding: 1.5rem;
+  margin: 9px;
+  padding: 2.5rem;
 }
 
 .button {
