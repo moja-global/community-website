@@ -232,7 +232,7 @@ module.exports = {
       '@docusaurus/preset-classic',
       {
         googleAnalytics: {
-          trackingID: 'UA-195907568-1',
+          trackingID: 'G-SZGHHTE296',
           anonymizeIP: true,
         },
         docs: {
