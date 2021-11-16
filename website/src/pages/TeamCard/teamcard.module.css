@@ -1,0 +1,54 @@
+.communityBody {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 1500px;
+    text-align: center;
+    margin: 3rem auto;
+    justify-content: center;
+    gap: 10px 10px;;
+    margin-top: 1rem;
+    margin-bottom: 0.1rem;
+    padding-right: 0.125em; 
+    padding-top: 0.125em;  
+  }
+  
+  .card {
+    border: 2px solid var(--ifm-color-primary-dark);
+    margin: 10px;
+    padding: 1.5rem;
+    padding-bottom: 0.5em;
+  }
+  
+  .projects{ 
+    margin-bottom: 0.3rem;
+    padding-top: 0.5em;
+    line-height: 1em;
+  }
+  
+  .item{
+    margin-bottom: 0.3rem;
+    padding-top: 0.5em;
+    line-height: 1em;
+  }
+  
+  .link{
+    font-weight: bold;
+  }
+  
+  .button {
+    background-color: var(--ifm-color-primary-lightest);
+    border-radius: 10px;
+    padding: 0.02rem 0.2rem;
+    outline: none;
+    cursor: auto;
+    border: none;
+  }
+   
+  @media screen and (max-width: 966px) {
+      .card {
+        width: 100%;
+      }
+    }
+  
+    

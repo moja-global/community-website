@@ -1,0 +1,27 @@
+.communityBody {
+    display: flex;
+    flex-direction: column;
+    max-width: 2000px;
+    text-align: center;
+    margin: 2rem auto;
+    padding: 1rem;
+  
+  }
+  
+  .communityTitle {
+    font-size: 2.5rem;
+  }
+  
+  .communitySubtitle {
+    color: var(--ifm-color-primary);
+    font-size: x-large;
+  }
+  
+  @media screen and (max-width: 966px) {
+    .card {
+      width: 100%;
+    }
+  }
+  
+    
+  
