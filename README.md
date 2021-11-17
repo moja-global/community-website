@@ -18,7 +18,7 @@ Start developing on GitPod and see the code in action.
 
 [_moja global_](http://moja.global/) is a collaboration under the [Linux Foundation](https://linuxfoundation.org/) that aims for the widest possible collaboration on and use of credible tools to better manage the land sector. The flagship software is the [Full Lands Integration Tool (FLINT)](https://github.com/moja-global/flint), a tool to estimate emissions and sinks of greenhouse gasses from forestry and agriculture.
 
-## Development Setup
+## Local Development
 
 Before setting up the project make sure the LTS (Long Term Support) version of NodeJs is installed with a package manager of your choice. We recommend NPM or Yarn.
 
@@ -27,37 +27,72 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
 2. Clone the repository.
 
 ```
-    https://github.com/<YOUR_GITHUB_USERNAME>/community-website.git
+https://github.com/<YOUR_GITHUB_USERNAME>/community-website.git
 ```
 
 3. Go into the directory containing the project.
 
 ```
-    cd community-website/website
+cd community-website/website
 ```
 
 4. Install all the dependencies
 
 ```
-    yarn
+yarn
 ```
 
 5. Start the development server.
 
 ```
-    yarn start
+yarn start
 ```
 
 6. Build the Community website:
 
 ```sh
-    yarn build
+yarn build
 ```
 
 7. Serve an optimized production build:
 
 ```sh
-    yarn serve
+yarn serve
+```
+
+## Linting Guidelines
+
+The Project has ESLint configured to properly format the code. This enables developer to follow the same coding style and to avoid improperly-linted code. All the commands below should be run from the `website` directory.
+
+```sh
+yarn lint
+```
+This command logs all warnings and lint errors and scope of fixes/improvements.
+
+```sh
+yarn lint:fix
+```
+This option instructs ESLint to try to fix as many issues as possible. The fixes are made to the actual files themselves and only the remaining unfixed issues are output.
+
+```sh
+eslint --ignore-path tmp/.eslintignore file.js
+```
+This option allows you to specify the file to use as your `.eslintignore`. By default, ESLint looks in the current working directory for `.eslintignore`. You can override this behavior by providing a path to a different file.
+
+## Deployment
+
+We use Vercel for deployment. To enable Vercel, create an account  and through the Vercel dashboard, you can create a new project by importing a GitHub repository. The repository should be a fork of the `moja-global/community-website` repository. Vercel will automatically configure the build settings for the project and deploy it. You can further configure the domain name and other settings in the Vercel dashboard.
+
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+
+```sh
+GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
+```
+
+You can optionally deploy it using Docker Compose. Push the following commands to your terminal.
+
+```sh
+docker compose up --build
 ```
 
 ## Contribution Guides
