@@ -1,0 +1,9 @@
+version: '3.8'
+
+services: 
+  react-docker:
+    image: moja-global/community-website:0.1.0
+    build: 
+      context: .
+    ports: 
+      - "3000:3000"
