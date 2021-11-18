@@ -20,13 +20,12 @@ jobs:
       - name: Run Contributors script
         run: |
           cd website
-          rm contributors.json
           node ./fetchContributors.js
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
-          add: 'website/contributors.json'
+          add: 'website'
           default_author: github_actor
           commit_message: 'Update contributors'
           signoff: true
