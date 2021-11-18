@@ -1,9 +1,6 @@
 # Dependencies
 node_modules
 
-# Contributors File
-contributors.json
-
 # Production
 build/
 
