@@ -1,7 +1,7 @@
 ---
 id:  powering-deforestation-prediction-using-artificial-intelligence
 title:  Powering Deforestation prediction using Artificial Intelligence
-slug:  /powering-deforestation-prediction-using-artificial-intelligence.md
+slug:  /powering-deforestation-prediction-using-artificial-intelligence
 keywords:
 -  deforestation
 -  deforestation prediction
