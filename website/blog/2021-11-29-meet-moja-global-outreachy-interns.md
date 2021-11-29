@@ -25,7 +25,7 @@ Based on the work developed and the other contributions, we selected three inter
 ## Outreachy Intern #1: David Guevara-Apaza
 
 <p align="center">
-  <img src="../static/img/david-guevara-apaza-outreachy-2021.jpg" height="400" width="600" alt="Picture of David. David is the Outreachy 2021 Intern from moja global"></img>
+  <img src="/img/david-guevara-apaza-outreachy-2021.jpg" height="400" width="600" alt="Picture of David. David is the Outreachy 2021 Intern from moja global"></img>
 </p>
 
 David Guevara-Apaza is from Cusco, Peru and has recently graduated in Biology. He holds a passion for computational biology and AI in topics related to conservation, biodiversity and bioinformatics. His interest gave him the motivation to apply for Outreachy Internships. He hopes to use this opportunity to keep working on environmental initiatives using data analysis, modelling and technology as a potential tool to enrich projects and get interdisciplinary works to another level.
@@ -33,7 +33,7 @@ David Guevara-Apaza is from Cusco, Peru and has recently graduated in Biology. H
 ## Outreachy Intern #2: Simple Shell
 
 <p align="center">
-  <img src="../static/img/simple-shell-picture-outreachy-2021.jpg" height="400" width="400" alt="Picture of Simple Shell. Simple Shell is the Outreachy 2021 Intern from moja global"></img>
+  <img src="/img/simple-shell-picture-outreachy-2021.jpg" height="400" width="400" alt="Picture of Simple Shell. Simple Shell is the Outreachy 2021 Intern from moja global"></img>
 </p>
 
 Simple Shell hails from Cameroon and is based in the city of Dschang. He loves every aspect of tech especially coding and data analysis. He has a profound interest in developing the world by contributing to projects to curb environmental and societal ills.
@@ -41,7 +41,7 @@ Simple Shell hails from Cameroon and is based in the city of Dschang. He loves e
 ## Outreachy Intern #3: Asmi Jafar
 
 <p align="center">
-  <img src="../static/img/asmi-jafar-picture-outreachy-2021.jpg" height="400" width="400" alt="Picture of Asmi Jafar. Asmi is the Outreachy 2021 Intern from moja global"></img>
+  <img src="/img/asmi-jafar-picture-outreachy-2021.jpg" height="400" width="400" alt="Picture of Asmi Jafar. Asmi is the Outreachy 2021 Intern from moja global"></img>
 </p>
 
 Asmi Jafar is a Computer Science graduate from Aligarh Muslim University, India. She is profoundly influenced by technology and the various ways she can use it to express art. She is quite interested in web development and research and is curious to learn and contribute to projects. Her interest in moja global came through knowing about its projects and future goals. She also loves reading and painting, and she quotes one of her favourite lines from a book titled: **The Last Lecture**:
