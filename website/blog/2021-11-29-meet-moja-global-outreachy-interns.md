@@ -18,7 +18,7 @@ Moja global participated in the December 2021 Outreachy internships with the pro
 - Implement continuous integration and deployment pipelines for FLINT Reporting and the other projects in the moja global ecosystem.
 - Developing and documenting a framework to ensure long-term reproducibility of Python-based data analysis on moja global datasets.
 
-We received 9 community applications during the contribution phase, out of which 8 submitted their final applications. Most of them were able to complete their good first issues successfully and completed their first task. The task involved analyzing moja global datasets from our [Land Sector datasets](https://github.com/moja-global/Land_Sector_Datasets) repo and using data analysis tools to prepare an exploratory report.
+We received 9 community applications during the contribution phase, out of which 8 submitted their final applications. Most of them were able to complete their good first issues successfully and completed their first task. The task involved analyzing moja global datasets from our [Land Sector datasets](https://github.com/moja-global/Land_Sector_Datasets) repo and using data analysis tools to prepare an exploratory report. We would like to thank all the contributors who worked on this project and we hope that they will be able to contribute to the future of moja global.
 
 Based on the work developed and the other contributions, we selected three interns: [David Guevara-Apaza](https://github.com/yodavo), [Simple Shell](https://github.com/Simpleshell3) and [Asmi Jafar](https://github.com/asmijafar20).
 
