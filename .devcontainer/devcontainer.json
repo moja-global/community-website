@@ -1,0 +1,24 @@
+{
+    "name": "Node.js & TypeScript",
+    "build": {
+        "dockerfile": "Dockerfile",
+        "args": {
+            "VARIANT": "16"
+        }
+    },
+    "settings": {
+        "terminal.integrated.defaultProfile.linux": "zsh"
+    },
+    "extensions": [
+        "dbaeumer.vscode-eslint",
+        "bierner.emojisense",
+        "shd101wyy.markdown-preview-enhanced",
+        "eamodio.gitlens",
+        "mhutchie.git-graph",
+        "streetsidesoftware.code-spell-checker"
+    ],
+    "forwardPorts": [
+        3000
+    ],
+    "remoteUser": "node"
+}
