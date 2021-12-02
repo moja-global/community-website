@@ -176,6 +176,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/JanaTod"><img src="https://avatars.githubusercontent.com/u/91850076?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JanaTod</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=JanaTod" title="Code">💻</a></td>
     <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Aniket762" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/caseynv"><img src="https://avatars.githubusercontent.com/u/67697400?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelechukwu Nwandu</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=caseynv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Sukriti-sood" title="Code">💻</a></td>
   </tr>
 </table>
 
