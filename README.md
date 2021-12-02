@@ -175,6 +175,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Devesh21700Kumar"><img src="https://avatars.githubusercontent.com/u/59202075?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devesh Kumar</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3ADevesh21700Kumar" title="Bug reports">🐛</a></td>
     <td align="center"><a href="https://github.com/JanaTod"><img src="https://avatars.githubusercontent.com/u/91850076?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JanaTod</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=JanaTod" title="Code">💻</a></td>
     <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Aniket762" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/caseynv"><img src="https://avatars.githubusercontent.com/u/67697400?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelechukwu Nwandu</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=caseynv" title="Documentation">📖</a></td>
   </tr>
 </table>
 
