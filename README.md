@@ -1,68 +1,102 @@
-# Community Website
+<div align="center">
+<img src="https://i0.wp.com/mojaglobal.kinsta.cloud/wp-content/uploads/2021/03/Asset-66@4x.png" alt="Moja global logo" height ="auto" width="200" />
+<br />
+<h1>Community Website</h1>
+<p>
+Repository for the moja global community website, a resource for the moja global community.
+</p>
+<p align="center">
+<a href="https://github.com/moja-global/community-website" alt="GitHub contributors">
+<img src="https://img.shields.io/github/contributors/moja-global/community-website.svg" /></a>
+<a href="https://github.com/moja-global/community-website" alt="GitHub issues by-label">
+<img src="https://img.shields.io/github/issues/moja-global/community-website" /></a>
+<a href="https://mojaglobal.slack.com/" alt="Slack">
+<img src="https://img.shields.io/badge/Slack-@layer5.svg?logo=slack" /></a>
+<a href="https://github.com/moja-global/community-website" alt="Twitter Follow">
+<img src="https://img.shields.io/twitter/follow/mojaglobal.svg?label=Follow&style=social" /></a>
+<a href="https://github.com/moja-global/community-website" alt="License">
+<img src="https://img.shields.io/github/license/moja-global/community-website.svg" /></a>
+</p>
+</div>
 
-<!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+## Introduction
 
-[![All Contributors](https://img.shields.io/badge/all_contributors-16-orange.svg?style=flat-square)](#contributors-)
+[Moja global](http://moja.global/) is a collaboration under the [Linux Foundation](https://linuxfoundation.org/) that aims for the widest possible collaboration on and use of credible tools to better manage the land sector. The flagship software is the [Full Lands Integration Tool (FLINT)](https://github.com/moja-global/flint), a tool to estimate emissions and sinks of greenhouse gasses from forestry and agriculture.
 
-<!-- ALL-CONTRIBUTORS-BADGE:END -->
+The Community website aims to serve a glimpse of moja global's projects and their working to the wider community. The website hosts projects, case studies, blogs, tutorials and more developed by the wider moja community to help you better understand our work and hopefully learn from others experience.
 
-![Powered by Vercel](website/static/img/powered-by-vercel.svg)
+Our mission is to help new users become familiar with the moja global community. We want to:
 
-Contributors website is for people to get a glimpse of moja global's projects and their working. The website also holds blogs and guides by the moja family to help you better understand our work and hopefully learn from others experience.
+- Explain FLINT and the ecosystem surrounding it to anyone who is new to the ecosystem.
+- Cover updates across the ecosystem to help users stay up to date.
+- Bring Measure, Reporting and Verification (MRV) software edication to the community, in as many languages as possible.
+- Assist new developers, writers, community managers and other contributors to get started on our projects.
+- Provide them an opportunity to work on funded projects under the mentorship of the community members.
 
-Start developing on GitPod and see the code in action.
+## Technology Stack
 
-[![Gitpod ready-to-code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/moja-global/community-website/)
+We use a variety of technologies to build the web interface and support the community. They include:
 
-## What is moja global?
+- [NodeJS](https://nodejs.org/)
+- [Yarn package manager](https://yarnpkg.com/)
+- [Docusaurus](https://docusaurus.io/)
+- [React](https://reactjs.org/)
+- [Algolia DocSearch](https://www.algolia.com/)
+- [GitHub Actions](https://github.com/features/actions)
+- [Vercel](https://vercel.com/)
+- [LightHouse](https://lighthouse.io/)
 
-[_moja global_](http://moja.global/) is a collaboration under the [Linux Foundation](https://linuxfoundation.org/) that aims for the widest possible collaboration on and use of credible tools to better manage the land sector. The flagship software is the [Full Lands Integration Tool (FLINT)](https://github.com/moja-global/flint), a tool to estimate emissions and sinks of greenhouse gases from forestry and agriculture.
+We use NodeJS and Yarn to install, test and build the website. Docusaurus has been used as a static site generator to build the website. React is being utilized to build our custom component-based user interface to provide a modern look to the website. Algolia DocSearch is used to provide search functionality to the website, offering site-indexing and rapid fast intra-site search results. GitHub Actions manages our CI/CD pipelines and issue triage. Vercel is used to deploy the website, while providing us DNS management and automated deployment of our pull requests. LightHouse is used to continuously monitor our website benchmarks and help us identify SEO, accessibility and performance issues.
 
-## Local Development
+## Installation
 
-Before setting up the project make sure the LTS (Long Term Support) version of NodeJs is installed with a package manager of your choice. We recommend NPM or Yarn.
+Before setting up the project make sure the LTS (Long Term Support) version of NodeJS is installed. We recommend using the Yarn package manager to install the project.
 
-1. Fork the repository.
+1. Fork the [community-website repository](https://github.com/moja-global/community-website).
+2. Clone the repository:
+  ```sh
+  git clone git@github.com:<USERNAME>/community-website.git && cd community-website
+  ```
+  Replace the `<USERNAME>` with your GitHub username. If you've already forked the repo, you'll want to ensure your fork is configured and that it's up to date. This will save you the headache of potential merge conflicts. To configure your fork:
+  ```sh
+  git remote add upstream https://github.com/moja-global/community-website.git
+  ```
+  To sync your fork with the latest changes:
+  ```sh
+  git checkout main
+  git fetch upstream
+  git merge upstream/main
+  ```
+3. Install the project:
+  ```sh
+  yarn
+  ```
+4. Start the project:
+  ```sh
+  yarn start
+  ```
+5. Build the project:
+  ```sh
+  yarn build
+  ```
+6. Serve the project:
+  ```sh
+  yarn serve
+  ```
 
-2. Clone the repository.
+## How to Get Involved?
 
-```
-https://github.com/<YOUR_GITHUB_USERNAME>/community-website.git
-```
+Moja global welcomes contributions to the community website. If you have an idea for a new feature or a bug fix, please submit an issue or pull request. Our planned features can be found on our [Issue Tracker](https://github.com/moja-global/community-website/issues). Our contribution guides include:
 
-3. Go into the directory containing the project.
+- [How to write and publish a blog](https://community.moja.global/community/community-website-contributions#writing-new-blogs)
+- [How to write and publish documentation](https://community.moja.global/community/community-website-contributions#adding-new-documentation)
+- [How to add meetings](https://github.com/moja-global/community-website/blob/main/website/meetings.md)
 
-```
-cd community-website/website
-```
+## Developer Notes
 
-4. Install all the dependencies
+### Linting
 
-```
-yarn
-```
-
-5. Start the development server.
-
-```
-yarn start
-```
-
-6. Build the Community website:
-
-```sh
-yarn build
-```
-
-7. Serve an optimized production build:
-
-```sh
-yarn serve
-```
-
-## Linting Guidelines
-
-The Project has ESLint configured to properly format the code. This enables developer to follow the same coding style and to avoid improperly-linted code. All the commands below should be run from the `website` directory.
+The project has ESLint configured to properly format the code. This enables developer to follow the same coding style and to avoid improperly-linted code. All the commands below should be run from the `website` directory.
 
 ```sh
 yarn lint
@@ -79,7 +113,7 @@ eslint --ignore-path tmp/.eslintignore file.js
 ```
 This option allows you to specify the file to use as your `.eslintignore`. By default, ESLint looks in the current working directory for `.eslintignore`. You can override this behavior by providing a path to a different file.
 
-## Deployment
+### Deployment
 
 We use Vercel for deployment. To enable Vercel, create an account  and through the Vercel dashboard, you can create a new project by importing a GitHub repository. The repository should be a fork of the `moja-global/community-website` repository. Vercel will automatically configure the build settings for the project and deploy it. You can further configure the domain name and other settings in the Vercel dashboard.
 
@@ -95,24 +129,20 @@ You can optionally deploy it using Docker Compose. Push the following commands t
 docker compose up --build
 ```
 
-## Contribution Guides
+### Frequently Asked Questions
 
-- [How to write and publish a blog](https://community.moja.global/community/community-website-contributions#writing-new-blogs)
-- [How to write and publish documentation](https://community.moja.global/community/community-website-contributions#adding-new-documentation)
-- [How to add meetings](https://github.com/moja-global/community-website/blob/main/website/meetings.md)
+We have a [FAQ](FAQq.md) page that answers common questions around the community website and how to contribute to it.
 
-## How to Get Involved?
+## Support
 
-moja global welcomes a wide range of contributions as explained in [Contributing document](https://github.com/moja-global/About-moja-global/blob/master/CONTRIBUTING.md) and in the [About moja-global Wiki](https://github.com/moja-global/.github/wiki).
+Moja global thrives on community participation, and we appreciate your contributions to our website and our documentation!
 
-## FAQ and Other Questions
+You can reach out to us through the following channels:
 
-- You can find FAQs on the [Wiki](https://github.com/moja.global/.github/wiki).
-- If you have a question about the code, submit [user feedback](https://github.com/moja-global/About-moja-global/blob/master/Contributing/How-to-Provide-User-Feedback.md) in the relevant repository
-- If you have a general question about a project or repository or moja global, [join moja global](https://github.com/moja-global/About-moja-global/blob/master/Contributing/How-to-Join-moja-global.md) and
-  - [submit a discussion](https://help.github.com/en/articles/about-team-discussions) to the project, repository or moja global [team](https://github.com/orgs/moja-global/teams)
-  - [submit a message](https://get.slack.help/hc/en-us/categories/200111606#send-messages) to the relevant channel on [moja global's Slack workspace](mojaglobal.slack.com).
-- If you have other questions, please write to info@moja.global
+- [info@moja.global](mailto:info@moja.global) : Ask questions about moja global relevant to the members and management with a point of focus for new user countries and policy makers.
+- [tsc@moja.global](mailto:tsc@moja.global) : Ask questions about contributing code, helping out with development, resolving issues and building new features with moja global teams.
+- [mentorship@moja.global](mailto:mentorship@moja.global) : Ask questions about participating in the community, sponsoring programs, funding opportunity and community development.
+- [Slack community](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw ): Connect with other developers, scientists, policy makers and other interested people over our Slack community.
 
 ## Contributors ✨
 
@@ -143,6 +173,10 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
   <tr>
     <td align="center"><a href="http://www.juliancabezas.com"><img src="https://avatars.githubusercontent.com/u/17553010?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Julián Cabezas</b></sub></a><br /><a href="#translation-juliancabezas" title="Translation">🌍</a></td>
     <td align="center"><a href="https://github.com/Devesh21700Kumar"><img src="https://avatars.githubusercontent.com/u/59202075?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Devesh Kumar</b></sub></a><br /><a href="https://github.com/moja-global/community-website/issues?q=author%3ADevesh21700Kumar" title="Bug reports">🐛</a></td>
+    <td align="center"><a href="https://github.com/JanaTod"><img src="https://avatars.githubusercontent.com/u/91850076?v=4?s=100" width="100px;" alt=""/><br /><sub><b>JanaTod</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=JanaTod" title="Code">💻</a></td>
+    <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Aniket762" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/caseynv"><img src="https://avatars.githubusercontent.com/u/67697400?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelechukwu Nwandu</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=caseynv" title="Documentation">📖</a></td>
+    <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Sukriti-sood" title="Code">💻</a></td>
   </tr>
 </table>
 
@@ -152,3 +186,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind welcome!
+
+## License
+
+This project is licensed under the [Mozilla Public License 2.0](https://www.mozilla.org/en-US/MPL/2.0/).
