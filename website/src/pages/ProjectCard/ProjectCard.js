@@ -43,7 +43,7 @@ const ProjectCard = (props) => {
           <a href={props.link} className="modal_gh_link">
             Github
           </a>
-          <a href="https://moja.global/" className="modal_docs_link">
+          <a target="_blank" rel="noopener noreferrer" href="https://moja.global/" className="modal_docs_link">
             Docs
           </a>
         </div>
