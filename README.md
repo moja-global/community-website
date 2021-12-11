@@ -67,19 +67,23 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
   git fetch upstream
   git merge upstream/main
   ```
-3. Install the project:
+3. Move to website directory:
+  ```sh
+  cd website
+  ``` 
+4. Install the project:
   ```sh
   yarn
   ```
-4. Start the project:
+5. Start the project:
   ```sh
   yarn start
   ```
-5. Build the project:
+6. Build the project:
   ```sh
   yarn build
   ```
-6. Serve the project:
+7. Serve the project:
   ```sh
   yarn serve
   ```
