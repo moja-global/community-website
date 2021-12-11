@@ -47,6 +47,7 @@ html[data-theme='light'] .sponsor_wrapper:hover{
   box-shadow: 0 5px 18px rgb(0 0 0 / 70%);
 }
 
+
 html[data-theme='dark'] .sponsor_wrapper{
   padding: 5px;
   margin: 10px;
