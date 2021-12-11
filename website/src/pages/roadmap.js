@@ -34,6 +34,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flintCloud.onGoing}
           nextPriority={ProjectDescription.flintCloud.nextPriority}
           forthComing={ProjectDescription.flintCloud.forthComing}
+          link={ProjectDescription.flintCloud.link}
         />
         <ProjectCard
           className="project"
@@ -42,6 +43,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flintReportingTool.onGoing}
           nextPriority={ProjectDescription.flintReportingTool.nextPriority}
           forthComing={ProjectDescription.flintReportingTool.forthComing}
+          link={ProjectDescription.flintReportingTool.link}
         />
       </div>
       <div className={styles.projects}>
@@ -52,6 +54,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flintUI.onGoing}
           nextPriority={ProjectDescription.flintUI.nextPriority}
           forthComing={ProjectDescription.flintUI.forthComing}
+          link={ProjectDescription.flintUI.link}
         />
         <ProjectCard
           className="project"
@@ -60,6 +63,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flint.onGoing}
           nextPriority={ProjectDescription.flint.nextPriority}
           forthComing={ProjectDescription.flint.forthComing}
+          link={ProjectDescription.flint.link}
         />
       </div>
     </Layout>
