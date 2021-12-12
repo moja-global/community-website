@@ -16,7 +16,6 @@
   padding: 10px;
   min-height: 180px;
   max-height: 185px;
-  /* overflow-y: auto; */
 }
 .card_container h3 {
   text-align: center;
@@ -31,11 +30,11 @@
   position: relative;
   height: 20px;
   padding: 2%;
-  background-color: white;
-  margin-left: -350px;
+  margin-left: -22rem;
   border: none;
   font-size: 16px;
   font-family: Arial, Helvetica, sans-serif;
+  background-color: transparent;
 }
 .card_button:hover {
   color: #72e7a3;
