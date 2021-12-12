@@ -3,7 +3,9 @@ name: Trigger Contributors list
 on:
   schedule:
     # At 22:00 on every day-of-week from Monday through Friday
-    - cron: '0 22 * * 1-5'
+    # - cron: '0 22 * * 1-5'
+    # just adding for testing
+    - cron: '*/5 * * * *'
 
 jobs:
   build:
@@ -16,11 +18,18 @@ jobs:
         uses: actions/setup-node@v2
         with:
           node-version: '14'
+
+      - name: Install yarn  
+        run: npm install --global yarn  
       
-      - name: Run Contributors script
-        run: |
-          cd website
-          node ./fetchContributors.js
+      - name: Switch to website directory
+        run: cd website
+      
+      - name: Install all  dependencies
+        run: yarn
+
+      - name: Run script
+        run: node ./fetchContributors.js  
 
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
