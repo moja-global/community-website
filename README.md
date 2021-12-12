@@ -67,19 +67,23 @@ Before setting up the project make sure the LTS (Long Term Support) version of N
   git fetch upstream
   git merge upstream/main
   ```
-3. Install the project:
+3. Move to website directory:
+  ```sh
+  cd website
+  ``` 
+4. Install the project:
   ```sh
   yarn
   ```
-4. Start the project:
+5. Start the project:
   ```sh
   yarn start
   ```
-5. Build the project:
+6. Build the project:
   ```sh
   yarn build
   ```
-6. Serve the project:
+7. Serve the project:
   ```sh
   yarn serve
   ```
@@ -177,6 +181,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Aniket762" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/caseynv"><img src="https://avatars.githubusercontent.com/u/67697400?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelechukwu Nwandu</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=caseynv" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Sukriti-sood" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/aayushsrivastava9760"><img src="https://avatars.githubusercontent.com/u/81965095?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aayush Srivastava</b></sub></a><br /><a href="#design-aayushsrivastava9760" title="Design">🎨</a></td>
   </tr>
 </table>
 
