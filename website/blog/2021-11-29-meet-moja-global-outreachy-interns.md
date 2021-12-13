@@ -30,6 +30,9 @@ Based on the work developed and the other contributions, we selected three inter
 
 David Guevara-Apaza is from Cusco, Peru and has recently graduated in Biology. He holds a passion for computational biology and AI in topics related to conservation, biodiversity and bioinformatics. His interest gave him the motivation to apply for Outreachy Internships. He hopes to use this opportunity to keep working on environmental initiatives using data analysis, modelling and technology as a potential tool to enrich projects and get interdisciplinary works to another level.
 
+<button><a href="https://www.google.com" target="_blank" > Github </a></button>
+<button><a href="https://www.linkedin.com/in/yooodavo/" target="_blank" > Linkedin </a></button>
+
 ## Outreachy Intern #2: Simple Shell
 
 <p align="center">
@@ -38,6 +41,9 @@ David Guevara-Apaza is from Cusco, Peru and has recently graduated in Biology. H
 
 Simple Shell hails from Cameroon and is based in the city of Dschang. He loves every aspect of tech especially coding and data analysis. He has a profound interest in developing the world by contributing to projects to curb environmental and societal ills.
 
+<button><a href="https://www.google.com" target="_blank" > Github </a></button>
+<button><a href="https://www.google.com" target="_blank" > Linkedin </a></button>
+
 ## Outreachy Intern #3: Asmi Jafar
 
 <p align="center">
@@ -45,6 +51,9 @@ Simple Shell hails from Cameroon and is based in the city of Dschang. He loves e
 </p>
 
 Asmi Jafar is a Computer Science graduate from Aligarh Muslim University, India. She is profoundly influenced by technology and the various ways she can use it to express art. She is quite interested in web development and research and is curious to learn and contribute to projects. Her interest in moja global came through knowing about its projects and future goals. She also loves reading and painting, and she quotes one of her favourite lines from a book titled: **The Last Lecture**:
+
+<button><a href="https://github.com/asmijafar20" target="_blank" > Github </a></button>
+<button><a href="https://www.linkedin.com/in/asmijafar20/" target="_blank" > Linkedin </a></button>
 
 > The Brick walls are there for a reason, they are not there to keep us out. The brick walls are there to give us a chance to show how badly we want something.
 
