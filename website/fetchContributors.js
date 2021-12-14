@@ -1,13 +1,8 @@
 #!/usr/bin/env node
 
 const fs = require('fs');
-// const request = require('request');
 const path = require('path');
 
-
-// const REQUIRED_KEYS = ['total', 'author'];
-
-// const BLACKLIST = [];
 
 const axios = require('axios');
 
@@ -15,65 +10,69 @@ const axios = require('axios');
 (async() => {
     let page = 1;
     const repoArray = [];
+    try {
+        while (1) {
+            const res = await axios(
+                'https://api.github.com/orgs/moja-global/repos?per_page=100&page=' + page
+            );
 
-    while (1) {
-        const res = await axios(
-            'https://api.github.com/orgs/moja-global/repos?per_page=100&page=' + page
-        );
+            const repos = res.data;
 
-        const repos = res.data;
+            for (const repo of repos) {
+                const repoInfo = { name: repo.name, contribUrl: repo.contributors_url, url: repo.html_url };
 
-        for (const repo of repos) {
-            const repoInfo = { name: repo.name, contribUrl: repo.contributors_url, url: repo.html_url };
+                repoArray.push(repoInfo);
+            }
 
-            repoArray.push(repoInfo);
+            if (repos.length === 0) {
+                break;
+            }
+
+            page++;
         }
 
-        if (repos.length === 0) {
-            break;
+        const contributorsInfo = [];
+
+        function checkAlreadyExist(username, contributorsInfo) {
+            for (let i = 0; i < contributorsInfo.length; i++) {
+                if (contributorsInfo[i].username === username) {
+                    return i;
+
+                }
+            }
+
+            return -1;
         }
 
-        page++;
-    }
+        for (const repo of repoArray) {
+            const res = await axios(repo.contribUrl);
 
-    const contributorsInfo = [];
+            const contributors = res.data;
 
-    function checkAlreadyExist(username, contributorsInfo) {
-        for (let i = 0; i < contributorsInfo.length; i++) {
-            if (contributorsInfo[i].username === username) {
-                return i;
+            const projectInfo = { projectName: repo.name, projectUrl: repo.url };
 
+            for (const constributor of contributors) {
+                const username = constributor.login;
+
+                const contributorIndex = checkAlreadyExist(username, contributorsInfo);
+
+                if (contributorIndex === -1) {
+                    const contributorInfo = {
+                        username: username,
+                        photoUrl: constributor.avatar_url,
+                        url: constributor.html_url,
+                        projects: [projectInfo],
+                    };
+
+                    contributorsInfo.push(contributorInfo);
+                } else {
+                    contributorsInfo[contributorIndex].projects.push(projectInfo);
+                }
             }
         }
 
-        return -1;
-    }
-
-    for (const repo of repoArray) {
-        const res = await axios(repo.contribUrl);
-
-        const contributors = res.data;
-
-        const projectInfo = { projectName: repo.name, projectUrl: repo.url };
-
-        for (const constributor of contributors) {
-            const username = constributor.login;
-
-            const contributorIndex = checkAlreadyExist(username, contributorsInfo);
-
-            if (contributorIndex === -1) {
-                const contributorInfo = {
-                    username: username,
-                    photoUrl: constributor.avatar_url,
-                    url: constributor.html_url,
-                    projects: [projectInfo],
-                };
-
-                contributorsInfo.push(contributorInfo);
-            } else {
-                contributorsInfo[contributorIndex].projects.push(projectInfo);
-            }
-        }
+    } catch (error) {
+        console.log(error)
     }
 
     fs.writeFile(

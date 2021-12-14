@@ -5,7 +5,6 @@ import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomePageFeatures';
-import Contributors from '../components/Contributors';
 import features from '../../websiteData/features';
 import Sponsors from '../components/Sponsors';
 
@@ -84,7 +83,6 @@ const Home = () => {
           </div>
         </main>
 
-        <Contributors />
         <Sponsors />
       </Layout>
     </>

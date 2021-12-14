@@ -1,54 +1,52 @@
-.communityBody {
+.card {
+    border: 2px solid var(--ifm-color-primary-dark);
     display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    max-width: 560px;
+    padding: 1.5rem;
+}
+
+.projectContainer {
+    max-width: 1500px;
+    display: flex;
+    padding-top: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+    width: 100%;
+}
+
+.projects {
+    display: flex;
+    padding-top: 0.5em;
+    line-height: 1em;
     flex-direction: row;
     flex-wrap: wrap;
-    max-width: 1500px;
-    text-align: center;
-    margin: 3rem auto;
     justify-content: center;
-    gap: 10px 10px;;
-    margin-top: 1rem;
-    margin-bottom: 0.1rem;
-    padding-right: 0.125em; 
-    padding-top: 0.125em;  
-  }
-  
-  .card {
-    border: 2px solid var(--ifm-color-primary-dark);
-    margin: 10px;
-    padding: 1.5rem;
-    padding-bottom: 0.5em;
-  }
-  
-  .projects{ 
-    margin-bottom: 0.3rem;
-    padding-top: 0.5em;
+    margin-bottom: 0;
+}
+
+.username {
+    margin: 16px;
+}
+
+.item {
     line-height: 1em;
-  }
-  
-  .item{
-    margin-bottom: 0.3rem;
-    padding-top: 0.5em;
-    line-height: 1em;
-  }
-  
-  .link{
-    font-weight: bold;
-  }
-  
-  .button {
+    margin-left: 3px;
+    margin-right: 3px;
+    color: white;
+}
+
+.button {
     background-color: var(--ifm-color-primary-lightest);
-    border-radius: 10px;
-    padding: 0.02rem 0.2rem;
+    border-radius: 4px;
+    padding: 0.04rem 0.4rem;
     outline: none;
+    overflow-wrap: anywhere;
     cursor: auto;
+    font-size: 13px;
     border: none;
-  }
-   
-  @media screen and (max-width: 966px) {
-      .card {
-        width: 100%;
-      }
-    }
-  
-    
+}

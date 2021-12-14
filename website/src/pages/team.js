@@ -8,14 +8,15 @@ const Team = () => {
   return (
     <Layout>
       <div className={styles.communityBody}>
-      <div>
+
         <h1 className={styles.communityTitle}>Contributors</h1>
-        </div>
-          <div className={styles.communitySubtitle}>
+
+          <h2 className={styles.communitySubtitle}>
           Thanks to everyone involved in Contributing to The Moja-Global.
-            </div>
+            </h2>
+         
         <JsonDataDisplay />
-      </div>
+        </div>
     </Layout>
   );
 };
