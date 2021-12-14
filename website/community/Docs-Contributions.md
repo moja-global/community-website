@@ -69,7 +69,7 @@ If you have experience and want to help, please send an email to [mentorship@moj
 
 moja global is increasingly looking for new scientists, developers and researchers to join us and help improve our processes. We are also looking for constructive feedback to help us improve our software, workflows and processes. Please have a look at the below steps to get started with sharing your feedback as a user:
 
-1. Navigate to the landing page of the repository on which you want to provide feedback. If you have feedback on moja global, please navigate to the `.github` repository.
+1. Navigate to the landing page of the repository on which you want to provide feedback. If you have feedback on moja global, please navigate to the `About_moja_global` repository.
 2. Under the repository name, click **Issues**.
 3. Click the green **New Issue** button.
 4. Click the green **Get Started** button in the User Feedback box.

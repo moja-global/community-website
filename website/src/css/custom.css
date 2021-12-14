@@ -10,18 +10,16 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 :root {
-
-    --ifm-color-primary: #07903e;
-    --ifm-color-primary-white: #f5f6f7;
-    --ifm-color-primary-dark: rgb(13, 126, 101);
-    --ifm-color-primary-darker: rgb(13, 100, 81);
-    --ifm-color-primary-darkest: rgb(26, 136, 112);
-    --ifm-color-primary-light: rgb(12, 173, 138);
-    --ifm-color-primary-lighter: rgb(7, 77, 61);
-    --ifm-color-primary-lightest: rgb(10, 117, 96);
-    --ifm-code-font-size: 120%;
-    font-family: 'Poppins', sans-serif;
-
+  --ifm-color-primary: #07903e;
+  --ifm-color-primary-white: #f5f6f7;
+  --ifm-color-primary-dark: rgb(13, 126, 101);
+  --ifm-color-primary-darker: rgb(13, 100, 81);
+  --ifm-color-primary-darkest: rgb(26, 136, 112);
+  --ifm-color-primary-light: rgb(12, 173, 138);
+  --ifm-color-primary-lighter: rgb(7, 77, 61);
+  --ifm-color-primary-lightest: rgb(10, 117, 96);
+  --ifm-code-font-size: 120%;
+  font-family: 'Poppins', sans-serif;
 }
 
 .docusaurus-highlight-code-line {
@@ -37,12 +35,30 @@
   padding: 5rem;
 }
 
-.sponsor_wrapper {
+html[data-theme='light'] .sponsor_wrapper {
   padding: 5px;
   margin: 17px;
   border: 1px solid #67ca8f;
   border-radius: 5px;
   display: flex;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 55%);
+}
+
+html[data-theme='light'] .sponsor_wrapper:hover{
+  box-shadow: 0 5px 18px rgb(0 0 0 / 70%);
+}
+
+
+html[data-theme='dark'] .sponsor_wrapper{
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #67ca8f;
+  display: flex;
+  box-shadow: 0 5px 18px rgba(95, 201, 135, 0.55);
+}
+
+html[data-theme='dark'] .sponsor_wrapper:hover{
+  box-shadow: 0 5px 25px rgba(91, 180, 125, 0.66);
 }
 
 .sponsor_avatar {
@@ -88,7 +104,7 @@
 }
 
 .row {
-  padding-left: 10%;
+  padding-left: 0%;
 }
 
 /* Custom Light */
@@ -107,7 +123,6 @@ html[data-theme='light'] a {
   color: #475447;
 }
 
-
 html[data-theme='light'] a:hover {
   text-decoration: none;
   color: #07903e;
@@ -119,7 +134,6 @@ html[data-theme='light'] .navbar {
 
 html[data-theme='light'] .contributors {
   background-color: var(--ifm-color-primary-white);
-
 }
 
 html[data-theme='light'] .footer {
