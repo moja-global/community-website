@@ -3,6 +3,7 @@ import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from './roadmap.module.css';
 import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectDescription from '../../websiteData/roadmap';
 
 const RoadmapHeader = () => {
   return (
@@ -20,49 +21,6 @@ const RoadmapHeader = () => {
   );
 };
 
-const ProjectDescription = {
-  flintCloud: {
-    title: 'FLINT Cloud',
-    body: 'The project aims to build a continuous deployment pipeline to offer FLINT as a SaaS over cloud. The project also aims to simplify the process of installation by supporting a single command or step installation process.',
-    onGoing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    nextPriority:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    forthComing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  flintReportingTool: {
-    title: 'FLINT Reporting Tool',
-    body: 'FLINT Reporting Tooloffers functionality for classifying FLINT output results intostandard reporting formats.',
-    onGoing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    nextPriority:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    forthComing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  flintUI: {
-    title: 'FLINT Visualization Tool',
-    body: 'This project provides an intuitive way for new to explore some preconfigured FLINT modules, including the Generic Budget Carbon Model (GCBM), in order to better understand how the FLINT system works',
-    onGoing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    nextPriority:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    forthComing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-  flint: {
-    title: 'FLINT',
-    body: 'FLINT is a modular and highly flexible open-source software technology designed to estimate greenhouse gas emissions and removals by the land sector.',
-    onGoing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    nextPriority:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    forthComing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-  },
-};
-
 const Roadmap = () => {
   return (
     <Layout title="Roadmap" description="Moja Global Community Project Roadmaps">
@@ -76,6 +34,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flintCloud.onGoing}
           nextPriority={ProjectDescription.flintCloud.nextPriority}
           forthComing={ProjectDescription.flintCloud.forthComing}
+          link={ProjectDescription.flintCloud.link}
         />
         <ProjectCard
           className="project"
@@ -84,6 +43,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flintReportingTool.onGoing}
           nextPriority={ProjectDescription.flintReportingTool.nextPriority}
           forthComing={ProjectDescription.flintReportingTool.forthComing}
+          link={ProjectDescription.flintReportingTool.link}
         />
       </div>
       <div className={styles.projects}>
@@ -94,6 +54,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flintUI.onGoing}
           nextPriority={ProjectDescription.flintUI.nextPriority}
           forthComing={ProjectDescription.flintUI.forthComing}
+          link={ProjectDescription.flintUI.link}
         />
         <ProjectCard
           className="project"
@@ -102,6 +63,7 @@ const Roadmap = () => {
           onGoingDesc={ProjectDescription.flint.onGoing}
           nextPriority={ProjectDescription.flint.nextPriority}
           forthComing={ProjectDescription.flint.forthComing}
+          link={ProjectDescription.flint.link}
         />
       </div>
     </Layout>

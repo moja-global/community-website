@@ -1,14 +1,8 @@
-node_modules
-contributors.json
-
 # Dependencies
 node_modules
 
-# Contributors File
-contributors.json
-
 # Production
-/build
+build/
 
 # Generated files
 .docusaurus

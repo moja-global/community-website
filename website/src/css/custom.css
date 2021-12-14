@@ -1,4 +1,5 @@
 /* stylelint-disable docusaurus/copyright-header */
+
 /**
  * Any CSS included here will be global. The classic template
  * bundles Infima by default. Infima is a CSS framework designed to
@@ -6,10 +7,11 @@
  */
 
 /* You can override the default Infima variables here. */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap');
 :root {
   --ifm-color-primary: #07903e;
+  --ifm-color-primary-white: #f5f6f7;
   --ifm-color-primary-dark: rgb(13, 126, 101);
   --ifm-color-primary-darker: rgb(13, 100, 81);
   --ifm-color-primary-darkest: rgb(26, 136, 112);
@@ -27,16 +29,60 @@
   padding: 0 var(--ifm-pre-padding);
 }
 
-.contributors {
+.contributors,
+.sponsors {
   text-align: center;
-  padding: 40px 10px;
+  padding: 5rem;
+}
+
+html[data-theme='light'] .sponsor_wrapper {
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #67ca8f;
+  display: flex;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 55%);
+}
+
+html[data-theme='light'] .sponsor_wrapper:hover{
+  box-shadow: 0 5px 18px rgb(0 0 0 / 70%);
+}
+
+
+html[data-theme='dark'] .sponsor_wrapper{
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #67ca8f;
+  display: flex;
+  box-shadow: 0 5px 18px rgba(95, 201, 135, 0.55);
+}
+
+html[data-theme='dark'] .sponsor_wrapper:hover{
+  box-shadow: 0 5px 25px rgba(91, 180, 125, 0.66);
+}
+
+.sponsor_avatar {
+  width: auto;
+  height: 50px;
+}
+
+.sponsor_content {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+
+.features__list {
+  list-style-type: none;
+  padding-inline-start: 0;
 }
 
 .contributor-avatar {
   border: 1px solid rgb(255, 255, 255);
   display: inline-block;
-  width: 100px;
-  height: 100px;
+  width: 75px;
+  height: 75px;
   border-radius: 50%;
   border: 1px solid rgb(182, 178, 178);
   overflow: hidden;
@@ -55,11 +101,15 @@
   font-weight: bold;
 }
 
+.row {
+  padding-left: 0%;
+}
+
 /* Custom Light */
 
 html[data-theme='light']
   .button.button--secondary.button--outline:not(.button--active):not(:hover) {
-  color: #f5f6f7;
+  color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] {
@@ -71,23 +121,32 @@ html[data-theme='light'] a {
   color: #475447;
 }
 
+html[data-theme='light'] a:hover {
+  text-decoration: none;
+  color: #07903e;
+}
+
 html[data-theme='light'] .navbar {
-  background-color: #f7f5f7;
+  background-color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] .contributors {
-  background-color: #f7f5f7;
+  background-color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] .footer {
   background-color: #2e382b;
-  color: #e3f2e8;
+  color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] .footer__link-item {
-  color: #e3f2e8;
+  color: #bdc3c7;
+  text-decoration: none;
 }
 
+html[data-theme='light'] .footer__link-item:hover {
+  color: #ecf0f1;
+}
 /* Custom Dark */
 
 html[data-theme='dark'] {
@@ -95,10 +154,11 @@ html[data-theme='dark'] {
 }
 
 html[data-theme='dark'] .footer__link-item {
-  color: #e3f2e8;
+  color: #bdc3c7;
 }
+
 html[data-theme='dark'] .footer__link-item:hover {
-  color: #73e8a3;
+  color: #ecf0f1;
 }
 
 @media only screen and (max-width: 996px) {
@@ -110,6 +170,12 @@ html[data-theme='dark'] .footer__link-item:hover {
   .footer {
     padding: 5%;
   }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    padding-left: 1%;
+  }
 }
 
 @media only screen and (max-width: 852px) {
@@ -117,12 +183,29 @@ html[data-theme='dark'] .footer__link-item:hover {
     display: grid;
     grid-template-columns: repeat(4, auto);
   }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    padding-left: 17%;
+  }
 }
 
 @media only screen and (max-width: 648px) {
   .footer__links {
     display: grid;
     grid-template-columns: repeat(2, auto);
+  }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    padding-left: 15px;
+  }
+
+  .sponsor_avatar {
+    width: 120px;
+    height: auto;
   }
 }
 
@@ -135,10 +218,34 @@ html[data-theme='dark'] .footer__link-item:hover {
   .footer__col {
     text-align: center;
   }
+
+  .row {
+    display: grid;
+    grid-template-columns: repeat(1, auto);
+    padding-left: 15px;
+  }
 }
 
 @media only screen and (max-width: 736px) {
   .pluginsHeader {
     padding-top: 30px;
+  }
+  .hero__title {
+    font-size: 2.5rem;
+  }
+}
+
+@media only screen and (max-width: 1279px) {
+  .navbar__toggle {
+    display: inherit;
+  }
+  .navbar__item {
+    display: none;
+  }
+  .navbar__search-input {
+    width: 9rem;
+  }
+  .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
+    display: none !important;
   }
 }

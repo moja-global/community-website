@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: 'Moja Global Community',
+  title: `Moja Global Community`,
   tagline: `Learn about moja global's projects and join our ever-growing community`,
   url: 'https://community.moja.global',
   baseUrl: '/',
@@ -14,6 +14,11 @@ module.exports = {
     locales: ['en', 'es'],
   },
   themeConfig: {
+    algolia: {
+      appId: 'BH4D9OD16A',
+      apiKey: '2227dd7224b78071d191aff9cbf1a6c5',
+      indexName: 'moja',
+    },
     prism: {
       theme: require('prism-react-renderer/themes/github'),
       darkTheme: require('prism-react-renderer/themes/dracula'),
@@ -86,7 +91,7 @@ module.exports = {
           to: '/tutorial/tutorial-introduction',
           label: 'Tutorial',
           position: 'left',
-          activeBaseRegex: '/tutorial/'
+          activeBaseRegex: '/tutorial/',
         },
       ],
     },
@@ -165,7 +170,7 @@ module.exports = {
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
-            }
+            },
           ],
         },
         {
@@ -177,7 +182,7 @@ module.exports = {
             },
             {
               label: 'Governance model',
-              href: '/community/governance'
+              href: '/community/governance',
             },
             {
               label: 'Newsletter',
@@ -186,7 +191,7 @@ module.exports = {
             {
               label: 'Contributing guidelines',
               href: '/community/contributing',
-            }
+            },
           ],
         },
         {
@@ -210,25 +215,6 @@ module.exports = {
             },
           ],
         },
-        {
-          title: 'Sponsors',
-          items: [
-            {
-              html: `
-                <a href="https://www.linuxfoundation.org/" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img src="/img/linux-foundation.svg" alt="Backed by the Linux Foundation" />
-                </a>
-              `,
-            },
-            {
-              html: `
-                <a href="https://vercel.com/?utm_source=[moja-global]&utm_campaign=oss" target="_blank" rel="noreferrer noopener" aria-label="Powered by">
-                  <img src="/img/powered-by-vercel.svg" alt="Powered by Vercel" />
-                </a>
-              `,
-            },
-          ],
-        },
       ],
       copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
     },
@@ -242,7 +228,7 @@ module.exports = {
       { name: 'twitter:title', content: 'Moja Global Community' },
       {
         name: 'twitter:description',
-        content: "Learn about moja global's projects and join our ever-growing community",
+        content: "moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software that allows users to accurately and affordably estimate greenhouse gas emissions and removals from the AFOLU sector. The project’s members aim to support the widest possible use of credible emissions estimation software.",
       },
     ],
   },
@@ -256,13 +242,11 @@ module.exports = {
         },
         docs: {
           sidebarPath: require.resolve('./sidebars.js'),
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/',
+          editUrl: 'https://github.com/moja-global/community-website/edit/main/website/',
         },
         blog: {
           showReadingTime: true,
-          // Please change this to your repo.
-          editUrl: 'https://github.com/facebook/docusaurus/edit/master/website/blog/',
+          editUrl: 'https://github.com/moja-global/community-website/edit/master/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
@@ -276,13 +260,6 @@ module.exports = {
     ],
   ],
   plugins: [
-    [
-      require.resolve('@easyops-cn/docusaurus-search-local'),
-      {
-        hashed: true,
-        language: ['en'],
-      },
-    ],
     [
       '@docusaurus/plugin-content-docs',
       {
@@ -304,10 +281,10 @@ module.exports = {
     [
       '@docusaurus/plugin-content-docs',
       {
-          id: 'tutorial-introduction',
-          path: 'tutorial',
-          routeBasePath: 'tutorial',
-          sidebarPath: require.resolve('./sidebarsTutorial.js')
+        id: 'tutorial-introduction',
+        path: 'tutorial',
+        routeBasePath: 'tutorial',
+        sidebarPath: require.resolve('./sidebarsTutorial.js'),
       },
     ],
   ],

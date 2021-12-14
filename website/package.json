@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "postinstall": "node ./fetchContributors.js",
     "docusaurus": "docusaurus",
     "start": "docusaurus start",
     "build": "docusaurus build",
@@ -17,11 +16,11 @@
     "lint:fix": "eslint ./src/ --fix"
   },
   "dependencies": {
-    "@docusaurus/core": "2.0.0-beta.0",
-    "@docusaurus/preset-classic": "2.0.0-beta.0",
+    "@docusaurus/core": "2.0.0-beta.8",
+    "@docusaurus/preset-classic": "2.0.0-beta.8",
+    "@docusaurus/theme-search-algolia": "^2.0.0-beta.8",
     "@emotion/react": "^11.4.1",
     "@emotion/styled": "^11.3.0",
-    "@easyops-cn/docusaurus-search-local": "^0.19.1",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
     "axios": "^0.24.0",
@@ -43,7 +42,8 @@
     "eslint-plugin-prettier": "^3.3.1",
     "eslint-plugin-promise": "^4.3.1",
     "eslint-plugin-react": "^7.22.0",
-    "prettier": "^2.3.0"
+    "prettier": "^2.3.0",
+    "react-lazyload": "^3.2.0"
   },
   "eslintConfig": {
     "extends": [

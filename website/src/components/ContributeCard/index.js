@@ -1,15 +1,15 @@
 import React from 'react';
 import './styles.css';
 
-const index = ({ text, link }) => {
+const ContributeCard = ({ text, link }) => {
   return (
     <div className="card-container">
       <div>
-        <h3>{text}</h3>
+        <h2>{text}</h2>
         {link && <a>{link}</a>}
       </div>
     </div>
   );
 };
 
-export default index;
+export default ContributeCard;

@@ -1,0 +1,20 @@
+.card {
+  border: 2px solid var(--ifm-color-primary-dark);
+  margin: 9px;
+  padding: 2.5rem;
+}
+
+.button {
+  background-color: var(--ifm-color-primary-lightest);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+}
+
+@media screen and (max-width: 966px) {
+  .card {
+    width: 100%;
+  }
+}

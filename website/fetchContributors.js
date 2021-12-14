@@ -4,6 +4,7 @@ const fs = require('fs');
 // const request = require('request');
 const path = require('path');
 
+
 // const REQUIRED_KEYS = ['total', 'author'];
 
 // const BLACKLIST = [];
@@ -41,6 +42,7 @@ const axios = require('axios');
         for (let i = 0; i < contributorsInfo.length; i++) {
             if (contributorsInfo[i].username === username) {
                 return i;
+
             }
         }
 
@@ -83,4 +85,5 @@ const axios = require('axios');
             } else console.log('Fetched 1 file: contributors.json');
         }
     );
+
 })();

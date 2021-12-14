@@ -1,0 +1,66 @@
+/* stylelint-disable docusaurus/copyright-header */
+
+.features {
+  display: flex;
+  align-items: center;
+  padding: 2rem 0;
+  width: 100%;
+  justify-content: center;
+}
+
+.featureImage {
+  text-align: center;
+}
+
+.featureSvg {
+  height: 400px;
+  width: 400px;
+}
+
+.featureRow {
+  display: flex;
+  width: 100%;
+  padding: 0 4rem;
+  justify-content: center;
+}
+
+.featureRow:nth-of-type(2) {
+  flex-direction: row-reverse;
+}
+
+.featureText {
+  margin: auto 4rem;
+}
+
+.featureTitle {
+  font-size: x-large;
+}
+
+.featureDescription {
+  font-size: medium;
+}
+
+@media screen and (max-width: 966px) {
+  .featureRow {
+    flex-direction: column !important;
+    padding: 0 2rem;
+  }
+
+  .featureSvg {
+    height: 200px;
+    width: 200px;
+  }
+
+  .featureText {
+    margin: auto;
+    text-align: center;
+  }
+}
+
+.pluginsHeader {
+  font-size: 200%;
+  line-height: 100%;
+  padding: 0 0 30px;
+  text-align: center;
+  font-weight: bold;
+}

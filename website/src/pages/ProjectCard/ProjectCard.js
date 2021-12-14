@@ -10,9 +10,9 @@ const ProjectCard = (props) => {
     <div className="container">
       <div className="card">
         <div className="card_container">
-          <h3>
+          <h2>
             <b>{props.projectTitle}</b>
-          </h3>
+          </h2>
           <p className="card_body">{props.projectBody}</p>
         </div>
         <button className="card_button" onClick={() => modalRef.current.open()}>
@@ -40,10 +40,10 @@ const ProjectCard = (props) => {
           </div>
         </div>
         <div className="modal_links">
-          <a href="https://github.com/" className="modal_gh_link">
+          <a href={props.link} className="modal_gh_link">
             Github
           </a>
-          <a href="https://moja.global/" className="modal_docs_link">
+          <a target="_blank" rel="noopener noreferrer" href="https://moja.global/" className="modal_docs_link">
             Docs
           </a>
         </div>

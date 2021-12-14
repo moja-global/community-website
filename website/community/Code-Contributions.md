@@ -49,18 +49,18 @@ moja global is increasingly looking for new scientists, developers and researche
     - Before starting a new project, review whether a project based on your idea already exists:
       - All projects are listed in the **Project** tab of the moja global root directory.
       - Please also review the existing repositories, as not all may be listed under the "Project" tab.
-      - Finally, have a look at the [Strategic Plan](https://github.com/moja-global/.github/blob/master/Governance/Strategic-Plan.md) for this year, if your idea might be worked upon.
+      - Finally, have a look at the [Strategic Plan](https://github.com/moja-global/About_moja_global/blob/master/Governance/Strategic-Plan.md) for this year, if your idea might be worked upon.
     - If your project idea already exists, please join forces with those already active. Else (if your project does not exist) proceed with the next step.
 
 2. Build on what already exists:
 
-    - If you can build on code that is already available, coordinate your project with the maintainers of the relevant repository by [requesting a new feature](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Request-a-New-Feature.md).
-    - If there is no existing code base to start from, [create a repository](https://github.com/moja-global/.github/blob/master/Contributing/How-To-Create-a-Repository.md) even if you are not part of the moja global organisation (yet).
+    - If you can build on code that is already available, coordinate your project with the maintainers of the relevant repository by [requesting a new feature](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Request-a-New-Feature.md).
+    - If there is no existing code base to start from, [create a repository](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-To-Create-a-Repository.md) even if you are not part of the moja global organisation (yet).
 
 3. Create a project board to track and update your work:
 
-    - If you are a part of the moja organisation use the project list under `.github`.
-    - If you are not (yet) part of the moja global organisation, use the projects list in your repository. You can notify the wider moja global community by opening an issue under `.github` informing that you have started a new project.
+    - If you are a part of the moja organisation use the project list under `About_moja_global`.
+    - If you are not (yet) part of the moja global organisation, use the projects list in your repository. You can notify the wider moja global community by opening an issue under `About_moja_global` informing that you have started a new project.
 
 4. Invite your team:
 
@@ -71,8 +71,8 @@ moja global is increasingly looking for new scientists, developers and researche
 5. Build a **Science Design**:
     - If your project has any scientific component, you will need to have a **Science Design** for your project.
     - If your project is revising or adding to an existing module, the original **Science Design** can be revised.
-    - [Follow these steps](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Agree-on-a-Science-Design.md): The processes for both developing new or revising existing **Science Designs** are the same.
-6. Follow the [regular project implementation cycle](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Implement-a-Project.md)
+    - [Follow these steps](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Agree-on-a-Science-Design.md): The processes for both developing new or revising existing **Science Designs** are the same.
+6. Follow the [regular project implementation cycle](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Implement-a-Project.md)
 
 ## Creating a new repository
 
@@ -102,14 +102,14 @@ Tests are an important component of the pull-request/merge process. If you are d
 
 ## Project implementation
 
-This process assumes that you already have [started a new project](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Start-a-New-Project.md) and have an approved [**Science Design**](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Agree-on-a-Science-Design.md)
+This process assumes that you already have [started a new project](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Start-a-New-Project.md) and have an approved [**Science Design**](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Agree-on-a-Science-Design.md)
 
 1. Confirm Your Team:
 
     - Contact the maintainers and documentation writers of the repository you want to code for and discuss your project. Agree upon the `write` and maybe the `admin` permissions. Assign additional maintainers and documentation writers as needed.
     - Assign a Coach who is willing to introduce new developers to the project.
     - Publicise widely that the project is ready to be developed and is looking for engineers, documentation writers, testers and more. When moja global users collaborate everybody wins. Contact [tsc@moja.global](mailto:tsc@moja.global) to get support with reaching out to the community of users.
-    - Emphasize to all new contributors to review the [Coding Guidelines](https://github.com/moja-global/.github/blob/master/Governance/Coding-Guidelines.md) and the [Contribution Criteria](https://github.com/moja-global/.github/blob/master/Governance/Contribution-Criteria.md).
+    - Emphasize to all new contributors to review the [Coding Guidelines](https://github.com/moja-global/About_moja_global/blob/master/Governance/Coding-Guidelines.md) and the [Contribution Criteria](https://github.com/moja-global/About_moja_global/blob/master/Governance/Contribution-Criteria.md).
 
 2. User Stories and Minimum Viable Product:
 
@@ -125,7 +125,7 @@ This process assumes that you already have [started a new project](https://githu
     - Agree on an initial project architecture with the software development team. This improves communication, increases the speed and quality of the coding while reducing risks.
     - There are no fixed rules about what you should define up front. Your minimum outcome is that everybody agrees on how the project should be built and how it should fit into the wider software components.
     - It is logical to define the interactions with the existing system and sketch a technology diagram linking the user interface with the business process and with the data.
-    - Use [branding](https://github.com/moja-global/.github/blob/master/Governance/Branding.md) and [User Interface Style](https://github.com/moja-global/.github/blob/master/Governance/User-Interface-Style.md) of the wider software components.
+    - Use [branding](https://github.com/moja-global/About_moja_global/blob/master/Governance/Branding.md) and [User Interface Style](https://github.com/moja-global/About_moja_global/blob/master/Governance/User-Interface-Style.md) of the wider software components.
 
 4. Iterative Build:
 
@@ -137,7 +137,7 @@ This process assumes that you already have [started a new project](https://githu
     - Continue this cycle until the project is ready for a first release.
 
 5. Approve Release:
-    - Once the code is ready for release, document the tests that have been performed, copy the Wiki to the repository and create a [release-candidate version](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Assign-a-Version.md) that includes the Wiki and all other documentation.
+    - Once the code is ready for release, document the tests that have been performed, copy the Wiki to the repository and create a [release-candidate version](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Assign-a-Version.md) that includes the Wiki and all other documentation.
     - Submit the pre-release to the scientists and code maintainers for a final review.
     - Invite the independent scientists to participate in the review if a science review panel was used. Document test results and feedback from the reviewers and maintainers.
     - Complete all the tests and bug-fixes.
@@ -166,7 +166,7 @@ We would also like the users to review the following if they are not familiar wi
 
 moja global is increasingly looking for new scientists, developers and researchers to join us and help improve our processes. We are also looking for constructive feature development via feature requests to help us improve our software, workflows and processes. Please have a look at the below steps to get started with requesting a new feature as a user:
 
-1. Navigate to the main page of the repository for which you want to propose a new feature or functionality. If you want to propose a new tool or module, please navigate to the `.github` repository.
+1. Navigate to the main page of the repository for which you want to propose a new feature or functionality. If you want to propose a new tool or module, please navigate to the `About_moja_global` repository.
 2. Under the repository name, click **Issues**.
 3. Click the green **New Issue** button
 4. Click the green button **Get Started** in the Feature Request box.
@@ -175,7 +175,7 @@ moja global is increasingly looking for new scientists, developers and researche
 7. Attach files, screenshots and/or animated GIFs.
 8. Click the green button "Submit New Issue" at the bottom right corner.
 
-If you would also like to build the proposed feature, please also review [how to start a new project](https://github.com/moja-global/.github/blob/master/Contributing/How-to-Start-a-New-Project.md).
+If you would also like to build the proposed feature, please also review [how to start a new project](https://github.com/moja-global/About_moja_global/blob/master/Contributing/How-to-Start-a-New-Project.md).
 
 ## Standard tests
 
