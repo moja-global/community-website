@@ -37,8 +37,9 @@
 
 html[data-theme='light'] .sponsor_wrapper {
   padding: 5px;
-  margin: 10px;
+  margin: 17px;
   border: 1px solid #67ca8f;
+  border-radius: 5px;
   display: flex;
   box-shadow: 0 5px 15px rgb(0 0 0 / 55%);
 }
@@ -63,6 +64,7 @@ html[data-theme='dark'] .sponsor_wrapper:hover{
 .sponsor_avatar {
   width: auto;
   height: 50px;
+  border-radius: 5px;
 }
 
 .sponsor_content {
@@ -203,9 +205,18 @@ html[data-theme='dark'] .footer__link-item:hover {
     padding-left: 15px;
   }
 
+  .sponsors{
+    padding: 1rem;
+  }
+
   .sponsor_avatar {
-    width: 120px;
+    width: 115px;
     height: auto;
+  }
+
+  .sponsor_content a:last-of-type .sponsor_avatar{
+    width: 170px;
+    margin: 3px;
   }
 }
 
