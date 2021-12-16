@@ -35,11 +35,29 @@
   padding: 5rem;
 }
 
-.sponsor_wrapper {
+html[data-theme='light'] .sponsor_wrapper {
   padding: 5px;
   margin: 10px;
   border: 1px solid #67ca8f;
   display: flex;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 55%);
+}
+
+html[data-theme='light'] .sponsor_wrapper:hover{
+  box-shadow: 0 5px 18px rgb(0 0 0 / 70%);
+}
+
+
+html[data-theme='dark'] .sponsor_wrapper{
+  padding: 5px;
+  margin: 10px;
+  border: 1px solid #67ca8f;
+  display: flex;
+  box-shadow: 0 5px 18px rgba(95, 201, 135, 0.55);
+}
+
+html[data-theme='dark'] .sponsor_wrapper:hover{
+  box-shadow: 0 5px 25px rgba(91, 180, 125, 0.66);
 }
 
 .sponsor_avatar {
