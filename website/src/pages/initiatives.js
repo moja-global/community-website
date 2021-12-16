@@ -2,9 +2,7 @@ import React, { useState } from 'react';
 import Layout from '@theme/Layout';
 import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
-import { FixedSizeList as List } from 'react-window';
-import MeetingCard from '../components/PastMeetingCard';
-import { pastMeetings, upcomingMeetings } from '../../websiteData/meetings';
+import { events } from '../../websiteData/meetings';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import format from 'date-fns/format';
 import parse from 'date-fns/parse';
@@ -23,23 +21,9 @@ const localizer = dateFnsLocalizer({
   locales,
 });
 // format for adding a meeting is new Date(year , month-1 , date)
-const events = [
-  {
-    title: 'Big Meeting',
-    start: new Date(2022, 0, 2),
-    end: new Date(2022, 0, 5),
-  },
-  {
-    title: 'Meeting',
-    start: new Date(2021, 1, 1),
-    end: new Date(2021, 1, 5),
-  },
-  {
-    title: 'dummy meeting',
-    start: new Date(2021, 11, 12),
-    end: new Date(2021, 11, 14),
-  },
-];
+function ondouleclick() {
+  window.open('https://bit.ly/2SbrRhe', '_blank');
+}
 
 const Community = () => {
   return (
@@ -106,30 +90,28 @@ const Community = () => {
           </div>
         </section>
         <section id="meetings">
-        <h3 className={styles.communitySubtitle}>Our Meetings</h3>
-           <div>
-            <div> 
+          <h3 className={styles.communitySubtitle}>Our Meetings</h3>
+          <div>
+            <div>
               <h5 className={styles.meetingTitle}>Past Meetings</h5>
-                
-                  <Calendar className={styles.Calendar}
-                    localizer={localizer}
-                    events={events}
-                    startAccessor="start"
-                    endAccessor="end"
-                    style={{ height: 400}}
-                  />
+              <a href="https://calendar.google.com/calendar/u/1/r?cid=bGF5ZXI1LmlvX2VoMmFhOWRwZjFnNDBlbHZvYzc2MmpucGhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
+                <button className={styles.button}>Add to your Calendar</button>
+              </a>
+
+              <Calendar
+                className={styles.Calendar}
+                localizer={localizer}
+                events={events}
+                startAccessor="start"
+                endAccessor="end"
+                views={{
+                  month: true,
+                }}
+                onDoubleClickEvent={ondouleclick}
+                style={{ height: 600 }}
+              />
             </div>
           </div>
-          <div>
-              <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
-              <Calendar className={styles.Calendar}
-                    localizer={localizer}
-                    events={events}
-                    startAccessor="start"
-                    endAccessor="end"
-                    style={{ height: 400}}
-                  />
-            </div>
         </section>
       </div>
     </Layout>

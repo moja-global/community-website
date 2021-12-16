@@ -37,6 +37,16 @@
   margin: 35px auto;
 }
 
+.button {
+  background-color: var(--ifm-color-primary-lightest);
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  outline: none;
+  cursor: pointer;
+  border: none;
+  margin-bottom: 5%;
+}
+
 @media screen and (max-width: 966px) {
   .communityRow {
     flex-direction: column;
@@ -49,5 +59,13 @@
 
   .communityMeeting {
     width: 100%;
+  }
+}
+
+@media screen and (min-width: 375px) {
+  .button {
+    position: relative;
+    left: 35%;
+    margin-bottom: 0%;
   }
 }
