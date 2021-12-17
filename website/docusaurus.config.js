@@ -125,10 +125,6 @@ module.exports = {
               label: 'FLINT Cloud',
               href: 'https://docs.moja.global/projects/flintcloud/en/latest',
             },
-            {
-              label: 'FAQs',
-              href: 'https://docs.moja.global/en/latest/faq.html',
-            },
           ],
         },
         {
@@ -143,16 +139,8 @@ module.exports = {
               href: '/blog',
             },
             {
-              label: 'News',
-              href: 'https://moja.global/news/',
-            },
-            {
               label: 'Mentorship',
               href: '/community/mentorship',
-            },
-            {
-              label: 'Slack',
-              href: 'https://mojaglobal.slack.com/',
             },
             {
               label: 'Initiatives',
@@ -165,6 +153,10 @@ module.exports = {
             {
               label: 'Case Studies',
               href: '/case-studies/introduction',
+            },
+            {
+              label: 'FAQs',
+              href: 'https://docs.moja.global/en/latest/faq.html',
             },
           ],
         },
@@ -180,33 +172,48 @@ module.exports = {
               href: '/community/governance',
             },
             {
-              label: 'Newsletter',
-              href: 'https://global.us13.list-manage.com/subscribe?u=d8a187fa0dfae0bafe4bc69cc&id=cbfdc2d476',
-            },
-            {
               label: 'Contributing guidelines',
               href: '/community/contributing',
             },
           ],
         },
         {
-          title: 'Social',
+          title: 'Follow Us',
           items: [
             {
-              label: 'Twitter ',
-              href: 'https://twitter.com/mojaglobal',
+              html: `
+              <a href= 'https://twitter.com/mojaglobal'>
+              <img class="socials" src="/img/twitter.png" />
+              </a>
+              `,
             },
             {
-              label: 'Youtube ',
-              href: 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ',
+              html: `
+              <a href= 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ'>
+              <img class="socials" src="/img/youtube.png" />
+              </a>
+              `,
             },
             {
-              label: 'GitHub',
-              href: 'https://github.com/moja-global',
+              html: `
+              <a href= 'https://github.com/moja-global'>
+              <img class="socials" src="/img/github.png" />
+              </a>
+              `,
             },
             {
-              label: 'LinkedIn',
-              href: 'https://www.linkedin.com/company/moja-global/',
+              html: `
+              <a href= 'https://www.linkedin.com/company/moja-global/'>
+              <img class="socials" src="/img/linkedin.png" />
+              </a>
+              `,
+            },
+            {
+              html: `
+              <a href= 'https://mojaglobal.slack.com/'>
+              <img class="socials" src="/img/slack.png" />
+              </a>
+              `,
             },
           ],
         },
