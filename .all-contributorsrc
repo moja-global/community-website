@@ -152,6 +152,51 @@
       "contributions": [
         "bug"
       ]
+    },
+    {
+      "login": "JanaTod",
+      "name": "JanaTod",
+      "avatar_url": "https://avatars.githubusercontent.com/u/91850076?v=4",
+      "profile": "https://github.com/JanaTod",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "Aniket762",
+      "name": "Aniket Pal",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67703407?v=4",
+      "profile": "https://aniket.live",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "caseynv",
+      "name": "Kelechukwu Nwandu",
+      "avatar_url": "https://avatars.githubusercontent.com/u/67697400?v=4",
+      "profile": "https://github.com/caseynv",
+      "contributions": [
+        "doc"
+      ]
+    },
+    {
+      "login": "Sukriti-sood",
+      "name": "Sukriti Sood",
+      "avatar_url": "https://avatars.githubusercontent.com/u/55010599?v=4",
+      "profile": "https://github.com/Sukriti-sood",
+      "contributions": [
+        "code"
+      ]
+    },
+    {
+      "login": "aayushsrivastava9760",
+      "name": "Aayush Srivastava",
+      "avatar_url": "https://avatars.githubusercontent.com/u/81965095?v=4",
+      "profile": "https://github.com/aayushsrivastava9760",
+      "contributions": [
+        "design"
+      ]
     }
   ],
   "contributorsPerLine": 7,
