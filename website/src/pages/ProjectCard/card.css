@@ -1,10 +1,12 @@
 .card {
   width: 500px;
-  height: 250px;
-  margin-bottom: 10%;
-  margin-left: 15%;
+  height: 270px;
+  padding: 20px;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  margin-top: 20px;
+  margin-bottom: 30px;
+  margin-left: 50px;
 }
 
 .card:hover {
@@ -14,7 +16,7 @@
   padding: 10px;
   min-height: 180px;
   max-height: 185px;
-  overflow-y: auto;
+  overflow-y: hidden;
 }
 .card_container h3 {
   text-align: center;
@@ -27,8 +29,10 @@
 }
 .card_button {
   padding: 2%;
+  margin: 10px;
   border: none;
   font-size: 16px;
+  text-align: left;
   font-family: Arial, Helvetica, sans-serif;
 }
 .card_button:hover {
