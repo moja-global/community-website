@@ -1,6 +1,4 @@
 /**
- * Copyright (c) Facebook, Inc. and its affiliates.
- *
  * This source code is licensed under the MIT license found in the
  * LICENSE file in the root directory of this source tree.
  */
@@ -112,7 +110,6 @@ function Footer() {
         </div>
         {(logo || copyright) && (
           <div className="footer__bottom text--center">
-            <hr/>
             {copyright ? (
               <div
                 className="footer__copyright" // Developer provided the HTML, so assume it's safe.
