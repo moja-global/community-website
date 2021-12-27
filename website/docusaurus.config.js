@@ -63,30 +63,37 @@ module.exports = {
           label: 'Projects',
         },
         { to: '/blog', label: 'Blogs', position: 'left' },
-        { to: '/initiatives', label: 'Initiatives', position: 'left' },
         {
-          to: '/community/support',
-          label: 'Community',
+
+          type: 'dropdown',
+          label: 'Dropdown-1',
           position: 'left',
-          activeBaseRegex: '/community/',
+          items: [
+            {
+              label: 'Initiatives',
+              href: '/initiatives'
+            },
+            {
+              label: 'Case Studies',
+              href: '/case-studies/introduction',
+            },
+          ],
         },
+
         {
-          to: '/case-studies/introduction',
-          label: 'Case Studies',
+          type: 'dropdown',
+          label: 'Dropdown-2',
           position: 'left',
-          activeBaseRegex: '/case-studies/',
-        },
-        {
-          href: 'https://github.com/moja-global',
-          label: 'GitHub',
-          position: 'right',
-        },
-        { to: '/roadmap', label: 'Roadmap', position: 'right' },
-        {
-          to: '/tutorial/tutorial-introduction',
-          label: 'Tutorial',
-          position: 'left',
-          activeBaseRegex: '/tutorial/',
+          items: [
+            {
+              label: 'Community',
+              href: '/community/support',
+            },
+            {
+              label: 'Tutorial',
+              href: '/tutorial/tutorial-introduction',
+            },
+          ],
         },
       ],
     },
