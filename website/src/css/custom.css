@@ -124,18 +124,25 @@ html[data-theme='dark'] .sponsor_wrapper:hover{
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
   font-weight: 600;
-  transition: transform .2s; /* Animation */
+
   cursor: pointer;
+
 }
 
 .stats-item p{
   margin: auto;
+  border: #67ca8f 1px solid;
+  border-radius: 5px;
+  box-shadow: #67ca8f 0px 0px 5px;
+  padding: 0.5rem;
+  transition: transform .2s; /* Animation */
 }
 
-.stats-item:hover {
+.stats-item p:hover {
   transform: scale(1.1); /* (120% zoom) */
   box-shadow: 5px 10px 15px #4754478f;
   background-color: #e3f2e8;
+  border: none;
 }
 /* Custom Light */
 
