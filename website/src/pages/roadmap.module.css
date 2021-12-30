@@ -6,26 +6,49 @@
 }
 @media screen and (max-width: 966px) {
     .banner {
-      padding: 2rem;
+      padding: 1rem;
+    }
+
+    .header_subtitle{
+      font-size: 1.125rem !important;
+      font-weight: 500;
     }
   }
 
 .project_head{
-  text-decoration: underline;
-  text-decoration-color: #72E7A3 ; 
+  /* text-decoration: underline;
+  text-decoration-color: #72E7A3 ;  */
   padding: 2%;
-  margin-left: 45%;
+  text-align: center;
+  font-size: 2.5em;
 }
 .projects{
   width: 100%;
   height: 100%;
   display: flex;
+  justify-content: space-evenly;
 }
+
+.header_subtitle{
+  font-size: 1.5rem;
+}
+
 @media screen and (max-width: 966px) {
   .projects{
     width: 100%;
     height: 100%;
     display: block;
-    margin-left: -15%;
+    /* margin-left: -15%; */
+    padding: 0 20px;
+  }
+
+  .project_head{
+    padding-bottom: 25px;
+    padding-top: 15px;
+    font-size: 1.9rem;
+  }
+
+  .header_title{
+    font-size: 1.875rem;
   }
 }

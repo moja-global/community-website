@@ -3,17 +3,17 @@ const ProjectDescription = {
     title: 'FLINT Cloud',
     body: 'The project aims to build a continuous deployment pipeline to offer FLINT as a SaaS over cloud. The project also aims to simplify the process of installation by supporting a single command or step installation process.',
     onGoing:
-      'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
+      'Lorem ipsum dolor sit amet, consectetur adipiscing elit',
     nextPriority:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     forthComing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    link:
+      link:
       'https://github.com/moja-global/FLINT.Cloud'
   },
   flintReportingTool: {
     title: 'FLINT Reporting Tool',
-    body: 'FLINT Reporting Tooloffers functionality for classifying FLINT output results intostandard reporting formats.',
+    body: 'FLINT Reporting Tool offers functionality for classifying FLINT output results into standard reporting formats.',
     onGoing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     nextPriority:
