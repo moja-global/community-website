@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i0.wp.com/mojaglobal.kinsta.cloud/wp-content/uploads/2021/03/Asset-66@4x.png" alt="Moja global logo" height ="auto" width="200" />
+<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="Moja global logo" height ="auto" width="200" />
 <br />
 <h1>Community Website</h1>
 <p>
