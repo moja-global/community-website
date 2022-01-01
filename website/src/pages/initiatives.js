@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
