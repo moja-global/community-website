@@ -93,10 +93,11 @@ const Community = () => {
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
           <div>
             <div>
-              <h5 className={styles.meetingTitle}>Past Meetings</h5>
-              <a href="https://calendar.google.com/calendar/u/1/r?cid=bGF5ZXI1LmlvX2VoMmFhOWRwZjFnNDBlbHZvYzc2MmpucGhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
-                <button className={styles.button}>Add to your Calendar</button>
-              </a>
+              <div className={styles.addToCalendar}>
+                <a href="https://calendar.google.com/calendar/u/1/r?cid=bGF5ZXI1LmlvX2VoMmFhOWRwZjFnNDBlbHZvYzc2MmpucGhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
+                  <button>Add to your Calendar</button>
+                </a>
+              </div>
 
               <Calendar
                 className={styles.Calendar}

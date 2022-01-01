@@ -7,6 +7,8 @@
   padding: 1rem;
 }
 
+
+
 .communityTitle {
   font-size: xx-large;
 }
@@ -37,10 +39,14 @@
   margin: 35px auto;
 }
 
-.button {
+.addToCalendar {
+  display: flex;
+  justify-content: end
+}
+.addToCalendar button{
   background-color: var(--ifm-color-primary-lightest);
   border-radius: 10px;
-  padding: 0.5rem 1rem;
+  padding: 0.75rem 1rem;
   outline: none;
   cursor: pointer;
   border: none;
