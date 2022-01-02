@@ -2,28 +2,9 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
-import { events } from '../../websiteData/meetings';
-import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
-import format from 'date-fns/format';
-import parse from 'date-fns/parse';
-import startOfWeek from 'date-fns/startOfWeek';
-import getDay from 'date-fns/getDay';
-import 'react-big-calendar/lib/css/react-big-calendar.css';
-
-const locales = {
-  'en-US': require('date-fns/locale/en-US'),
-};
-const localizer = dateFnsLocalizer({
-  format,
-  parse,
-  startOfWeek,
-  getDay,
-  locales,
-});
-// format for adding a meeting is new Date(year , month-1 , date)
-function ondouleclick() {
-  window.open('https://bit.ly/2SbrRhe', '_blank');
-}
+import { FixedSizeList as List } from 'react-window';
+import MeetingCard from '../components/PastMeetingCard';
+import { pastMeetings, upcomingMeetings } from '../../websiteData/meetings';
 
 const Community = () => {
   return (
@@ -91,26 +72,30 @@ const Community = () => {
         </section>
         <section id="meetings">
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
-          <div>
-            <div>
-              <div className={styles.addToCalendar}>
-                <a href="https://calendar.google.com/calendar/u/1/r?cid=bGF5ZXI1LmlvX2VoMmFhOWRwZjFnNDBlbHZvYzc2MmpucGhzQGdyb3VwLmNhbGVuZGFyLmdvb2dsZS5jb20">
-                  <button>Add to your Calendar</button>
-                </a>
-              </div>
-
-              <Calendar
-                className={styles.Calendar}
-                localizer={localizer}
-                events={events}
-                startAccessor="start"
-                endAccessor="end"
-                views={{
-                  month: true,
-                }}
-                onDoubleClickEvent={ondouleclick}
-                style={{ height: 600 }}
-              />
+          <div className={styles.communityRow}>
+            <div className={styles.communityMeeting}>
+              <h5 className={styles.meetingTitle}>Past Meetings</h5>
+              <List
+                height={500}
+                itemCount={pastMeetings.length}
+                itemSize={100}
+                width="90%"
+                itemData={{ isCompleted: true }}
+              >
+                {MeetingCard}
+              </List>
+            </div>
+            <div className={styles.communityMeeting}>
+              <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
+              <List
+                height={500}
+                itemCount={upcomingMeetings.length}
+                itemSize={100}
+                width="90%"
+                itemData={{ isCompleted: false }}
+              >
+                {MeetingCard}
+              </List>
             </div>
           </div>
         </section>

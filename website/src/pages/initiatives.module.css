@@ -7,8 +7,6 @@
   padding: 1rem;
 }
 
-
-
 .communityTitle {
   font-size: xx-large;
 }
@@ -36,21 +34,7 @@
 
 .meetingTitle {
   font-size: large;
-  margin: 35px auto;
-}
-
-.addToCalendar {
-  display: flex;
-  justify-content: end
-}
-.addToCalendar button{
-  background-color: var(--ifm-color-primary-lightest);
-  border-radius: 10px;
-  padding: 0.75rem 1rem;
-  outline: none;
-  cursor: pointer;
-  border: none;
-  margin-bottom: 5%;
+  margin: 10px auto;
 }
 
 @media screen and (max-width: 966px) {
@@ -65,13 +49,5 @@
 
   .communityMeeting {
     width: 100%;
-  }
-}
-
-@media screen and (min-width: 375px) {
-  .button {
-    position: relative;
-    left: 35%;
-    margin-bottom: 0%;
   }
 }
