@@ -34,10 +34,17 @@
 
 .featureTitle {
   font-size: x-large;
+  color: #73e8a3; 
+  
 }
+/* 
+html[data-theme='dark']{
+  color: #73e8a3;
+} */
 
 .featureDescription {
   font-size: medium;
+  /* color: #fff; */
 }
 
 @media screen and (max-width: 966px) {
