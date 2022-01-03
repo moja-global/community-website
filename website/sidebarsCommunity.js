@@ -2,6 +2,7 @@ module.exports = {
   community: [
     'support',
     'technical-steering-committee',
+    'working-groups',
     'governance',
     'contributing',
     'community-website-contributions',
