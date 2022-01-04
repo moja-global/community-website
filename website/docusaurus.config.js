@@ -89,22 +89,6 @@ module.exports = {
             },
           ],
         },
-
-        // {
-        //   type: 'dropdown',
-        //   label: 'Dropdown-2',
-        //   position: 'left',
-        //   items: [
-        //     {
-        //       label: 'Community',
-        //       href: '/community/support',
-        //     },
-        //     {
-        //       label: 'Tutorial',
-        //       href: '/tutorial/tutorial-introduction',
-        //     },
-        //   ],
-        // },
       ],
     },
     footer: {
