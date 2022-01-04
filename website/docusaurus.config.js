@@ -64,9 +64,15 @@ module.exports = {
         },
         { to: '/blog', label: 'Blogs', position: 'left' },
         {
+          to: '/community/support',
+          label: 'Community',
+          position: 'left',
+          activeBaseRegex: '/community/',
+        },
+        {
 
           type: 'dropdown',
-          label: 'Dropdown-1',
+          label: 'Know more',
           position: 'left',
           items: [
             {
@@ -77,24 +83,28 @@ module.exports = {
               label: 'Case Studies',
               href: '/case-studies/introduction',
             },
-          ],
-        },
-
-        {
-          type: 'dropdown',
-          label: 'Dropdown-2',
-          position: 'left',
-          items: [
-            {
-              label: 'Community',
-              href: '/community/support',
-            },
             {
               label: 'Tutorial',
               href: '/tutorial/tutorial-introduction',
             },
           ],
         },
+
+        // {
+        //   type: 'dropdown',
+        //   label: 'Dropdown-2',
+        //   position: 'left',
+        //   items: [
+        //     {
+        //       label: 'Community',
+        //       href: '/community/support',
+        //     },
+        //     {
+        //       label: 'Tutorial',
+        //       href: '/tutorial/tutorial-introduction',
+        //     },
+        //   ],
+        // },
       ],
     },
     footer: {
