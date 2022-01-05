@@ -16,8 +16,10 @@ const Community = () => {
         <section id="initiatives">
           <div className={styles.communityRow}>
             <div className={styles.communityItem}>
+
               <CommunityCard
                 title="Linux Foundation Mentorship"
+                image="static\img\linuxFoundation.jpeg"
                 description="The Linux Foundation is the parent organisation of moja global. Therefore, we actively participate and host our projects for the LFX Mentorship programme."
                 btnLink="/community/mentorship#linux-foundation-mentorship/"
                 btnText="Learn More"
@@ -26,7 +28,8 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Season of Docs"
-                description="Moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about our projects with good as well as oriented documentation"
+                image="static\img\index.png"
+                description="Moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about as well as desrcibe projects with good as well as oriented documentation"
                 btnLink="/community/mentorship#google-season-of-docs/"
                 btnText="Learn More"
               />
@@ -34,6 +37,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Outreachy Internships"
+                image="static\img\Outreach.png"
                 description="Moja global participates in Outreachy. We love to support under-represented groups in technology who can help accelerate our project growth."
                 btnLink="/community/mentorship#outreachy-internships/"
                 btnText="Learn More"
@@ -42,6 +46,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Summer of Code"
+                image="static\img\gsoc.png"
                 description="Moja global participates in Google Summer of Code. We love to host a wide range of contributors to help us accelerate our project growth."
                 btnLink="/community/mentorship#google-summer-of-code/"
                 btnText="Learn More"
@@ -55,7 +60,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="GitHub"
-                
+                image="static\img\github.png"
                 description="We have a ton of open issues which could use your help and expertise. "
                 btnText="Learn More"
                 btnLink="https://github.com/moja-global"
@@ -64,6 +69,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Slack"
+                image="static\img\slack.png"
                 description="We would love to know you better. Hop on and chat with the community."
                 btnText="Join Us"
                 btnLink="https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw"

@@ -26,14 +26,14 @@
 
 .communityItem {
   width: 33.3%;
+  
 }
-
 .communityMeeting {
   width: 50%;
 }
 
 .meetingTitle {
-  font-size: large;
+  font-size: small;
   margin: 10px auto;
 }
 

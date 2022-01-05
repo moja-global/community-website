@@ -2,13 +2,14 @@ import React from 'react';
 import styles from './CommunityCard.module.css';
 import Link from '@docusaurus/Link';
 
-const CommunityCard = ({ title, description, btnLink, btnText }) => {
+const CommunityCard = ({ title, image, description, btnLink, btnText }) => {
   return (
     <div className={styles.card}>
       <h3>{title}</h3>
+      <img src={image}  alt="logo" width={100} />
       <p>{description}</p>
       <Link to={btnLink}>
-        <button className={styles.button}>{btnText}</button>
+      <button className={styles.button}>{btnText}</button>
       </Link>
     </div>
   );
