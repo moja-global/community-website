@@ -35,6 +35,22 @@ Use clear, simple language that’s approachable and accessible for a wide range
 
 Follow standard American English punctuation rules. For more guidance, see “[Punctuation](https://brand.github.com/content/grammar#punctuation)” in GitHub’s Brand Guide and “[Punctuation](https://docs.microsoft.com/style-guide/punctuation)” in the Microsoft Style Guide.
 
+### Responsive content
+If you’re writing for the web, assume your content will be used on a variety of devices. Many websites today are responsive—that is, they reconfigure automatically based on the device in use. Assume your content will be viewed at small sizes.
+
+### Keep it short
+- **Short text** is always better, but on mobile devices, it’s imperative. Try to write sentences and paragraphs that are short enough to read on a mobile screen without scrolling. It’s hard to read a paragraph when you need to scroll to see the second half.
+
+- **Try to keep headings to one, short line.** Two-line headings take up twice as much scarce vertical space. Use short words in headings, too, if you can. If a customer uses larger fonts to improve accessibility, long words may break across lines.
+
+- **Short sections**—headings and the text that follows—are easier to read on small screens. Short sections also make it easier for customers to stop reading and later pick up where they left off.
+
+### Use simple images, charts, and tables
+
+- Choose simple images and crop extraneous detail.
+
+- **Create infographics carefully.** Provide a way for readers to open an infographic in an application where they can enlarge specific areas. Or, present individual sections of the infographic within text, and provide a link to the full infographic.
+
 ## Best practices
 
 For words that have multiple spellings, use American English over British English.
@@ -49,9 +65,12 @@ For words that have multiple spellings, use American English over British Englis
 
 When introducing an unfamiliar acronym, spell out the full term, and put the acronym in parentheses. Put both the full term and acronym in bold.
 
-<!-- **For example:**
+**For example:**
+Full Lands INtegration Tool (FLINT)
 
-"Ethereum, like Bitcoin, currently uses a consensus protocol called **proof-of-work (PoW)**." -->
+Don't introduce acronyms that are used just once.
+
+If an acronym will appear only once in your content, just spell out the term. Don't introduce it in parentheses after the spelled-out version.
 
 ### Consistency
 
