@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://i0.wp.com/mojaglobal.kinsta.cloud/wp-content/uploads/2021/03/Asset-66@4x.png" alt="Moja global logo" height ="auto" width="200" />
+<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="Moja global logo" height ="auto" width="200" />
 <br />
 <h1>Community Website</h1>
 <p>
@@ -181,6 +181,7 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://aniket.live"><img src="https://avatars.githubusercontent.com/u/67703407?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aniket Pal</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Aniket762" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/caseynv"><img src="https://avatars.githubusercontent.com/u/67697400?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelechukwu Nwandu</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=caseynv" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Sukriti-sood" title="Code">💻</a></td>
+    <td align="center"><a href="https://github.com/aayushsrivastava9760"><img src="https://avatars.githubusercontent.com/u/81965095?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aayush Srivastava</b></sub></a><br /><a href="#design-aayushsrivastava9760" title="Design">🎨</a></td>
   </tr>
 </table>
 
