@@ -26,7 +26,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Season of Docs"
-                description="moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about our projects with good documentation."
+                description="Moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about our projects with good as well as oriented documentation"
                 btnLink="/community/mentorship#google-season-of-docs/"
                 btnText="Learn More"
               />
@@ -34,7 +34,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Outreachy Internships"
-                description="moja global participates in Outreachy. We love to support under-represented groups in technology who can help accelerate our project growth."
+                description="Moja global participates in Outreachy. We love to support under-represented groups in technology who can help accelerate our project growth."
                 btnLink="/community/mentorship#outreachy-internships/"
                 btnText="Learn More"
               />
@@ -42,7 +42,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Summer of Code"
-                description="moja global participates in Google Summer of Code. We love to host a wide range of contributors to help us accelerate our project growth."
+                description="Moja global participates in Google Summer of Code. We love to host a wide range of contributors to help us accelerate our project growth."
                 btnLink="/community/mentorship#google-summer-of-code/"
                 btnText="Learn More"
               />
@@ -55,6 +55,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="GitHub"
+                
                 description="We have a ton of open issues which could use your help and expertise. "
                 btnText="Learn More"
                 btnLink="https://github.com/moja-global"
