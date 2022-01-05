@@ -8,8 +8,8 @@ const ProjectDescription = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     forthComing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      link:
-      'https://github.com/moja-global/FLINT.Cloud'
+    link: 
+    'https://github.com/moja-global/FLINT.Cloud'
   },
   flintReportingTool: {
     title: 'FLINT Reporting Tool',
