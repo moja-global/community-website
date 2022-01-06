@@ -19,7 +19,7 @@ const Community = () => {
 
               <CommunityCard
                 title="Linux Foundation Mentorship"
-                image="static\img\linuxFoundation.jpeg"
+                image="static\img\linux.png"
                 description="The Linux Foundation is the parent organisation of moja global. Therefore, we actively participate and host our projects for the LFX Mentorship programme."
                 btnLink="/community/mentorship#linux-foundation-mentorship/"
                 btnText="Learn More"

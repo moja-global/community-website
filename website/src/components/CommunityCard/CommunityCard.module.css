@@ -2,6 +2,7 @@
   border: 2px solid var(--ifm-color-primary-dark);
   margin: 9px;
   padding: 2.5rem;
+  height: 95%
 }
 
 .button {
@@ -11,7 +12,8 @@
   outline: none;
   cursor: pointer;
   border: none;
-}
+  
+ }
 
 @media screen and (max-width: 966px) {
   .card {
