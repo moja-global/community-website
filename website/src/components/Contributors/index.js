@@ -29,16 +29,16 @@ const Contributors = (props) => {
       {/* counter */}
       <div className="stats">
         <div className="stats-item">
-          <p>30+ contributors</p>
+          <p>40+ contributors</p>
         </div>
         <div className="stats-item">
-          <p>100+ forks</p>
+          <p>80+ forks</p>
         </div>
         <div className="stats-item">
-          <p>40+ pull requests</p>
+          <p>120+ pull requests</p>
         </div>
         <div className="stats-item">
-          <p>50+ stars</p>
+          <p>40+ stars</p>
         </div>
       
       </div>

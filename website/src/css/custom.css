@@ -124,9 +124,6 @@ html[data-theme='dark'] .sponsor_wrapper:hover{
   padding: 1rem 1.5rem;
   font-size: 1.2rem;
   font-weight: 600;
-
-  cursor: pointer;
-
 }
 
 .stats-item p{
@@ -135,6 +132,7 @@ html[data-theme='dark'] .sponsor_wrapper:hover{
   border-radius: 5px;
   box-shadow: #67ca8f 0px 0px 5px;
   padding: 0.5rem;
+  cursor: pointer;
   transition: transform .2s; /* Animation */
 }
 
@@ -204,7 +202,7 @@ html[data-theme='dark'] .sponsor_wrapper, html[data-theme='light'] .sponsor_wrap
     margin: 17px;
   }
 
-html[data-theme='dark'] .stats-item:hover {
+html[data-theme='dark'] .stats-item p:hover {
   color: #2e382b;
 }
 /* counter media query */
