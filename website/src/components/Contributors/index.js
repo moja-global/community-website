@@ -26,6 +26,22 @@ const Contributors = (props) => {
           </LazyLoad>
         )}
       </div>
+      {/* counter */}
+      <div className="stats">
+        <div className="stats-item">
+          <p>40+ contributors</p>
+        </div>
+        <div className="stats-item">
+          <p>80+ forks</p>
+        </div>
+        <div className="stats-item">
+          <p>120+ pull requests</p>
+        </div>
+        <div className="stats-item">
+          <p>40+ stars</p>
+        </div>
+      
+      </div>
     </div>
   );
 };
