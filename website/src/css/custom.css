@@ -34,6 +34,14 @@
   padding: 5rem;
 }
 
+html[data-theme='dark'] .rbc-toolbar button {
+  color: white !important
+}
+
+html[data-theme='dark'] .rbc-toolbar button:hover {
+  color: #373a3c !important
+}
+
 html[data-theme='light'] .sponsor_wrapper {
   padding: 5px;
   margin: 21px;

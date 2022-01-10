@@ -2,9 +2,28 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
-import { FixedSizeList as List } from 'react-window';
-import MeetingCard from '../components/PastMeetingCard';
-import { pastMeetings, upcomingMeetings } from '../../websiteData/meetings';
+import { events } from '../../websiteData/meetings';
+import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
+import format from 'date-fns/format';
+import parse from 'date-fns/parse';
+import startOfWeek from 'date-fns/startOfWeek';
+import getDay from 'date-fns/getDay';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+const locales = {
+  'en-US': require('date-fns/locale/en-US'),
+};
+const localizer = dateFnsLocalizer({
+  format,
+  parse,
+  startOfWeek,
+  getDay,
+  locales,
+});
+// format for adding a meeting is new Date(year , month-1 , date)
+function ondouleclick() {
+  window.open('https://workspace.google.com/intl/en_in/products/calendar/?utm_source=google&utm_medium=cpc&utm_campaign=1011352-Workspace-APAC-IN-en-BKWS-EXA-Golden&utm_content=text-ad-none-none-DEV_c-CRE_469259700126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20EXA%20%7C%20Calendar%20%7C%20%5BM:1%5D%20%7C%20IN%20%7C%20EN-KWID_43700057535047290-kwd-1844967558&userloc_1007820-network_g&utm_term=KW_google%20calendar&gclid=CjwKCAiAz--OBhBIEiwAG1rIOkbt8UI2XpXuSfpJzoHLn12sVQllOHJEgzju9YKwJOe1AgCPEgUKMBoCnK8QAvD_BwE&gclsrc=aw.ds', '_blank');
+}
 
 const Community = () => {
   return (
@@ -72,30 +91,26 @@ const Community = () => {
         </section>
         <section id="meetings">
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
-          <div className={styles.communityRow}>
-            <div className={styles.communityMeeting}>
-              <h5 className={styles.meetingTitle}>Past Meetings</h5>
-              <List
-                height={500}
-                itemCount={pastMeetings.length}
-                itemSize={100}
-                width="90%"
-                itemData={{ isCompleted: true }}
-              >
-                {MeetingCard}
-              </List>
-            </div>
-            <div className={styles.communityMeeting}>
-              <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
-              <List
-                height={500}
-                itemCount={upcomingMeetings.length}
-                itemSize={100}
-                width="90%"
-                itemData={{ isCompleted: false }}
-              >
-                {MeetingCard}
-              </List>
+          <div>
+            <div>
+              <div className={styles.addToCalendar}>
+                <a href="https://workspace.google.com/intl/en_in/products/calendar/?utm_source=google&utm_medium=cpc&utm_campaign=1011352-Workspace-APAC-IN-en-BKWS-EXA-Golden&utm_content=text-ad-none-none-DEV_c-CRE_469259700126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20EXA%20%7C%20Calendar%20%7C%20%5BM:1%5D%20%7C%20IN%20%7C%20EN-KWID_43700057535047290-kwd-1844967558&userloc_1007820-network_g&utm_term=KW_google%20calendar&gclid=CjwKCAiAz--OBhBIEiwAG1rIOkbt8UI2XpXuSfpJzoHLn12sVQllOHJEgzju9YKwJOe1AgCPEgUKMBoCnK8QAvD_BwE&gclsrc=aw.ds">
+                  <button>Add to your Calendar</button>
+                </a>
+              </div>
+
+              <Calendar
+                className={styles.Calendar}
+                localizer={localizer}
+                events={events}
+                startAccessor="start"
+                endAccessor="end"
+                views={{
+                  month: true,
+                }}
+                onDoubleClickEvent={ondouleclick}
+                style={{ height: 600 }}
+              />
             </div>
           </div>
         </section>
