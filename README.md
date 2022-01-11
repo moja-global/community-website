@@ -183,6 +183,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Sukriti-sood" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/aayushsrivastava9760"><img src="https://avatars.githubusercontent.com/u/81965095?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aayush Srivastava</b></sub></a><br /><a href="#design-aayushsrivastava9760" title="Design">🎨</a></td>
   </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/khush2706"><img src="https://avatars.githubusercontent.com/u/86849664?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khushboo Chaturvedi</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=khush2706" title="Code">💻</a></td>
+  </tr>
 </table>
 
 <!-- markdownlint-restore -->
