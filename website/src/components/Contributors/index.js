@@ -6,6 +6,8 @@ import ContributorAvatar from '../ContributorAvatar';
 const Contributors = (props) => {
   const [loading, setLoading] = useState(true);
   const [repoStars, setRepoStars] = useState(0);
+  const [repoForks, setRepoForks] = useState(0);
+  const [repoWatchers, setRepoWatchers] = useState(0);
 
   useEffect(() => {
     fetch(`https://api.github.com/repos/moja-global/community-website`).then(async (response) => {
@@ -13,6 +15,14 @@ const Contributors = (props) => {
 
       if (data && data.stargazers_count) {
         setRepoStars(data.stargazers_count);
+      }
+
+      if (data && data.forks_count) {
+        setRepoForks(data.forks_count);
+      }
+
+     if (data && data.watchers_count) {
+        setRepoWatchers(data.watchers_count);
       }
 
       setLoading(false);
@@ -51,10 +61,10 @@ const Contributors = (props) => {
           <p>{sortedContributors.length} Contributors</p>
         </div>
         <div className="stats-item">
-          <p>80+ forks</p>
+          <p>{repoForks} Forks</p>
         </div>
         <div className="stats-item">
-          <p>120+ pull requests</p>
+          <p>{repoWatchers} Watchers</p>
         </div>
         <div className="stats-item">
           <p>{repoStars} Stars</p>
