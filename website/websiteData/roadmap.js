@@ -8,8 +8,10 @@ const ProjectDescription = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     forthComing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-    link: 
-    'https://github.com/moja-global/FLINT.Cloud'
+    link: {
+      github: 'https://github.com/moja-global/FLINT.Cloud',
+      docs: 'https://docs.moja.global/projects/flintcloud/en/latest/',
+    },
   },
   flintReportingTool: {
     title: 'FLINT Reporting Tool',
@@ -20,8 +22,10 @@ const ProjectDescription = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     forthComing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      link:
-      'https://github.com/moja-global/FLINT.Reporting'
+    link: {
+      github: 'https://github.com/moja-global/FLINT.Reporting',
+      docs: 'https://docs.moja.global/projects/flint-reporting/en/latest/',
+    },      
   },
   flintUI: {
     title: 'FLINT Visualization Tool',
@@ -32,8 +36,10 @@ const ProjectDescription = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     forthComing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      link:
-      'https://github.com/moja-global/FLINT-UI'
+    link: {
+      github: 'https://github.com/moja-global/FLINT-UI',
+      docs: 'https://docs.moja.global/projects/flint-ui/en/latest/',
+    },     
   },
   flint: {
     title: 'FLINT',
@@ -44,8 +50,10 @@ const ProjectDescription = {
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
     forthComing:
       'Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.',
-      link:
-      'https://github.com/moja-global/FLINT'
+    link: {
+      github: 'https://github.com/moja-global/FLINT',
+      docs: 'https://moja.global/flint/',
+    },     
   },
 };
 

@@ -22,7 +22,7 @@ const ProjectCard = (props) => {
               <b>{props.projectTitle}</b>
             </h2>
             <div className="project_links">
-              <a href={props.link}>
+              <a href={props.link.docs}>
                 {' '}
                 <svg
                   class="w-6 h-6 project-icon"
@@ -39,7 +39,7 @@ const ProjectCard = (props) => {
                   ></path>
                 </svg>
               </a>
-              <a href={props.link}>
+              <a href={props.link.github}>
                 {' '}
                 <img className="project-icon" src="./static/img/github.svg" />{' '}
               </a>
@@ -55,7 +55,7 @@ const ProjectCard = (props) => {
         <div className='modal_header'>
         <h1>{props.projectTitle}</h1>
         <div className='project_link_icons'>
-        <a href={props.link}>
+        <a href={props.link.docs}>
                 {' '}
                 <svg
                   class="w-6 h-6 project-icon"
@@ -72,7 +72,7 @@ const ProjectCard = (props) => {
                   ></path>
                 </svg>
               </a>
-              <a href={props.link}>
+              <a href={props.link.github}>
                 {' '}
                 <img className="project-icon" src="./static/img/github.svg" />{' '}
               </a>
