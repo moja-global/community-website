@@ -2,7 +2,7 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from './roadmap.module.css';
-import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
 import ProjectDescription from '../../websiteData/roadmap';
 
 const RoadmapHeader = () => {

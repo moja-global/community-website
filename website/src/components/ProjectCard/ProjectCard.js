@@ -2,6 +2,8 @@
 import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import './card.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import ProjectIcon from '../svgs/ProjectIcon';
+import GithubIcon from '../svgs/GithubIcon';
 
 const ProjectCard = (props) => {
   const modalRef = useRef();
@@ -9,9 +11,8 @@ const ProjectCard = (props) => {
   const handleClick = (e) => {
     let id = e.target.id;
     let div = document.querySelector(`.${id}e`);
-    div.classList.toggle("invisible");
-  }
-
+    div.classList.toggle('invisible');
+  };
 
   return (
     <div className="main_card_container">
@@ -22,26 +23,11 @@ const ProjectCard = (props) => {
               <b>{props.projectTitle}</b>
             </h2>
             <div className="project_links">
-              <a href={props.link.docs}>
-                {' '}
-                <svg
-                  class="w-6 h-6 project-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  ></path>
-                </svg>
+              <a target="_blank" rel="noreferrer" href={props.link.docs}>
+                <ProjectIcon />
               </a>
-              <a href={props.link.github}>
-                {' '}
-                <img className="project-icon" src="./static/img/github.svg" />{' '}
+              <a target="_blank" rel="noreferrer" href={props.link.github}>
+                <GithubIcon className="project-icon" />
               </a>
             </div>
           </div>
@@ -52,31 +38,18 @@ const ProjectCard = (props) => {
         </button>
       </div>
       <Modal ref={modalRef} className="modal">
-        <div className='modal_header'>
-        <h1>{props.projectTitle}</h1>
-        <div className='project_link_icons'>
-        <a href={props.link.docs}>
-                {' '}
-                <svg
-                  class="w-6 h-6 project-icon"
-                  fill="none"
-                  stroke="currentColor"
-                  viewBox="0 0 24 24"
-                  xmlns="http://www.w3.org/2000/svg"
-                >
-                  <path
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
-                  ></path>
-                </svg>
-              </a>
-              <a href={props.link.github}>
-                {' '}
-                <img className="project-icon" src="./static/img/github.svg" />{' '}
-              </a>
-        </div>
+        <div className="modal_header">
+          <h1>{props.projectTitle}</h1>
+          <div className="project_link_icons">
+            <a target="_blank" rel="noreferrer" href={props.link.docs}>
+              {' '}
+              <ProjectIcon />
+            </a>
+            <a target="_blank" rel="noreferrer" href={props.link.github}>
+              {' '}
+              <GithubIcon className="project-icon" />
+            </a>
+          </div>
         </div>
         <p className="discription">{props.projectBody}</p>
         <div className="task_timlines">
@@ -90,7 +63,7 @@ const ProjectCard = (props) => {
                     <p>{props.onGoingDesc}</p>
                     {/** Description of ongoing task will be passed down in the prop */}
                   </div>
-                  <button className="expand_button" onClick = {handleClick}>
+                  <button className="expand_button" onClick={handleClick}>
                     <svg
                       id="div_11"
                       className="w-6 h-6 button_arrow"
@@ -156,7 +129,7 @@ const ProjectCard = (props) => {
                   <div className="task_text">
                     <p>{props.onGoingDesc}</p>
                   </div>
-                  <button className="expand_button" onClick = {handleClick}>
+                  <button className="expand_button" onClick={handleClick}>
                     <svg
                       id="div_12"
                       className="w-6 h-6 button_arrow"
@@ -187,7 +160,7 @@ const ProjectCard = (props) => {
                     <p>{props.nextPriority}</p>
                     {/** Description of next priority task will be passed down in the prop */}
                   </div>
-                  <button className="expand_button" onClick = {handleClick}>
+                  <button className="expand_button" onClick={handleClick}>
                     <svg
                       id="div_21"
                       className="w-6 h-6 button_arrow"
@@ -250,7 +223,7 @@ const ProjectCard = (props) => {
             </div>
           </div>
           <div className="status">
-            <h5>Forthcoming</h5>       
+            <h5>Forthcoming</h5>
             <div className="task_wrapper">
               <div className="task_div">
                 <span className="box_decor"></span>
@@ -259,7 +232,7 @@ const ProjectCard = (props) => {
                     <p>{props.forthComing}</p>
                     {/** Description of forthcoming task will be passed down in the prop */}
                   </div>
-                  <button className="expand_button" data-target="div_31" onClick = {handleClick}>
+                  <button className="expand_button" data-target="div_31" onClick={handleClick}>
                     <svg
                       id="div_31"
                       className="w-6 h-6 button_arrow"
@@ -326,8 +299,6 @@ const ProjectCard = (props) => {
     </div>
   );
 };
-
-
 
 const Modal = forwardRef((props, ref) => {
   const [open, setOpen] = useState(false);
@@ -410,7 +381,5 @@ const Modal = forwardRef((props, ref) => {
     </AnimatePresence>
   );
 });
-
-
 
 export default ProjectCard;
