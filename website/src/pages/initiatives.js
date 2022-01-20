@@ -16,7 +16,6 @@ const Community = () => {
         <section id="initiatives">
           <div className={styles.communityRow}>
             <div className={styles.communityItem}>
-
               <CommunityCard
                 title="Linux Foundation Mentorship"
                 image="static\img\linux.png"
@@ -28,7 +27,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Season of Docs"
-                image="static\img\index.png"
+                image="static\img\gsod.webp"
                 description="Moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about as well as desrcibe projects with good as well as oriented documentation"
                 btnLink="/community/mentorship#google-season-of-docs/"
                 btnText="Learn More"
@@ -46,7 +45,7 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Summer of Code"
-                image="static\img\gsoc.png"
+                image="static\img\gsoc.svg"
                 description="Moja global participates in Google Summer of Code. We love to host a wide range of contributors to help us accelerate our project growth."
                 btnLink="/community/mentorship#google-summer-of-code/"
                 btnText="Learn More"
