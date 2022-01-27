@@ -7,7 +7,14 @@ import ProjectDescription from '../../websiteData/roadmap';
 
 const RoadmapHeader = () => {
   return (
-    <header className={clsx('hero hero--primary', styles.banner, styles.header_subtitle, styles.header_title)}>
+    <header
+      className={clsx(
+        'hero hero--primary',
+        styles.banner,
+        styles.header_subtitle,
+        styles.header_title
+      )}
+    >
       <div className="container">
         <h1 className="header_title">Roadmap</h1>
         <p className="roadmap_mission header_subtitle">
@@ -35,6 +42,7 @@ const Roadmap = () => {
           nextPriority={ProjectDescription.flintCloud.nextPriority}
           forthComing={ProjectDescription.flintCloud.forthComing}
           link={ProjectDescription.flintCloud.link}
+          subTask1={ProjectDescription.flintCloud.subTask1}
         />
         <ProjectCard
           className="project"
@@ -44,6 +52,7 @@ const Roadmap = () => {
           nextPriority={ProjectDescription.flintReportingTool.nextPriority}
           forthComing={ProjectDescription.flintReportingTool.forthComing}
           link={ProjectDescription.flintReportingTool.link}
+          subTask1={ProjectDescription.flintReportingTool.subTask1}
         />
       </div>
       <div className={styles.projects}>
@@ -55,6 +64,7 @@ const Roadmap = () => {
           nextPriority={ProjectDescription.flintUI.nextPriority}
           forthComing={ProjectDescription.flintUI.forthComing}
           link={ProjectDescription.flintUI.link}
+          subTask1={ProjectDescription.flintUI.subTask1}
         />
         <ProjectCard
           className="project"
@@ -64,6 +74,7 @@ const Roadmap = () => {
           nextPriority={ProjectDescription.flint.nextPriority}
           forthComing={ProjectDescription.flint.forthComing}
           link={ProjectDescription.flint.link}
+          subTask1={ProjectDescription.flint.subTask1}
         />
       </div>
     </Layout>
