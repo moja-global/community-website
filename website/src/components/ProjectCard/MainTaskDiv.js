@@ -1,6 +1,7 @@
 import React from 'react';
 
-const MainTaskDiv = (props) => {
+const MainTaskDiv = (props, handleClick) => {
+  console.log(handleClick);
   return (
     <div className="task_div">
       <span className="box_decor"></span>
@@ -8,7 +9,7 @@ const MainTaskDiv = (props) => {
         <div className="task_text">
           <p>{props.content}</p>
         </div>
-        <button className="expand_button">
+        <button className="expand_button" onClick={() => handleClick}>
           <svg
             id="div_11"
             className="w-6 h-6 button_arrow"

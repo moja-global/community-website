@@ -11,9 +11,10 @@ const ProjectCard = (props) => {
   const modalRef = useRef();
 
   const handleClick = (e) => {
-    let id = e.target.id;
-    let div = document.querySelector(`.${id}e`);
+    // let id = e.target.id;
+    let div = document.querySelector(`.${e}e`);
     div.classList.toggle('invisible');
+    console.log('clicked');
   };
 
   return (
@@ -58,7 +59,7 @@ const ProjectCard = (props) => {
           <div className="status">
             <h5>On-Going</h5>
             <div className="task_wrapper">
-              <MainTaskDiv content={props.onGoingDesc} />
+              <MainTaskDiv content={props.onGoingDesc} handleClick={() => handleClick()} id='div_11'/>
               <ul className="task_details div_11e">
                 <li className="task_box">
                   <SubTaskDiv content={props.subTask1} />
