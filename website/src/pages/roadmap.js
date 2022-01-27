@@ -2,15 +2,15 @@ import React from 'react';
 import clsx from 'clsx';
 import Layout from '@theme/Layout';
 import styles from './roadmap.module.css';
-import ProjectCard from './ProjectCard/ProjectCard';
+import ProjectCard from '../components/ProjectCard/ProjectCard';
 import ProjectDescription from '../../websiteData/roadmap';
 
 const RoadmapHeader = () => {
   return (
-    <header className={clsx('hero hero--primary', styles.banner)}>
+    <header className={clsx('hero hero--primary', styles.banner, styles.header_subtitle, styles.header_title)}>
       <div className="container">
-        <h1 className="hero__title">Roadmap</h1>
-        <p className="hero__subtitle roadmap_mission">
+        <h1 className="header_title">Roadmap</h1>
+        <p className="roadmap_mission header_subtitle">
           Moja global’s mission is to support ambitious climate action by developing pioneering,
           open-source software – including the groundbreaking FLINT software – to help users
           accurately and affordably estimate greenhouse gas emissions and removals from forestry,
