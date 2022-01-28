@@ -10,12 +10,16 @@ import GithubIcon from '../svgs/GithubIcon';
 const ProjectCard = (props) => {
   const modalRef = useRef();
 
-  const handleClick = (e) => {
-    // let id = e.target.id;
-    let div = document.querySelector(`.${e}e`);
-    div.classList.toggle('invisible');
-    console.log('clicked');
-  };
+  // const handleClick = (e) => {
+  //   // let id = e.target.id;
+  //   let div = document.querySelector(`.${e}e`);
+  //   div.classList.toggle('invisible');
+  //   console.log('clicked');
+  // };
+
+  const [isOpen, setIsOpen] = useState({activeIndex: null})
+
+  const handleClick = (index) => { return setIsOpen({activeIndex: index})} 
 
   return (
     <div className="main_card_container">
@@ -59,11 +63,25 @@ const ProjectCard = (props) => {
           <div className="status">
             <h5>On-Going</h5>
             <div className="task_wrapper">
-              <MainTaskDiv content={props.onGoingDesc} handleClick={() => handleClick()} id='div_11'/>
-              <ul className="task_details div_11e">
+              <MainTaskDiv content={props.onGoingDesc} index={0} onClick={handleClick}/>
+              <ul className={isOpen.activeIndex === 0 ? 'task_details' : 'task_details invisible'}>
+                <li className="task_box">
+                  <SubTaskDiv content={props.subTask1} />
+                </li> 
                 <li className="task_box">
                   <SubTaskDiv content={props.subTask1} />
                 </li>
+                <li className="task_box">
+                <SubTaskDiv content={props.subTask1} />
+                </li>
+              </ul>  
+            </div>
+            <div className="task_wrapper">
+              <MainTaskDiv content={props.onGoingDesc} index={1} onClick={handleClick}/>
+              <ul className={isOpen.activeIndex === 1 ? 'task_details' : 'task_details invisible'}>
+                <li className="task_box">
+                  <SubTaskDiv content={props.subTask1} />
+                </li> 
                 <li className="task_box">
                   <SubTaskDiv content={props.subTask1} />
                 </li>
@@ -76,8 +94,8 @@ const ProjectCard = (props) => {
           <div className="status">
             <h5>Next-Priority</h5>
             <div className="task_wrapper">
-              <MainTaskDiv content={props.nextPriority} />
-              <ul className="task_details div_21e invisible">
+              <MainTaskDiv content={props.nextPriority} index={2} onClick={handleClick} />
+              <ul className={isOpen.activeIndex === 2 ? 'task_details' : 'task_details invisible'}>
                 <li className="task_box">
                 <SubTaskDiv content={props.subTask1} />
                 </li>
@@ -93,8 +111,8 @@ const ProjectCard = (props) => {
           <div className="status">
             <h5>Forthcoming</h5>
             <div className="task_wrapper">
-              <MainTaskDiv content={props.forthComing} />
-              <ul className="task_details div_31e invisible">
+              <MainTaskDiv content={props.forthComing} index={3} onClick={handleClick} />
+              <ul className={isOpen.activeIndex === 3 ? 'task_details' : 'task_details invisible'}>
                 <li className="task_box">
                   <SubTaskDiv content={props.subTask1} />
                 </li>
