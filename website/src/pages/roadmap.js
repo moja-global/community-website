@@ -36,13 +36,13 @@ const Roadmap = () => {
       <div className={styles.projects}>
         <ProjectCard
           className="project"
-          projectTitle={ProjectDescription.flintCloud.title}
-          projectBody={ProjectDescription.flintCloud.body}
-          onGoingDesc={ProjectDescription.flintCloud.onGoing}
-          nextPriority={ProjectDescription.flintCloud.nextPriority}
-          forthComing={ProjectDescription.flintCloud.forthComing}
-          link={ProjectDescription.flintCloud.link}
-          subTask1={ProjectDescription.flintCloud.subTask1}
+          projectTitle={ProjectDescription.flint.title}
+          projectBody={ProjectDescription.flint.body}
+          onGoingDesc={ProjectDescription.flint.onGoing}
+          nextPriority={ProjectDescription.flint.nextPriority}
+          forthComing={ProjectDescription.flint.forthComing}
+          link={ProjectDescription.flint.link}
+          subTask1={ProjectDescription.flint.subTask1}
         />
         <ProjectCard
           className="project"
@@ -68,13 +68,35 @@ const Roadmap = () => {
         />
         <ProjectCard
           className="project"
-          projectTitle={ProjectDescription.flint.title}
-          projectBody={ProjectDescription.flint.body}
-          onGoingDesc={ProjectDescription.flint.onGoing}
-          nextPriority={ProjectDescription.flint.nextPriority}
-          forthComing={ProjectDescription.flint.forthComing}
-          link={ProjectDescription.flint.link}
-          subTask1={ProjectDescription.flint.subTask1}
+          projectTitle={ProjectDescription.flintCloud.title}
+          projectBody={ProjectDescription.flintCloud.body}
+          onGoingDesc={ProjectDescription.flintCloud.onGoing}
+          nextPriority={ProjectDescription.flintCloud.nextPriority}
+          forthComing={ProjectDescription.flintCloud.forthComing}
+          link={ProjectDescription.flintCloud.link}
+          subTask1={ProjectDescription.flintCloud.subTask1}
+        />
+      </div>
+      <div className={styles.projects}>
+        <ProjectCard
+          className="project"
+          projectTitle={ProjectDescription.docs.title}
+          projectBody={ProjectDescription.docs.body}
+          onGoingDesc={ProjectDescription.docs.onGoing}
+          nextPriority={ProjectDescription.docs.nextPriority}
+          forthComing={ProjectDescription.docs.forthComing}
+          link={ProjectDescription.docs.link}
+          subTask1={ProjectDescription.docs.subTask1}
+        />
+        <ProjectCard
+          className="project"
+          projectTitle={ProjectDescription.gcbm.title}
+          projectBody={ProjectDescription.gcbm.body}
+          onGoingDesc={ProjectDescription.gcbm.onGoing}
+          nextPriority={ProjectDescription.gcbm.nextPriority}
+          forthComing={ProjectDescription.gcbm.forthComing}
+          link={ProjectDescription.gcbm.link}
+          subTask1={ProjectDescription.gcbm.subTask1}
         />
       </div>
     </Layout>

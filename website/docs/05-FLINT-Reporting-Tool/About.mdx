@@ -1,0 +1,20 @@
+---
+id: FLINT-Reporting-Tool
+title: About FLINT Reporting Tool
+---
+
+## Purpose and Overview
+
+FLINT Reporting Tool provides business intelligence for analysing and transforming FLINT output databases into useful information and outputs. The current implementation of the Reporting Tool processes the Flux database into simplified 2006 GL Reporting Tables.
+
+The Reporting Tool was simply brought together to support the generation of tables, graphs, and other reporting artefacts, from the FLINT output databases, to meet policy and other reporting requirements.
+
+The support for these reporting requirements was not envisioned to happen all at once; but rather in a piece by piece manner, with the first version of the Reporting Tool (the current version) supporting the generation of UNFCCC CRF tables.
+
+## Project Features
+
+Reporting Tool takes flux facts and assigns/aggregates them to a land-use category, a reporting table and a UNFCCC reporting variable. To do this:
+
+1. The Reporting Tool first implements a process that allocates a flux to an IPCC Land Use Category: This is identified as the Land Use Decision Process.
+2. Secondly, it implements a process to allocate the flux to a 2006 GL Reporting Table: This is identified as the Flux Type to Reporting Table Process.
+3. Finally, it aggregates the fluxes according to the UNFCCC variable: This is simply identified as the Aggregation Process.
