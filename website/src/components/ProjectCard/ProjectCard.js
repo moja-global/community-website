@@ -2,17 +2,24 @@
 import React, { forwardRef, useImperativeHandle, useRef, useState } from 'react';
 import './card.css';
 import { motion, AnimatePresence } from 'framer-motion';
+import MainTaskDiv from './MainTaskDiv';
+import SubTaskDiv from './SubTaskDiv';
 import ProjectIcon from '../svgs/ProjectIcon';
 import GithubIcon from '../svgs/GithubIcon';
 
 const ProjectCard = (props) => {
   const modalRef = useRef();
 
-  const handleClick = (e) => {
-    let id = e.target.id;
-    let div = document.querySelector(`.${id}e`);
-    div.classList.toggle('invisible');
-  };
+  // const handleClick = (e) => {
+  //   // let id = e.target.id;
+  //   let div = document.querySelector(`.${e}e`);
+  //   div.classList.toggle('invisible');
+  //   console.log('clicked');
+  // };
+
+  const [isOpen, setIsOpen] = useState({activeIndex: null})
+
+  const handleClick = (index) => { return setIsOpen({activeIndex: index})} 
 
   return (
     <div className="main_card_container">
@@ -56,168 +63,47 @@ const ProjectCard = (props) => {
           <div className="status">
             <h5>On-Going</h5>
             <div className="task_wrapper">
-              <div className="task_div">
-                <span className="box_decor"></span>
-                <div className="task_description">
-                  <div className="task_text">
-                    <p>{props.onGoingDesc}</p>
-                    {/** Description of ongoing task will be passed down in the prop */}
-                  </div>
-                  <button className="expand_button" onClick={handleClick}>
-                    <svg
-                      id="div_11"
-                      className="w-6 h-6 button_arrow"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <ul className="task_details div_11e invisible">
+              <MainTaskDiv content={props.onGoingDesc} index={0} onClick={handleClick}/>
+              <ul className={isOpen.activeIndex === 0 ? 'task_details' : 'task_details invisible'}>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                      </div>
-                    </div>
-                  </div>
+                  <SubTaskDiv content={props.subTask1} />
+                </li> 
+                <li className="task_box">
+                  <SubTaskDiv content={props.subTask1} />
                 </li>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                      </div>
-                    </div>
-                  </div>
+                <SubTaskDiv content={props.subTask1} />
+                </li>
+              </ul>  
+            </div>
+            <div className="task_wrapper">
+              <MainTaskDiv content={props.onGoingDesc} index={1} onClick={handleClick}/>
+              <ul className={isOpen.activeIndex === 1 ? 'task_details' : 'task_details invisible'}>
+                <li className="task_box">
+                  <SubTaskDiv content={props.subTask1} />
+                </li> 
+                <li className="task_box">
+                  <SubTaskDiv content={props.subTask1} />
                 </li>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet</p>
-                      </div>
-                    </div>
-                  </div>
+                <SubTaskDiv content={props.subTask1} />
                 </li>
               </ul>
-              <div className="task_div">
-                <span className="box_decor"></span>
-                <div className="task_description">
-                  <div className="task_text">
-                    <p>{props.onGoingDesc}</p>
-                  </div>
-                  <button className="expand_button" onClick={handleClick}>
-                    <svg
-                      id="div_12"
-                      className="w-6 h-6 button_arrow"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
             </div>
           </div>
           <div className="status">
             <h5>Next-Priority</h5>
             <div className="task_wrapper">
-              <div className="task_div">
-                <span className="box_decor"></span>
-                <div className="task_description">
-                  <div className="task_text">
-                    <p>{props.nextPriority}</p>
-                    {/** Description of next priority task will be passed down in the prop */}
-                  </div>
-                  <button className="expand_button" onClick={handleClick}>
-                    <svg
-                      id="div_21"
-                      className="w-6 h-6 button_arrow"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <ul className="task_details div_21e invisible">
+              <MainTaskDiv content={props.nextPriority} index={2} onClick={handleClick} />
+              <ul className={isOpen.activeIndex === 2 ? 'task_details' : 'task_details invisible'}>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                      </div>
-                    </div>
-                  </div>
+                <SubTaskDiv content={props.subTask1} />
                 </li>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                      </div>
-                    </div>
-                  </div>
+                  <SubTaskDiv content={props.subTask1} />
                 </li>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet</p>
-                      </div>
-                    </div>
-                  </div>
+                <SubTaskDiv content={props.subTask1} />
                 </li>
               </ul>
             </div>
@@ -225,71 +111,16 @@ const ProjectCard = (props) => {
           <div className="status">
             <h5>Forthcoming</h5>
             <div className="task_wrapper">
-              <div className="task_div">
-                <span className="box_decor"></span>
-                <div className="task_description">
-                  <div className="task_text">
-                    <p>{props.forthComing}</p>
-                    {/** Description of forthcoming task will be passed down in the prop */}
-                  </div>
-                  <button className="expand_button" data-target="div_31" onClick={handleClick}>
-                    <svg
-                      id="div_31"
-                      className="w-6 h-6 button_arrow"
-                      fill="none"
-                      stroke="currentColor"
-                      viewBox="0 0 24 24"
-                      xmlns="http://www.w3.org/2000/svg"
-                    >
-                      <path
-                        stroke-linecap="round"
-                        stroke-linejoin="round"
-                        stroke-width="2"
-                        d="M19 9l-7 7-7-7"
-                      ></path>
-                    </svg>
-                  </button>
-                </div>
-              </div>
-              <ul className="task_details div_31e invisible">
+              <MainTaskDiv content={props.forthComing} index={3} onClick={handleClick} />
+              <ul className={isOpen.activeIndex === 3 ? 'task_details' : 'task_details invisible'}>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                      </div>
-                    </div>
-                  </div>
+                  <SubTaskDiv content={props.subTask1} />
                 </li>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
-                      </div>
-                    </div>
-                  </div>
+                  <SubTaskDiv content={props.subTask1} />
                 </li>
                 <li className="task_box">
-                  <div className="task_details_div">
-                    <span className="border_div">
-                      <span className="border"></span>
-                    </span>
-                    <span className="box_decor"></span>
-                    <div className="task_description_list">
-                      <div className="task_text">
-                        <p>Lorem ipsum dolor sit amet</p>
-                      </div>
-                    </div>
-                  </div>
+                  <SubTaskDiv content={props.subTask1} />
                 </li>
               </ul>
             </div>
