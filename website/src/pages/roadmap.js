@@ -7,7 +7,14 @@ import ProjectDescription from '../../websiteData/roadmap';
 
 const RoadmapHeader = () => {
   return (
-    <header className={clsx('hero hero--primary', styles.banner, styles.header_subtitle, styles.header_title)}>
+    <header
+      className={clsx(
+        'hero hero--primary',
+        styles.banner,
+        styles.header_subtitle,
+        styles.header_title
+      )}
+    >
       <div className="container">
         <h1 className="header_title">Roadmap</h1>
         <p className="roadmap_mission header_subtitle">
