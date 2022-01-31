@@ -1,0 +1,128 @@
+---
+id: newcomers-guide
+title: Newcomers Guide
+sidebar_position: 1
+slug: /newcomers-guide
+---
+
+Hey there!
+
+This guide specifically focuses on the 'first-time contributors'. So, if you are reading this it probably means that you are looking forward to contribute to moja-global or you need some kind of direction regarding your current task.
+
+No worries, this is the right place to find all the common first-time issues or potential areas wherein you can put your contribution.
+
+## Ways to contribute
+
+As a member of the moja-global community, you could contribute in a multitude of ways. You might be a newcomer or a long-time contributor to this community.
+We welcome all types of contributions, no matter how large or small. You can contribute to documentation, community-website, content development or help with outreach as a first-time contributor.
+
+To interact with community members or mentors, attend our bi-weekly meets where we discuss issues related to contributions. The link to the meet is shared via our [Slack](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw) channel..
+
+Below are some of the categories through which you can kick-start your contribution.
+
+### Documentation
+ 
+- Help us in producing high-quality developer-friendly project documentation. Slack channel: [#documentation](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw)
+- Improve the current documentation by identifying gaps and loopholes.
+
+- Documentation files could be found in the ```doc``` directory in our github [repository](https://github.com/moja-global/moja_global_docs). Documentation is hosted using Read the Docs which uses markdown syntax. The HTML documentation can be built locally by running ```make html``` 
+
+- The most common and simple way of contributing to documentation could be done by improving existing documentation files in ``doc`` directory:
+
+- Inorder to update or add new text to any one of the existing files follow the below steps:
+   - Update the text in any applicable ``.rst`` files
+   - Run ``make clean && make html`` from the root directory
+   - Check the output in ``doc/_build/html/index.html`` to make sure the changes are correct
+   - Commit your changes and open a pull request.
+
+### Community website
+
+Help us in improving our project's user interfaces and user experience. Slack Channel: [#user-interface](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw), [#community-website](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw)
+
+- Modifying existing codebase:
+   - Find the source code in ``website`` directory
+   - Update the changes you want to make 
+   - Run ``yarn start`` from the same directory and check whether the changes have been updated
+   - Commit changes and open a pull request
+
+- Improve the UI of the website 
+- Design mockups for existing webpages
+- Review existing pull requests
+
+### Contributing to our core project - FLINT
+
+If you are someone who is skilled around Javascript, then you can start contributing to [FLINT-UI](https://github.com/moja-global/FLINT-UI)
+- Help us improve the user-interface of our project.
+- Set up the FLINT Core Development referring the [docs](https://docs.moja.global/en/latest/DevelopmentSetup/windows_installation.html#.)
+- Try implementing base models like FLINT Example, RothC model or Chapman-Richards using the video tutorials.
+- Discuss the issue with mentor so that you are on the right track.
+- Start contributing to the code once you are comfortable with the tool.
+
+### Content Development
+
+Help us create content for the community by performing due research.
+- **Research**: Perform documentation research process based on the inputs of developer and develop initial content.
+- **Draft**: Prepare a draft after prior research before forwarding it to SMEs.
+- **Review**: Review the draft and suggest improvements and provide feedback.
+- **Merge**: Perform the final review which incorporates all initial suggestions and feedback before being merged.
+
+### Advocacy
+
+Help us engage with our members and promote our community inside and outside of it. Slack Channel: [#general](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw), [#community-website](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw).
+
+- Help organize events for our community (e.g. Begineer open-source related programs like WinterofCode);
+- Share on social media about your work or your contributions and dont forget to tag us.
+- Welcome newcomers in our community 
+- Help and encourage our members to contribute
+- Engage and answer questions on our slack community channel or on github issues and pull requests.
+- Add labels: ```good-first issue``` and ```begineer-friendly issue``` on begineer-friendly issues.
+- Create content to help newcomers get involved.
+
+### Project Management
+
+Help us manage our projects, their contributors and contributions!
+
+- Label issues
+- Assign and unassign contributors to our issues
+- Help triage and validate issues and pull requests, i.e., evaluate them and then closing if necessary
+- Create valid issues to help maintain the projects.
+
+**Note:** If you're a newcomer you may not have permissions to open/close issues or assign/unassign labels and contributors to issues. You can still help validate them by communicating with members who have such permissions.
+
+## Get your issue assigned
+
+- Head over to the project you want to contribute. 
+
+- Comment on an already existing issue with labels like ``beginners-only``, ``good-first issue``.
+If you feel a need to open an issue, we encourage you to please go ahead and make a new issue tagging respective mentors of the project to guide you further.
+
+- Alternatively, you can also browse through the [website](https://community.moja.global/) or our [repo](https://github.com/moja-global) and if you find an area that needs improvement, go ahead and create an issue for the same.
+
+- Also, it is always advised to check if the issue is unassigned or not and then comment on the issue you wish to work on, also if the issue is stale for more than a month try commenting there to know if anyone is working or not.
+
+## Git Guidelines while making your first pull request 
+
+- Avoid working on your fork's ```master``` branch. Instead, create a separate branch to make it easier to update your pull request if the moja-global's master changes.
+- To make your pull request simpler to review, try to [squash](https://gitready.com/advanced/2009/02/10/squashing-commits-with-rebase.html) together minor pushes that make the same changes to the same part of code. For major modifications, a fair number of distinct well-factored contributions is fine.
+- Use ``git rebase`` instead of ```git merge``` or ``git pull`` to update your pull request branch if any conflicts arise as a consequence of changes in the moja-global's master, since the latter would cause merge commits that pollute the git history, making your changes more difficult to analyse.
+- Add descriptive commit messages.
+- To avoid committing unrelated changes use ``git add -p`` or ``git add -i``
+- As GitHub does not notify reviewers when you push a new commit to a pull request, drop a comment on the pull request thread to let reviewers know you've made changes.
+- When referring to specific lines of code in a discussion of an issue or pull request thread on GitHub, press the ``y`` key to refresh the page with a URL that contains the version you're looking at so any lines of code you refer to in the future will still make sense, even if the file's content changes.
+
+## Resources
+
+- Moja-Global
+    - [Community website](https://community.moja.global/)
+    - [Github Org](https://github.com/moja-global)
+    - [Documentation](https://docs.moja.global/en/latest/)
+
+- FLINT
+    - [FLINT Installation](https://docs.moja.global/en/latest/DevelopmentSetup/windows_installation.html#)
+    - [How Flint Works](https://www.youtube.com/watch?v=kRj6AJSDPSw)
+    - [FLINT Core on Visual Studio 2019](https://www.youtube.com/watch?v=BmHltWrxCTY)
+    - [FLINT Example (RothC model) on Visual Studio](https://www.youtube.com/watch?v=Jfi2-vEhfkg&t=17s)
+    - [FLINT Example (Chapman Richards model) on Visual Studio](https://www.youtube.com/watch?v=JFTyeZQbPjI)
+    - [Testing GCBM packages](https://www.youtube.com/watch?v=pSfUlDk37Jk)
+
+Reach out to us on [Slack](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw) if you need help with any issues!
