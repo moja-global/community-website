@@ -290,6 +290,15 @@
     width: 25% !important;
   }
 
+  .close_icon {
+    /* position: absolute; */
+    left: 50px;
+    top: 50px;
+    width: 8%;
+    display: flex;
+    justify-content: space-evenly;
+  }
+
   h2{
     font-size: 1.3rem !important;
   }

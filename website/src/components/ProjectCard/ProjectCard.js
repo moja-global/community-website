@@ -44,9 +44,20 @@ const ProjectCard = (props) => {
           <b>View Timeline</b>
         </button>
       </div>
+
       <Modal ref={modalRef} className="modal">
+       
         <div className="modal_header">
+          
+        <span className="close_icon" >
+             <button onClick={() => modalRef.current.close()}>Close</button> 
+        </span>
+
+
           <h1>{props.projectTitle}</h1>
+          
+
+
           <div className="project_link_icons">
             <a target="_blank" rel="noreferrer" href={props.link.docs}>
               {' '}
