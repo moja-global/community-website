@@ -6,6 +6,7 @@ import MainTaskDiv from './MainTaskDiv';
 import SubTaskDiv from './SubTaskDiv';
 import ProjectIcon from '../svgs/ProjectIcon';
 import GithubIcon from '../svgs/GithubIcon';
+import CloseIcon from '../svgs/CloseIcon';
 
 const ProjectCard = (props) => {
   const modalRef = useRef();
@@ -44,6 +45,7 @@ const ProjectCard = (props) => {
           <b>View Timeline</b>
         </button>
       </div>
+
       <Modal ref={modalRef} className="modal">
         <div className="modal_header">
           <h1>{props.projectTitle}</h1>
@@ -56,6 +58,7 @@ const ProjectCard = (props) => {
               {' '}
               <GithubIcon className="project-icon" />
             </a>
+            <CloseIcon className="project-icon" onClick={() => modalRef.current.close()}></CloseIcon>
           </div>
         </div>
         <p className="discription">{props.projectBody}</p>
