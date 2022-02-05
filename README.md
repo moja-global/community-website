@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="Moja global logo" height ="auto" width="200" />
+<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="moja global logo" height ="auto" width="200" />
 <br />
 <h1>Community Website</h1>
 <p>
@@ -23,9 +23,9 @@ Repository for the moja global community website, a resource for the moja global
 
 [Moja global](http://moja.global/) is a collaboration under the [Linux Foundation](https://linuxfoundation.org/) that aims for the widest possible collaboration on and use of credible tools to better manage the land sector. The flagship software is the [Full Lands Integration Tool (FLINT)](https://github.com/moja-global/flint), a tool to estimate emissions and sinks of greenhouse gasses from forestry and agriculture.
 
-The Community website aims to serve a glimpse of Moja global's projects and their work to the wider community. The website hosts projects, case studies, blogs, tutorials, and more developed by the wider moja community to help you better understand our work and hopefully learn from other's experiences.
+The Community website aims to serve a glimpse of moja global's projects and their work to the wider community. The website hosts projects, case studies, blogs, tutorials, and more developed by the wider moja community to help you better understand our work and hopefully learn from other's experiences.
 
-Our mission is to help new users become familiar with the Moja global community. We want to:
+Our mission is to help new users become familiar with the moja global community. We want to:
 
 - Explain FLINT and the ecosystem surrounding it to anyone who is new to the ecosystem.
 - Cover updates across the ecosystem to help users stay up to date.
@@ -108,7 +108,7 @@ yarn lint
 This command logs all warnings and lint errors and the scope of fixes/improvements.
 
 ```sh
-yarn lint: fix
+yarn lint:fix
 ```
 This option instructs ESLint to try to fix as many issues as possible. The fixes are made to the actual files themselves and only the remaining unfixed issues are output.
 
@@ -143,8 +143,8 @@ Moja global thrives on community participation, and we appreciate your contribut
 
 You can reach out to us through the following channels:
 
-- [info@moja.global](mailto:info@moja.global) : Ask questions about Moja global relevant to the members and management with a point of focus for new user countries and policymakers.
-- [tsc@moja.global](mailto:tsc@moja.global) : Ask questions about contributing code, helping out with development, resolving issues and building new features with Moja global teams.
+- [info@moja.global](mailto:info@moja.global) : Ask questions about moja global relevant to the members and management with a point of focus for new user countries and policymakers.
+- [tsc@moja.global](mailto:tsc@moja.global) : Ask questions about contributing code, helping out with development, resolving issues and building new features with moja global teams.
 - [mentorship@moja.global](mailto:mentorship@moja.global) : Ask questions about participating in the community, sponsoring programs, funding opportunities, and community development.
 - [Slack community](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw ): Connect with other developers, scientists, policymakers, and other interested people over our Slack community.
 
