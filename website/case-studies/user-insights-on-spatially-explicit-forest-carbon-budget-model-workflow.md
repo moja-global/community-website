@@ -38,9 +38,9 @@ Spatially explicit modelling makes use of data that is spatially described, whic
 
 <table>
     <tr>
-        <td><img src="../static/img/spatial-data.jpeg" /></td>
-        <td><img src="../static/img/southern_vancouver_island_photo_tj_watt.jpeg" /></td>
-        <td><img src="../static/img/spatial-data-1.png" /></td>
+        <td><img src="/img/spatial-data.jpeg" /></td>
+        <td><img src="/img/southern_vancouver_island_photo_tj_watt.jpeg" /></td>
+        <td><img src="/img/spatial-data-1.png" /></td>
     </tr>
 </table>
 
@@ -283,5 +283,5 @@ The data that is directly input and output with GCBM/FLINT is described in the e
 The steps required to run a successful model simulation through GCBM/FLINT are dependent on the features of the input data, and the users modelling objectives. The workflow described in the flowchart below is a high-level generalization.
 
 <p align="center">
-    <img src="../static/img/summary-gcbm.png" width="700" height="1000"></img>
+    <img src="/img/summary-gcbm.png" width="700" height="1000"></img>
 </p>
