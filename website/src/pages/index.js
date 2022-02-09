@@ -8,6 +8,7 @@ import HomepageFeatures from '../components/HomePageFeatures';
 import Contributors from '../components/Contributors';
 import features from '../../websiteData/features';
 import Sponsors from '../components/Sponsors';
+import ScrollToTop from '../components/ScrollToTop';
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -54,11 +55,13 @@ const Home = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
     <>
+      
       <Layout
         title={`Hello from ${siteConfig.title}`}
         description="Description will go into a meta tag in <head />"
       >
         <HomepageHeader />
+        <ScrollToTop />
         <main>
           <div className="maindiv">
             <br></br>
@@ -87,6 +90,7 @@ const Home = () => {
         <Contributors />
         <Sponsors />
       </Layout>
+      <ScrollToTop />
     </>
   );
 };
