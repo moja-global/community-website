@@ -87,20 +87,7 @@ const Community = () => {
         </section>
         <section id="meetings">
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
-          <div>
-            <div>
-              <h5 className={styles.meetingTitle}>Past Meetings</h5>
 
-              <Calendar
-                className={styles.Calendar}
-                localizer={localizer}
-                events={meetings}
-                startAccessor="start"
-                endAccessor="end"
-                style={{ height: 400 }}
-              />
-            </div>
-          </div>
           <div>
             <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
             <Calendar

@@ -1,56 +1,5 @@
-.communityBody {
-  display: flex;
-  flex-direction: column;
-  max-width: 1280px;
-  text-align: center;
-  margin: 2rem auto;
-  padding: 1rem;
-}
-
-
-
-.communityTitle {
-  font-size: xx-large;
-}
-
-.communitySubtitle {
-  color: var(--ifm-color-primary);
-  font-size: x-large;
-}
-
-.communityRow {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-content: center;
-  margin: 2rem 10px;
-}
-
-.communityItem {
-  width: 33.3%;
-}
-
-.communityMeeting {
-  width: 50%;
-}
-
-.meetingTitle {
-  font-size: large;
-  margin: 35px auto;
-}
-
-.addToCalendar {
-  display: flex;
-  justify-content: end
-}
-.addToCalendar button{
-  background-color: var(--ifm-color-primary-lightest);
-  border-radius: 10px;
-  padding: 0.75rem 1rem;
-  outline: none;
-  cursor: pointer;
-  border: none;
-  margin-bottom: 5%;
+.rbc-calendar {
+  color: black;
 }
 
 @media screen and (max-width: 966px) {
@@ -68,7 +17,57 @@
   }
 }
 
-@media screen and (min-width: 375px) {
+/* stylelint-disable docusaurus/copyright-header */
+
+/**
+ * CSS files with the .module.css suffix will be treated as CSS modules
+ * and scoped locally.
+ */
+
+.heroBanner {
+  min-height: calc(100vh - 60px);
+  background-image: url('/img/banner-image.png');
+  overflow: hidden;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.heroContainer {
+  width: 50%;
+  margin-left: 8%;
+  color: white;
+}
+
+.buttons {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: left;
+  justify-content: left;
+  margin: 30px 0 0;
+}
+
+html[data-theme='dark'] li > a:hover {
+  text-decoration: none;
+  color: #ecf0f1;
+}
+
+.buttons > a {
+  margin: 5px;
+}
+
+@media screen and (max-width: 966px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+
+  .heroContainer {
+    width: 100%;
+    margin: auto;
+  }
+
+  .buttons {
+    justify-content: center;
+  }
   .button {
     position: relative;
     left: 35%;
