@@ -1,22 +1,23 @@
-export const events = [
+// format for adding a meeting is new Date(year , month-1 , date)
+const meetings = [
   {
-    title: 'Big Meeting',
-    start: new Date(2022, 0, 2, 1, 20, 30),
-    end: new Date(2022, 0, 5, 1, 20, 30),
+    title: 'Documentation Meeting',
+    start: new Date(2021, 11, 2, 16, 30, 0),
+    end: new Date(2021, 11, 2, 17, 0, 0),
+    gmeetLink: 'google.com',
   },
   {
-    title: 'Meeting',
-    start: new Date(2021, 1, 1, 1, 20, 30),
-    end: new Date(2021, 1, 5, 1, 20, 30),
+    title: 'Technical Working Group Meeting',
+    start: new Date(2021, 11, 4, 16, 30, 0),
+    end: new Date(2021, 11, 4, 17, 0, 0),
+    gmeetLink: 'google2.com',
   },
   {
-    title: '🎈dummy meeting',
-    start: new Date(2021, 11, 12, 1, 20, 30),
-    end: new Date(2021, 11, 14, 1, 20, 30),
-  },
-  {
-    title: 'dummy meeting',
-    start: new Date(2021, 11, 12, 1, 20, 30),
-    end: new Date(2021, 11, 14, 1, 20, 30),
+    title: 'UI Working Group Meeting',
+    start: new Date(2022, 0, 6, 16, 30, 0),
+    end: new Date(2022, 0, 6, 17, 0, 0),
+    gmeetLink: 'google.com',
   },
 ];
+
+export default meetings;

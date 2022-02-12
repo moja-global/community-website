@@ -2,7 +2,7 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
-import { events } from '../../websiteData/meetings';
+import meetings from '../../websiteData/meetings';
 import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
 import format from 'date-fns/format';
 import parse from 'date-fns/parse';
@@ -20,10 +20,6 @@ const localizer = dateFnsLocalizer({
   getDay,
   locales,
 });
-// format for adding a meeting is new Date(year , month-1 , date)
-function ondouleclick() {
-  window.open('https://workspace.google.com/intl/en_in/products/calendar/?utm_source=google&utm_medium=cpc&utm_campaign=1011352-Workspace-APAC-IN-en-BKWS-EXA-Golden&utm_content=text-ad-none-none-DEV_c-CRE_469259700126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20EXA%20%7C%20Calendar%20%7C%20%5BM:1%5D%20%7C%20IN%20%7C%20EN-KWID_43700057535047290-kwd-1844967558&userloc_1007820-network_g&utm_term=KW_google%20calendar&gclid=CjwKCAiAz--OBhBIEiwAG1rIOkbt8UI2XpXuSfpJzoHLn12sVQllOHJEgzju9YKwJOe1AgCPEgUKMBoCnK8QAvD_BwE&gclsrc=aw.ds', '_blank');
-}
 
 const Community = () => {
   return (
@@ -93,25 +89,29 @@ const Community = () => {
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
           <div>
             <div>
-              <div className={styles.addToCalendar}>
-                <a href="https://workspace.google.com/intl/en_in/products/calendar/?utm_source=google&utm_medium=cpc&utm_campaign=1011352-Workspace-APAC-IN-en-BKWS-EXA-Golden&utm_content=text-ad-none-none-DEV_c-CRE_469259700126-ADGP_Hybrid%20%7C%20AW%20SEM%20%7C%20BKWS%20~%20EXA%20%7C%20Calendar%20%7C%20%5BM:1%5D%20%7C%20IN%20%7C%20EN-KWID_43700057535047290-kwd-1844967558&userloc_1007820-network_g&utm_term=KW_google%20calendar&gclid=CjwKCAiAz--OBhBIEiwAG1rIOkbt8UI2XpXuSfpJzoHLn12sVQllOHJEgzju9YKwJOe1AgCPEgUKMBoCnK8QAvD_BwE&gclsrc=aw.ds">
-                  <button>Add to your Calendar</button>
-                </a>
-              </div>
+              <h5 className={styles.meetingTitle}>Past Meetings</h5>
 
               <Calendar
                 className={styles.Calendar}
                 localizer={localizer}
-                events={events}
+                events={meetings}
                 startAccessor="start"
                 endAccessor="end"
-                views={{
-                  month: true,
-                }}
-                onDoubleClickEvent={ondouleclick}
-                style={{ height: 600 }}
+                style={{ height: 400 }}
               />
             </div>
+          </div>
+          <div>
+            <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
+            <Calendar
+              className={styles.Calendar}
+              localizer={localizer}
+              events={meetings}
+              selectable={true}
+              views={['month', 'week', 'agenda']}
+              onSelectEvent={(event) => console.log(event.gmeetLink)}
+              style={{ height: 400, width: '100%' }}
+            />
           </div>
         </section>
       </div>
