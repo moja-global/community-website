@@ -89,7 +89,6 @@ const Community = () => {
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
 
           <div>
-            <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
             <Calendar
               className={styles.Calendar}
               localizer={localizer}
