@@ -1,9 +1,38 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import LazyLoad from 'react-lazyload';
 import contributors from '../../contributors.json';
 import ContributorAvatar from '../ContributorAvatar';
 
 const Contributors = (props) => {
+  const [loading, setLoading] = useState(true);
+  const [repoStars, setRepoStars] = useState(0);
+  const [repoForks, setRepoForks] = useState(0);
+  const [repoWatchers, setRepoWatchers] = useState(0);
+
+  useEffect(() => {
+    fetch(`https://api.github.com/repos/moja-global/community-website`).then(async (response) => {
+      const data = await response.json();
+
+      if (data && data.stargazers_count) {
+        setRepoStars(data.stargazers_count);
+      }
+
+      if (data && data.forks_count) {
+        setRepoForks(data.forks_count);
+      }
+
+      if (data && data.watchers_count) {
+        setRepoWatchers(data.watchers_count);
+      }
+
+      setLoading(false);
+    });
+  }, []);
+
+  if (loading) {
+    return <div></div>;
+  }
+
   const sortedContributors = contributors
     .map((o) => {
       // add one day per commit
@@ -25,6 +54,21 @@ const Contributors = (props) => {
             </div>
           </LazyLoad>
         )}
+      </div>
+      {/* counter */}
+      <div className="stats">
+        <div className="stats-item">
+          <p>{sortedContributors.length} Contributors</p>
+        </div>
+        <div className="stats-item">
+          <p>{repoForks} Forks</p>
+        </div>
+        <div className="stats-item">
+          <p>{repoWatchers} Watchers</p>
+        </div>
+        <div className="stats-item">
+          <p>{repoStars} Stars</p>
+        </div>
       </div>
     </div>
   );

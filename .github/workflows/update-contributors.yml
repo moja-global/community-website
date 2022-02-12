@@ -2,8 +2,8 @@ name: Trigger Contributors list
 
 on:
   schedule:
-    # At 22:00 on every day-of-week from Monday through Friday
-    - cron: '0 22 * * 1-5'
+    # At 00:00 UTC on every Monday
+    - cron: '0 0 * * 0'
 
 jobs:
   build:
@@ -20,12 +20,13 @@ jobs:
       - name: Run Contributors script
         run: |
           cd website
+          npm install request --save
           node ./fetchContributors.js
-
+          
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
         with:
           add: 'website'
           default_author: github_actor
-          commit_message: 'Update contributors'
+          message: 'Update contributors'
           signoff: true

@@ -19,12 +19,12 @@
     "message": "FLINT-Reporting-Tool",
     "description": "The label for category FLINT-Reporting-Tool in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.FLINT-Visualization-Tool": {
+  "sidebar.tutorialSidebar.category.FLINT-UI": {
     "message": "FLINT-Visualization-Tool",
-    "description": "The label for category FLINT-Visualization-Tool in sidebar tutorialSidebar"
+    "description": "The label for category FLINT-UI in sidebar tutorialSidebar"
   },
-  "sidebar.tutorialSidebar.category.Predictive-Deforestation": {
-    "message": "Predictive-Deforestation",
-    "description": "The label for category Predictive-Deforestation in sidebar tutorialSidebar"
+  "sidebar.tutorialSidebar.category.GCBM": {
+    "message": "GCBM",
+    "description": "The label for category GCBM in sidebar tutorialSidebar"
   }
 }

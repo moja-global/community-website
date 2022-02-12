@@ -84,8 +84,6 @@ Maintainers should set up the `watch` capacity for projects that they manage to 
 
 If you have experience and want to help, please send an email to [tsc@moja.global](mailto:tsc@moja.global). We are looking for engineers with experience in C++, MRV or carbon flux modelling experience.
 
-## Contribute review and science design
-
 ## Review or Contribute to a Science Design
 
 All moja global code is informed by a **Science Design**. Science Designs are developed collaboratively and everybody is invited to contribute. It is advisable to review the science design before contributing to the code or the documentation. Follow the following steps to contribute to or review a **Science Design**:

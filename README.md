@@ -1,5 +1,5 @@
 <div align="center">
-<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="Moja global logo" height ="auto" width="200" />
+<img src="https://avatars.githubusercontent.com/u/19564969?v=4" alt="moja global logo" height ="auto" width="200" />
 <br />
 <h1>Community Website</h1>
 <p>
@@ -23,13 +23,13 @@ Repository for the moja global community website, a resource for the moja global
 
 [Moja global](http://moja.global/) is a collaboration under the [Linux Foundation](https://linuxfoundation.org/) that aims for the widest possible collaboration on and use of credible tools to better manage the land sector. The flagship software is the [Full Lands Integration Tool (FLINT)](https://github.com/moja-global/flint), a tool to estimate emissions and sinks of greenhouse gasses from forestry and agriculture.
 
-The Community website aims to serve a glimpse of moja global's projects and their working to the wider community. The website hosts projects, case studies, blogs, tutorials and more developed by the wider moja community to help you better understand our work and hopefully learn from others experience.
+The Community website aims to serve a glimpse of moja global's projects and their work to the wider community. The website hosts projects, case studies, blogs, tutorials, and more developed by the wider moja community to help you better understand our work and hopefully learn from other's experiences.
 
 Our mission is to help new users become familiar with the moja global community. We want to:
 
 - Explain FLINT and the ecosystem surrounding it to anyone who is new to the ecosystem.
 - Cover updates across the ecosystem to help users stay up to date.
-- Bring Measure, Reporting and Verification (MRV) software edication to the community, in as many languages as possible.
+- Bring Measure, Reporting, and Verification (MRV) software education to the community, in as many languages as possible.
 - Assist new developers, writers, community managers and other contributors to get started on our projects.
 - Provide them an opportunity to work on funded projects under the mentorship of the community members.
 
@@ -46,7 +46,7 @@ We use a variety of technologies to build the web interface and support the comm
 - [Vercel](https://vercel.com/)
 - [LightHouse](https://lighthouse.io/)
 
-We use NodeJS and Yarn to install, test and build the website. Docusaurus has been used as a static site generator to build the website. React is being utilized to build our custom component-based user interface to provide a modern look to the website. Algolia DocSearch is used to provide search functionality to the website, offering site-indexing and rapid fast intra-site search results. GitHub Actions manages our CI/CD pipelines and issue triage. Vercel is used to deploy the website, while providing us DNS management and automated deployment of our pull requests. LightHouse is used to continuously monitor our website benchmarks and help us identify SEO, accessibility and performance issues.
+We use NodeJS and Yarn to install, test, and build the website. Docusaurus has been used as a static site generator to build the website. React is being utilized to build our custom component-based user interface to provide a modern look to the website. Algolia DocSearch is used to provide search functionality to the website, offering site-indexing and rapid fast intra-site search results. GitHub Actions manages our CI/CD pipelines and issue triage. Vercel is used to deploy the website while providing us DNS management and automated deployment of our pull requests. LightHouse is used to continuously monitor our website benchmarks and help us identify SEO, accessibility and performance issues.
 
 ## Installation
 
@@ -100,12 +100,12 @@ Moja global welcomes contributions to the community website. If you have an idea
 
 ### Linting
 
-The project has ESLint configured to properly format the code. This enables developer to follow the same coding style and to avoid improperly-linted code. All the commands below should be run from the `website` directory.
+The project has ESLint configured to properly format the code. This enables developers to follow the same coding style and to avoid improperly-linted code. All the commands below should be run from the `website` directory.
 
 ```sh
 yarn lint
 ```
-This command logs all warnings and lint errors and scope of fixes/improvements.
+This command logs all warnings and lint errors and the scope of fixes/improvements.
 
 ```sh
 yarn lint:fix
@@ -121,7 +121,7 @@ This option allows you to specify the file to use as your `.eslintignore`. By de
 
 We use Vercel for deployment. To enable Vercel, create an account  and through the Vercel dashboard, you can create a new project by importing a GitHub repository. The repository should be a fork of the `moja-global/community-website` repository. Vercel will automatically configure the build settings for the project and deploy it. You can further configure the domain name and other settings in the Vercel dashboard.
 
-If you are using GitHub pages for hosting, this command is a convenient way to build the website and push to the `gh-pages` branch.
+If you are using GitHub pages for hosting, this command is a convenient way to build the website and push it to the `gh-pages` branch.
 
 ```sh
 GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
@@ -130,7 +130,7 @@ GIT_USER=<Your GitHub username> USE_SSH=true yarn deploy
 You can optionally deploy it using Docker Compose. Push the following commands to your terminal.
 
 ```sh
-docker compose up --build
+docker-compose up --build
 ```
 
 ### Frequently Asked Questions
@@ -143,10 +143,10 @@ Moja global thrives on community participation, and we appreciate your contribut
 
 You can reach out to us through the following channels:
 
-- [info@moja.global](mailto:info@moja.global) : Ask questions about moja global relevant to the members and management with a point of focus for new user countries and policy makers.
+- [info@moja.global](mailto:info@moja.global) : Ask questions about moja global relevant to the members and management with a point of focus for new user countries and policymakers.
 - [tsc@moja.global](mailto:tsc@moja.global) : Ask questions about contributing code, helping out with development, resolving issues and building new features with moja global teams.
-- [mentorship@moja.global](mailto:mentorship@moja.global) : Ask questions about participating in the community, sponsoring programs, funding opportunity and community development.
-- [Slack community](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw ): Connect with other developers, scientists, policy makers and other interested people over our Slack community.
+- [mentorship@moja.global](mailto:mentorship@moja.global) : Ask questions about participating in the community, sponsoring programs, funding opportunities, and community development.
+- [Slack community](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw ): Connect with other developers, scientists, policymakers, and other interested people over our Slack community.
 
 ## Contributors ✨
 
@@ -182,6 +182,9 @@ Thanks goes to these wonderful people ([emoji key](https://allcontributors.org/d
     <td align="center"><a href="https://github.com/caseynv"><img src="https://avatars.githubusercontent.com/u/67697400?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Kelechukwu Nwandu</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=caseynv" title="Documentation">📖</a></td>
     <td align="center"><a href="https://github.com/Sukriti-sood"><img src="https://avatars.githubusercontent.com/u/55010599?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Sukriti Sood</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=Sukriti-sood" title="Code">💻</a></td>
     <td align="center"><a href="https://github.com/aayushsrivastava9760"><img src="https://avatars.githubusercontent.com/u/81965095?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Aayush Srivastava</b></sub></a><br /><a href="#design-aayushsrivastava9760" title="Design">🎨</a></td>
+  </tr>
+  <tr>
+    <td align="center"><a href="https://github.com/khush2706"><img src="https://avatars.githubusercontent.com/u/86849664?v=4?s=100" width="100px;" alt=""/><br /><sub><b>Khushboo Chaturvedi</b></sub></a><br /><a href="https://github.com/moja-global/community-website/commits?author=khush2706" title="Code">💻</a></td>
   </tr>
 </table>
 
