@@ -8,6 +8,12 @@ import format from 'date-fns/format';
 import parse from 'date-fns/parse';
 import startOfWeek from 'date-fns/startOfWeek';
 import getDay from 'date-fns/getDay';
+import LFXLogo from './../../static/img/linux.png';
+import GSODLogo from './../../static/img/gsod.webp';
+import GSOCLogo from './../../static/img/gsoc.png';
+import OutreachyLogo from './../../static/img/Outreach.png';
+import GithubLogo from './../../static/img/github.png';
+import SlackLogo from './../../static/img/slack.png';
 import 'react-big-calendar/lib/css/react-big-calendar.css';
 
 const locales = {
@@ -33,33 +39,29 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Linux Foundation Mentorship"
-                description="The Linux Foundation is the parent organisation of moja global. Therefore, we actively participate and host our projects for the LFX Mentorship programme."
+                image={LFXLogo}
                 btnLink="/community/mentorship#linux-foundation-mentorship/"
-                btnText="Learn More"
               />
             </div>
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Season of Docs"
-                description="moja global participates in Google Season of Docs. We love technical writers who can bring in clarity about our projects with good documentation."
+                image={GSODLogo}
                 btnLink="/community/mentorship#google-season-of-docs/"
-                btnText="Learn More"
               />
             </div>
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Outreachy Internships"
-                description="moja global participates in Outreachy. We love to support under-represented groups in technology who can help accelerate our project growth."
+                image={OutreachyLogo}
                 btnLink="/community/mentorship#outreachy-internships/"
-                btnText="Learn More"
               />
             </div>
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Google Summer of Code"
-                description="moja global participates in Google Summer of Code. We love to host a wide range of contributors to help us accelerate our project growth."
+                image={GSOCLogo}
                 btnLink="/community/mentorship#google-summer-of-code/"
-                btnText="Learn More"
               />
             </div>
           </div>
@@ -70,16 +72,14 @@ const Community = () => {
             <div className={styles.communityItem}>
               <CommunityCard
                 title="GitHub"
-                description="We have a ton of open issues which could use your help and expertise. "
-                btnText="Learn More"
+                image={GithubLogo}
                 btnLink="https://github.com/moja-global"
               />
             </div>
             <div className={styles.communityItem}>
               <CommunityCard
                 title="Slack"
-                description="We would love to know you better. Hop on and chat with the community."
-                btnText="Join Us"
+                image={SlackLogo}
                 btnLink="https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw"
               />
             </div>
@@ -87,8 +87,7 @@ const Community = () => {
         </section>
         <section id="meetings">
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
-
-          <div>
+          <div className={styles.calendarWrapper}>
             <Calendar
               className={styles.Calendar}
               localizer={localizer}
@@ -96,7 +95,7 @@ const Community = () => {
               selectable={true}
               views={['month', 'week', 'agenda']}
               onSelectEvent={(event) => console.log(event.gmeetLink)}
-              style={{ height: 400, width: '100%' }}
+              style={{ height: 400 }}
             />
           </div>
         </section>

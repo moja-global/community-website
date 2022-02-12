@@ -42,6 +42,9 @@ html[data-theme='dark'] .rbc-today {
   color: black !important;
 }
 
+html[data-theme='dark'] .rbc-active {
+  color: black !important;
+}
 html[data-theme='dark'] .rbc-today {
   background-color: var(--ifm-color-primary);
 }
