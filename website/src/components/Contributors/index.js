@@ -21,7 +21,7 @@ const Contributors = (props) => {
         setRepoForks(data.forks_count);
       }
 
-     if (data && data.watchers_count) {
+      if (data && data.watchers_count) {
         setRepoWatchers(data.watchers_count);
       }
 

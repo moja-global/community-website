@@ -1,5 +1,4 @@
 module.exports = {
-    community: [
-        'tutorial-introduction',
-    ]
-}
+    community: ['tutorial-introduction'],
+  }
+  

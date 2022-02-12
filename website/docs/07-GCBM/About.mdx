@@ -1,0 +1,35 @@
+---
+id: GCBM
+title: About GCBM
+---
+
+## Purpose and Overview
+
+The Generic Carbon Budget Model (GCBM), a spatially-explicit forest ecosystem carbon accounting tool developed by the Canadian Forest Service (CFS) at Natural Resources Canada, that functions on the FLINT platform,  has been applied in various projects and at various scales by National and Provincial governments. Growing interest in applications of the model exists within the global forest community.
+
+The GCBM implements the lessons learned from over 30 years of carbon modeling by CFS. It is a spatial-explicit implementation of their widely-used Carbon Budget Model of the Canadian Forest Sector (CBM-CFS3). The science and modeling processes behind each are very similar. It is an operational model that uses data required for forest management planning supplemented with ecological parameters. The CBM-CFS3 is currently used to generate Canada’s annual GHG submissions to the UNFCCC. The forest emissions and removals reported by Canada were replicated using the FLINT-based GCBM and the results were very similar.
+
+## Project Features
+
+In FLINT, CBM-CFS3 simulates the entire landscape a timestep at a time. FLINT simulations are conducted a pixel at a time through the whole timeseries. The pixels are completely independent from one another and are highly scalable.
+
+GCBM brings CBM-CFS3 science implemented as modules running on the FLINT platform
+- Ecosystem components (biomass, soil, gases) represented as pools
+- Yield curve-based growth
+- Disturbances and annual processes represented as transfers between pools.
+
+The Core modules include:
+
+- Biomass growth and mortality.
+- Dead organic matter and soil dynamics.
+- Disturbance impacts (management, natural disturbances, land-use change).
+
+The national-scale estimates of C stocks and fluxes using GCBM are nearly identical (<0.25% difference) 
+to CBM-CFS3. The main differences from CBM-CFS3 are:
+
+- Inventory and disturbances are spatially explicit (GIS layers) instead of spatially referenced (database tables).
+- Location of disturbances is explicit in spatial layers instead of rule-based.
+- Spatial as well as tabular output for pools and fluxes.
+- Easier to extend with new modules.
+- Easier to simulate large landscapes (greater number of pixels).
+
