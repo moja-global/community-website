@@ -2,15 +2,30 @@ import React from 'react';
 import Layout from '@theme/Layout';
 import styles from './initiatives.module.css';
 import CommunityCard from '../components/CommunityCard';
-import { FixedSizeList as List } from 'react-window';
-import MeetingCard from '../components/PastMeetingCard';
-import { pastMeetings, upcomingMeetings } from '../../websiteData/meetings';
+import meetings from '../../websiteData/meetings';
+import { Calendar, dateFnsLocalizer } from 'react-big-calendar';
+import format from 'date-fns/format';
+import parse from 'date-fns/parse';
+import startOfWeek from 'date-fns/startOfWeek';
+import getDay from 'date-fns/getDay';
 import LFXLogo from './../../static/img/linux.png';
 import GSODLogo from './../../static/img/gsod.webp';
 import GSOCLogo from './../../static/img/gsoc.png';
 import OutreachyLogo from './../../static/img/Outreach.png';
 import GithubLogo from './../../static/img/github.png';
 import SlackLogo from './../../static/img/slack.png';
+import 'react-big-calendar/lib/css/react-big-calendar.css';
+
+const locales = {
+  'en-US': require('date-fns/locale/en-US'),
+};
+const localizer = dateFnsLocalizer({
+  format,
+  parse,
+  startOfWeek,
+  getDay,
+  locales,
+});
 
 const Community = () => {
   return (
@@ -72,31 +87,16 @@ const Community = () => {
         </section>
         <section id="meetings">
           <h3 className={styles.communitySubtitle}>Our Meetings</h3>
-          <div className={styles.communityRow}>
-            <div className={styles.communityMeeting}>
-              <h5 className={styles.meetingTitle}>Past Meetings</h5>
-              <List
-                height={500}
-                itemCount={pastMeetings.length}
-                itemSize={100}
-                width="90%"
-                itemData={{ isCompleted: true }}
-              >
-                {MeetingCard}
-              </List>
-            </div>
-            <div className={styles.communityMeeting}>
-              <h5 className={styles.meetingTitle}>Upcoming Meetings</h5>
-              <List
-                height={500}
-                itemCount={upcomingMeetings.length}
-                itemSize={100}
-                width="90%"
-                itemData={{ isCompleted: false }}
-              >
-                {MeetingCard}
-              </List>
-            </div>
+          <div className={styles.calendarWrapper}>
+            <Calendar
+              className={styles.Calendar}
+              localizer={localizer}
+              events={meetings}
+              selectable={true}
+              views={['month', 'week', 'agenda']}
+              onSelectEvent={(event) => console.log(event.gmeetLink)}
+              style={{ height: 400 }}
+            />
           </div>
         </section>
       </div>
