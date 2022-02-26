@@ -54,7 +54,7 @@ Greenhouse gas fluxes in the AFOLU Sector can be estimated in two ways:
 - Finding net changes in C stocks over time (used for most CO2 fluxes)
 - Directly finding gas flux rates to and from the atmosphere (used for estimating non-CO2 emissions and some CO2 emissions and removals).
 
-Below we describe the major ecosystem stocks and processes associated with emission and removal in the AFOLU Sector, grouped by components, i.e.,
+Below are the major ecosystem stocks and processes associated with emission and removal in the AFOLU Sector, grouped by components, i.e.,
 
 - Biomass
 - Dead Organic Matter
