@@ -1,5 +1,5 @@
 ---
-title: How AFOLU sector responsible for GHG emission and removal?
+title: How AFOLU sector is responsible for GHG emission and removal?
 description: Agriculture, Forest and Other Land uses are also responsible for Greenhouse Gases emission and removal.
 slug: afolu-sector-ghg-emission
 authors: sukriti_05
@@ -8,7 +8,7 @@ image: https://i.imgur.com/NdoUkr0.jpeg
 hide_table_of_contents: false
 ---
 
-Agriculture, Forestry, and Other Land Use (__AFOLU__) plays a central role for food security and sustainable development . Plants take up carbon dioxide (CO2) from the atmosphere and nitrogen (N) from the soil when they grow, redistributing it among multiple __pools__, including __above__ and __below-ground__ living __biomass__, dead residues, and soil organic matter.
+Agriculture, Forestry, and Other Land Use (__AFOLU__) plays a central role for food security and sustainable development . Plants take up carbon dioxide from the atmosphere and nitrogen from the soil when they grow, redistributing it among multiple __pools__, including __above__ and __below-ground__ living __biomass__, dead residues, and soil organic matter.
 
 __Pool__ is a system which has the capacity to accumulate or release carbon.
 
@@ -68,7 +68,6 @@ Plant biomass, including above- and below-ground components, is the main mechani
 ### Dead Organic Matter
 
 The majority of biomass generated in living plant material ends up in dead organic matter (DOM) pools (dead wood, for instance). DOM sometimes decomposes rapidly, releasing carbon into the atmosphere. However, a substantial amount of carbon is retained for months, years, or even decades. Through the decomposition rate and input of fresh organic matter, land use and management affect C stocks of dead organic matter. The burning of dead organic matter results in the release of CO2, N2O, CH4, NOx, NMVOC, and CO.
-
 
 ### Soils
 
