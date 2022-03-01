@@ -21,7 +21,8 @@ jobs:
         run: |
           cd website
           npm install request --save
-          node ./fetchContributors.js
+          node ./scripts/fetchContributors.js
+          rm package-lock.json
           
       - name: Commit changes
         uses: EndBug/add-and-commit@v7
