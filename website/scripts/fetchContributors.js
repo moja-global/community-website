@@ -48,7 +48,7 @@ request(
     });
 
     fs.writeFile(
-      path.resolve(__dirname, 'src/contributors.json'),
+      path.resolve(__dirname, '../src/contributors.json'),
       JSON.stringify(content, null, 2) + '\n',
       (err) => {
         if (err) {
