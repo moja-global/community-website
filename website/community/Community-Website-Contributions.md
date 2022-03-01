@@ -40,7 +40,7 @@ There are somethings that are quite important and must be kept in mind while wri
 3. Keep the documentation piece concise, crisp and to the point.
 4. Avoid using technical jargon and prefer to use simple language and vocabulary..
 
-#### Additing it to the website
+#### Adding it to the website
 
 Every document has a unique ID attached to it which is by default the `name of the document`. It can be overriden by defining the ID explicitly at the top of the document like.
 
@@ -93,9 +93,15 @@ There are somethings that are quite important and must be kept in mind while sub
 
 If you have not already, follow [these instructions](https://github.com/moja-global/community-website/blob/main/FAQ.md#how-to-contribute-to-the-community-website) to setup the Community website locally before publishing the same. You must be familiar with the basic Git & GitHub workflow to be able to clone and setup the website and push your changes.
 
-Once the community website has been setup, navigate to the `blog` directory and create a Markdown file with the name of your blog. The name of the file should be in the format `YYYY-MM-DD-TITLE.md`. The purpose of the naming convention is to make sure that the blogs are sorted in chronological order.
+To create a blog, you can run the command:
 
-Let's take an example of a blog that we would like to submit. Create a file at `website/blog/2019-09-05-test.md` and write the following content in it:
+```sh
+npm run write-blog
+```
+
+It will prompt you to enter the title of the blog, the description of the blog and the tags of the blog. You can also add a cover image for the blog by uploading it to a CDN like Imgur. Once the command is executed, you can see the name of the file as `YYYY-MM-DD-TITLE.md`. The purpose of the naming convention is to make sure that the blogs are sorted in chronological order.
+
+Let's take an example of a blog that we would like to submit. 
 
 ```
 ---
