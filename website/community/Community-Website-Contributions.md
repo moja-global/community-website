@@ -42,19 +42,15 @@ There are somethings that are quite important and must be kept in mind while wri
 
 #### Adding it to the website
 
-Every document has a unique ID attached to it which is by default the `name of the document`. It can be overriden by defining the ID explicitly at the top of the document like.
+To create a project on the Community Website, you need to run the following command:
 
-```
----
-id: example-id
----
+```sh
+yarn run write-project
 ```
 
-This will overwrite the document's ID to `example-id` instead of whatever was the name of the file.
+A script will automatically generate a directory, based on your inputs, for you along with an `About.mdx` file where you can start writting the documentation. Specify the name of the project and the name of the directory where the documentation will be stored. Make sure that you have a numerical prefix attached to the directory name to make sure that the directory is unique and it does not override the position of other projects in the sidebar. You can take inspiration from the existing documentation and use the same structure.
 
-Creating a document on the community website is fairly easy. All you have to do is to go into the respective project directory inside the `docs` directory wherein you want the documentation to be visible and create a markdown file `.md`. You can also create a `.mdx` file if you want to add some JSX code in your documentation but that's an complex use-case and does not need to be addressed here.
-
-At the top of the file, specify ID and the title in the front matter, so that our configurations will pick them up correctly while generating your site.
+At the top of the file, you will find the ID and the title specified in the front matter, so that our configurations will pick them up correctly while generating your site. You can override the front matter values by editing the values.
 
 ```
 ---
@@ -96,7 +92,7 @@ If you have not already, follow [these instructions](https://github.com/moja-glo
 To create a blog, you can run the command:
 
 ```sh
-npm run write-blog
+yarn run write-blog
 ```
 
 It will prompt you to enter the title of the blog, the description of the blog and the tags of the blog. You can also add a cover image for the blog by uploading it to a CDN like Imgur. Once the command is executed, you can see the name of the file as `YYYY-MM-DD-TITLE.md`. The purpose of the naming convention is to make sure that the blogs are sorted in chronological order.
