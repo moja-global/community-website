@@ -13,6 +13,7 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "write-blog": "node ./scripts/write-blogs.js",
+    "write-project": "node ./scripts/write-projects.js",
     "lint": "eslint ./src/",
     "lint:fix": "eslint ./src/ --fix"
   },
