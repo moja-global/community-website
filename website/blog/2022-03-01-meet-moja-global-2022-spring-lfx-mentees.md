@@ -26,7 +26,7 @@ Soham Shah is a Software Engineer, Open source-contributor and Research Enthusia
 
 He is a JavaScript Engineer, exploring into the areas of full stack development, Design Systems, Web Performance and Frontend Tooling. Soham is an open source enthusiast, and has been an active contributor to moja global. He is currently co-leading UI Working Group at the moja global community. 
 
-Outside moja global, he is the core-collaborator at Chakra UI, a popular open source component library, and has been involved with their documentation and triaging team. Being passionate about sharing learnings and insights about web development, he has delivered tech talks at various tech meetups like ReactJS Bangalore and JSMeetup, and an active member in these communities.
+Outside moja global, he is the core-collaborator at [Chakra UI](https://chakra-ui.com/), a popular open source component library, and has been involved with their documentation and triaging team. Being passionate about sharing learnings and insights about web development, he has delivered tech talks at various tech meetups like ReactJS Bangalore and JSMeetup, and an active member in these communities.
 
 During the LFX Mentorship term, he is indeed excited to contribute towards FLINT-UI project to build useful tools, write quality code, get mentored and ship great features; and in turn creating a strong impact towards combating climate change via the power of code.
 
@@ -38,7 +38,9 @@ During the LFX Mentorship term, he is indeed excited to contribute towards FLINT
 
 Padmaja Bhol is currently a Ceramic undergrad at National Institute of Technology, Rourkela, India. She is inspired by how open source communities come together to build, test, and promote the software they love. She is interested in full-stack web development, cloud-native, and technical documentation. 
 
-She learned about moja global through Hacktoberfesr and has been an active contributor since then. Through LFX Mentorship, she is honored to contribute to projects that help fight climate change.
+She learnt about moja global through Hacktoberfest and has been an active contributor since then. Padmaja had previously mentored for moja global during Winter of Code where she helped fellow developers to make contributions to the organisation. She has always been fascinated by the wide array of technologies, moja global had to offer and it was through the organisation that she decided to step away from her comfort zone as a front-end developer to explore the world of cloud native and backend development.
+
+Now, she enjoys the variety in the learning curves that come with new challenges. Thanks to the vibrant community here, she was able to navigate the blockers by networking and collaborating with like minded folks across the community, some of whom have gone of their way to help her out. Through LFX Mentorship, she is looking to contribute to projects that help fight climate change.
 
 ## How to get involved?​
 
