@@ -17,10 +17,11 @@ Over the past three months, I've been working with [Harsh Mishra](https://github
 
 The [FLINT Reporting tool](https://github.com/moja-global/FLINT.Reporting) of Moja global is to provide Business Intelligence for analyzing and transforming FLINT output databases into useful information and outputs.
 
-The goal of my project was to implement the CI/CD pipeline at Moja global and implement the framework for reproducible research. One of the project parts focuses on the FLINT reporting tool, its maintenance, and assisting to make it more user-friendly.  Also implementing the CI/CD pipelines for the reporting tool by using GitHub Actions and making it deployment ready. Along with this the part of the project also targets centralizing and migrating the docker images across the community **_GitHub Container Repository_**.
+The goal of my project was to implement the CI/CD pipeline at Moja global and implement the framework for reproducible research. One of the project parts focuses on the FLINT reporting tool, its maintenance, and assisting to make it more user-friendly.  Also implementing the CI/CD pipelines for the reporting tool by using GitHub Actions and making it deployment ready. Along with this the part of the project also targets centralizing and migrating the docker images across the community **GitHub Container Repository**.
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acqrdrxb4wk7oek2p6da.png" height="438" width="438" alt="FLINT Reporting Tool System and Purpose"></img><figcaption>FLINT Reporting Tool System and Purpose<figcaption>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acqrdrxb4wk7oek2p6da.png"  alt="FLINT Reporting Tool System and Purpose"></img>
+  <figcaption><em>Fig: FLINT Reporting Tool System and Purpose</em></figcaption>
 </p>
 
 
@@ -40,7 +41,8 @@ The FLINT is considered as the library itself - it doesn't do much unless we att
 Previously, the Moja Global images were published on the docker hub registry but it wasn’t centralized and maintained for a long time. Also, there are no Continuous integration workflows set up in the [FLINT Cloud](https://github.com/moja-global/FLINT.Cloud) and [FLINT Reporting tool](https://github.com/moja-global/FLINT.Reporting) repository so the images are not able to update when there is a new release in the project. We have built and published all the images using GitHub Actions to the GitHub Container Registry. Now, Moja Global has **30 packages** published on the Moaj Global GitHub Container Registry. It increased the uniformity and accessibility across the community. 
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c0aarfnhpyfw6dhywtys.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Moja Global GitHub Packages.<figcaption>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c0aarfnhpyfw6dhywtys.png"  alt="Moja Global GitHub Packages"></img>
+  <figcaption><em>Fig: Moja Global GitHub Packages</em></figcaption>
 </p>
 
 
@@ -53,11 +55,8 @@ We have streamlined the containerization of the reporting tool microservices and
 The build process for the workflow of the microservices was taking more than 4 mins and later we have optimized the build process by **18x faster** by using **Docker caching method**. 
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3lv0ds9nloeeomom27tl.png" height="438" width="438">
-</p>
-
-<p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8dwtfeyxeneo3tuedy36.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Reporting tool Microservices workflow.<figcaption>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8dwtfeyxeneo3tuedy36.png" alt="Reporting tool Microservices workflow"></img>
+    <figcaption><em>Fig: Reporting tool Microservices workflow.</em></figcaption>
 </p>
 
 **4) Setup the FLINT reporting Kubernetes environment and automate the process for the reporting tool.**
@@ -71,18 +70,20 @@ The Reporting Tool’s **Database** hosts all the data tables that are needed by
 
 We have streamlined the process of deploying each service on the Kubernetes cluster by updating and rectifying the **helm charts** `values.yml` files. We have fixed the Database and tested it over the cloud.
 
-_**Demo Run:**_
+**Demo Run:**
 
 Setup the **Kubernetes environment** of the reporting tool on the cloud. First, we install all the dependencies/packages using superscript, then we set up the system by initializing the database and after that deploy services on that using scripts, and finally building a client over that. 
 
 The back-end of reporting tool i.e database and services are running efficiently and successfully!
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qlzfjvtkfw8eltqnara.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Microservices running at backend.<figcaption>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qlzfjvtkfw8eltqnara.png" alt="Microservices running at backend"></img>
+  <figcaption><em>Fig: Microservices running at backend</em></figcaption>
 </p>
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fgugh9v9m2mmg4rawshb.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Reporting Tool Client.<figcaption>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fgugh9v9m2mmg4rawshb.png" alt="Reporting Tool Client"></img>
+  <figcaption><em>Fig: Reporting Tool Client</em></figcaption>
 </p>
 
 
@@ -90,7 +91,7 @@ The back-end of reporting tool i.e database and services are running efficiently
  
 The Outreachy Internship and my participation with Moja Global was very fruitful. I have learned a lot of things during the process. It increased my learning ability and efficiency. I have also learnt about the implementation of issues/problems faced during the production stage. I have also learnt about a great deal of communicating and navigating across a large organization and finding areas to plug in our contributions.
 
-_Skills I have gained while working on the project:_
+Skills I have gained while working on the project:
 
 - Implementation of CI/CD pipeline.
 
