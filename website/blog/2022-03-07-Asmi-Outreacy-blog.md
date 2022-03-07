@@ -19,19 +19,30 @@ The [FLINT Reporting tool](https://github.com/moja-global/FLINT.Reporting) of Mo
 
 The goal of my project was to implement the CI/CD pipeline at Moja global and implement the framework for reproducible research. One of the project parts focuses on the FLINT reporting tool, its maintenance, and assisting to make it more user-friendly.  Also implementing the CI/CD pipelines for the reporting tool by using GitHub Actions and making it deployment ready. Along with this the part of the project also targets centralizing and migrating the docker images across the community **_GitHub Container Repository_**.
 
-![image](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acqrdrxb4wk7oek2p6da.png)<figcaption>FLINT Reporting Tool System and Purpose<figcaption>
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acqrdrxb4wk7oek2p6da.png" height="438" width="438" alt="FLINT Reporting Tool System and Purpose"></img><figcaption>FLINT Reporting Tool System and Purpose<figcaption>
+</p>
+
 
 <h3>Goals Achieved:</h3>
 
 **1) Understood the FLINT, FLINT Implementation, and the FLINT Reporting Tool Structure.**
 
 The FLINT is considered as the library itself - it doesn't do much unless we attach modules to it and make it an implementation. FLINT implementations extends the FLINT library image and the library image extends the FLINT base image. In our case for the FLINT implementation image, we have used **SLEEK** (_Standard Land emissions and extractions of Kenya_) image. Later the outputs are used as the FLINT application image i.e. Reporting Tool images.
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dvwru1debotkgl6u23ef.jpg)
+
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/dvwru1debotkgl6u23ef.jpg" height="438" width="438"></img>
+</p>
+
 
 **2) Strategized and Centralized Docker images across the community for standardization and uniformity.**
  
 Previously, the Moja Global images were published on the docker hub registry but it wasn’t centralized and maintained for a long time. Also, there are no Continuous integration workflows set up in the [FLINT Cloud](https://github.com/moja-global/FLINT.Cloud) and [FLINT Reporting tool](https://github.com/moja-global/FLINT.Reporting) repository so the images are not able to update when there is a new release in the project. We have built and published all the images using GitHub Actions to the GitHub Container Registry. Now, Moja Global has **30 packages** published on the Moaj Global GitHub Container Registry. It increased the uniformity and accessibility across the community. 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c0aarfnhpyfw6dhywtys.png)<figcaption>Moja Global GitHub Packages.<figcaption>
+
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c0aarfnhpyfw6dhywtys.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Moja Global GitHub Packages.<figcaption>
+</p>
+
 
 **3) Maintenance and Rectification of the FLINT Reporting tool.**
 
@@ -41,9 +52,13 @@ We have streamlined the containerization of the reporting tool microservices and
  
 The build process for the workflow of the microservices was taking more than 4 mins and later we have optimized the build process by **18x faster** by using **Docker caching method**. 
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3lv0ds9nloeeomom27tl.png)
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3lv0ds9nloeeomom27tl.png" height="438" width="438">
+</p>
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8dwtfeyxeneo3tuedy36.png)<figcaption>Reporting tool Microservices workflow.<figcaption>
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8dwtfeyxeneo3tuedy36.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Reporting tool Microservices workflow.<figcaption>
+</p>
 
 **4) Setup the FLINT reporting Kubernetes environment and automate the process for the reporting tool.**
 
@@ -62,9 +77,14 @@ Setup the **Kubernetes environment** of the reporting tool on the cloud. First, 
 
 The back-end of reporting tool i.e database and services are running efficiently and successfully!
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qlzfjvtkfw8eltqnara.png)<figcaption>Microservices running at backend.<figcaption>
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qlzfjvtkfw8eltqnara.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Microservices running at backend.<figcaption>
+</p>
 
-![Image description](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fgugh9v9m2mmg4rawshb.png)<figcaption>Reporting Tool Client.<figcaption>
+<p align="center">
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fgugh9v9m2mmg4rawshb.png" height="438" width="438" alt="Moja Global GitHub Packages"></img><figcaption>Reporting Tool Client.<figcaption>
+</p>
+
 
 <h3>Learnings</h3>
  
