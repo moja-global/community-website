@@ -147,6 +147,9 @@ You can reach out to us through the following channels:
 - [tsc@moja.global](mailto:tsc@moja.global) : Ask questions about contributing code, helping out with development, resolving issues and building new features with moja global teams.
 - [mentorship@moja.global](mailto:mentorship@moja.global) : Ask questions about participating in the community, sponsoring programs, funding opportunities, and community development.
 - [Slack community](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw ): Connect with other developers, scientists, policymakers, and other interested people over our Slack community.
+## Contributing
+
+Go through our contributing guidelines over [here.](https://github.com/moja-global/About_moja_global/tree/master/Contributing#community-contributions).
 
 ## Contributors ✨
 
