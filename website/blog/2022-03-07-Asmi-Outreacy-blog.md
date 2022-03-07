@@ -41,7 +41,7 @@ The FLINT is considered as the library itself - it doesn't do much unless we att
 Previously, the Moja Global images were published on the docker hub registry but it wasn’t centralized and maintained for a long time. Also, there are no Continuous integration workflows set up in the [FLINT Cloud](https://github.com/moja-global/FLINT.Cloud) and [FLINT Reporting tool](https://github.com/moja-global/FLINT.Reporting) repository so the images are not able to update when there is a new release in the project. We have built and published all the images using GitHub Actions to the GitHub Container Registry. Now, Moja Global has **30 packages** published on the Moaj Global GitHub Container Registry. It increased the uniformity and accessibility across the community. 
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c0aarfnhpyfw6dhywtys.png"  alt="Moja Global GitHub Packages"></img>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/c0aarfnhpyfw6dhywtys.png"  width="550" alt="Moja Global GitHub Packages"></img>
   <figcaption><em>Fig: Moja Global GitHub Packages</em></figcaption>
 </p>
 
@@ -55,7 +55,7 @@ We have streamlined the containerization of the reporting tool microservices and
 The build process for the workflow of the microservices was taking more than 4 mins and later we have optimized the build process by **18x faster** by using **Docker caching method**. 
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/8dwtfeyxeneo3tuedy36.png" alt="Reporting tool Microservices workflow"></img>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/trmi2anmxy6y7xrm91qh.png" width="550"></img>
     <figcaption><em>Fig: Reporting tool Microservices workflow.</em></figcaption>
 </p>
 
@@ -77,12 +77,12 @@ Setup the **Kubernetes environment** of the reporting tool on the cloud. First, 
 The back-end of reporting tool i.e database and services are running efficiently and successfully!
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qlzfjvtkfw8eltqnara.png" alt="Microservices running at backend"></img>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/7qlzfjvtkfw8eltqnara.png"  width="550" alt="Microservices running at backend"></img>
   <figcaption><em>Fig: Microservices running at backend</em></figcaption>
 </p>
 
 <p align="center">
-  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fgugh9v9m2mmg4rawshb.png" alt="Reporting Tool Client"></img>
+  <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/fgugh9v9m2mmg4rawshb.png"  width="550" alt="Reporting Tool Client"></img>
   <figcaption><em>Fig: Reporting Tool Client</em></figcaption>
 </p>
 
