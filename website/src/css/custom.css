@@ -264,17 +264,17 @@ html[data-theme='dark'] .stats-item p:hover {
 }
 
 @media only screen and (max-width: 1279px) {
-  .navbar__toggle {
-    display: inherit;
-  }
-  .navbar__item {
+  .navbar__inner .navbar__brand .navbar__title {
     display: none;
   }
-  .navbar__search-input {
-    width: 9rem;
+
+  .navbar__inner .navbar__items--right .dropdown span span {
+    display: none;
   }
-  .displayOnlyInLargeViewport_node_modules-\@docusaurus-theme-classic-lib-next-theme-Navbar- {
-    display: none !important;
+
+  .navbar__inner .navbar__items--right .DocSearch-Button .DocSearch-Button-Placeholder,
+  .navbar__inner .navbar__items--right .DocSearch-Button .DocSearch-Button-Keys {
+    display: none;
   }
 }
 
