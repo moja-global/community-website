@@ -5,11 +5,11 @@ image: https://dev-to-uploads.s3.amazonaws.com/uploads/articles/3b4xdim2k09gg085
 
 # My Outreachy internship experience blog - Asmi Jafar 
 
-I have started my open source journey with an Outreachy internship only. I was a complete beginner in open source when I started contributing to the Moja Global community and it turn out to be my selection as an intern at Moja Global. I never participated in any open-source program previously but got an opportunity with Outreachy to showcase my interest. And in these past three months I have learned a lot of new things and implemented them as well.
+I have started my open source journey with an Outreachy internship only. I was a complete beginner in open source when I started contributing to the Moja Global community and it turns out to be my selection as an Outreachy intern with Moja Global. I never participated in any open-source program previously but got an opportunity with Outreachy to showcase my interest. And in these past three months, I have learned a lot of new things and implemented them as well.
 
-I started with good first issues with Moja Global, updated links and versions across repositories, and contributed to the community website by adding the feature for displaying all contributors during the Outreachy contribution period. Later I have finished all the tasks which were given to participants to showcase their skills. 
+I started with good first issues with Moja Global, updated links and versions across repositories. Later, I contributed to the community website by adding the feature for displaying all Contributors during the Outreachy contribution period. Lastly, I have finished all the tasks given to participants to showcase their skills during my contribution period. 
 
-Over the past three months, I've been working with [Harsh Mishra](https://github.com/HarshCasper) on implementing Continuous Integration and Delivery (CI/CD) across the Moja Global repositories and centralizing the Moja Global docker images on the GitHub Container Registry. I’ve worked with [Anthony](https://github.com/Tonnix) on FLINT Reporting Tool with 31 Microservices! and this blog would be documenting my experience and the project report.
+Over the past three months, I have been working with [Harsh Mishra](https://github.com/HarshCasper) on implementing Continuous Integration and Delivery (CI/CD) pipelines across the Moja Global repositories and centralizing the Moja Global docker images on the GitHub Container Registry. I have worked with [Anthony Kwaje](https://github.com/Tonnix) on FLINT Reporting Tool with 31 Microservices! And this blog would be documenting my experience and the project report.
 
 <h3>About Project:</h3>
 
@@ -17,7 +17,7 @@ Over the past three months, I've been working with [Harsh Mishra](https://github
 
 The [FLINT Reporting tool](https://github.com/moja-global/FLINT.Reporting) of Moja global is to provide Business Intelligence for analyzing and transforming FLINT output databases into useful information and outputs.
 
-The goal of my project was to implement the CI/CD pipeline at Moja global and implement the framework for reproducible research. One of the project parts focuses on the FLINT reporting tool, its maintenance, and assisting to make it more user-friendly.  Also implementing the CI/CD pipelines for the reporting tool by using GitHub Actions and making it deployment ready. Along with this the part of the project also targets centralizing and migrating the docker images across the community **GitHub Container Repository**.
+The goal of my project was to implement the CI/CD pipelines at Moja global and implement the framework for reproducible research. One of the project parts focuses on the FLINT reporting tool, its maintenance, and assisting to make it more user-friendly.  Also implementing the CI/CD pipelines for the reporting tool by using GitHub Actions and making it deployment ready. Along with this the part of the project also targets centralizing and migrating the docker images across the community **GitHub Container Repository**.
 
 <p align="center">
   <img src="https://dev-to-uploads.s3.amazonaws.com/uploads/articles/acqrdrxb4wk7oek2p6da.png"  alt="FLINT Reporting Tool System and Purpose"></img>
@@ -90,7 +90,7 @@ The back-end of reporting tool i.e database and services are running efficiently
 
 <h3>Learnings</h3>
  
-The Outreachy Internship and my participation with Moja Global was very fruitful. I have learned a lot of things during the process. It increased my learning ability and efficiency. I have also learnt about the implementation of issues/problems faced during the production stage. I have also learnt about a great deal of communicating and navigating across a large organization and finding areas to plug in our contributions.
+The Outreachy internship and my participation with Moja Global was very fruitful. I have learned a lot of things during the process. It also increased my learning ability and efficiency. Acquire a knowledge about the execution of issues/problems faced during the Production stage. I have also learned a great deal about communicating and navigating across large organizations and finding areas to plug in your contributions.
 
 Skills I have gained while working on the project:
 
@@ -108,10 +108,10 @@ Skills I have gained while working on the project:
 
 <h3>Acknowledgement</h3>
 
-My experience as a beginner and then as an intern with moja global was amazing. I’ve learned a lot of things about the open-source ecosystem. Contributing to open source taught me about a lot of things and increased my abilities to become a good software engineer in near future.
+My experience as a beginner and then as an intern with Moja Global was amazing. Learned a lot of things about the open-source ecosystem. Contributing to open source taught me about a lot of things and increased my abilities to become a good software engineer in near future.
 
-I want to thank all the maintainers and mentors of the Moja Global community for helping me out during my internship. Special thanks to my mentors [Harsh Mishra](https://github.com/HarshCasper) and [Anthony Kwaje](https://github.com/Tonnix) for helping me out throughout the process. Interacting with harsh in one on one meetings has helped a lot for up scaling my skills.  He has provided me with many good resources for learning and implementing. 
+I want to thank all the maintainers and mentors of the Moja Global community for helping me out during my internship. Special thanks to my mentors [Harsh Mishra](https://github.com/HarshCasper) and [Anthony Kwaje](https://github.com/Tonnix) for helping me out throughout the process. Interacting with [Harsh](https://github.com/HarshCasper) in 1:1 meetings has helped a lot upscaling my skills and under his superintendence, I have learned about a great deal of things. He has provided me with many good resources for learning and execution. 
 
-It was a great experience working with Anthony and getting to know about the structure of the project. I would also like to thank my co-intern [Simple Shell](https://github.com/Simpleshell3) for his contributions and for solving issues. 
+It was a great experience working with [Anthony](https://github.com/Tonnix) and getting to know about the structure of the Project. He explained things so well with their execution. I would also like to thank my co-intern [Simple Shell](https://github.com/Simpleshell3) for his contributions and help. 
 
-Lastly, I want to extend my gratitude to the Moja Global community and decided to be a mentor for Google Summer of Code 2022. And I want to thank [Andrew O'Reilly-Nugent](https://github.com/aornugent) and [Harsh Mishra](https://github.com/HarshCasper) for believing in me and suggesting me for the mentorship. I will cherish my experience as an intern with Moja Global life-long as I’ve learned plenty of things. 
+Lastly, I want to extend my gratitude to the Moja Global community and decided to Mentor for Google Summer of Code 2022. And I want to thank [Andrew O'Reilly-Nugent](https://github.com/aornugent) and [Harsh Mishra](https://github.com/HarshCasper) for believing in me and suggesting my name for the mentorship. I will cherish my experience as an intern with Moja Global life-long as I have learned about a great deal of things. 
