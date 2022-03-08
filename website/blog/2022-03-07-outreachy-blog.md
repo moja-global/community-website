@@ -86,8 +86,7 @@ The back-end of reporting tool i.e database and services are running efficiently
   <figcaption><em>Fig: Reporting Tool Client</em></figcaption>
 </p>
 
-You can find my Outreachy tasks Weekly logs **[here.]**(https://docs.google.com/document/d/17SyTeOY2c9Z6FUE3d7NEG4SlqHmhfIFJOqOVT1kbQ0E/edit?usp=sharing)
-
+#### You can find my Outreachy internship Week-Wise logs [here.](https://docs.google.com/document/d/17SyTeOY2c9Z6FUE3d7NEG4SlqHmhfIFJOqOVT1kbQ0E/edit?usp=sharing)
 
 <h3>Learnings</h3>
  
