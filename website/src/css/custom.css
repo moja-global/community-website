@@ -263,6 +263,10 @@ html[data-theme='dark'] .stats-item p:hover {
   }
 }
 
+.navbar__inner .navbar__items .dropdown__menu li:hover .dropdown__link {
+  color: #67ca8f; /* Hover Effect in 'Know More' dropdown */
+}
+
 @media only screen and (max-width: 1279px) {
   .navbar__inner .navbar__brand .navbar__title {
     display: none;
