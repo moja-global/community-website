@@ -2,6 +2,9 @@
 id: doc-wg
 title: Documentation Working Group
 ---
+
+![Active Working Group](https://img.shields.io/badge/STATUS-ACTIVE-green?style=for-the-badge)
+
 __Documentation Working Group__ is aimed at developing high-quality user and developer documentation. The Documentation Working group is geared towards making sure that all of the important software, tools and projects are well-documented with a standard developer experience defined to help new contributors in getting started with the community.
 
 The Documentation Working Group is specifically used for capability building, bringing onboard new contributors, and helping them to get started, while making sure that the influx of new contributions is not hindered by a lack of good documentation. The next sections of this document describe how the Documentation Working Group is coordinated, and what sort of impact it has in the large and diverse community that makes up moja global.
