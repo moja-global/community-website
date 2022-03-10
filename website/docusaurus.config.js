@@ -76,7 +76,6 @@ module.exports = {
           activeBaseRegex: '/community/',
         },
         {
-
           type: 'dropdown',
           label: 'Know More',
           position: 'left',
