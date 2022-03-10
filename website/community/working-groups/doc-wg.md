@@ -57,7 +57,7 @@ The Documentation Working Group is not limited to only software documentation, r
 
 We are yet to decide on the tools and technologies that we will employ for our purpose. However some of them that are most commonly employed are [Markdown](https://guides.github.com/features/mastering-markdown/), [Docusaurus](https://docusaurus.io/), [Sphinx](https://www.sphinx-doc.org/), [ReadTheDocs](https://readthedocs.org/), [Moodle](https://moodle.org/), [GitHub Issues](https://guides.github.com/features/issues/), [GitHub Project Board](https://github.com/features/project-management/). We also would like to use more efficient project management tools to track our documentation and releases and we are open to suggestions for the same.
 
-## How to apply?
+## How to get involved?
 
 The Documentation Working Group is entirely driven by volunteer efforts but we like to keep track of all the contributors who would like to join. It helps us set proper workflows, processes and contribution pipelines that allows us to track the work being done and set realistic timelines. You can pitch for several documentation-specific domains that you would like to contribute to.
 
