@@ -12,7 +12,7 @@ module.exports = {
     {
       type: 'category',
       label: 'Working Groups',
-      items: ['working-groups/doc-wg'],
+      items: ['working-groups/doc-wg', 'working-groups/ui-wg'],
     },
     'mentorship',
     'strategic-plan-change',
