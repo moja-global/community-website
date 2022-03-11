@@ -36,6 +36,6 @@ As the projects have been announced, we expect potential GSoC participants to jo
 
 We recommend checking out the [Google Summer of Code Contributor guide](https://google.github.io/gsocguides/student/) to getting started. We encourage the potential GSoC participants to join our [Slack workspace](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw) and join our upcoming working group meetings.
 
-The application window opens on April 4, 2022. However, we want to work with potential student developers before GSoC starts. All the project ideas have a small task associated with them which you can find under the `First steps` section. The tasks are as simple as setting the project, running a user story and sharing your findings. Implementing these first steps are necessary and we would ask you to write about that in your proposal (without fail!).
+The application window opens on April 4, 2022. However, we want to work with potential student developers before GSoC starts. All the project ideas have a small task associated with them which you can find under the `First steps` section. The tasks are as simple as setting the project, running a user story and sharing your findings. Implementing these steps are a requirement to apply, hence please provide a short summary of your findings in your GSoC project proposal.
 
 For more updates, please sign-up for the [Google Summer of Code mailing lists](https://developers.google.com/open-source/gsoc/resources/lists).
