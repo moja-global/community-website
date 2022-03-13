@@ -3,7 +3,9 @@ id: ui-wg
 title: User-Interface(UI) Working Group
 ---
 
-![Active Working Group](https://img.shields.io/badge/STATUS-ACTIVE-green?style=for-the-badge)
+import WGStatus from '@site/src/components/WGStatus';
+
+<WGStatus status="active"/>
 
 The UI working group is responsible for developing the visual components, user interactions and user experience of the UI-based projects under moja global.
 
