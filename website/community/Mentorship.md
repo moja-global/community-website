@@ -3,13 +3,13 @@ id: mentorship
 title: Mentorship
 ---
 
-Help fight climate change from your keyboard! moja global specialises in software for monitoring greenhouse gas emissions and removals from land use and landuse change. We participate in various mentorship programs which offers a generous stipend and an exceptional working experience to contributors. We also assist new contributors with the software development process, learning how to collaborate with others and how to get the most out of the software development lifecycle.
+Help fight climate change from your keyboard! moja global specialises in software for monitoring greenhouse gas emissions and removals from land use and landuse change. We participate in various mentorship programs which offer a generous stipend and an exceptional working experience to contributors. We also assist new contributors with the software development process, learning how to collaborate with others and how to get the most out of the software development lifecycle.
 
 ## Outreachy Internships
 
-[Outreachy](https://www.outreachy.org/) provides paid, remote, three-month internships to applicants who identify themselves as women (both cis and trans), trans men, non-binary people, and genderqueer. The aim of this internship is to support diversity in Free and Open Source Software (FOSS) and uplift the under-represented sections of the society.
+[Outreachy](https://www.outreachy.org/) provides paid, remote, three-month internships to applicants who identify themselves as women (both cis and trans), trans men, non-binary people, and genderqueer. The aim of this internship is to support diversity in Free and Open Source Software (FOSS) and uplift the under-represented sections of society.
 
-The Outreachy internship at moja global for the December 2021 to March 2022 round will be coordinated by [Andrew O'Reilly-Nugent](https://github.com/aornugent).
+The Outreachy internship at moja global for December 2021 to March 2022 round will be coordinated by [Andrew O'Reilly-Nugent](https://github.com/aornugent).
 
 ### Current Project: **Climate change: extend models of forest carbon pools**.
 
@@ -17,9 +17,9 @@ The Outreachy internship at moja global for the December 2021 to March 2022 roun
 
 Land plays an important role in global cycles of greenhouse gases (GHG). Land use activities result in emissions and removals of GHG to the atmosphere. The Fifth Assessment report of the Intergovernmental Panel on Climate Change (IPCC) indicates that the Agriculture, Forestry and Other Land Use (AFOLU) sector is responsible for almost a quarter (~10–12 Gt CO2eq/yr) of anthropogenic GHG emissions mainly from activities such as deforestation, forest degradation and also from livestock, soil, nutrient management and agricultural burning.
 
-Moja global's Full Lands Integration Tool (FLINT) has been developed to support the GHG inventories development and the implementation of mitigation actions in the AFOLU sector. But, some functions and features of the FLINT need to be refined or added in order to fully support mitigation actions and establishment and maintenance of sustainable GHG inventory management systems in developing countries. The UNFCCC secretariat has initiated a collaboration with moja global to refine the FLINT and make it available to developing countries across all regions.
+Moja global's Full Lands Integration Tool (FLINT) has been developed to support the GHG inventories development and the implementation of mitigation actions in the AFOLU sector. But, some functions and features of the FLINT need to be refined or added in order to fully support mitigation actions and the establishment and maintenance of sustainable GHG inventory management systems in developing countries. The UNFCCC secretariat has initiated a collaboration with moja global to refine the FLINT and make it available to developing countries across all regions.
 
-This project focuses on the development of FLINT module to account for the dynamics of carbon from forest living biomass into dead organic matter pools (DOM). A DOM module simulates annual changes in the C stocks of each pool that occur due to growth, biomass turnover, litterfall, transfer and decomposition as well as complex disturbances that can alter biomass turnover, and transfers between DOM pools (litter, dead wood and soil).
+This project focuses on the development of FLINT module to account for the dynamics of carbon from forest living biomass into dead organic matter pools (DOM). A DOM module simulates annual changes in the C stocks of each pool that occur due to growth, biomass turnover, litterfall, transfer and decomposition as well as complex disturbances that can alter biomass turnover, and transfers between DOM pools (litter, dead wood, and soil).
 
 The interns are working with moja global ecosystem modelling experts to identify candidate models for describing DOM dynamics in forestry, collect data and parameter calibrations to test and evaluate the DOM module. The interns are working across various domains including writing, project documentation and data management, while expertise in climate change research, data analysis and team collaboration.
 
@@ -49,7 +49,7 @@ This involves:
 4. Creating the deployment framework and setting up a CD pipeline on commodity cloud hardware, favouring automation wherever possible (e.g. infrastructure-as-code).
 5. Providing new documentation for the cloud deployment procedure.
 
-The past mentees were [Mohammad Warid ](https://mentorship.lfx.linuxfoundation.org/mentee/b5ef75ed-5645-433d-a660-99b23346ea35), [Shubham Karande](https://mentorship.lfx.linuxfoundation.org/mentee/3249e1c5-4140-41c4-97f4-15eda5ed604d), [Sneha Mishra](https://mentorship.lfx.linuxfoundation.org/mentee/d20558aa-af22-4a33-9bc4-1941b5a8f329), [Arnav Tiwari](https://mentorship.lfx.linuxfoundation.org/mentee/0ce8259f-3cd5-4062-a1f8-8f155e9bb143), [Vijaya Laxmi Durga Alekhya Nynala](https://mentorship.lfx.linuxfoundation.org/mentee/9d6563b6-f8c4-4e20-9a81-0fdd93a1c0ca), [Shloka Gupta](https://mentorship.lfx.linuxfoundation.org/mentee/bb85aa86-de96-48cf-b5dd-fba4b75c5bce) and [Rajiv Singh](https://mentorship.lfx.linuxfoundation.org/mentee/817f5835-af24-4508-93e9-dac5fdf44ff8)
+The past mentees were [Mohammad Warid ](https://mentorship.lfx.linuxfoundation.org/mentee/b5ef75ed-5645-433d-a660-99b23346ea35), [Shubham Karande](https://mentorship.lfx.linuxfoundation.org/mentee/3249e1c5-4140-41c4-97f4-15eda5ed604d), [Sneha Mishra](https://mentorship.lfx.linuxfoundation.org/mentee/d20558aa-af22-4a33-9bc4-1941b5a8f329), [Arnav Tiwari](https://mentorship.lfx.linuxfoundation.org/mentee/0ce8259f-3cd5-4062-a1f8-8f155e9bb143), [Vijaya Laxmi Durga Alekhya Nynala](https://mentorship.lfx.linuxfoundation.org/mentee/9d6563b6-f8c4-4e20-9a81-0fdd93a1c0ca), [Shloka Gupta](https://mentorship.lfx.linuxfoundation.org/mentee/bb85aa86-de96-48cf-b5dd-fba4b75c5bce) and [Rajiv Ranjan Singh](https://mentorship.lfx.linuxfoundation.org/mentee/817f5835-af24-4508-93e9-dac5fdf44ff8)
 
 ### Past Projects
 
