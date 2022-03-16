@@ -76,14 +76,13 @@ module.exports = {
           activeBaseRegex: '/community/',
         },
         {
-
           type: 'dropdown',
           label: 'Know More',
           position: 'left',
           items: [
             {
               label: 'Initiatives',
-              href: '/initiatives'
+              href: '/initiatives',
             },
             {
               label: 'Case Studies',
@@ -182,6 +181,10 @@ module.exports = {
               label: 'Contributing guidelines',
               href: '/community/contributing',
             },
+            {
+              label: 'Workiing Groups',
+              href: '/community/working-groups/doc-wg',
+            },
           ],
         },
         {
@@ -237,7 +240,8 @@ module.exports = {
       { name: 'twitter:title', content: 'Moja Global Community' },
       {
         name: 'twitter:description',
-        content: "moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software that allows users to accurately and affordably estimate greenhouse gas emissions and removals from the AFOLU sector. The project’s members aim to support the widest possible use of credible emissions estimation software.",
+        content:
+          'moja global is a not for profit, collaborative project that brings together a community of experts to develop open-source software that allows users to accurately and affordably estimate greenhouse gas emissions and removals from the AFOLU sector. The project’s members aim to support the widest possible use of credible emissions estimation software.',
       },
     ],
   },
