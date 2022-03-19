@@ -38,7 +38,7 @@ The FLINT is considered as the framework itself - it doesn't do much unless we a
   <figcaption><em>Describing how the FLINT Images Work</em></figcaption>
 </p>
 
-## Centralizing the Docker images
+### Centralizing the Docker images
  
 Previously, the moja global images were published on the DockerHub, but it wasn’t maintained for a long time. No continuous integration workflows were implemented; Hence the images were not updated for the past couple of years. If a user wanted to use the images, they would need to build it locally, and the chances of a code change breaking something were relatively high.
 
