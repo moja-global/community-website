@@ -373,3 +373,9 @@ html[data-theme='dark'] .stats-item p:hover {
     padding: 3%;
   }
 }
+@media (max-width: 382px){
+  .contributors{
+    padding: 4.5rem;
+
+  }
+}
