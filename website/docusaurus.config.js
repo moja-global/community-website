@@ -11,7 +11,7 @@ module.exports = {
   projectName: 'Community Website', // Usually your repo name.
   i18n: {
     defaultLocale: 'en',
-    locales: ['en', 'es'],
+    locales: ['en'],
   },
   themeConfig: {
     algolia: {
@@ -52,10 +52,7 @@ module.exports = {
         srcDark: 'img/logo-light.png',
       },
       items: [
-        {
-          type: 'localeDropdown',
-          position: 'right',
-        },
+       
         {
           href: 'https://github.com/moja-global',
           label: 'GitHub',
