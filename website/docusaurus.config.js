@@ -45,7 +45,7 @@ module.exports = {
     },
     navbar: {
       title: 'Community',
-      hideOnScroll: true,
+      hideOnScroll: false,
       logo: {
         alt: 'moja global Logo',
         src: 'img/logo.png',
