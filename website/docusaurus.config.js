@@ -259,7 +259,7 @@ module.exports = {
         },
         blog: {
           showReadingTime: true,
-          editUrl: 'https://github.com/moja-global/community-website/edit/master/website/blog/',
+          editUrl: 'https://github.com/moja-global/community-website/edit/main/website/blog/',
         },
         theme: {
           customCss: require.resolve('./src/css/custom.css'),
