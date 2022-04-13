@@ -8,6 +8,12 @@ module.exports = {
     'code-contribution',
     'docs-contribution',
     'management-contribution',
+    'community-contribution',
+    {
+      type: 'category',
+      label: 'Working Groups',
+      items: ['working-groups/doc-wg', 'working-groups/ui-wg'],
+    },
     'mentorship',
     'strategic-plan-change',
     'code-of-conduct',

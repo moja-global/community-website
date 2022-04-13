@@ -16,6 +16,9 @@ const features = [
         <li>
           <a href="/community/governance">Governance model</a>
         </li>
+        <li>
+          <a href="/community/working-groups/doc-wg">Working Groups</a>
+        </li>
       </ul>
     ),
   },
@@ -33,10 +36,10 @@ const features = [
           <a href="/docs/FLINT-Reporting-Tool/About">FLINT Reporting Tool</a>
         </li>
         <li>
-          <a href="/docs/FLINT-Visualization-Tool/About">FLINT Visualization Tool</a>
+          <a href="/docs/FLINT-UI/About">FLINT Visualization Tool</a>
         </li>
         <li>
-          <a href="/docs/Predictive-Deforestation/About">Predictive Deforestation</a>
+          <a href="/docs/GCBM/About">GCBM</a>
         </li>
       </ul>
     ),

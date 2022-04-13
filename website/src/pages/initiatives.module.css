@@ -1,19 +1,18 @@
 .communityBody {
   display: flex;
   flex-direction: column;
-  max-width: 1280px;
   text-align: center;
   margin: 2rem auto;
   padding: 1rem;
 }
 
 .communityTitle {
-  font-size: xx-large;
+  font-size: 2.5rem;
 }
 
 .communitySubtitle {
-  color: var(--ifm-color-primary);
-  font-size: x-large;
+  margin-top: 2rem;
+  font-size: 2rem;
 }
 
 .communityRow {
@@ -21,11 +20,8 @@
   flex-direction: row;
   justify-content: center;
   align-content: center;
-  margin: 2rem 10px;
-}
-
-.communityItem {
-  width: 33.3%;
+  flex-wrap: wrap;
+  margin: 1rem 2.5rem;
 }
 
 .communityMeeting {
@@ -33,21 +29,16 @@
 }
 
 .meetingTitle {
-  font-size: large;
+  font-size: small;
   margin: 10px auto;
 }
 
-@media screen and (max-width: 966px) {
-  .communityRow {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .communityItem {
-    width: 100%;
-  }
-
-  .communityMeeting {
-    width: 100%;
-  }
+.calendarWrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+.Calendar {
+  width: 80%;
 }
