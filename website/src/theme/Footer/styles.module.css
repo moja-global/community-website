@@ -3,11 +3,130 @@
  * LICENSE file in the root directory of this source tree.
  */
 
+ .card {
+    width: 50vw;
+    margin-top: 4vh;
+    background-color: white;
+    padding-bottom: 4vh;
+    padding-top: 4vh;
+    box-shadow: 0px 0px 8px whitesmoke;
+ }
+
+ @media (max-width: 2560px) {
+  .card {
+    width: 79vw;
+   }
+}
+
+.headercontent {
+   display: flex;
+}
+
+.headercontent h2 {
+  display: flex;
+  width: 80%;
+  margin-left: 10%;
+  line-height: 214%;
+  align-items: center;
+  color: black
+}
+
+html[data-theme='dark'] .heading {
+   color: #242526;
+}
+
 .footerLogoLink {
   opacity: 0.5;
   transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
 }
 
+.close {
+  width: 1.6em !important;
+  height: 1.6em !important;
+  color: white ;
+}
+
+html[data-theme='dark'] .close {
+  color: black;
+}
+
 .footerLogoLink:hover {
   opacity: 1;
+}
+
+.feedbackfloaticon {
+  right: 8px;
+  position: fixed;
+  bottom: 8px;
+  color: #73E8A3;
+  font-size: xx-large;
+  cursor: grab;
+  background-color: #2E382B;
+  width: fit-content;
+}
+
+ @media (max-width: 425px) {
+  .feedbackfloaticon {
+    font-size: 16px;
+   }
+}
+
+@media (min-width: 425px) {
+  .feedbackfloaticon { 
+    font-size: 28px;
+   }
+} 
+
+.buttons {
+  padding: 1%;
+  min-width: 134px;
+  background: #ffffff;
+  color: #242526;
+  border: 2px solid #73E8A3;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 2%;
+  margin: 2%;
+  font-size: small;
+  font-weight: bolder;
+}
+
+.buttons:hover {
+  color: white;
+  background-color: #73E8A3;
+}
+ 
+.link {
+  padding: 1%;
+  min-width: 134px;
+  background: #ffffff;
+  color: #242526;
+  border: 2px solid #73E8A3;
+  padding-left: 4%;
+  padding-right: 4%;
+  border-radius: 2%;
+  margin: 2%;
+  font-size: small; 
+  font-weight: bolder;
+}
+
+.link:hover {
+  color: white;
+  background-color: #73E8A3;
+}
+
+.textarea {
+  width: 80%;
+  margin-left: 10%;
+  height: 24vh;
+  padding: 1%;
+}
+
+ .OR {
+  padding: 1%;
+  background: #ffffff;
+  color: black;
+  border-radius: 2%;
+  margin: 2%;
+  font-weight: bolder;
 }
