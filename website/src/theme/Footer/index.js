@@ -28,11 +28,11 @@ function FooterLink({ to, href, label, prependBaseUrlToHref, ...props }) {
       className="footer__link-item"
       {...(href
         ? {
-            href: prependBaseUrlToHref ? normalizedHref : href,
-          }
+          href: prependBaseUrlToHref ? normalizedHref : href,
+        }
         : {
-            to: toUrl,
-          })}
+          to: toUrl,
+        })}
       {...props}
     >
       {href && !isInternalUrl(href) ? (
@@ -54,30 +54,28 @@ const FooterLogo = ({ sources, alt }) => (
 function Footer() {
   const { footer } = useThemeConfig();
   const modalRef = useRef();
-  const [isOpen, setIsOpen] = useState({activeIndex: null});
-  const handleClick = (index) => { return setIsOpen({activeIndex: index})} 
   const { copyright, links = [], logo = {} } = footer || {};
-  var feedback= ' ';
+  var feedback = ' ';
   const sources = {
     light: useBaseUrl(logo.src),
     dark: useBaseUrl(logo.srcDark || logo.src),
   };
 
-  const changeinput=(e)=>{
+  const changeinput = (e) => {
     console.log(e.target.value);
-    feedback=e.target.value;
+    feedback = e.target.value;
   }
 
-  const handleSubmit=(e)=>{
+  const handleSubmit = (e) => {
     e.preventDefault();
     console.log(feedback);
-    const data={
+    const data = {
       Feedback: feedback,
       Url: "https://community.moja.global/"
     }
-    axios.post('https://sheet.best/api/sheets/3b6fc57e-5cd4-4fbf-b9de-4a58a8d93968',data)
-    .then(response => alert("Feedback Submitted Successfully!"))
-    .catch(error => console.error('Error!', error.message))
+    axios.post('https://sheet.best/api/sheets/3b6fc57e-5cd4-4fbf-b9de-4a58a8d93968', data)
+      .then(response => alert("Feedback Submitted Successfully!"))
+      .catch(error => console.error('Error!', error.message))
   }
 
   if (!footer) {
@@ -91,7 +89,7 @@ function Footer() {
         close: () => setOpen(false),
       };
     });
-    
+
     return (
       <AnimatePresence>
         {open && (
@@ -103,7 +101,7 @@ function Footer() {
               animate={{
                 opacity: 1,
                 transition: {
-                  duration: 0.3,
+                  duration: 1,
                 },
               }}
               exit={{
@@ -131,7 +129,7 @@ function Footer() {
                 },
               }}
               className="modal-content-wrapper"
-              style={{backgroundColor: '#73E8A3'}}
+              style={{ backgroundColor: '#73E8A3' }}
             >
               <motion.div
                 className="modal-content"
@@ -190,8 +188,8 @@ function Footer() {
                     <div className="footer__title">{linkItem.title}</div>
                   ) : null}
                   {linkItem.items != null &&
-                  Array.isArray(linkItem.items) &&
-                  linkItem.items.length > 0 ? (
+                    Array.isArray(linkItem.items) &&
+                    linkItem.items.length > 0 ? (
                     <ul className="footer__items">
                       {linkItem.items.map((item, key) =>
                         item.html ? (
@@ -230,25 +228,25 @@ function Footer() {
           </div>
         )}
       </div>
-       <button className={styles.feedbackfloaticon} onClick={() => modalRef.current.open()} onMouseOver={() => tooltip()} onMouseOverCapture={() => tooltiphide()}><FaEdit/> </button> 
-       <Modal ref={modalRef} className={"modal"}>
+      <button className={styles.feedbackfloaticon} onClick={() => modalRef.current.open()} onMouseOver={() => tooltip()} onMouseOverCapture={() => tooltiphide()}><FaEdit /> </button>
+      <Modal ref={modalRef} className={"modal"}>
         <div className="modal_header">
-        <h1 className={styles.heading}>Feedback</h1>
+          <h1 className={styles.heading}>Feedback</h1>
           <div className="project_link_icons">
             <AiOutlineClose className={styles.close} onClick={() => modalRef.current.close()}></AiOutlineClose>
           </div>
           <div className={styles.card}>
             <form autoComplete='off' onSubmit={handleSubmit}>
               <div className={styles.headercontent}>
-             <h2> Help us improve the website by providing your valuable feedback 💡</h2>
-             </div>
-             <textarea type='text' placeholder='Enter your suggestions here' className={styles.textarea} required onChange={(e)=>changeinput(e)} ></textarea>
-             <div  style={{display: 'flex', flexWrap: 'wrap ', justifyContent: 'center'}} >
-               <button type='submit' className={styles.buttons}>Submit Feedback</button>
-               <p className={styles.OR}> OR </p>
-               <a className={styles.link} onClick={()=>{window.open("https://github.com/moja-global/community-website")}}>Open an issue <VscGithub/> </a>
+                <h2> Help us improve the website by providing your valuable feedback 💡</h2>
               </div>
-           </form>
+              <textarea type='text' placeholder='Enter your suggestions here' className={styles.textarea} required onChange={(e) => changeinput(e)} ></textarea>
+              <div style={{ display: 'flex', flexWrap: 'wrap ', justifyContent: 'center' }} >
+                <button type='submit' className={styles.buttons}>Submit Feedback</button>
+                <p className={styles.OR}> OR </p>
+                <a className={styles.link} onClick={() => { window.open("https://github.com/moja-global/community-website") }}>Open an issue <VscGithub /> </a>
+              </div>
+            </form>
           </div>
         </div>
       </Modal>
@@ -257,4 +255,3 @@ function Footer() {
 }
 
 export default Footer;
- 
