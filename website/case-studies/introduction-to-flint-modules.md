@@ -1,9 +1,9 @@
 ---
-id:  implementation-of-flint-modules
-title:  Implementation of FLINT Modules
-slug:  /implementation-flint-modules
+id:  introduction-to-flint-modules
+title:  An introduction to FLINT modules
+slug:  /introduction-to-flint-modules
 description:  Learn about FLINT Modules and how they work.
-image: https://i.imgur.com/An53MDO.png
+image: https://i.imgur.com/F231ztY.png
 keywords:
 - FLINT Modules
 - FLINT
@@ -19,7 +19,7 @@ keywords:
 - WOFOST crop growth
 ---
 
-![Cover Image for the case study titled `Implementation of FLINT Modules`](../static/img/implementation-of-flint-modules.png)
+![Cover Image for the case study titled `An introduction to FLINT Modules`](../static/img/introduction-to-flint-modules.png)
 
 FLINT is a tool designed to support better land management and help reduce greenhouse gas (GHG) emissions worldwide. The tool uses modules to simulate different environments and processes related to carbon transfer.
 
@@ -57,13 +57,7 @@ Each module must ingest data such as climate data or information about environme
 
 At the end of a simulation, modules output the updated values for state variables. The output for carbon pools is in the form of an array (sparse matrix). The array includes information about the source pool, the sink pool, and the amount of flux. The module output is shared with the unit controller within FLINT.
 
-In terms of the FLINT programming framework, there are internal and external modules. The internal modules tend to be generic utility modules, for example, for producing output tables. While external modules are regionally or nationally specific. By using modules and separating the generic and specific, FLINT’s framework remains highly flexible and new modules can be ‘plugged in’ as they are developed. Adding or developing modules is an advanced topic, which will not be covered here. If you would like to implement a new module, please reach out on `#modules-and-gbcm` on [Slack](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw).
-
 Modules run over "simulation units". A simulation unit can represent a spatial area, such as a forest, or it can represent an emissions source, such as livestock. When the simulation unit refers to a geographical  area, it is known as a "land unit". FLINT is responsible for managing the processing of simulation units over time.
-
-### Modules
-
-Modules are the building blocks of FLINT. They contain the operations that describe the ecological processes driving carbon changes in the landscape. This case study provides information regarding the major modules present in FLINT.
 
 ### Pools
 
@@ -107,7 +101,7 @@ The carbon cycle is based on the transfer of carbon molecules from one pool to a
 
 ### Empirical Forest Growth Module
 
-The empirical Forest growth module includes all operations required to simulate biomass accumulation. It simulates the growth in carbon stock within a forest over time. This module is included within FLINT and is also used by the Chapman Richards Module. **Biomass** refers to the mass of living organisms, including plants, animals and microorganisms. **Biomass accumulation** is the net change in standing biomass from one time to another (g/m^2).
+The empirical Forest growth module includes all operations required to simulate biomass accumulation. It simulates the growth in carbon stock within a forest over time. This module is included within FLINT and is also used by the [Chapman Richards Module](https://github.com/moja-global/FLINT.Module.Chapman_Richards). **Biomass** refers to the mass of living organisms, including plants, animals and microorganisms. **Biomass accumulation** is the net change in standing biomass from one time to another (g/m^2).
 
 The module runs at a **monthly step interval**. The module's behavior is based on yield tables that represent **monthly growth increments** for a forest type. The data for the yield tables comes from research and experimentation, and is called **empirical data**, thus giving the name of this module as the empirical forest growth module. It's important to note that the yield tables only include **above-ground biomass**. If you want to calculate the **below-ground biomass* you should use the hybrid forest growth module.
 
@@ -227,7 +221,7 @@ This module provides the estimation of above-ground biomass on the basis of the 
 
 ### GCBM Module
 
-The GCBM is a set of science modules developed by the Canadian Forest Service (CFS) to run with FLINT.
+The Generic Carbon Budget Model (GCBM) is a set of science modules developed by the Canadian Forest Service (CFS) to run with FLINT.
 
 These are the same science modules used in the first generation tool ([CBM-CFS3](https://www.nrcan.gc.ca/climate-change/impacts-adaptations/climate-change-impacts-forests/carbon-accounting/carbon-budget-model/cbm-cfs3/13089)). Since the science and processes behind both tools are very similar, it is relatively easy to transition from CBM-CFS3 to GCBM.
 
@@ -252,8 +246,6 @@ There are a large number of modules within the GCBM, some of which are optional 
 The Canadian Model for Peatlands (CaMP) is a module for Greenhouse Gas (GHG) emissions. The CaMP was designed as a module for the spatially-explicit GCBM. The CaMP is a site to national-level peatland carbon model developed to better estimate GHG emissions across a range of peatland types in Canada.
 
 Different events are triggered on the basis of the land type found during simulation. For example, if the land type is peatland then this triggers a peatland disturbance event. Otherwise it triggers a regular CBM disturbance event.
-
-> Bona, Kelly Ann, et al. "The Canadian Model for Peatlands (CaMP): A peatland carbon model for national greenhouse gas reporting." Ecological Modelling 431 (2020): 109164.
 
 ##### Decay Module
 
@@ -325,7 +317,7 @@ There are no specific inputs to the GCBM module. It contains several modules whi
 
 #### Output
 
-GCBM gives us the estimate of carbon flux generated, Aboveground Biomass etc.
+GCBM gives us the estimate of carbon flux generated, above-ground biomass etc. There is a special repository to visualize the output generated by GCBM called [Taswira](https://github.com/moja-global/GCBM.Visualisation_Tool).
 
 |![Diagram depicting how the GCBM output is displayed on a chart.](../static/img/gcbm-chart-module-case-study.png) |
 |:--:|
@@ -335,11 +327,9 @@ GCBM gives us the estimate of carbon flux generated, Aboveground Biomass etc.
 |:--:|
 | Diagram depicting how the GCBM output is displayed on a map. |
 
-There is a special repository to visualize the output generated by GCBM [Taswira](https://github.com/moja-global/GCBM.Visualisation_Tool).
-
 ### Wofost Crop Growth Module
 
-WOFOST (WOrld FOod STudies) is a mechanistic module that simulates crop growth on the basis of photosynthesis, respiration and the prevailing environmental conditions. It is similar to the hybrid forest growth module.
+WOFOST (WOrld FOod STudies) is a mechanistic module that simulates crop growth on the basis of photosynthesis, respiration and the prevailing environmental conditions. It is similar to the [hybrid forest growth module](#hybrid-forest-growth-module).
 
 It is similar to the [DayCent](https://en.wikipedia.org/wiki/DayCent). This module runs on a **Daily time step** and allows users to model the potential production, attainable production and actual production for a given site (region). The simulation runs from sowing to maturity and is based on the response of crop to weather (all production levels) and soil moisture conditions.
 
@@ -379,7 +369,7 @@ It is similar to the [DayCent](https://en.wikipedia.org/wiki/DayCent). This modu
 4. Can I implement a module from scratch?
 
     Yes you can. Here's an example of a custom made module: [**Agricultural soil module**](https://github.com/moja-global/FLINT.Module.Agricultural_Soil_Model). This project involves specifically implementing the agricultural soils model that is used to estimate non-CO2 GHG emissions from agricultural practices. You can visit the [module development docs](https://github.com/moja-global/FLINT.Modules.docs/blob/develop/modules.md#developing-modules) to learn how to implement a single, simple module from scratch.
-f
+
 5. How do modules interact with each other?
 
     Different Modules are configured through the local domain controller and sequencer which decides the flow of modules. Below is a sequence diagram to help you visualize this flow.
@@ -387,3 +377,7 @@ f
     |![Diagram depicting the control flow diagram of how FLINT modules interact with each other.](../static/img/module-interaction-control-module-case-study.png) |
     |:--:|
     | Diagram depicting the control flow diagram of how FLINT modules interact with each other. |
+
+6. How can I implement a module from scratch?
+
+    If you would like to implement a new module, please reach out on `#modules-and-gbcm` on [Slack](https://join.slack.com/t/mojaglobal/shared_invite/zt-o6ta1ug0-rVLjAo460~d7JbZ~HpFFtw).
