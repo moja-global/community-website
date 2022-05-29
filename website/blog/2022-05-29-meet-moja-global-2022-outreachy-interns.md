@@ -1,8 +1,8 @@
 ---
-title: Meet moja global 2022 Outreachy interns
+title: Meet moja global May 2022 Outreachy interns
 description: Moja global announces the selection of interns for the May 2022 Outreachy internships
 tags: ['moja-global','outreachy','open-source','internships','mentorship']
-image: imgur.com
+image: https://i.imgur.com/3ufHnnt.png
 authors: harshcasper
 slug: meet-moja-global-outreachy-may-2022-interns
 hide_table_of_contents: false
@@ -18,7 +18,7 @@ Moja global participated in the May 2022 Outreachy internships with the project 
 
 They will also be developing a semi-automated, FLINT-based workflow to run a unique FLINT simulation of forest dynamics for each location. The interns will also be responsible for publishing their findings openly on our repositories, with editorial support from the moja global Technical Steering Committee.
 
-Based on the work developed and the other contributions, we selected three interns: [Kateryna Derhaus](https://github.com/derha) and [Ankita Sharma](https://github.com/Simpleshell3).
+Based on the work developed and the other contributions, we selected two interns: [Kateryna Derhaus](https://github.com/derha) and [Ankita Sharma](https://github.com/ankitaS11).
 
 ## Outreachy Intern #1: Kateryna Derhaus
 
