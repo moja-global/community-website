@@ -4,9 +4,6 @@ on:
   schedule:
     - cron: "15 14 1 * *"
 
-  pull_request:
-    branches: [ main ]
-
 jobs:
   build:
     name: Optimize PNG images
@@ -33,7 +30,12 @@ jobs:
           oxipng -o 4 -i 0 --strip safe *.png
           popd
 
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v9.1
+        id: verify-changed-files
+
       - name: Commit changes
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
         uses: EndBug/add-and-commit@v7
         with:
           add: 'website'
