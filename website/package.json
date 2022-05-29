@@ -30,7 +30,7 @@
     "dedent": "^0.7.0",
     "file-loader": "^6.2.0",
     "framer-motion": "^4.1.17",
-    "inquirer": "^8.2.0",
+    "inquirer": "^8.2.4",
     "moment": "^2.29.1",
     "react": "^17.0.1",
     "react-big-calendar": "^0.38.1",
