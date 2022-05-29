@@ -75,7 +75,7 @@ An operation is a process within FLINT that moves carbon stock between pools. Op
 
 Events are operations that occur intermittently (rather than for every time step in a simulation) resulting in the movement of carbon from one pool to another. Events include natural and anthropogenic events including: fire, harvesting, ploughing, and fertiliser application. These are coded for the FLINT as a module. Here is the relationship between Pools and Operations/ Events.
 
-|![Diagram depicting how FLINT calls modules to move carbon between pools.](../static/img/operations-module-case-study.png) |
+|![Diagram depicting how FLINT calls modules to move carbon between pools. The first column states Carbon Pools/Time step while the first row states Event operations. For each pixel, FLINT calls modules to move carbon between pools.](../static/img/operations-module-case-study.png) |
 |:--:|
 | Diagram depicting how FLINT calls modules to move carbon between pools. |
 
