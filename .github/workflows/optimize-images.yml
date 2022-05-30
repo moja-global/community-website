@@ -1,0 +1,44 @@
+name: Optimize images
+
+on:
+  schedule:
+    - cron: "15 14 1 * *"
+
+jobs:
+  build:
+    name: Optimize PNG images
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Cache Oxipng
+        uses: actions/cache@v3
+        with:
+          path: ~/.cargo/
+          key: ${{ runner.os }}-cargo
+
+      - name: Install Oxipng
+        run: |
+          cargo install oxipng
+
+      - name: Optimize PNGs
+        run: |
+          pushd website/static/img
+          # -o 4 is the highest recommended level of optimization
+          oxipng -o 4 -i 0 --strip safe *.png
+          popd
+
+      - name: Verify Changed files
+        uses: tj-actions/verify-changed-files@v9.1
+        id: verify-changed-files
+
+      - name: Commit changes
+        if: steps.verify-changed-files.outputs.files_changed == 'true'
+        uses: EndBug/add-and-commit@v7
+        with:
+          add: 'website'
+          default_author: github_actor
+          message: 'Optimize images'
+          signoff: true
