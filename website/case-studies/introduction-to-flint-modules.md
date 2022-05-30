@@ -21,13 +21,19 @@ keywords:
 
 ![Cover Image for the case study titled `An introduction to FLINT Modules`](../static/img/introduction-to-flint-modules.png)
 
+:::info
+
+This page is incomplete and we would love your help. Edit this page and add anything that would be helpful to others.
+
+:::
+
 FLINT is a tool designed to support better land management and help reduce greenhouse gas (GHG) emissions worldwide. The tool uses modules to simulate different environments and processes related to carbon transfer.
 
-A module is a self-contained set of operations that describe the ecological processes driving carbon changes in a landscape across a specified period of time. For example, the empirical forest growth module contains all the operations needed to simulate biomass accumulation.
+A module is a self-contained set of operations that describe the ecological processes driving carbon changes in a landscape across a specified period. For example, the empirical forest growth module contains all the operations needed to simulate biomass accumulation.
 
-All modules are compatible with the [`develop`](https://github.com/moja-global/FLINT/tree/develop) branch of **FLINT** and any actively maintained branches will work with the most recent version. It is strongly recommended to always use the latest version of FLINT. The FLINT Application Programming Interface (API) has evolved over time, so some modules might be out of date.
+All modules are compatible with the [`develop`](https://github.com/moja-global/FLINT/tree/develop) branch of **FLINT**, and any actively maintained branches will work with the most recent version. It is strongly recommended always to use the latest version of FLINT. The FLINT Application Programming Interface (API) has evolved so that some modules might be outdated.
 
-Modules come in three different tiers according to the amount of information they need, and their degree of analytical complexity. Three tiers are described for categorizing both emissions factors and activity data. Tier 1 is the most basic, frequently utilizing IPCC-recommended country-level defaults. While tiers 2 and 3 are more advanced.
+Modules come in three different tiers according to the amount of information they need and their degree of analytical complexity. Three tiers are described for categorizing both emissions factors and activity data. Tier 1 is the most basic, frequently utilizing IPCC-recommended country-level defaults. While tiers 2 and 3 are more advanced.
 
 ## Prerequisites
 
@@ -53,15 +59,15 @@ Modules are responsible for managing "state variables" and "carbon pools".
 - State variables are variables that can represent characteristics of the environment such as tree height or age.
 - Carbon pools _represent the location of carbon within an environment. Such as in trees, underground or in the atmosphere_.
 
-Each module must ingest data such as climate data or information about environmental disturbances, to calculate changes to state variables and the amounts of carbon in each of its carbon pools as the simulation progresses.
+Each module must ingest data such as climate data or information about environmental disturbances to calculate changes to state variables and the amounts of carbon in each of its carbon pools as the simulation progresses.
 
 At the end of a simulation, modules output the updated values for state variables. The output for carbon pools is in the form of an array (sparse matrix). The array includes information about the source pool, the sink pool, and the amount of flux. The module output is shared with the unit controller within FLINT.
 
-Modules run over "simulation units". A simulation unit can represent a spatial area, such as a forest, or it can represent an emissions source, such as livestock. When the simulation unit refers to a geographical  area, it is known as a "land unit". FLINT is responsible for managing the processing of simulation units over time.
+Modules run over "simulation units". A simulation unit can represent a spatial area, such as a forest, or an emissions source, such as livestock. When the simulation unit refers to a geographical area, it is known as a "land unit". FLINT is responsible for managing the processing of simulation units over time.
 
 ### Pools
 
-A pool is a reservoir within which something can be stored and released. For example, a carbon pool is a reservoir from which carbon can be stored (sequestered and/or maintained) or emitted, such as debris. Within FLINT, each pool has attributed a value such as tonnes carbon, and at each time step, the FLINT can move stores from one pool to another using an operation. Here is an example of pools in a FLINT simulation.
+A pool is a reservoir within which something can be stored and released. For example, a carbon pool is a reservoir from which carbon can be stored (sequestered and maintained) or emitted, such as debris. Within FLINT, each pool has attributed a value such as tonnes of carbon, and at each time step, the FLINT can move stores from one pool to another using an operation. Here is an example of pools in a FLINT simulation.
 
 |![Diagram depicting how modules determine pools in FLINT.](../static/img/pools-module-case-study.png) |
 |:--:|
@@ -73,7 +79,7 @@ An operation is a process within FLINT that moves carbon stock between pools. Op
 
 ### Events
 
-Events are operations that occur intermittently (rather than for every time step in a simulation) resulting in the movement of carbon from one pool to another. Events include natural and anthropogenic events including: fire, harvesting, ploughing, and fertiliser application. These are coded for the FLINT as a module. Here is the relationship between Pools and Operations/ Events.
+Events are operations that occur intermittently (rather than for every step in a simulation), resulting in the movement of carbon from one pool to another. Events include natural and anthropogenic events, including fire, harvesting, ploughing, and fertiliser application. These are coded for the FLINT as a module. Here is the relationship between Pools and Operations/Events.
 
 |![Diagram depicting how FLINT calls modules to move carbon between pools. The first column states Carbon Pools/Time step while the first row states Event operations. For each pixel, FLINT calls modules to move carbon between pools.](../static/img/operations-module-case-study.png) |
 |:--:|
@@ -81,29 +87,25 @@ Events are operations that occur intermittently (rather than for every time step
 
 ### Temporal distribution
 
-The temporal scale in FLINT is referred to as time-steps. Time-steps are lengths of time over which operations are reported. It is only at the end of a time-step that carbon can be moved from one pool to another.
+The temporal scale in FLINT is referred to as time steps. Time-steps are lengths of time over which operations are reported. At the end of a time-step, carbon can be moved from one pool to another.
 
-The standard time-step in FLINT is one month. However it can be varied by the user. One month is the recommended time-step for modelling carbon.
+The standard time step in FLINT is one month. However, it can be varied by the user. One month is the recommended time step for modelling carbon.
 
 ### Synchronized events
 
-In some circumstances, modules that are simulated for a particular Simulation Unit are dependent on other Simulation Units. That is, there is an interdependency between the Simulation Units. In these situations it is necessary for there to be a process that synchronizes across the related Simulation Units and this is known as synchronized events. The Synchronized Server in FLINT manages Synchronized events.
+In some circumstances, simulated modules for a particular Simulation Unit are dependent on other Simulation Units. That is, the Simulation Units are interdependent. In these situations, it is necessary for a process that synchronizes across the related Simulation Units, which is known as synchronized events. The Synchronized Server in FLINT manages Synchronized events.
 
 ### Mass balance
 
-The carbon cycle is based on the transfer of carbon molecules from one pool to another, where the molecules are not created, nor are they destroyed. As such, all outputs must be equal to the inputs. The system must be in balance. This is referred to as mass balance. Overall this is the high level design of FLINT.
-
-|![Diagram depicting the high-level design of FLINT.](../static/img/flint-design-module-case-study.png) |
-|:--:|
-| Diagram depicting the high-level design of FLINT. |
+The carbon cycle is based on the transfer of carbon molecules from one pool to another, where the molecules are not created, nor are they destroyed. As such, all outputs must be equal to the inputs. The system must be in balance. This is referred to as mass balance.
 
 ## Existing FLINT modules
 
 ### Empirical Forest Growth Module
 
-The empirical Forest growth module includes all operations required to simulate biomass accumulation. It simulates the growth in carbon stock within a forest over time. This module is included within FLINT and is also used by the [Chapman Richards Module](https://github.com/moja-global/FLINT.Module.Chapman_Richards). **Biomass** refers to the mass of living organisms, including plants, animals and microorganisms. **Biomass accumulation** is the net change in standing biomass from one time to another (g/m^2).
+The empirical Forest growth module includes all operations required to simulate biomass accumulation. It simulates the growth in carbon stock within a forest over time. This module is included within FLINT and is also used by the [Chapman Richards Module](https://github.com/moja-global/FLINT.Module.Chapman_Richards). **Biomass** refers to the mass of living organisms, including plants, animals and microorganisms. **Biomass accumulation** is the net change in standing Biomass from one time to another (g/m^2).
 
-The module runs at a **monthly step interval**. The module's behavior is based on yield tables that represent **monthly growth increments** for a forest type. The data for the yield tables comes from research and experimentation, and is called **empirical data**, thus giving the name of this module as the empirical forest growth module. It's important to note that the yield tables only include **above-ground biomass**. If you want to calculate the **below-ground biomass* you should use the hybrid forest growth module.
+The module runs at a **monthly step interval**. The module's behaviour is based on yield tables representing **monthly growth increments** for a forest type. The data for the yield tables comes from research and experimentation and is called **empirical data**, thus giving the name of this module, the empirical forest growth module. It's important to note that the yield tables only include **above-ground biomass**. If you want to calculate the **below-ground Biomass*, you should use the hybrid forest growth module.
 
 #### Inputs:
 
@@ -128,9 +130,9 @@ The module runs at a **monthly step interval**. The module's behavior is based o
 
 ### Hybrid Forest Growth Module
 
-The Hybrid Forest Growth Module calculates the biomass above and below the ground. The module simulates physiological responses to environmental conditions to help derive relationships that can be used to predict tree growth. The module contains a series of equations that are used to calculate the amounts of biomass in the environment.
+The Hybrid Forest Growth Module calculates the biomass above and below the ground. The module simulates physiological responses to environmental conditions to help derive relationships that we can use to predict tree growth. The module contains a series of equations used to calculate the amounts of biomass in the environment.
 
-The Hybrid Forest Growth module represents a 3-PG model (Physiological Principles in Predicting Growth). 3-PG models require more detailed data than is typically needed in empirical growth models. 3-PG models are better than the empirical models as they can be used with any landscape as long as all the required data is provided.
+The Hybrid Forest Growth module represents a 3-PG model (Physiological Principles in Predicting Growth). 3-PG models require more detailed data than is typically needed in empirical growth models. 3-PG models are better than the empirical models as we can use them with any landscape as long as all the required data is provided.
 
 In `forestgrowthmodule.cpp`, the equation used is:
 
@@ -142,7 +144,7 @@ double ForestGrowthModule::calculate_above_ground_biomass(double age, double max
 
 ### Turnover Module
 
-Turnover is the movement of carbon from a living carbon pool to a dead carbon pool. This is due to the natural living process of plant components . For example: A deciduous forest will have near 100% turnover of leaves across a year, or an annual turnover rate of 99%. The turnover rates will vary with vegetation types and the plant components. For example: A tree stem may have zero (0) annual turnover, while the leaves have one (1).
+Turnover is the movement of carbon from a living carbon pool to a dead carbon pool. It is due to the natural living process of plant components. For example, a deciduous forest will have near 100% turnover of leaves across a year or an annual turnover rate of 99%. The turnover rates will vary with vegetation types and the plant components. For example, A tree stem may have zero (0) annual turnover, while the leaves have one (1).
 
 To determine the volume of turnover through time, a calculation similar to the one below is carried out:
 
@@ -158,9 +160,9 @@ Decomposition represents heterotrophic respiration of litter and soil organic ma
 
 ### RothC Soil Carbon Module
 
-RothC is a module used for simulating the turnover of soil carbon in non-waterlogged soils under different vegetation types. It is based on the decomposition of organic matter as it relates to mean temperature and moisture, and proportion of resistant and decomposable organic material. It runs on a monthly time step interval.
+RothC is a module used to simulate soil carbon turnover in non-waterlogged soils under different vegetation types. It is based on the decomposition of organic matter related to mean temperature and moisture and the proportion of resistant and decomposable organic material. It runs on a monthly time step interval.
 
-Input data for the RothC module is readily available. There is considerable overlap with hybrid growth modules and WOFOST modules. For a detailed explanation and better understanding, see Ver de Terre production - [RothC guide](https://www.verdeterreprod.fr/wp-content/uploads/2020/05/RothC_guide_WIN.pdf).
+Input data for the RothC module is readily available. There is considerable overlap between hybrid growth modules and WOFOST modules. For a detailed explanation and better understanding, see Ver de Terre production - [RothC guide](https://www.verdeterreprod.fr/wp-content/uploads/2020/05/RothC_guide_WIN.pdf).
 
 #### Inputs:
 
@@ -188,7 +190,7 @@ Input data for the RothC module is readily available. There is considerable over
 
 ### Chapman Richards Module
 
-The Chapman Richards module is a tier 3 module. It is used for the estimation of greenhouse gas emissions and removals due to changes in biomass carbon for forests using Chapman Richards equation. We can calculate above-ground and below-ground biomass using this module.
+The Chapman Richards module is a tier 3 module. It is used to estimate greenhouse gas emissions and removals due to changes in biomass carbon for forests using the Chapman Richards equation. We can calculate above-ground and below-ground biomass using this module.
 
 ```
 AGC = * [ 1 -  e ^ { -k *Age } ] ^ { ( 1 / (1-m) }
@@ -200,7 +202,7 @@ AGC = * [ 1 -  e ^ { -k *Age } ] ^ { ( 1 / (1-m) }
 -   **Age**: Age of the forest (years).
 -   **m**: Parameter used in modelling tree growth (dimensionless).
 
-This module provides the estimation of above-ground biomass on the basis of the age of forests. Below-ground biomass is calculated as a ratio of above-ground biomass. This equation is also used within the Forest Growth module. There is a separate repository for the [Chapman Richards module](https://github.com/moja-global/FLINT.Module.Chapman_Richards). It works on a monthly time step interval.
+This module estimates above-ground biomass based on the age of forests. Below-ground biomass is calculated as a ratio of above-ground biomass. This equation is also used within the Forest Growth module. A separate repository for the [Chapman Richards module](https://github.com/moja-global/FLINT.Module.Chapman_Richards) is available. It works on a monthly time step interval.
 
 #### Input
 
@@ -227,9 +229,9 @@ These are the same science modules used in the first generation tool ([CBM-CFS3]
 
 The CBM-CFS3 is widely used throughout Canada and globally. Its use is supported by the Canadian Forest Service of Natural Resources Canada.
 
-The next generation GCBM is currently used by the CFS with a number of partner organizations to advance the science of forest carbon estimation and to support policy analyses such as the assessment of mitigation options in the forest sector.
+The next generation GCBM is currently used by the CFS with several partner organizations to advance the science of forest carbon estimation and support policy analyses such as assessing mitigation options in the forest sector.
 
-In GCBM, forest inventory and disturbance events are spatially explicit. The location of disturbances are explicit in spatial layers. The GCBM Module is able to simulate large landscapes easily.
+In GCBM, forest inventory and disturbance events are spatially explicit. The location of disturbances is explicit in spatial layers. The GCBM Module can simulate large landscapes easily.
 
 |![Diagram depicting the high-level overview of GCBM.](../static/img/gcbm-overview-module-case-study.png) |
 |:--:|
@@ -243,18 +245,16 @@ There are a large number of modules within the GCBM, some of which are optional 
 
 ##### Canadian Model for Peatlands (CaMP)
 
-The Canadian Model for Peatlands (CaMP) is a module for Greenhouse Gas (GHG) emissions. The CaMP was designed as a module for the spatially-explicit GCBM. The CaMP is a site to national-level peatland carbon model developed to better estimate GHG emissions across a range of peatland types in Canada.
+The Canadian Model for Peatlands (CaMP) is a module for Greenhouse Gas (GHG) emissions. The CaMP was designed as a module for the spatially-explicit GCBM. The CaMP is a site to a national-level peatland carbon model developed to estimate GHG emissions across a range of peatland types in Canada.
 
-Different events are triggered on the basis of the land type found during simulation. For example, if the land type is peatland then this triggers a peatland disturbance event. Otherwise it triggers a regular CBM disturbance event.
+Different events are triggered based on the land type found during the simulation. For example, if the land type is peatland, this triggers a peatland disturbance event. Otherwise, it triggers a regular CBM disturbance event.
 
 ##### Decay Module
 
 This module calculates the annual decay and turnover of a set of dead organic matter pools present in the GCBM. The data requirements for the decay module are:
 
 - A table named "decay_parameters", with one set of decay parameters for each of the enumerated  Dead Organic Matter (DOM) pools in the DOMPool.
-
 - Scalar "mean_annual_temperature". This is the mean annual temperature of the environment.
-
 - Scalar "SlowMixingRate". This is the amount that has moved from slow above-ground to slow below-ground annually.
 
 ##### Moss Decay Module
@@ -301,13 +301,13 @@ This module creates the stand growth curve. It gets the standard growth curve ID
 
 A yield table is a table which indicates the volume of wood per unit area of forest that is expected to be at different ages compared to other trees.
 
-This module creates the yield tables for multiple hardwood and softwood species components depending upon the age of the tree, species type and species ID of the tree.
+This module creates the yield tables for multiple hardwood and softwood species components depending upon the tree's age, species type and species ID of the tree.
 
-It also gives a summary of total volume of the species growth curve and creates a yield table for a specific type with the transform result yield data.
+It also summarises the total volume of the species growth curve and creates a yield table for a specific type with the transform result yield data.
 
 ##### Yield Table Growth Module
 
-This module creates and updates yield tables for different land types like peatland and moss, and transfers content between various biomass pools. It requires the growth yield curve to work which it retrieves from the stand growth curve factory file. It also performs turnover and decay of different pools in its one time step.
+This module creates and updates yield tables for different land types like peatland and moss and transfers content between various biomass pools. It requires the growth yield curve to work, which it retrieves from the stand growth curve factory file. It also performs turnover and decay of different pools in one step.
 
 The [Turnover module](#turnover-module) and the [Decomposition module](#decomposition-module) are also used as a pre-requisite for the GCBM.
 
@@ -329,9 +329,9 @@ GCBM gives us the estimate of carbon flux generated, above-ground biomass etc. T
 
 ### Wofost Crop Growth Module
 
-WOFOST (WOrld FOod STudies) is a mechanistic module that simulates crop growth on the basis of photosynthesis, respiration and the prevailing environmental conditions. It is similar to the [hybrid forest growth module](#hybrid-forest-growth-module).
+WOFOST (WOrld FOod STudies) is a mechanistic module that simulates crop growth based on photosynthesis, respiration and the prevailing environmental conditions. It is similar to the [hybrid forest growth module](#hybrid-forest-growth-module).
 
-It is similar to the [DayCent](https://en.wikipedia.org/wiki/DayCent). This module runs on a **Daily time step** and allows users to model the potential production, attainable production and actual production for a given site (region). The simulation runs from sowing to maturity and is based on the response of crop to weather (all production levels) and soil moisture conditions.
+It is similar to the [DayCent](https://en.wikipedia.org/wiki/DayCent). This module runs on a **Daily time step** and allows users to model the potential production, attainable production and actual production for a given site (region). The simulation runs from sowing to maturity and is based on the response of the crop to weather (all production levels) and soil moisture conditions.
 
 #### Inputs:
 
@@ -368,7 +368,7 @@ It is similar to the [DayCent](https://en.wikipedia.org/wiki/DayCent). This modu
 
 4. Can I implement a module from scratch?
 
-    Yes you can. Here's an example of a custom made module: [**Agricultural soil module**](https://github.com/moja-global/FLINT.Module.Agricultural_Soil_Model). This project involves specifically implementing the agricultural soils model that is used to estimate non-CO2 GHG emissions from agricultural practices. You can visit the [module development docs](https://github.com/moja-global/FLINT.Modules.docs/blob/develop/modules.md#developing-modules) to learn how to implement a single, simple module from scratch.
+    Yes, you can. Here's an example of a custom made module: [**Agricultural soil module**](https://github.com/moja-global/FLINT.Module.Agricultural_Soil_Model). This project involves specifically implementing the agricultural soils model used to estimate non-CO2 GHG emissions from agricultural practices. You can visit the [module development docs](https://github.com/moja-global/FLINT.Modules.docs/blob/develop/modules.md#developing-modules) to learn how to implement a single, simple module from scratch.
 
 5. How do modules interact with each other?
 
