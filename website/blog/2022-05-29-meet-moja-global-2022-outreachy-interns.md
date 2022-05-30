@@ -34,7 +34,7 @@ Kateryna is a Computer Engineering major at Ankara University, Turkey. Her inter
   <img src="/img/ankita-sharma-outreachy-2022.jpg" height="510" width="400" alt="Picture of Ankita. Ankita is the Outreachy 2021 Intern from moja global"></img>
 </p>
 
-Ankita is currently pursuing a Bachelor of Technology in Electronics and Communication from the International Institute of Information Technology, Naya Raipur, India. She found an early-career interest in Computer Science and always wanted to see how real-life development works in an organization which led her to open-source development. She learned about Outreachy while I searched for open source opportunities and discovered the moja global organization and found the project very interesting. After contributing during the contribution period, she is excited to work for the common goal with the moja global community!
+Ankita is currently pursuing a Bachelor of Technology in Electronics and Communication from the International Institute of Information Technology, Naya Raipur, India. She found an early-career interest in Computer Science and always wanted to see how real-life development works in an organization which led her to open-source development. She learned about Outreachy while searching for open source opportunities and discovered the moja global organization and found the project very interesting. After contributing during the contribution period, she is excited to work for the common goal with the moja global community!
 
 We want to thank the [Software Freedom Conservancy](https://sfconservancy.org/) for running the Outreachy internships. Welcome, Kateryna and Ankita to the Outreachy Internships! Thanks for your interest, and we hope it will be a great learning experience for all of you! 
 
