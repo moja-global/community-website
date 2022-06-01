@@ -16,6 +16,9 @@ const features = [
         <li>
           <a href="/community/governance">Governance model</a>
         </li>
+        <li>
+          <a href="/community/working-groups/doc-wg">Working Groups</a>
+        </li>
       </ul>
     ),
   },
