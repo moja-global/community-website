@@ -149,11 +149,18 @@
   color: white;
 }
 
-.project-icon{
+html[data-theme='light'] .project-icon {
   height: 1.8em;
   width: 1.8em;
-  stroke: white;
+  color: #242526;
 }
+
+html[data-theme='dark'] .project-icon {
+  height: 1.8em;
+  width: 1.8em;
+  color: white;
+}
+
 
 .project_links{
   display: flex;
