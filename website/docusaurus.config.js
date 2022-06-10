@@ -192,35 +192,35 @@ module.exports = {
           items: [
             {
               html: `
-              <a href= 'https://twitter.com/mojaglobal'>
+              <a href= 'https://twitter.com/mojaglobal' target="_blank">
               <img class="socials" src="/img/twitter.png" alt="twitter icon" />
               </a>
               `,
             },
             {
               html: `
-              <a href= 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ'>
+              <a href= 'https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ' target="_blank">
               <img class="socials" src="/img/youtube.png" alt="youtube icon" />
               </a>
               `,
             },
             {
               html: `
-              <a href= 'https://github.com/moja-global'>
+              <a href= 'https://github.com/moja-global' target="_blank">
               <img class="socials" src="/img/github.png" alt="github icon" />
               </a>
               `,
             },
             {
               html: `
-              <a href= 'https://www.linkedin.com/company/moja-global/'>
+              <a href= 'https://www.linkedin.com/company/moja-global/' target="_blank">
               <img class="socials" src="/img/linkedin.png" alt="linkedin icon" />
               </a>
               `,
             },
             {
               html: `
-              <a href= 'https://mojaglobal.slack.com/'>
+              <a href= 'https://mojaglobal.slack.com/' target="_blank">
               <img class="socials" src="/img/slack.png" alt="slack icon" />
               </a>
               `,
