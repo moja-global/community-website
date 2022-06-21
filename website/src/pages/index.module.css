@@ -26,24 +26,32 @@
 
 .heroBanner {
   min-height: calc(100vh - 60px);
-  background-image: url('/img/banner-image.png');
+  background-color: #004643;
   overflow: hidden;
-  background-repeat: no-repeat;
-  background-size: cover;
 }
 
 .heroContainer {
-  width: 50%;
+  width: 45%;
   margin-left: 8%;
+  margin-right: 10%;
   color: white;
+}
+
+.logo {
+  width: 300px;
+  height: 250px;
 }
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: left;
-  justify-content: left;
-  margin: 30px 0 0;
+  justify-content: space-between;
+  margin: 30px 50px 0 0;
+}
+
+.hero__subtitle {
+  width: 30% !important;
 }
 
 html[data-theme='dark'] li > a:hover {
@@ -52,7 +60,27 @@ html[data-theme='dark'] li > a:hover {
 }
 
 .buttons > a {
+  color: black !important;
   margin: 5px;
+  background-color: #f9bc60;
+  border-color: #f9bc60 !important;
+  height: 50px;
+}
+
+.graphic2 {
+  height: 30%;
+  width: 6%;
+  position: absolute;
+  top: 60px;
+  left: 0px;
+}
+
+.graphic1 {
+  height: 23%;
+  width: 10%;
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 @media screen and (max-width: 966px) {
