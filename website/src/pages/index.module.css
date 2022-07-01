@@ -37,17 +37,14 @@
   color: white;
 }
 
-.logo {
-  width: 300px;
-  height: 250px;
-}
+
 
 .buttons {
   display: flex;
   flex-wrap: wrap;
   align-items: left;
   justify-content: space-between;
-  margin: 30px 90px 0 0;
+  margin: 30px 100px 0 0;
 }
 
 .hero__subtitle {
@@ -68,16 +65,12 @@ html[data-theme='dark'] li > a:hover {
 }
 
 .graphic2 {
-  height: 30%;
-  width: 6%;
   position: absolute;
   top: 60px;
   left: 0px;
 }
 
 .graphic1 {
-  height: 23%;
-  width: 10%;
   position: absolute;
   right: 0;
   bottom: 0;

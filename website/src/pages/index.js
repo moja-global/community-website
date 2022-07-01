@@ -13,7 +13,7 @@ const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
     <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <img className={clsx(styles.graphic2)} src="static/img/mojaGraphic2.png"></img>
+      <img className={clsx(styles.graphic2)} src="static/img/mojaGraphic2.png" alt={"Graphic"} height={200} width={80}></img>
       <div className={clsx('container', styles.heroContainer)}>
         <h1 className="hero__title">{siteConfig.title}</h1>
         <p className="hero__subtitle">{siteConfig.tagline}</p>
@@ -38,8 +38,8 @@ const HomepageHeader = () => {
           </Link>
         </div>
       </div>
-      <img className={clsx(styles.logo)} src="static/img/logo-light.png"></img>
-      <img className={clsx(styles.graphic1)} src="static/img/mojaGraphic1.png"></img>
+      <img className={clsx(styles.logo)} src="static/img/logo-light.png" alt={"Logo"} height={250} width={300}></img>
+      <img className={clsx(styles.graphic1)} src="static/img/mojaGraphic1.png" alt={"Graphic"} height={180} width={180}></img>
     </header>
   );
 };
