@@ -84,7 +84,6 @@ const Home = () => {
           </div>
         </main>
 
-        <Contributors />
         <Sponsors />
       </Layout>
     </>
