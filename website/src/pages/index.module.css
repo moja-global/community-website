@@ -2,6 +2,30 @@
   color: black;
 }
 
+html[data-theme='dark'] .KnowTheCommunity {
+  background-color: var(--ifm-color-primary-green-dark);
+}
+
+html[data-theme='light'] .KnowTheCommunity {
+  background-color: var(--ifm-color-primary-green-light);
+}
+
+html[data-theme='dark'] .KnowTheCommunityTitle {
+  color: var(--ifm-color-primary-green-light);
+}
+
+html[data-theme='light'] .KnowTheCommunityTitle {
+  color: var(--ifm-color-primary-green-dark);
+}
+
+html[data-theme='dark'] svg > path {
+  color: var(--ifm-color-primary-green-light);
+}
+
+html[data-theme='light'] svg > path {
+  color: var(--ifm-color-primary-green-dark);
+}
+
 @media screen and (max-width: 966px) {
   .communityRow {
     flex-direction: column;
@@ -72,5 +96,26 @@ html[data-theme='dark'] li > a:hover {
     position: relative;
     left: 35%;
     margin-bottom: 0%;
+  }
+}
+
+.KnowTheCommunityTitle {
+  max-width: 960px;
+  margin: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1172px) {
+  .KnowTheCommunityTitle {
+    max-width: 610px;
+  }
+}
+
+@media screen and (max-width: 800px) {
+  .KnowTheCommunityTitle {
+    padding: 0 48px;
+  }
+  .KnowTheCommunityTitle h1 {
+    text-align: center;
   }
 }

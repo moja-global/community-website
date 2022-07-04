@@ -6,8 +6,9 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomePageFeatures';
 import Contributors from '../components/Contributors';
-import features from '../../websiteData/features';
 import Sponsors from '../components/Sponsors';
+import KnowTheCommunityCarousel from '../components/KnowTheCommunityCarousel/';
+import features from '../../websiteData/features';
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -41,14 +42,14 @@ const HomepageHeader = () => {
   );
 };
 
-const Feature = ({ title, description }) => {
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      <h2>{title}</h2>
-      <div className={styles.feature__description}>{description}</div>
-    </div>
-  );
-};
+// const Feature = ({ title, description }) => {
+//   return (
+//     <div className={clsx('col col--4', styles.feature)}>
+//       <h2>{title}</h2>
+//       <div className={styles.feature__description}>{description}</div>
+//     </div>
+//   );
+// };
 
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -61,25 +62,21 @@ const Home = () => {
         <HomepageHeader />
         <main>
           <div className="maindiv">
-            <br></br>
-            <br></br>
-            <br></br>
-            <h1 align="center">Know the Community</h1>
-            <br></br>
-            <br></br>
-            {features && features.length > 0 && (
-              <section className={styles.features}>
-                <div className="container">
-                  <div className="row">
-                    {features.map((props, idx) => (
-                      <Feature key={idx} {...props} />
-                    ))}
-                  </div>
-                </div>
-                <br></br>
-                <br></br>
-              </section>
-            )}
+            <div className={styles.KnowTheCommunity}>
+              <br></br>
+              <br></br>
+              <div className={`container ${styles.KnowTheCommunityTitle} `}>
+                <h1 align="left">Know the Community</h1>
+              </div>
+              <br></br>
+              {features && features.length > 0 && (
+                <section className={styles.features}>
+                  <KnowTheCommunityCarousel />
+                  <br></br>
+                  <br></br>
+                </section>
+              )}
+            </div>
             <HomepageFeatures />
           </div>
         </main>

@@ -18,6 +18,8 @@
   --ifm-color-primary-light: rgb(12, 173, 138);
   --ifm-color-primary-lighter: rgb(7, 77, 61);
   --ifm-color-primary-lightest: rgb(10, 117, 96);
+  --ifm-color-primary-green-light: rgb(171, 209, 198);
+  --ifm-color-primary-green-dark: rgb(0, 70, 67);
   --ifm-code-font-size: 120%;
   font-family: 'Poppins', sans-serif;
 }
@@ -343,7 +345,6 @@ html[data-theme='dark'] .stats-item p:hover {
 .socials:hover {
   filter: none;
 }
-
 @media (max-width: 992px) {
   .footer {
     padding: 2% 1%;
@@ -376,6 +377,40 @@ html[data-theme='dark'] .stats-item p:hover {
 @media (max-width: 382px){
   .contributors{
     padding: 4.5rem;
+  }
+}
 
+.class-0,
+.class-3,
+.class-6 {
+  transform: translateY(0px);
+  transition: all 0.3s;
+}
+
+.class-1,
+.class-4,
+.class-7 {
+  transform: translateY(50px);
+  transition: all 0.3s;
+}
+
+.class-2,
+.class-5,
+.class-8 {
+  transform: translateY(-50px);
+  transition: all 0.3s;
+}
+
+@media (max-width: 788px) {
+  .class-2,
+  .class-5,
+  .class-8,
+  .class-1,
+  .class-4,
+  .class-7,
+  .class-0,
+  .class-3,
+  .class-6 {
+    transform: none;
   }
 }

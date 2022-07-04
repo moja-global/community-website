@@ -1,0 +1,50 @@
+.CommunityCardContainer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 50px;
+  padding: 50px 0;
+  list-style: none;
+}
+
+.carousel {
+  overflow: hidden;
+  max-width: 960px;
+  margin: auto;
+}
+
+@media screen and (max-width: 1172px) {
+  .carousel {
+    max-width: 610px;
+  }
+}
+@media screen and (max-width: 800px) {
+  .carousel {
+    max-width: 280px;
+  }
+}
+.carouselContainer {
+  display: grid;
+  grid-auto-flow: column;
+  gap: 20px;
+}
+
+.carouselButtonLeft {
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: end;
+}
+
+.carouselButtonRight {
+  background-color: transparent;
+  border: none;
+  font-weight: bolder;
+  font-size: 50px;
+  text-align: start;
+}
+
+.carouselContainer {
+  transform: translateX(0px);
+  transition: all 0.5s;
+}
