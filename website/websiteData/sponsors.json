@@ -2,27 +2,27 @@
   {
     "name": "The Linux Foundation",
     "url": "https://www.linuxfoundation.org/",
-    "logo": "/img/linuxFoundation-transparent-backgroud.png"
+    "logo": "/img/linuxFoundation.jpeg"
   },
   {
     "name": "Natural Resources Canada",
     "url": "https://www.nrcan.gc.ca/home",
-    "logo": "/img/nrcanada-transparent-background.png"
+    "logo": "/img/nrcanada.png"
   },
   {
     "name": "Mullion Group",
     "url": "https://www.mulliongroup.com.au/meet-flintpro/",
-    "logo": "/img/mulliong-transparent-background.png"
+    "logo": "/img/mulliong.png"
   },
   {
     "name": "UNFCCC",
     "url": "https://unfccc.int/",
-    "logo": "/img/uncc-transparent-background.png"
+    "logo": "/img/uncc.png"
   },
   {
     "name": "Climate Advisers",
     "url": "https://climateadvisers.org/",
-    "logo": "/img/climate-advisers-transparent-background.png"
+    "logo": "/img/climate-advisers.png"
   },
   {
     "name": "Vercel (Infrastructure)",

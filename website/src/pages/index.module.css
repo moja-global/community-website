@@ -26,7 +26,7 @@
 
 .heroBanner {
   min-height: calc(100vh - 60px);
-  background-color: var(--ifm-color-primary-green);
+  background-color: #004643;
   overflow: hidden;
 }
 
@@ -59,8 +59,8 @@ html[data-theme='dark'] li > a:hover {
 .buttons > a {
   color: black !important;
   margin: 5px;
-  background-color: var(--ifm-color-primary-yellow);
-  border-color: var(--ifm-color-primary-yellow) !important;
+  background-color: #f9bc60;
+  border-color: #f9bc60 !important;
   height: 50px;
 }
 

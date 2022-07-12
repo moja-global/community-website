@@ -18,10 +18,6 @@
   --ifm-color-primary-light: rgb(12, 173, 138);
   --ifm-color-primary-lighter: rgb(7, 77, 61);
   --ifm-color-primary-lightest: rgb(10, 117, 96);
-  --ifm-color-primary-green: rgb(0, 70, 67);
-  --ifm-color-primary-green-dark: rgb(0, 30, 29);
-  --ifm-color-primary-yellow: rgb(249, 188, 96);
-  --ifm-color-primary-lavender: rgb(232, 228, 230);
   --ifm-code-font-size: 120%;
   font-family: 'Poppins', sans-serif;
 }
@@ -60,23 +56,32 @@ html[data-theme='dark'] .rbc-toolbar button:hover {
 html[data-theme='light'] .sponsor_wrapper {
   padding: 5px;
   margin: 21px;
+  border: 1px solid #67ca8f;
   border-radius: 5px;
   display: flex;
+  box-shadow: 0 5px 15px rgb(0 0 0 / 55%);
 }
 
-
+html[data-theme='light'] .sponsor_wrapper:hover {
+  box-shadow: 0 5px 18px rgb(0 0 0 / 70%);
+}
 
 html[data-theme='dark'] .sponsor_wrapper {
   padding: 5px;
   margin: 21px;
+  border: 1px solid #67ca8f;
   border-radius: 5px;
   display: flex;
+  box-shadow: 0 5px 18px rgba(95, 201, 135, 0.55);
+}
+
+html[data-theme='dark'] .sponsor_wrapper:hover {
+  box-shadow: 0 5px 25px rgba(91, 180, 125, 0.66);
 }
 
 .sponsors {
-  min-height: 100vh;
-  background-color: var(--ifm-color-primary-green);
-  padding: 230px 150px;
+  text-align: center;
+  padding: 3rem 1rem;
 }
 
 .sponsor_avatar {
@@ -86,40 +91,11 @@ html[data-theme='dark'] .sponsor_wrapper {
 }
 
 .sponsor_content {
-  background-color: var(--ifm-color-primary-green-dark);
-  max-width: 600px;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: space-between;
-  padding: 40px 60px;
-  border-radius: 10px;
-}
-
-.sponsor_button {
-  padding: 15px;
-  background-color: var(--ifm-color-primary-green);
-  margin: 20px 0px;
-}
-
-.sponsor_button a, a:hover{
- color: var(--ifm-color-primary-white);
- text-decoration-line: none !important;
-}
-
-.sponsor_info {
-  background-color: var(--ifm-color-primary-lavender);
-  max-width: 650px;
-  color: var(--ifm-color-primary-green);
-  padding: 14px 40px;
-  border-radius: 10px;
-}
-
-.sponsor-wrapper {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
+  justify-content: center;
 }
 
 .features__list {
@@ -146,6 +122,7 @@ html[data-theme='dark'] .sponsor_wrapper {
   font-size: 200%;
   line-height: 100%;
   padding: 0 0 30px;
+  text-align: center;
   font-weight: bold;
 }
 
