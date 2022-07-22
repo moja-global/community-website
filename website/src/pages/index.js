@@ -12,31 +12,37 @@ import Sponsors from '../components/Sponsors';
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <header className={clsx('hero hero--primary', styles.heroBanner)}>
-      <div className={clsx('container', styles.heroContainer)}>
-        <h1 className="hero__title">{siteConfig.title}</h1>
-        <p className="hero__subtitle">{siteConfig.tagline}</p>
-        <div className={styles.buttons}>
-          <Link
-            className={clsx(
-              'button button--outline button--secondary button--lg',
-              styles.getStarted
-            )}
-            to="/docs/"
-          >
-            Know our Projects
-          </Link>
-          <Link
-            className={clsx(
-              'button button--outline button--secondary button--lg',
-              styles.getStarted
-            )}
-            to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists"
-          >
-            Watch the tutorials
-          </Link>
+    <header className={styles.heroBanner}>
+      <img className={styles.graphic2} src="static/img/mojaGraphic2.png" alt={'Graphic'}></img>
+      <div className={styles.heroContainer}>
+        <div className={styles.subContainer}>
+          <h1 className={styles.title}>{siteConfig.title}</h1>
+          <p className={styles.subtitle}>{siteConfig.tagline}</p>
+          <div className={styles.buttonContainer}>
+            <button className={styles.btn}>
+              <Link className={styles.getStarted} to="/docs/">
+                Know our Projects
+              </Link>
+            </button>
+            <button className={styles.btn}>
+              <Link
+                className={styles.getStarted}
+                to="https://www.youtube.com/channel/UCfQUrrNP1Xf-Fv4c8uHYXhQ/playlists"
+              >
+                Watch the tutorials
+              </Link>
+            </button>
+          </div>
         </div>
+        <img
+          className={styles.heroImg}
+          src="static/img/logo-light.png"
+          alt={'Logo'}
+          height={250}
+          width={300}
+        ></img>
       </div>
+      <img className={styles.graphic1} src="static/img/mojaGraphic1.png" alt={'Graphic'}></img>
     </header>
   );
 };
