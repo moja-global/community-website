@@ -2,7 +2,7 @@
   color: black;
 }
 
-@media screen and (max-width: 966px) {
+/* @media screen and (max-width: 966px) {
   .communityRow {
     flex-direction: column;
     align-items: center;
@@ -15,7 +15,7 @@
   .communityMeeting {
     width: 100%;
   }
-}
+} */
 
 /* stylelint-disable docusaurus/copyright-header */
 
@@ -25,30 +25,80 @@
  */
 
 .heroBanner {
-  min-height: calc(100vh - 60px);
+  position: relative;
+  height: calc(100vh - 60px);
   background-color: #004643;
-  overflow: hidden;
+}
+
+.graphic2{
+  width: 7rem;
+}
+
+.graphic1{
+  width: 15rem;
+  bottom: 0;
+  position: absolute;
+  right: 0;
 }
 
 .heroContainer {
-  width: 45%;
+
+  width: full;
+  overflow-x: hidden;
+  overflow-y: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  gap: 0rem;
+
+  /* width: 45%;
   margin-left: 8%;
   margin-right: 10%;
-  color: white;
+  color: white; */
 }
 
+.title{
+  font-size: 4rem;
+}
 
+.subtitle{
+  width: 65%;
+  font-weight: 600;
+  font-size: 1.6rem;
+  color: #ABD1C6;
+}
 
-.buttons {
+.heroImg{
+  width: 24rem;
+  height: 19rem;
+  display: block;
+}
+
+.buttonContainer {
   display: flex;
-  flex-wrap: wrap;
-  align-items: left;
-  justify-content: space-between;
-  margin: 30px 100px 0 0;
+  gap: 1rem;
+  margin-top: 2rem;
 }
+
+.btn{
+  padding: 1.2rem 1.6rem;
+  font-size: 1rem;
+  background-color: #F9BC60;
+  outline: none !important;
+  border-radius: 5px;
+  border: none;
+}
+
+.btn > a {
+  color: black !important;
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+
+
 
 .hero__subtitle {
-  width: 30% !important;
 }
 
 html[data-theme='dark'] li > a:hover {
@@ -57,41 +107,27 @@ html[data-theme='dark'] li > a:hover {
 }
 
 .buttons > a {
-  color: black !important;
-  margin: 5px;
-  background-color: #f9bc60;
-  border-color: #f9bc60 !important;
-  height: 50px;
+
 }
 
 .graphic2 {
-  position: absolute;
-  top: 60px;
-  left: 0px;
 }
 
 .graphic1 {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 @media screen and (max-width: 966px) {
   .heroBanner {
-    padding: 2rem;
+    /* padding: 2rem; */
   }
 
   .heroContainer {
-    width: 100%;
-    margin: auto;
   }
 
   .buttons {
-    justify-content: center;
+    /* justify-content: center; */
   }
   .button {
-    position: relative;
-    left: 35%;
-    margin-bottom: 0%;
+    
   }
 }
