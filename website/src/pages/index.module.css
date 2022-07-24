@@ -30,11 +30,11 @@
   background-color: #004643;
 }
 
-.graphic2{
+.graphic2 {
   width: 7rem;
 }
 
-.graphic1{
+.graphic1 {
   width: 15rem;
   bottom: 0;
   position: absolute;
@@ -42,7 +42,6 @@
 }
 
 .heroContainer {
-
   width: full;
   overflow-x: hidden;
   overflow-y: hidden;
@@ -58,18 +57,18 @@
   color: white; */
 }
 
-.title{
+.title {
   font-size: 4rem;
 }
 
-.subtitle{
+.subtitle {
   width: 65%;
   font-weight: 600;
   font-size: 1.6rem;
-  color: #ABD1C6;
+  color: #abd1c6;
 }
 
-.heroImg{
+.heroImg {
   width: 24rem;
   height: 19rem;
   display: block;
@@ -81,10 +80,10 @@
   margin-top: 2rem;
 }
 
-.btn{
+.btn {
   padding: 1.2rem 1.6rem;
   font-size: 1rem;
-  background-color: #F9BC60;
+  background-color: #f9bc60;
   outline: none !important;
   border-radius: 5px;
   border: none;
@@ -96,8 +95,6 @@
   font-weight: 600;
 }
 
-
-
 .hero__subtitle {
 }
 
@@ -107,7 +104,6 @@ html[data-theme='dark'] li > a:hover {
 }
 
 .buttons > a {
-
 }
 
 .graphic2 {
@@ -128,6 +124,20 @@ html[data-theme='dark'] li > a:hover {
     /* justify-content: center; */
   }
   .button {
-    
+  }
+}
+
+/*  */
+@media screen and (max-width: 1349px) {
+  .heroBanner {
+    padding: 2rem;
+  }
+
+  .heroContainer {
+    margin: auto;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
   }
 }

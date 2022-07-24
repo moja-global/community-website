@@ -282,6 +282,13 @@ html[data-theme='dark'] .stats-item p:hover {
   }
 }
 
+/* hide logo for screens < 1350px */
+@media only screen and (max-width: 1349px) {
+  .navbar__inner .navbar__brand {
+    display: none;
+  }
+}
+
 /*Footer*/
 
 .footer {
@@ -373,9 +380,8 @@ html[data-theme='dark'] .stats-item p:hover {
     padding: 3%;
   }
 }
-@media (max-width: 382px){
-  .contributors{
+@media (max-width: 382px) {
+  .contributors {
     padding: 4.5rem;
-
   }
 }
