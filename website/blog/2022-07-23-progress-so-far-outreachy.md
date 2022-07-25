@@ -1,5 +1,5 @@
 ---
-title: Progress so far - 2022 Outreachy interns
+title: Progress so far - 2022 Outreachy interns (May)
 description: Contributions and progress made by the Outreachy interns (2022)
 tags: ['moja-global','outreachy','open-source','internships','mentorship']
 authors: Namyalg
@@ -8,7 +8,7 @@ hide_table_of_contents: false
 ---
 
 [Kateryna Derhaus](https://github.com/derha) and 
-[Ankita Sharma](https://github.com/ankitaS11) are GSoC mentees for the year 2022. 
+[Ankita Sharma](https://github.com/ankitaS11) are Outreachy interns (May) for the year 2022. 
 
 The Generic Carbon budget model (GCBM) is built on top of the Full Lands Integration Tool (FLINT). It was developed by Canada to run simulations in the Canadian ecosystem. Adaptations of the GCBM include GCBM.Belize, GCBM.Colombia and GCBM.Chile. Kateryna Derhaus is working on developing a new simulation model for Carpathians. She has run a test 
 simulation with low resolution spatial data and spatial data from Belize. On completion of the Carpathians simulation model, she will document the steps in jupyter notebooks. 
