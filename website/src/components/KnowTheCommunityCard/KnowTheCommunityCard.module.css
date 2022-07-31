@@ -86,3 +86,12 @@ html[data-theme='dark'] .description a {
 html[data-theme='light'] .description a {
   color: #abd1c6;
 }
+
+@media screen and (max-width: 450px) {
+  .card {
+    max-width: 200px;
+  }
+  .textContainer {
+    margin-left: 10px;
+  }
+}

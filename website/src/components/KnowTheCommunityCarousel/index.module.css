@@ -34,6 +34,7 @@
   font-weight: bolder;
   font-size: 50px;
   text-align: end;
+  cursor: pointer;
 }
 
 .carouselButtonRight {
@@ -42,9 +43,20 @@
   font-weight: bolder;
   font-size: 50px;
   text-align: start;
+  cursor: pointer;
 }
 
 .carouselContainer {
   transform: translateX(0px);
   transition: all 0.5s;
+}
+
+@media screen and (max-width: 450px) {
+  .carousel {
+    max-width: 200px;
+  }
+
+  .carouselContainer {
+    gap: 0;
+  }
 }
