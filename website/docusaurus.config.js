@@ -1,6 +1,6 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
 module.exports = {
-  title: `Moja Global Community`,
+  title: `moja global community`,
   tagline: `Learn about moja global's projects and join our ever-growing community`,
   url: 'https://community.moja.global',
   baseUrl: '/',
