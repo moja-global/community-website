@@ -23,8 +23,13 @@ It provides an abstraction of the underlying implementation while offering the u
 ## What is supported currently?
 Currently, the users can run the FLINT and GCBM examples on local and production environments
 
-- **Local environment** : A Docker-based setup has been created, such that Docker images can be pulled and built from the Github Container Registry. 
-- **Production environment** : Using Terraform, an IaaS, deployments can be made on Azure and GCP.
+- **Local environment** 
+  - The FLINT and GCBM example docker images can be pulled and built from the Github Container Registry. 
+  - The steps to [locally](https://github.com/moja-global/FLINT.Cloud/tree/master/kubernetes/local) deploy the FLINT and GCBM examples on Kubernetes are available 
+ 
+- **Production environment** : 
+ - Using Terraform, an IaaS, deployments can be made on Azure and GCP.
+ - Steps to deploy FLINT and GCBM examples on the [Azure Kubernetes Service](https://github.com/moja-global/FLINT.Cloud/tree/master/kubernetes/azure) are available
 
 ### FLINT Example 
 The [FLINT Example](https://github.com/moja-global/FLINT.Cloud/tree/master/local/rest_api_flint.example) demonstrates the Point and the Rothc modules. 
