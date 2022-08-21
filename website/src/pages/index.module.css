@@ -2,21 +2,6 @@
   color: black;
 }
 
-/* @media screen and (max-width: 966px) {
-  .communityRow {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .communityItem {
-    width: 100%;
-  }
-
-  .communityMeeting {
-    width: 100%;
-  }
-} */
-
 /* stylelint-disable docusaurus/copyright-header */
 
 /**
@@ -26,24 +11,26 @@
 
 .heroBanner {
   position: relative;
-  height: calc(100vh - 60px);
+  height: 100vh;
   background-color: #004643;
   z-index: 10;
 }
 
 .graphic2 {
-  width: 7rem;
+  width: 5rem;
 }
 
 .graphic1 {
-  width: 15rem;
-  bottom: 0;
+  width: 9rem;
   position: absolute;
+  bottom: 0;
   right: 0;
 }
 
 .heroContainer {
   width: 100%;
+  padding-right: 8rem;
+  padding-left: 8rem ;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
@@ -51,11 +38,8 @@
   justify-content: center;
   position: relative;
   gap: 0rem;
-
-  /* width: 45%;
-  margin-left: 8%;
-  margin-right: 10%;
-  color: white; */
+  height: fit-content;
+  color: white; 
 }
 
 .title {
@@ -70,15 +54,15 @@
 }
 
 .heroImg {
-  width: 24rem;
-  height: 19rem;
+  width: 20rem;
+  height: 15rem;
   display: block;
 }
 
 .buttonContainer {
   display: flex;
   gap: 1rem;
-  margin-top: 2rem;
+
 }
 
 .btn {
@@ -107,22 +91,21 @@ html[data-theme='dark'] li > a:hover {
 .buttons > a {
 }
 
-.graphic2 {
-}
 
-.graphic1 {
-}
 
 @media only screen and (min-width: 200px) and (max-width: 810px) {
   .heroContainer {
-    padding: 20px 0;
+    /* padding: 20px 0; */
     display: flex;
-    align-items: center;
-    justify-content: center;
+    margin: 0px auto 0px auto;
+    vertical-align: middle;
+    overflow-x: hidden;
+    overflow-y: hidden;
   }
 
   .heroBanner {
-    height: calc(100vh - 280px);
+    display: grid;
+    /* height: calc(100vh - 280px); */
   }
 
   .title {
@@ -142,10 +125,8 @@ html[data-theme='dark'] li > a:hover {
 
   .buttonContainer {
     display: flex;
-    flex-wrap: wrap;
     gap: 1rem;
     margin-top: 2rem;
-    z-index: 30;
   }
 
   .btn {
@@ -166,30 +147,68 @@ html[data-theme='dark'] li > a:hover {
 
 @media only screen and (min-width: 811px) and (max-width: 1348px) {
   .heroContainer {
-    padding: 80px 0;
+
   }
 
   .heroBanner {
-    height: calc(100vh - 120px);
+    /* height: calc(100vh - 120px); */
   }
 
-  .heroImg,
-  .graphic2 {
+  .heroImg {
     display: none;
   }
 }
 
+@media screen and (max-width: 1400px) {
+ .graphic2 {
+  width: 4rem;
+}
+}
+
 /*  */
 @media screen and (max-width: 1349px) {
-  .heroBanner {
-    padding: 2rem;
-  }
 
   .heroContainer {
+    padding: 2rem;
     margin: auto;
     width: 100%;
     display: flex;
+    overflow-x: hidden;
+    overflow-y: hidden;
     flex-direction: column;
     align-items: center;
+    justify-content: center;
   }
+}
+
+@media screen and (max-width: 467px) {
+  .buttonContainer {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.btn {
+  padding: 1rem 4rem;
+  font-size: 1rem;
+  background-color: #f9bc60;
+  outline: none !important;
+  border-radius: 5px;
+  border: none;
+}
+  
+}
+
+@media screen and (max-width: 367px) {
+
+.btn {
+  padding: 0.8rem 3rem;
+  font-size: 0.5rem;
+  background-color: #f9bc60;
+  outline: none !important;
+  border-radius: 5px;
+  border: none;
+}
+  
 }
