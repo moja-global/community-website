@@ -79,7 +79,7 @@ const Home = () => {
                 <br></br>
                 <br></br>
               </section>
-            )}
+            )} 
             <HomepageFeatures />
           </div>
         </main>
