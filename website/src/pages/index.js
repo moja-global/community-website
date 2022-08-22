@@ -44,7 +44,7 @@ const HomepageHeader = () => {
 const Feature = ({ title, description }) => {
   return (
     <div className={clsx('col col--4', styles.feature)}>
-      <h2 className='under'>{title}</h2>
+      <h2>{title}</h2>
       <div className={styles.feature__description}>{description}</div>
     </div>
   );
@@ -69,14 +69,12 @@ const Home = () => {
             <br></br>
             {features && features.length > 0 && (
               <section className={styles.features}>
-                <div className="container"> 
+                <div className="container">
+                  <div className="row">
                     {features.map((props, idx) => (
-                      <div className="card-wrap">
-                      <div className="card">
-                      <Feature key={idx} {...props}/>
-                      </div>
-                      </div>
+                      <Feature key={idx} {...props} />
                     ))}
+                  </div>
                 </div>
                 <br></br>
                 <br></br>
@@ -85,7 +83,6 @@ const Home = () => {
             <HomepageFeatures />
           </div>
         </main>
-
         <Contributors />
         <Sponsors />
       </Layout>
