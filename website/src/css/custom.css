@@ -130,6 +130,35 @@ html[data-theme='dark'] .sponsor_wrapper:hover {
   padding-left: 0%;
 }
 
+.container { 
+  display: flex; 
+  flex-flow: row wrap;
+}
+
+.card-wrap {
+  flex: 0 0 33.33%;
+  display: flex;
+  padding: 10px; /* gutter width */
+}
+
+.card {
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  flex: 0 0 100%;
+  background-color: rgb(19, 77, 70);
+}
+html[data-theme='light'] .card{
+  box-shadow: 0 0 4px rgba(0,0,0,0.4);
+  flex: 0 0 100%;
+  background-color: rgb(224, 242, 223);
+}
+html[data-theme='light'] .under{
+  text-decoration: underline;
+  text-decoration-color: black;
+}
+.under{
+  text-decoration: underline;
+  text-decoration-color: white;
+}
 .stats {
   margin: 2rem 3rem;
   display: flex;
