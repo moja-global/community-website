@@ -30,7 +30,7 @@
 .heroContainer {
   width: 100%;
   padding-right: 8rem;
-  padding-left: 8rem ;
+  padding-left: 8rem;
   overflow-x: hidden;
   overflow-y: hidden;
   display: flex;
@@ -39,7 +39,7 @@
   position: relative;
   gap: 0rem;
   height: fit-content;
-  color: white; 
+  color: white;
 }
 
 .title {
@@ -74,22 +74,20 @@
   border: none;
 }
 
-.btn > a {
+.btn>a {
   color: black !important;
   font-size: 1.2rem;
   font-weight: 600;
 }
 
-.hero__subtitle {
-}
+.hero__subtitle {}
 
-html[data-theme='dark'] li > a:hover {
+html[data-theme='dark'] li>a:hover {
   text-decoration: none;
   color: #ecf0f1;
 }
 
-.buttons > a {
-}
+.buttons>a {}
 
 
 
@@ -138,7 +136,7 @@ html[data-theme='dark'] li > a:hover {
     border: none;
   }
 
-  .btn > a {
+  .btn>a {
     color: black !important;
     font-size: 1rem;
     font-weight: 600;
@@ -146,9 +144,7 @@ html[data-theme='dark'] li > a:hover {
 }
 
 @media only screen and (min-width: 811px) and (max-width: 1348px) {
-  .heroContainer {
-
-  }
+  .heroContainer {}
 
   .heroBanner {
     /* height: calc(100vh - 120px); */
@@ -160,9 +156,9 @@ html[data-theme='dark'] li > a:hover {
 }
 
 @media screen and (max-width: 1400px) {
- .graphic2 {
-  width: 4rem;
-}
+  .graphic2 {
+    width: 4rem;
+  }
 }
 
 /*  */
@@ -183,32 +179,20 @@ html[data-theme='dark'] li > a:hover {
 
 @media screen and (max-width: 467px) {
   .buttonContainer {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 1rem;
-  margin-top: 2rem;
-}
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    margin-top: 2rem;
+  }
 
-.btn {
-  padding: 1rem 4rem;
-  font-size: 1rem;
-  background-color: #f9bc60;
-  outline: none !important;
-  border-radius: 5px;
-  border: none;
-}
-  
-}
 
-@media screen and (max-width: 367px) {
+  .btn {
+    padding: 0.8rem 3rem;
+    font-size: 0.5rem;
+    background-color: #f9bc60;
+    outline: none !important;
+    border-radius: 5px;
+    border: none;
+  }
 
-.btn {
-  padding: 0.8rem 3rem;
-  font-size: 0.5rem;
-  background-color: #f9bc60;
-  outline: none !important;
-  border-radius: 5px;
-  border: none;
-}
-  
 }
