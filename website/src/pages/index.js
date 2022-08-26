@@ -8,7 +8,7 @@ import HomepageFeatures from '../components/HomePageFeatures';
 import Contributors from '../components/Contributors';
 import features from '../../websiteData/features';
 import Sponsors from '../components/Sponsors';
-
+import Slider from '../components/CommunitySlider'
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -45,6 +45,7 @@ const Feature = ({ title, description }) => {
   return (
     <div className={clsx('col col--4', styles.feature)}>
       <h2>{title}</h2>
+      <hr className='under' />
       <div className={styles.feature__description}>{description}</div>
     </div>
   );
@@ -69,13 +70,7 @@ const Home = () => {
             <br></br>
             {features && features.length > 0 && (
               <section className={styles.features}>
-                <div className="container">
-                  <div className="row">
-                    {features.map((props, idx) => (
-                      <Feature key={idx} {...props} />
-                    ))}
-                  </div>
-                </div>
+                <Slider Feature={Feature}></Slider>
                 <br></br>
                 <br></br>
               </section>
@@ -83,7 +78,6 @@ const Home = () => {
             <HomepageFeatures />
           </div>
         </main>
-
         <Contributors />
         <Sponsors />
       </Layout>
