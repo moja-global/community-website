@@ -83,7 +83,7 @@ const features = [
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/DeveloperWorkflow/index.html">
+          <a href="https://github.com/moja-global/community-website#installation">
             GitHub Workflow
           </a>
         </li>
