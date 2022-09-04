@@ -1,11 +1,17 @@
 import React from 'react';
-const SponsorAvatar = ({ name, logo, url }) => {
+const SponsorAvatar = (props) => {
   return (
-    <a title={name} target="_blank" href={url} rel="noreferrer">
-      <div className="sponsor_wrapper">
-        <img width="120" height="120" className="sponsor_avatar" src={logo} alt={name} />{' '}
+    <div onClick={props.showDesc}>
+      <div className="single_sponsor">
+        <img
+          width="120"
+          height="120"
+          className="sponsor_avatar"
+          src={props.logo}
+          alt={props.name}
+        />{' '}
       </div>{' '}
-    </a>
+    </div>
   );
 };
 
