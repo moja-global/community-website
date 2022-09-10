@@ -1,6 +1,7 @@
 import React, { useRef } from 'react';
+import './styles.css';
 import features from '../../../websiteData/features';
-import { MdChevronLeft, MdChevronRight } from 'react-icons/md';
+import { MdOutlineArrowLeft,MdOutlineArrowRight } from 'react-icons/md';
 
 
 const Slider = ({ Feature }) => {
@@ -19,7 +20,7 @@ const Slider = ({ Feature }) => {
     }
     return <>
         <div className="contain">
-            <MdChevronLeft size={40} className="slider-icon left" onClick={slideLeft} />
+            <MdOutlineArrowLeft size={100} className="slider-icon left" onClick={slideLeft} />
             <div className="card-container">
                 {features.map((props, idx) => {
                     return <article className='card' ref={card}>
@@ -27,7 +28,7 @@ const Slider = ({ Feature }) => {
                     </article>
                 })}
             </div>
-            <MdChevronRight size={40} className="slider-icon right" onClick={slideRight} />
+            <MdOutlineArrowRight size={100} className="slider-icon right" onClick={slideRight} />
         </div>
     </>
 }

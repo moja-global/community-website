@@ -44,9 +44,12 @@ const HomepageHeader = () => {
 const Feature = ({ title, description }) => {
   return (
     <div className={clsx('col col--4', styles.feature)}>
-      <h2>{title}</h2>
+      <span class="dot"></span>
+      <span class="dot"></span>
+      <span class="dot"></span>
       <hr className='under' />
-      <div className={styles.feature__description}>{description}</div>
+      <h2 className='desch'>{title}</h2>
+      <div className='desc'>{description}</div>
     </div>
   );
 };
@@ -62,10 +65,11 @@ const Home = () => {
         <HomepageHeader />
         <main>
           <div className="maindiv">
+            <div className="divv">
             <br></br>
             <br></br>
             <br></br>
-            <h1 align="center">Know the Community</h1>
+            <h1  className='heading'>Know the Community</h1>
             <br></br>
             <br></br>
             {features && features.length > 0 && (
@@ -75,6 +79,7 @@ const Home = () => {
                 <br></br>
               </section>
             )}
+            </div>
             <HomepageFeatures />
           </div>
         </main>

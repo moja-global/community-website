@@ -132,86 +132,6 @@ html[data-theme='dark'] .sponsor_wrapper:hover {
   padding-left: 0%;
 }
 
-.contain {
-  width: 100%;
-  height: 250px;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.card-container {
-  overflow: scroll;
-  width: 100%;
-  box-sizing: content-box;
-  height: 100%;
-  overflow-x: scroll;
-  scrollbar-width: none;
-  scroll-behavior: smooth;
-  position: relative;
-  display: flex;
-  align-items: center;
-}
-
-.card-container::-webkit-scrollbar {
-  display: none;
-}
-
-.card {
-  flex: 0 0 30%;
-  overflow-x: hidden;
-  word-break: break-word;
-  padding: 5px;
-  display: inline-block;
-  margin-right: 30px;
-  background-color: rgb(19, 77, 70);
-}
-
-.slider-icon.left,
-.slider-icon.right {
-  background: rgb(103, 223, 209);
-  border-radius: 100%;
-  position: relative;
-  opacity: 0.5;
-  box-shadow: 2px 2px 2px 2px rgb(0 0 0 / 12%);
-  cursor: pointer;
-}
-
-.slider-icon.left {
-  margin-left: 20px;
-}
-
-.slider-icon.right {
-  margin-right: 20px;
-}
-
-.slider-icon.left:hover,
-.slider-icon.right:hover {
-  opacity: 1;
-}
-
-html[data-theme='light'] .card {
-  background-color: rgb(224, 242, 223);
-}
-
-html[data-theme='light'] .under {
-  border: 2px solid black;
-
-}
-
-html[data-theme='light'] .slider-icon.left {
-  background: rgb(172, 225, 146);
-}
-
-html[data-theme='light'] .slider-icon.right {
-  background: rgb(172, 225, 146);
-}
-
-.under {
-  border: 2px solid white;
-  margin-top: 0;
-}
-
 .stats {
   margin: 2rem 3rem;
   display: flex;
@@ -258,6 +178,10 @@ html[data-theme='light'] {
 
 html[data-theme='light'] a {
   color: #475447;
+}
+
+html[data-theme='light'] .desc a {
+  color: #73e8a3;
 }
 
 html[data-theme='light'] a:hover {
@@ -322,29 +246,11 @@ html[data-theme='dark'] .stats-item p:hover {
   .stats .stats-item p {
     font-size: 1rem;
   }
-
-  .card-container {
-    height: 360px;
-  }
-
-  .card {
-    padding: 0;
-    flex: 0 0 50%;
-  }
 }
 
 @media only screen and (max-width: 685px) {
   .stats {
     flex-direction: column;
-  }
-
-  .card-container {
-    height: 350px;
-  }
-
-  .card {
-    padding: 0;
-    flex: 0 0 100%;
   }
 }
 
@@ -483,7 +389,5 @@ html[data-theme='dark'] .stats-item p:hover {
 @media (max-width: 382px) {
   .contributors {
     padding: 4.5rem;
-
   }
-
 }
