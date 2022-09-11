@@ -1,42 +1,10 @@
-- [About FLINT and GCBM](#about-flint-and-gcbm)
-  - [What were the original goals?](#what-were-the-original-goals)
-  - [Mentors](#mentors)
-  - [How the meetings/community helped me to better approach my project's difficulties](#how-the-meetingscommunity-helped-me-to-better-approach-my-projects-difficulties)
-  - [What do I believe I achieved in a general aspect?](#what-do-i-believe-i-achieved-in-a-general-aspect)
-- [CML Action on FLINT.Cloud](#cml-action-on-flintcloud)
-  - [FLINT.Cloud Repository](#flintcloud-repository)
-  - [A little about CML](#a-little-about-cml)
-  - [What was the original goal?](#what-was-the-original-goal)
-  - [How does it work?](#how-does-it-work)
-  - [What does the Action achieve?](#what-does-the-action-achieve)
-  - [How and why we had to modify the Action](#how-and-why-we-had-to-modify-the-action)
-  - [How it can be enriched?](#how-it-can-be-enriched)
-- [DVC pipelines on the GCBM module](#dvc-pipelines-on-the-gcbm-module)
-  - [GCBM.Belize repository](#gcbmbelize-repository)
-  - [A little about DVC](#a-little-about-dvc)
-  - [What was the goal?](#what-was-the-goal)
-  - [What does the pipeline offer to the user?](#what-does-the-pipeline-offer-to-the-user)
-  - [How does the DVC pipeline works?](#how-does-the-dvc-pipeline-works)
-  - [How it can be utilized in the future?](#how-it-can-be-utilized-in-the-future)
-  - [Usage examples](#usage-examples)
-- [Processing the Land Sector Datasets](#processing-the-land-sector-datasets)
-  - [The Land Sector Datasets repository](#the-land-sector-datasets-repository)
-  - [What's the issue?](#whats-the-issue)
-  - [What's the goal?](#whats-the-goal)
-  - [What was my approach?](#what-was-my-approach)
-  - [Notes](#notes)
-- [Final Thoughts](#final-thoughts)
-- [References](#references)
-
-
-
+# Google Summer of Code 2022 - MLOps for Reproducible Science
 # About FLINT and GCBM
   Full Lands Integration Tool (FLINT) is an open-source software technology designed for measurement-reporting-verifying greenhouse gas emissions and removals from forestry, agriculture and other land uses. FLINT is not an MRV system but provides a framework to progressively build MRV systems for specific cases.
   
   The Generic Carbon Budget Model (GCBM) is a tool developed to assess and report the cumulative effects of anthropogenic and natural disturbances on forests. The GCBM is a set of modules developed by the  Canadian Forest Service (CFS) to run on top of FLINT. This set of modules describes several forest carbon pools. GCBM simulations work at an annual time step interval. GCBM handles as inputs a combination of spatially explicit datasets concerning the forest (with information like tree species or the location of forest types), age, climate, and disturbances, along with non-spatial parameters such as `volume to biomass conversion coefficients or yield curves`. A python tool is used to prepare the spatial inputs from raster to vector format and an SQLite Database handles the non-spatial data  [[1]](#1).
   
-  <sub>**carbon pool: represents a reservoir of carbon that can be stored or released</sub><br>
-  <sub>**disturbances: unplanned events (e.g. wildfire) that affect carbon pools</sub>
+  <sub>*carbon pool: represents a reservoir of carbon that can be stored or released , **disturbances: unplanned events (e.g. wildfire) that affect carbon pools</sub>
 
 ##  What were the original goals?
   In my proposal, I mention that the main concept of my ideas is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. Particularly, I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which I believe is achieved with the [DVC pipeline](#what-was-the-goal) for GCBM.Belize and Colombia repositories. Furthermore, I mention a cloud storage repository (which I found out already existed) on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. And last but not least I proposed a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation.
@@ -76,7 +44,7 @@ GCBM.Belize PR link: https://github.com/moja-global/GCBM.Belize/pull/14
   - How the simulation runs
   - How to interact with the results (analysis and reports)
   
-  Some existing issues:
+Some existing issues:
   - The whole workflow was configured to run in Windows Batch scripts and the steps were not connected between them, nor do they follow any structure, making their execution and the analysis of the results more complicated.
   - The Belize repository is a good case for experimenting with the GCBM by modifying specific parameters of the simulation and comparing the different outputs they provide. There was no such procedure to do that.
 ## A little about DVC
@@ -88,7 +56,7 @@ GCBM.Belize PR link: https://github.com/moja-global/GCBM.Belize/pull/14
 ## What was the goal?
 Integrate a system-agnostic pipeline to execute the complete workflow (preprocessing, simulation and postprocessing) that tracks and stores the outputs in remote storage.
 ## What does the pipeline offer to the user?
-  - The cases of GCBM.Belize and GCBM.Colombia are developed to only be executed in Windows systems but using DVC's functionalities I set up the pipeline to be system-agnostic
+  - The cases of GCBM.Belize and GCBM.Colombia are developed to only be executed in Windows systems but using DVC's functionalities I set up the pipeline to be system-agnostic.
   - Before the DVC pipeline was established, the phases of the workflow had to be executed manually but using DVC anyone can execute the whole workflow(including the postprocessing step) with only one command (`dvc repro`)
   - In the cases of the GCBM module, the outputs it generates are for the most part `.tif` files and in the postprocessing step, it generates some metrics and plots. All these outputs are listed and tracked by DVC using md5 hashes. Due to the large number of `.tif` output files generated from the workflow I used DVC's functionality to store files in remote storage and set up a Google Drive repository that stores them.
   - Furthermore, I used DVC's features for metrics and plot files to track these kinds of outputs from the workflow. This way when someone created another version of the GCBM `dvc diff` command could be used to compare the metrics from the standard GCBM version to the new one (and use the output in a potential report as well).
