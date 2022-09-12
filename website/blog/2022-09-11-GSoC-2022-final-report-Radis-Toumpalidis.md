@@ -17,10 +17,10 @@ tags: [gsoc, opensource, mlops, devops]
 ## Project Description 📌
   We applied MLOps techniques and tools to a complex scientific workflow s part of a community led, distributed carbon modelling platform. These techniques ensure reproducibility, which is the cornerstone of good science.
 
-  In my proposal, the main concept  is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which is achieved with the [DVC pipeline](#dvc-pipelines-on-the-gcbm-module) for GCBM.Belize and Colombia repositories. Furthermore, I build a cloud storage repository on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. Last but not least, I created a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation for the FLINTcloud platform as a numerical integration test, preventing breaking changes while under active development, and providing a useful template for new users to deploy their own FLINT services.
+  In my proposal, the main concept  is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which is achieved with the [DVC pipeline](#dvc-pipelines-on-the-gcbm-module) for GCBM.Belize and Colombia repositories. Furthermore, I build a cloud storage repository on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them because spatial datasets have a lot of variability and a standardisation process is needed to achieve reproducibility. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. Last but not least, I created a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation for the FLINTcloud platform as a numerical integration test, preventing breaking changes while under active development, and providing a useful template for new users to deploy their own FLINT services.
 
 
-  <sub>** flint-ready: prepare the dataset in vector format</sub>
+  <sub>** flint-ready: convert spatial datasets in into to a common format and coordinate system</sub>
 
 ### Tech Stacks Used
 | Purpose                                    | Tools and Technologies used |
@@ -43,7 +43,7 @@ tags: [gsoc, opensource, mlops, devops]
 ## DVC pipelines on the GCBM module
 GCBM.Belize PR link: https://github.com/moja-global/GCBM.Belize/pull/14
 ### GCBM.Belize repository
-  GCBM.Belize was developed as a case study for the GCBM in Belize. The repository can be seen as a paradigm on how the GCBM works in nation-scale, but also provides a technical paradigm for new-coming contributors on how the GCBM works, particularly:
+  GCBM.Belize was developed as a case study for the GCBM in Belize. The repository can be seen as a template on how the GCBM works in nation-scale, but also provides a technical example for new-coming contributors on how the GCBM works, particularly:
   - How the datasets are prepared
   - How the simulation runs
   - How to interact with the results (analysis and reports)
