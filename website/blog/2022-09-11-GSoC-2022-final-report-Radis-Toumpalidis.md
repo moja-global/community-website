@@ -4,7 +4,7 @@ authors:
   title: GSoC'22 Mentee
   url: https://github.com/radistoubalidis
   image_url: https://avatars.githubusercontent.com/radistoubalidis
-tags: [gsoc, opensource, graphql, journals]
+tags: [gsoc, opensource, mlops, devops]
 ---
 # Google Summer of Code 2022 - MLOps for Reproducible Science
 ## Some technical backgouround
@@ -15,7 +15,13 @@ tags: [gsoc, opensource, graphql, journals]
   <sub>*carbon pool: represents a reservoir of carbon that can be stored or released , **disturbances: unplanned events (e.g. wildfire) that affect carbon pools</sub>
 
 ## Project Description 📌
-  In my proposal, I mention that the main concept of my ideas is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. Particularly, I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which I believe is achieved with the [DVC pipeline](#what-was-the-goal) for GCBM.Belize and Colombia repositories. Furthermore, I mention a cloud storage repository (which I found out already existed) on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. And last but not least I proposed a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation.
+  We applied MLOps techniques and tools to a complex scientific workflow s part of a community led, distributed carbon modelling platform. These techniques ensure reproducibility, which is the cornerstone of good science.
+
+  In my proposal, the main concept  is to automate complicated and technically demanding tasks, as well as the corresponding reports,  that a moja-global contributor might face by using CI/CD tools for Machine Learning/Data Science projects. I propose a DVC repository (i.e.remote storage) to cache significant logs and outputs of simulations which is achieved with the [DVC pipeline](#dvc-pipelines-on-the-gcbm-module) for GCBM.Belize and Colombia repositories. Furthermore, I build a cloud storage repository on which we can use DVC's and CML's features to track, cache, compare, store and make flint-ready datasets there, thus making the datasets reproducible and interactive with the git repository that processes them because spatial datasets have a lot of variability and a standardisation process is needed to achieve reproducibility. I believe I achieved that with the work I've done on the [Land Sector](#processing-the-land-sector-datasets) repository. Last but not least, I created a [CML Action](#cml-action-on-flintcloud) that generates a small summary/report from the execution of a simulation for the FLINTcloud platform as a numerical integration test, preventing breaking changes while under active development, and providing a useful template for new users to deploy their own FLINT services.
+
+
+  <sub>** flint-ready: convert spatial datasets in into to a common format and coordinate system</sub>
+
 
 ### Tech Stacks Used
 | Purpose                                    | Tools and Technologies used |
@@ -32,24 +38,6 @@ tags: [gsoc, opensource, graphql, journals]
 ### What do I believe I achieved in a general aspect?
   In my proposal, my ideas and deliverable items were described generically and indefinitely because I hadn't realized 100% how several aspects of the code base worked. After I conducted enough research and learned how the code works I believed I reformed my deliverables more realistically.
 
-
-## CML Action on FLINT.Cloud
-PR Link: https://github.com/moja-global/FLINT.Cloud/pull/132
-### FLINT.Cloud Repository
- The core goal in [FLINT.Cloud](https://github.com/moja-global/FLINT.Cloud) is to build a continuous deployment pipeline to offer FLINT on cloud resources. It consists of 2 unique APIs that run a different kinds of simulations. The APIs in FLINT.Cloud are configured inside docker containers where the required dependencies such as the FLINT source code, other required software packages, etc. are included. The repository is going to co-operate with other repositories because the community is also working on  [FLINT.UI](https://github.com/moja-global/FLINT-UI) which is going to be a FLINT frontend client  for configuring simulations using the FLINT.Cloud APIs. Regarding the FLINT.Cloud repository, every step of the workflow (creating simulation configs, running and analyzing results) is executed through manual requests to the APIs. So, after discussion with the community and mentors, the creation of a CI script that would run a simulation and auto-generate a report was suggested. This CI script would provide a blueprint on how the APIs work to new-coming contributors and also stand as a procedure that automates a part of the workflow, thus releasing the developer/researcher of some technically demanding tasks.
-### A little about CML
-  [CML](https://cml.dev/) is an open-source CI/CD tool for Machine Learning or general Data Science projects. It can be used to track and provide auto-generated reports on development workflows and also can be configured to provide CI pipelines on cloud-hosted runners.
-### What was the original goal?
-  The original goal was to establish a GitHub Action that executes a benchmark simulation in FLINT.Cloud and provides an automated report on the sim results using CML
-### How does it work?
-  First of all, the action is triggered on pull requests with the `simulation` label. The action uses a benchmark sim configuration and runs it using the rest_gcbm_api which is wrapped inside a docker container that includes all the required dependencies for the simulation along with the GCBM rest-API. Using the provided benchmark configuration we execute it. After the simulation ends we use the [CompileResults](https://github.com/moja-global/GCBM.CompileResults) repo to prepare the `compiled_gcbm_output` database where SQL queries are run to provide information on the simulation's output. These inferences and plots can be utilized by CML to be published in the form of a comment on the PR.
-### What does the Action achieve?
-- Auto-generated simulation report when someone raises a PR with the `simulation` label. The generated report currently looks like [this](https://github.com/moja-global/FLINT.Cloud/pull/171#issuecomment-1214309899)
-- Establishes a validation process that the changes made in the specific PR will not break anything regarding the simulation run.
-### How and why we had to modify the Action
-The FLINT.Cloud repository is still in the development phase. Since the GCBM rest-API is still in the development phase and daily continuous changes in the input configuration code are made, we stumbled upon some errors that couldn't be resolved so it was decided to temporarily modify the CML Action to run the simulation straight from the FLINT CLI interface (which is included in the container) until the APIs get their final form.
-### How it can be enriched?
-After the CML Action PR was merged mentors suggested we could enrich the auto-generated report by also displaying (in Jupyter Notebook form) the code that generated any potential plots. They suggested the use of [jupytext](https://github.com/mwouts/jupytext), which is a python package for versioning and managing Jupyter Notebooks. It offers a variety of commands that map python scripts, markdown texts, and notebooks, so you can instantly access code in any of these formats. To sum up, I used jupytext to convert the script that generates the report from py:percent format into markdown so it can be attached to the report. I also raised a new [PR](https://github.com/moja-global/FLINT.Cloud/pull/176) for this addition.
     
 ## DVC pipelines on the GCBM module
 GCBM.Belize PR link: https://github.com/moja-global/GCBM.Belize/pull/14
@@ -166,6 +154,25 @@ Since the repository consists of many different datasets my mentors suggested I 
 - Most of the datasets in the repository are processed using `arcpy` which is a python package for geographical analysis but can only be used in Windows systems. As suggested by my mentors I also worked on refactoring the processing code of some Datasets that use `arcpy` with system-agnostic libraries/modules such as `geopandas`. I applied this idea in the `Global Ecological Zones` dataset where I processed the dataset with `geopandas` instead of `arcpy`, so now the datasets can be processed in non-Windows systems too.
 - I believe that if we follow an OOP approach we can implement a general processor that would be able to handle multiple Datasets from the Land Sector repository so it can be used in other moja-global projects in the future.
 - As this deliverable is not merged yet I used a personal Google Drive storage for testing my code but the same principles can be applied to moja-global's Google Drive storage.
+
+## CML Action on FLINT.Cloud
+PR Link: https://github.com/moja-global/FLINT.Cloud/pull/132
+### FLINT.Cloud Repository
+ The core goal in [FLINT.Cloud](https://github.com/moja-global/FLINT.Cloud) is to build a continuous deployment pipeline to offer FLINT on cloud resources. It consists of 2 unique APIs that run a different kinds of simulations. The APIs in FLINT.Cloud are configured inside docker containers where the required dependencies such as the FLINT source code, other required software packages, etc. are included. The repository is going to co-operate with other repositories because the community is also working on  [FLINT.UI](https://github.com/moja-global/FLINT-UI) which is going to be a FLINT frontend client  for configuring simulations using the FLINT.Cloud APIs. Regarding the FLINT.Cloud repository, every step of the workflow (creating simulation configs, running and analyzing results) is executed through manual requests to the APIs. So, after discussion with the community and mentors, the creation of a CI script that would run a simulation and auto-generate a report was suggested. This CI script would provide a blueprint on how the APIs work to new-coming contributors and also stand as a procedure that automates a part of the workflow, thus releasing the developer/researcher of some technically demanding tasks.
+### A little about CML
+  [CML](https://cml.dev/) is an open-source CI/CD tool for Machine Learning or general Data Science projects. It can be used to track and provide auto-generated reports on development workflows and also can be configured to provide CI pipelines on cloud-hosted runners.
+### What was the original goal?
+  The original goal was to establish a GitHub Action that executes a benchmark simulation in FLINT.Cloud and provides an automated report on the sim results using CML
+### How does it work?
+  First of all, the action is triggered on pull requests with the `simulation` label. The action uses a benchmark sim configuration and runs it using the rest_gcbm_api which is wrapped inside a docker container that includes all the required dependencies for the simulation along with the GCBM rest-API. Using the provided benchmark configuration we execute it. After the simulation ends we use the [CompileResults](https://github.com/moja-global/GCBM.CompileResults) repo to prepare the `compiled_gcbm_output` database where SQL queries are run to provide information on the simulation's output. These inferences and plots can be utilized by CML to be published in the form of a comment on the PR.
+### What does the Action achieve?
+- Auto-generated simulation report when someone raises a PR with the `simulation` label. The generated report currently looks like [this](https://github.com/moja-global/FLINT.Cloud/pull/171#issuecomment-1214309899)
+- Establishes a validation process that the changes made in the specific PR will not break anything regarding the simulation run.
+### How and why we had to modify the Action
+The FLINT.Cloud repository is still in the development phase. Since the GCBM rest-API is still in the development phase and daily continuous changes in the input configuration code are made, we stumbled upon some errors that couldn't be resolved so it was decided to temporarily modify the CML Action to run the simulation straight from the FLINT CLI interface (which is included in the container) until the APIs get their final form.
+### How it can be enriched?
+After the CML Action PR was merged mentors suggested we could enrich the auto-generated report by also displaying (in Jupyter Notebook form) the code that generated any potential plots. They suggested the use of [jupytext](https://github.com/mwouts/jupytext), which is a python package for versioning and managing Jupyter Notebooks. It offers a variety of commands that map python scripts, markdown texts, and notebooks, so you can instantly access code in any of these formats. To sum up, I used jupytext to convert the script that generates the report from py:percent format into markdown so it can be attached to the report. I also raised a new [PR](https://github.com/moja-global/FLINT.Cloud/pull/176) for this addition.
+
 
 ## Final Thoughts
 My experience throughout the mentorship has been wonderful. I believe I learned a variety of things, from how to implement CI principles in non-traditional web projects to how to write cooperative code. I feel proud for being a part of a community with such team spirit, and I want to continue collaborating and making real contributions to moja-global.
