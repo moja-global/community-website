@@ -22,6 +22,7 @@ tags: [gsoc, opensource, mlops, devops]
 
   <sub>** flint-ready: convert spatial datasets in into to a common format and coordinate system</sub>
 
+
 ### Tech Stacks Used
 | Purpose                                    | Tools and Technologies used |
 | ------------------------------------------------ | --------------------------- |
@@ -37,13 +38,11 @@ tags: [gsoc, opensource, mlops, devops]
 ### What do I believe I achieved in a general aspect?
   In my proposal, my ideas and deliverable items were described generically and indefinitely because I hadn't realized 100% how several aspects of the code base worked. After I conducted enough research and learned how the code works I believed I reformed my deliverables more realistically.
 
-
-
     
 ## DVC pipelines on the GCBM module
 GCBM.Belize PR link: https://github.com/moja-global/GCBM.Belize/pull/14
 ### GCBM.Belize repository
-  GCBM.Belize was developed as a case study for the GCBM in Belize. The repository can be seen as a template on how the GCBM works in nation-scale, but also provides a technical example for new-coming contributors on how the GCBM works, particularly:
+  GCBM.Belize was developed as a case study for the GCBM in Belize. The repository can be seen as a paradigm on how the GCBM works in nation-scale, but also provides a technical paradigm for new-coming contributors on how the GCBM works, particularly:
   - How the datasets are prepared
   - How the simulation runs
   - How to interact with the results (analysis and reports)
@@ -173,6 +172,7 @@ PR Link: https://github.com/moja-global/FLINT.Cloud/pull/132
 The FLINT.Cloud repository is still in the development phase. Since the GCBM rest-API is still in the development phase and daily continuous changes in the input configuration code are made, we stumbled upon some errors that couldn't be resolved so it was decided to temporarily modify the CML Action to run the simulation straight from the FLINT CLI interface (which is included in the container) until the APIs get their final form.
 ### How it can be enriched?
 After the CML Action PR was merged mentors suggested we could enrich the auto-generated report by also displaying (in Jupyter Notebook form) the code that generated any potential plots. They suggested the use of [jupytext](https://github.com/mwouts/jupytext), which is a python package for versioning and managing Jupyter Notebooks. It offers a variety of commands that map python scripts, markdown texts, and notebooks, so you can instantly access code in any of these formats. To sum up, I used jupytext to convert the script that generates the report from py:percent format into markdown so it can be attached to the report. I also raised a new [PR](https://github.com/moja-global/FLINT.Cloud/pull/176) for this addition.
+
 
 ## Final Thoughts
 My experience throughout the mentorship has been wonderful. I believe I learned a variety of things, from how to implement CI principles in non-traditional web projects to how to write cooperative code. I feel proud for being a part of a community with such team spirit, and I want to continue collaborating and making real contributions to moja-global.
