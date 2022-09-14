@@ -5,7 +5,7 @@
   transition: 0.3s;
 }
 
-.main_card_container{
+.main_card_container {
   margin-bottom: 5%;
   width: 50%;
   display: flex;
@@ -25,7 +25,7 @@
   overflow-y: hidden;
 }
 
-.card_container h2{
+.card_container h2 {
   padding-bottom: 20px;
 }
 
@@ -75,7 +75,7 @@
   position: fixed;
   width: 100%;
   height: 100%;
-  background: #18191a;
+  background-color: var(--ifm-card-background-color);
   margin: 3em 0;
   top: 0;
   bottom: 0;
@@ -83,7 +83,7 @@
   right: 0;
   padding: 50px;
   overflow: auto;
-  color: white;
+  color: var(--ifm-color-content);
   z-index: 100;
   border-radius: 0.875rem;
 }
@@ -100,19 +100,19 @@
   align-items: center;
   padding: 10px;
 }
-.modal-content{
+.modal-content {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
 }
 
-.modal-content h1{
+.modal-content h1 {
   text-align: center;
   margin-bottom: 1.2em;
 }
 
-.discription{
+.discription {
   text-align: center;
   margin-bottom: 2em;
 }
@@ -140,12 +140,12 @@
   font-weight: 600;
 }
 
-.card_header{
+.card_header {
   display: flex;
   justify-content: space-between;
 }
 
-.card_header a{
+.card_header a {
   color: white;
 }
 
@@ -161,14 +161,14 @@ html[data-theme='dark'] .project-icon {
   color: white;
 }
 
-
-.project_links{
+.project_links {
   display: flex;
   justify-content: space-evenly;
   width: 15%;
 }
 
-.task_div, .task_details_div{
+.task_div,
+.task_details_div {
   font-size: 0.875rem;
   font-weight: 500;
   line-height: 1.5;
@@ -177,7 +177,8 @@ html[data-theme='dark'] .project-icon {
   min-width: 90%;
 }
 
-.task_description, .task_description_list{
+.task_description,
+.task_description_list {
   border: 1px solid #333;
   border-radius: 0 0.375rem 0.375rem 0;
   display: flex;
@@ -186,39 +187,38 @@ html[data-theme='dark'] .project-icon {
   padding-right: 15px;
 }
 
-.task_text{
+.task_text {
   padding: 0 0.5rem;
   margin-right: 20px;
   padding-top: 0.5rem;
 }
 
-.box_decor{
+.box_decor {
   min-width: 1.2rem;
-  background-color: #72e7a3;
+  background-color: var(--ifm-color-primary);
   border-radius: 0.375rem 0 0 0.375rem;
 }
 
-.button_container{
+.button_container {
   display: flex;
   justify-content: center;
 }
 
-.expand_button{
+.expand_button {
   background-color: inherit;
   border: none;
   width: 20px;
   height: 20px;
   padding: 0;
-  
 }
 
-.button_arrow{
+.button_arrow {
   width: 15px;
   height: 15px;
   cursor: pointer;
 }
 
-.task_details{
+.task_details {
   list-style-type: none;
   padding-top: 0.75rem;
   margin-left: 0.5rem;
@@ -230,13 +230,12 @@ html[data-theme='dark'] .project-icon {
   align-items: center;
 }
 
-.task_details_div{
+.task_details_div {
   padding: 0;
   padding-top: 0.9rem;
-
 }
 
-.border_div{
+.border_div {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -244,7 +243,7 @@ html[data-theme='dark'] .project-icon {
   padding-left: 2px;
 }
 
-.border{
+.border {
   margin-right: 0.5rem;
   width: 1.25rem;
   height: 0.25rem;
@@ -253,11 +252,11 @@ html[data-theme='dark'] .project-icon {
   margin-bottom: 0.5rem;
 }
 
-.task_box{
+.task_box {
   min-width: 100%;
 }
 
-.task_description_list{
+.task_description_list {
   border: 1px solid #333;
   border-radius: 0 0.375rem 0.375rem 0;
   padding-right: 15px;
@@ -265,11 +264,11 @@ html[data-theme='dark'] .project-icon {
   justify-content: left;
 }
 
-.invisible{
+.invisible {
   display: none;
 }
 
-.project_link_icons{
+.project_link_icons {
   position: absolute;
   right: 50px;
   top: 50px;
@@ -288,12 +287,12 @@ html[data-theme='dark'] .project-icon {
     border-radius: 0.475rem;
   }
 
-  .main_card_container{
+  .main_card_container {
     width: 100%;
     padding-bottom: 0;
   }
 
-  .project_links{
+  .project_links {
     width: 25% !important;
   }
 
@@ -306,49 +305,49 @@ html[data-theme='dark'] .project-icon {
     justify-content: space-evenly;
   }
 
-  h2{
+  h2 {
     font-size: 1.3rem !important;
   }
 
-  .project-icon{
+  .project-icon {
     width: 1.6em !important;
     height: 1.6em !important;
   }
 
-  .modal-content-wrapper{
+  .modal-content-wrapper {
     margin-top: 50px;
     border-radius: 0;
     padding: 32px 16px;
     padding-bottom: 50px;
   }
 
-  .task_timlines{
+  .task_timlines {
     display: block;
   }
 
-  .status{
+  .status {
     width: 100%;
   }
 
-  .task_description_list{
+  .task_description_list {
     min-width: 85%;
   }
 
-  .task_details{
+  .task_details {
     padding-top: 0.5rem;
     margin-left: 5px;
   }
 
-  .status{
+  .status {
     margin-left: 0;
   }
 
-  .project_link_icons{
+  .project_link_icons {
     position: initial;
     width: 50%;
   }
 
-  .modal_header{
+  .modal_header {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -356,8 +355,7 @@ html[data-theme='dark'] .project-icon {
     padding-bottom: 20px;
   }
 
-  .modal_header h1{
+  .modal_header h1 {
     margin-bottom: 20px;
   }
-
 }
