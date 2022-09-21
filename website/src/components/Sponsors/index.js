@@ -21,7 +21,7 @@ const Sponsors = () => {
               </div>
               {sponsors.map((data, i) => (
                 <div className={'sponsor_desc ' + (sponsor === i ? 'active' : null)} key={i}>
-                  <img src={data.logo} className="sponsor_logo" />
+                  <img src={data.rlogo} className="sponsor_logo" />
                   <div className="text">
                     Lorem Ipsum is simply dummy text of the printing and typesen the industry's the
                     alley of type and scrambled it to make a type specimen book. Lorem Ipsum is
