@@ -1,6 +1,8 @@
 import React from 'react';
 import styles from './demodays.module.css'
 import Layout from '@theme/Layout'
+import robin from '/static/img/demo-days/robin.jpg'
+
 
 const Hello = () => {
     return (
@@ -46,21 +48,21 @@ const Hello = () => {
                     <div className={styles.info}>
                         <div>
                             <a href="https://github.com/Palaksharma23" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
+                                <img className={styles.profile} src={robin} alt="image" />
                             </a>
                             <h3>Name</h3>
                             <p>Gsoc'22 Mentee </p>
                         </div>
                         <div>
                             <a href="https://github.com/YashKandalkar" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
+                                <img className={styles.profile} src={robin} alt="image" />
                             </a>
                             <h3>Name</h3>
                             <p>Gsoc'22 Mentee</p>
                         </div>
                         <div>
                             <a href="https://github.com/radistoubalidis" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
+                                <img className={styles.profile} src={robin} alt="image" />
                             </a>
                             <h3>Name</h3>
                             <p>Gsoc'22 Mentee</p>
