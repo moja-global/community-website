@@ -1,0 +1,179 @@
+.intro {
+    display: flex;
+    padding: 5rem;
+    align-items: center;
+    background-image: url('/img/demo-days/demoday-bgimage.jpg');
+    background-size: 200rem;
+    justify-content: center;
+    height: 90vh;
+}
+
+.intro .title {
+    font-size: 5rem;
+    font-family: 'Times New Roman', Times, serif;
+    color: rgb(255, 124, 72);
+    margin-right: 5rem;
+    padding: 0.5rem;
+    width: 50%;
+}
+.date{
+    font-size: 3rem;
+    color: aliceblue;
+    font-family: 'Times New Roman', Times, serif;
+
+}
+.intro .sub {
+    text-align: right;
+    font-size: 1.5rem;
+    margin-top: 5rem;
+    font-weight: bold;
+    color: rgb(237, 243, 243);
+    width: 50%;
+}
+
+.about {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color:rgb(46, 56, 43);
+    padding: 2rem;
+    height: 100vh;
+}
+
+.descript {
+    display: flex;
+    margin: 2rem;
+}
+
+.descript2 {
+    display: flex;
+    margin: 2rem;
+}
+
+
+.head {
+    font-size: 3rem;
+    color: white;
+    width: 50%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.headscript {
+    font-weight: bolder;
+    width: 80%;
+    color: blanchedalmond;
+    font-size: 1.2rem;
+}
+
+.point {
+    font-size: 2rem;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.speaker {
+    display: flex;
+    padding: 5rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.title2 {
+    text-align: center;
+    font-size: 2rem;
+    color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.speaker .profile {
+    border-radius: 50%;
+    width: 50%;
+    border: 0.3rem solid rgb(11, 232, 163);
+}
+
+.speaker .info {
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    font-size: 2rem;
+    color: antiquewhite;
+}
+
+.speaker h3 {
+    color: violet;
+}
+
+@media screen and (max-width: 966px) {
+    .intro {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 1rem;
+    }
+
+    .intro .title {
+        font-size: 2rem;
+        width: fit-content;
+    }
+
+    .intro .sub {
+        font-size: 1rem;
+        text-align: justify;
+        width: 90%;
+    }
+
+    .about {
+        display: flex;
+        flex-direction: column;
+        padding: 1rem;
+    }
+
+    .descript {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .head {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .descript2 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .headscript {
+        text-align: justify;
+        width: 80%;
+        font-size: 1rem;
+    }
+
+    .point {
+        font-size: 1rem;
+        font-weight: bold;
+        text-align: justify;
+        width: fit-content;
+        width: 80%;
+    }
+
+    .speaker{
+        padding: 0.5rem;
+    }
+    .speaker .title2 {
+        font-size: 1.5rem;
+    }
+    
+    .speaker .profile{
+        width: 30%;
+    }
+    .speaker .info {
+        font-size: 1rem;
+        align-items: center;
+        display: flex;
+        flex-direction: column;
+    }
+}
