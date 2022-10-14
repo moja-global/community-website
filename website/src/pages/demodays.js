@@ -1,10 +1,6 @@
 import React from 'react';
 import styles from './demodays.module.css'
 import Layout from '@theme/Layout'
-import robin from '/static/img/demo-days/robin.jpg'
-import pic from '/static/img/demo-days/radistoumpalidis.jpg'
-import pic1 from '/static/img/demo-days/yashkandalkar.jpg'
-
 
 const Hello = () => {
     return (
@@ -43,14 +39,14 @@ On October 15 the final videos and demonstrations from 3 projects of GSoC 2022 w
                     <div className={styles.info}>
                         <div>
                             <a href="https://github.com/Palaksharma23" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src={robin} alt="image" />
+                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
                             </a>
                             <h3>Name</h3>
                             <p>Gsoc'22 Mentee </p>
                         </div>
                         <div>
                             <a href="https://github.com/YashKandalkar" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src={pic1} alt="image" />
+                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
                             </a>
                             <h3>Yash Kandalkar</h3>
                             <p>
@@ -60,7 +56,7 @@ I am glad to be a part of the Moja Global community and help fight climate chang
                         </div>
                         <div>
                             <a href="https://github.com/radistoubalidis" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src={pic} alt="image" />
+                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
                             </a>
                             <h3>Radis Toumpalidis</h3>
                             <p>Currently working on my thesis in the dept. of Information and Electrical Engineering of International Hellenic University in Thessaloniki, Greece. Technical interests - Machine Learning and Data Science but I also want to contribute to the Web Dev and DevOps domains. like reading research papers and my favorite language is Python. </p>
