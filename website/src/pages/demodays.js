@@ -12,10 +12,10 @@ const Hello = () => {
                 <section className={styles.intro}>
                     <div>
                     <h1 className={styles.title}>Demo Days 2022</h1>
-                    <h2 className={styles.date}> 🗓️ 21<sup>st</sup> October</h2>
+                    <h2 className={styles.date}> 🗓️ 22<sup>nd</sup> October</h2>
                     </div>
                     <p className={styles.sub}>
-                    On October 21 the final videos and demonstrations from all the 3 projects of GSoC 2022 will be shown.
+                    On October 22 the final videos and demonstrations from all the 3 projects of GSoC 2022 will be shown.
                     </p>
                 </section>
                 <section className={styles.about}>
@@ -24,7 +24,7 @@ const Hello = () => {
                         <p className={styles.headscript}>
                         6:00 PM(IST)
                         GSoC presentations
-On October 21 the final videos and demonstrations from 3 projects of GSoC 2022 will be shown. 
+On October 22 the final videos and demonstrations from 3 projects of GSoC 2022 will be shown. 
                         </p>
                     </div>
                     <div className={styles.descript2}>
