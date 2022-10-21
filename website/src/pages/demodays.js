@@ -12,10 +12,10 @@ const Hello = () => {
                 <section className={styles.intro}>
                     <div>
                     <h1 className={styles.title}>Demo Days 2022</h1>
-                    <h2 className={styles.date}> 🗓️ 15<sup>th</sup> October</h2>
+                    <h2 className={styles.date}> 🗓️ 21<sup>st</sup> October</h2>
                     </div>
                     <p className={styles.sub}>
-                    On October 15 the final videos and demonstrations from all the 3 projects of GSoC 2022 will be shown.
+                    On October 21 the final videos and demonstrations from all the 3 projects of GSoC 2022 will be shown.
                     </p>
                 </section>
                 <section className={styles.about}>
@@ -24,7 +24,7 @@ const Hello = () => {
                         <p className={styles.headscript}>
                         6:00 PM(IST)
                         GSoC presentations
-On October 15 the final videos and demonstrations from 3 projects of GSoC 2022 will be shown. 
+On October 21 the final videos and demonstrations from 3 projects of GSoC 2022 will be shown. 
                         </p>
                     </div>
                     <div className={styles.descript2}>
@@ -40,13 +40,6 @@ On October 15 the final videos and demonstrations from 3 projects of GSoC 2022 w
                 <section className={styles.speaker}>
                     <h1 className={styles.title2}>Keynote Speakers</h1>
                     <div className={styles.info}>
-                        <div>
-                            <a href="https://github.com/Palaksharma23" target="_blank" rel="noreferrer">
-                                <img className={styles.profile} src="/static/img/demo-days/robin.jpg" alt="image" />
-                            </a>
-                            <h3>Name</h3>
-                            <p>Gsoc'22 Mentee </p>
-                        </div>
                         <div>
                             <a href="https://github.com/YashKandalkar" target="_blank" rel="noreferrer">
                                 <img className={styles.profile} src={yash} alt="image" />
