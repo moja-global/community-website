@@ -10,7 +10,7 @@ moja global governs its participants according to the Contributor Covenant [Code
 
 ## FAQ and General Questions
 
-Before asking any questions, please have a look at our [FAQs](https://github.com/moja-global/.github/wiki). If your question isn't answered there, please write to info@moja.global.
+Before asking any questions, please have a look at our [FAQs](https://github.com/moja-global/community-website/blob/main/FAQ.md). If your question isn't answered there, please write to info@moja.global.
 
 If your question concerns the code of a project, then you should create a [new issue] in the relevant project's repository.
 
@@ -18,7 +18,7 @@ You can also [join moja global](https://github.com/moja-global/About_moja_global
 
 ## How to set up the community website locally?
 
-In order to set up the community website locally, make sure you have a [Github](github.com) account. If you do not have an existing Github account, we recommend you to create one.
+In order to set up the community website locally, make sure you have a [Github](https://github.com) account. If you do not have an existing Github account, we recommend you to create one.
 
 Here are the steps you can follow while setting up the website locally.
 
@@ -58,7 +58,7 @@ yarn start
 
 ## How to add new Documentation, Blogs or Pages?
 
-To add [documentations](https://community.moja.global/community/community-website-contributions#adding-new-documentation), [blogs](https://community.moja.global/community/community-website-contributions#writing-new-blogs) or pages, refer to [Contributing to the Community Website](https://community.moja.global/community/community-website-contributions#writing-the-blog) section on our community website.
+To add [documentations](https://community.moja.global/community/community-website-contributions#adding-new-documentation), [blogs](https://community.moja.global/community/community-website-contributions#writing-new-blogs) or pages, refer to [Contributing to the Community Website](https://community.moja.global/community/community-website-contributions) section on our community website.
 
 ## How to Contribute Code?
 

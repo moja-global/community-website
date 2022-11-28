@@ -6,15 +6,15 @@
 Repository for the moja global community website, a resource for the moja global community.
 </p>
 <p align="center">
-<a href="https://github.com/moja-global/community-website" alt="GitHub contributors">
+<a href="https://github.com/moja-global/community-website/graphs/contributors" alt="GitHub contributors">
 <img src="https://img.shields.io/github/contributors/moja-global/community-website.svg" /></a>
-<a href="https://github.com/moja-global/community-website" alt="GitHub issues by-label">
+<a href="https://github.com/moja-global/community-website/issues" alt="GitHub issues by-label">
 <img src="https://img.shields.io/github/issues/moja-global/community-website" /></a>
 <a href="https://mojaglobal.slack.com/" alt="Slack">
 <img src="https://img.shields.io/badge/Slack-@layer5.svg?logo=slack" /></a>
-<a href="https://github.com/moja-global/community-website" alt="Twitter Follow">
+<a href="https://twitter.com/mojaglobal" alt="Twitter Follow">
 <img src="https://img.shields.io/twitter/follow/mojaglobal.svg?label=Follow&style=social" /></a>
-<a href="https://github.com/moja-global/community-website" alt="License">
+<a href="https://github.com/moja-global/community-website/blob/main/LICENSE" alt="License">
 <img src="https://img.shields.io/github/license/moja-global/community-website.svg" /></a>
 </p>
 </div>
@@ -135,7 +135,7 @@ docker-compose up --build
 
 ### Frequently Asked Questions
 
-We have a [FAQ](FAQq.md) page that answers common questions around the community website and how to contribute to it.
+We have a [FAQ](FAQ.md) page that answers common questions around the community website and how to contribute to it.
 
 ## Support
 
