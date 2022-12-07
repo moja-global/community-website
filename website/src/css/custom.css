@@ -181,6 +181,15 @@ html[data-theme='light'] a:hover {
   color: #07903e;
 }
 
+html[data-theme='light'] .demo {
+  color: #07903e;
+}
+
+html[data-theme='light'] .demo:hover {
+  text-decoration: none;
+  color: #f1f6f3;
+}
+
 html[data-theme='light'] .navbar {
   background-color: var(--ifm-color-primary-white);
 }
