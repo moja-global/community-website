@@ -167,6 +167,11 @@ html[data-theme='light']
   color: var(--ifm-color-primary-white);
 }
 
+html[data-theme='light']
+  .button.button--primary.button--outline:not(.button--active):not(:hover) {
+  color: var(--ifm-color-primary);
+}
+
 html[data-theme='light'] {
   background-color: #e3f2e8;
   color: #2e382b;
@@ -174,6 +179,11 @@ html[data-theme='light'] {
 
 html[data-theme='light'] a {
   color: #475447;
+}
+
+html[data-theme='light'] a:nth-child(3):hover {
+  text-decoration: none;
+  color: var(--ifm-color-primary-white);
 }
 
 html[data-theme='light'] a:hover {
