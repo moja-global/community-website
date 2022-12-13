@@ -173,10 +173,10 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="https://docs.moja.global/en/latest/faq.html">Frequently Asked Questions</a>
+          <a href="https://docs.moja.global/en/master/faq.html">Frequently Asked Questions</a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/contact.html">Join moja global</a>
+          <a href="https://docs.moja.global/en/master/join-moja-global.html">Join moja global</a>
         </li>
         <li>
           <a href="/tutorial/tutorial-introduction">Tutorials</a>
