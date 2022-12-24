@@ -2,7 +2,7 @@
     display: flex;
     padding: 5rem;
     align-items: center;
-    background-image: url('/img/demo-days/demoday-bgimage.jpg');
+    background-image: url('/img/demo-days/demoday-bgimage-min.jpg');
     background-size: 200rem;
     justify-content: flex-start;
     height: 90vh;
@@ -16,7 +16,7 @@
     padding: 0.5rem;
 }
 .date{
-    font-size: 3rem;
+    font-size: 2rem;
     color: aliceblue;
     font-family: 'Times New Roman', Times, serif;
 
@@ -59,6 +59,7 @@
 .point {
     font-size: 2rem;
     font-family: 'Courier New', Courier, monospace;
+    color: antiquewhite;
 }
 
 .speaker {
@@ -67,13 +68,26 @@
     flex-direction: column;
     justify-content: center;
     background-color: black;
-    height: 100vh;
+    height: 200vh;
 }
 
 .speaker .title2 {
     text-align: center;
     font-size: 2rem;
     color: antiquewhite;
+    font-family: 'Courier New', Courier, monospace;
+}
+.speaker .subtitle2  {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(230, 134, 9);
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.speaker .subtitle3  {
+    text-align: center;
+    font-size: 2rem;
+    color: rgb(130, 185, 223);
     font-family: 'Courier New', Courier, monospace;
 }
 
@@ -99,6 +113,9 @@
     color: violet;
 }
 
+p{
+    padding: .5rem 1rem ;
+}
 @media screen and (max-width: 966px) {
     .intro {
         display: flex;
@@ -118,6 +135,7 @@
         display: flex;
         flex-direction: column;
         padding: .5rem;
+        height: fit-content;
     }
 
     .descript {
@@ -152,10 +170,20 @@
 
     .speaker{
         padding: 0.5rem;
+        height: fit-content;
     }
     .speaker .title2 {
         font-size: 1.2rem;
+        padding: 1rem;
     }
+
+    .speaker .subtitle2 {
+        font-size: 1.2rem;
+    }
+    .speaker .subtitle3 {
+        font-size: 1.2rem;
+    }
+    
     
     .speaker .profile{
         width: 20%;
@@ -168,5 +196,7 @@
         flex-direction: column;
     }
 
-
+    p{
+        padding: .5rem 1rem ;
+    }
 }
