@@ -33,13 +33,13 @@ const features = [
           <a href="/docs/FLINT-Cloud/About">FLINT Cloud</a>
         </li>
         <li>
-          <a href="/docs/FLINT-Reporting-Tool/About">FLINT Reporting Tool</a>
+          <a href="/docs/FLINT-Reporting-Tool/FLINT-Reporting-Tool">FLINT Reporting Tool</a>
         </li>
         <li>
-          <a href="/docs/FLINT-UI/About">FLINT Visualization Tool</a>
+          <a href="/docs/FLINT-UI/FLINT-UI">FLINT Visualization Tool</a>
         </li>
         <li>
-          <a href="/docs/GCBM/About">GCBM</a>
+          <a href="/docs/GCBM/GCBM">GCBM</a>
         </li>
       </ul>
     ),
