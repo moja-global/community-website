@@ -1,0 +1,46 @@
+.communityCard {
+    width: 390px;
+    height: 259px;
+    border-radius: 15px;
+    background-color: var(--primary-color);
+    margin-bottom: 4rem;
+}
+
+.positionDown {
+
+    margin-top: 7rem;
+}
+
+@media only screen and (max-width: 1000px) {
+    .positionDown {
+        margin-top: 0;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1400px) {
+    .communityCard {
+        width: 300px;
+        height: 219px;
+    }
+}
+
+@media only screen and (max-width: 1000px) and (min-width: 601px) {
+    .communityCard {
+        width: 350px;
+        height: 219px;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .communityCard {
+        width: 290px;
+        height: 219px;
+    }
+}
+
+@media only screen and (max-width: 350px) {
+    .communityCard {
+        width: 250px;
+        height: 219px;
+    }
+}
