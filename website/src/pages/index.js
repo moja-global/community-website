@@ -6,8 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomePageFeatures';
 import Contributors from '../components/Contributors';
-import features from '../../websiteData/features';
 import Sponsors from '../components/Sponsors';
+import CommunitySlideCarouselSection from '../components/CommunitySlideCarouselSection';
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -36,10 +36,7 @@ const HomepageHeader = () => {
             Watch the tutorials
           </Link>
           <Link
-            className={clsx(
-              'button button--outline button--primary button--lg',
-              styles.getStarted
-            )}
+            className={clsx('button button--outline button--primary button--lg', styles.getStarted)}
             to="/demodays/"
           >
             Demo Days
@@ -76,19 +73,7 @@ const Home = () => {
             <h1 align="center">Know the Community</h1>
             <br></br>
             <br></br>
-            {features && features.length > 0 && (
-              <section className={styles.features}>
-                <div className="container">
-                  <div className="row">
-                    {features.map((props, idx) => (
-                      <Feature key={idx} {...props} />
-                    ))}
-                  </div>
-                </div>
-                <br></br>
-                <br></br>
-              </section>
-            )}
+            <CommunitySlideCarouselSection />
             <HomepageFeatures />
           </div>
         </main>
