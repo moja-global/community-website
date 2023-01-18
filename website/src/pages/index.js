@@ -37,7 +37,7 @@ const HomepageHeader = () => {
           </Link>
           <Link
             className={clsx(
-              'button button--outline button--primary button--lg',
+              'button button--outline button--primary button--lg demo',
               styles.getStarted
             )}
             to="/demodays/"

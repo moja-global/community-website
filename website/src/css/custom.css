@@ -167,6 +167,15 @@ html[data-theme='light']
   color: var(--ifm-color-primary-white);
 }
 
+html[data-theme='light'] .demo {
+  color: #07903e;
+}
+
+html[data-theme='light'] .demo:hover {
+  text-decoration: none;
+  color: #f1f6f3;
+}
+
 html[data-theme='light'] {
   background-color: #e3f2e8;
   color: #2e382b;
@@ -240,6 +249,9 @@ html[data-theme='dark'] .stats-item p:hover {
 @media only screen and (max-width: 685px) {
   .stats {
     flex-direction: column;
+  }
+  .stats .stats-item p {
+    font-size: 0.9rem;
   }
 }
 
