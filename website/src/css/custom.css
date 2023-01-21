@@ -323,19 +323,19 @@ html[data-theme='dark'] .stats-item p:hover {
 
 .footer_items {
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   flex-wrap: nowrap;
 }
 
 .footer__col:last-of-type .footer__items {
   display: flex;
-  justify-content: space-evenly;
   flex-wrap: wrap;
+  justify-content: start;
+  gap: 8px;
 }
 
 .socials {
   width: 22px;
-  margin-right: 8px;
   transition: opacity var(--ifm-transition-fast) var(--ifm-transition-timing-default);
   filter: grayscale(1) invert(0.25);
 }
