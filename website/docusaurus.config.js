@@ -162,7 +162,7 @@ module.exports = {
             },
             {
               label: 'FAQs',
-              href: 'https://docs.moja.global/en/latest/faq.html',
+              href: 'https://docs.moja.global/en/add_instructions_gdal/faq.html',
             },
           ],
         },
