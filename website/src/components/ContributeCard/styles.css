@@ -1,6 +1,6 @@
 .card-container{
     display: flex;
-    justify-content:left;
+    justify-content: center;
     align-items: center;
     background-color: #73ac86;
     border-radius: 10px;
