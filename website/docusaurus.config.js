@@ -162,7 +162,7 @@ module.exports = {
             },
             {
               label: 'FAQs',
-              href: 'https://docs.moja.global/en/latest/faq.html',
+              href: 'https://docs.moja.global/en/add_instructions_gdal/faq.html',
             },
           ],
         },
@@ -182,7 +182,7 @@ module.exports = {
               href: '/community/contributing',
             },
             {
-              label: 'Workiing Groups',
+              label: 'Working Groups',
               href: '/community/working-groups/doc-wg',
             },
           ],
