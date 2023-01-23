@@ -40,7 +40,6 @@ const HomepageHeader = () => {
               'button button--outline button--primary button--lg demo',
               styles.getStarted
             )}
-
             to="/demodays/"
           >
             Demo Days

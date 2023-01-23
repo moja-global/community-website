@@ -160,7 +160,6 @@ html[data-theme='dark'] .sponsor_wrapper:hover {
   background-color: #e3f2e8;
   border: none;
 }
-
 /* Custom Light */
 
 html[data-theme='light']
@@ -169,7 +168,7 @@ html[data-theme='light']
 }
 
 html[data-theme='light'] .demo {
-  color: #07903e;
+  color: #67ca8f;
 }
 
 html[data-theme='light'] .demo:hover {
