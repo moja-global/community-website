@@ -25,7 +25,7 @@
  */
 
 .heroBanner {
-  min-height: calc(100vh - 55px);
+  min-height: calc(100vh - 60px);
   background-image: url('/img/banner-image.png');
   overflow: hidden;
   background-repeat: no-repeat;
