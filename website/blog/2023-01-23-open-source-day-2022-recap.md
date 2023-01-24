@@ -12,7 +12,7 @@ tags: [osd, opensource, ghc]
 
 ![OSD Banner](../websiteData/img/OSD_banner_2022.png)
 
-> "Each one of us can make a difference. Together we make change."
+> _"Each one of us can make a difference. Together we make change._"
 >
 > — Barabara Mikulski
 
