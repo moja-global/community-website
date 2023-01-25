@@ -5,7 +5,7 @@ import CommunitySlide from '../CommunitySlide';
 
 const CommunitySlideCarouselSection = () => {
   return (
-    <>
+    <div className="sliderSection" align="center">
       <Carousel
         responsiveLayout={[
           {
@@ -46,7 +46,7 @@ const CommunitySlideCarouselSection = () => {
           </Carousel.Item>
         ))}
       </Carousel>
-    </>
+    </div>
   );
 };
 

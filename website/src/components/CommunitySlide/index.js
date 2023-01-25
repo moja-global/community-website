@@ -13,7 +13,7 @@ const CommunitySlide = ({ title, description, position = 'down' }) => {
           <div className={styles.ellipse}></div>
         </div>
         <div className={styles.borderLine}></div>
-        <div className={styles.communityCardBody}>
+        <div align="left" className={styles.communityCardBody}>
           <div className={styles.cardBodyHeader}> {title} </div>
           {description.map((item) => (
             <a href={item.link} target="_blank" className={styles.cardBodyPills}>
