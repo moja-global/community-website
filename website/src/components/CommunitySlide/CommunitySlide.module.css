@@ -1,21 +1,9 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
-
 :root {
     --primary-color: #004643;
     --white-heading-color: #FFFFFF;
     --off-white-color: #D9D9D9;
     --secondary-text-color: #ABD1C6;
     --background-color-white-theme: #ABD1C6;
-}
-
-
-
-.communityCard {
-    width: 390px;
-    height: 259px;
-    border-radius: 15px;
-    background-color: var(--primary-color);
-    margin-bottom: 4rem;
 }
 
 .ellipseContainer {
@@ -38,8 +26,8 @@
 }
 
 .communityCardBody {
-    margin-top: 10px;
     margin-left: 20px;
+
 }
 
 .cardBodyHeader {
@@ -47,13 +35,11 @@
     font-size: 20px;
     color: var(--white-heading-color);
     line-height: 30px;
-    font-family: 'Poppins', sans-serif;
     margin-top: 1rem;
     margin-bottom: 0.3rem;
 }
 
 .cardBodyPills {
-    font-family: 'Poppins', sans-serif;
     color: var(--secondary-text-color) !important;
     font-size: 13px;
     cursor: pointer;
@@ -62,6 +48,5 @@
 }
 
 .positionDown {
-
     margin-top: 7rem;
 }

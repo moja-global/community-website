@@ -1,13 +1,19 @@
 .communityCard {
-    width: 390px;
-    height: 259px;
+    width: 24.375rem;
+    height: 16.188rem;
     border-radius: 15px;
     background-color: var(--primary-color);
     margin-bottom: 4rem;
 }
 
-.positionDown {
+@media only screen and (min-width: 1200px) {
+    .sliderSection {
+        width: 90%;
+        margin: auto;
+    }
+}
 
+.positionDown {
     margin-top: 7rem;
 }
 
