@@ -25,6 +25,7 @@
     "@emotion/styled": "^11.3.0",
     "@mdx-js/react": "^1.6.21",
     "@svgr/webpack": "^5.5.0",
+    "better-react-carousel": "^1.1.1",
     "clsx": "^1.1.1",
     "date-fns": "^2.27.0",
     "dedent": "^0.7.0",
