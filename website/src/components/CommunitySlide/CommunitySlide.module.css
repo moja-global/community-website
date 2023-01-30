@@ -1,0 +1,52 @@
+:root {
+    --primary-color: #004643;
+    --white-heading-color: #FFFFFF;
+    --off-white-color: #D9D9D9;
+    --secondary-text-color: #ABD1C6;
+    --background-color-white-theme: #ABD1C6;
+}
+
+.ellipseContainer {
+    display: flex;
+    gap: 10px;
+    padding: 1rem;
+}
+
+.ellipse {
+    width: 10px;
+    height: 10px;
+    background-color: var(--off-white-color);
+    border-radius: 50%;
+}
+
+.borderLine {
+    width: auto;
+    border: 2px solid var(--white-heading-color);
+    background-color: var(--white-heading-color);
+}
+
+.communityCardBody {
+    margin-left: 20px;
+
+}
+
+.cardBodyHeader {
+    font-weight: 600;
+    font-size: 20px;
+    color: var(--white-heading-color);
+    line-height: 30px;
+    margin-top: 1rem;
+    margin-bottom: 0.3rem;
+}
+
+.cardBodyPills {
+    color: var(--secondary-text-color) !important;
+    font-size: 13px;
+    cursor: pointer;
+    margin: 0.1rem;
+    display: block;
+}
+
+.positionDown {
+    margin-top: 7rem;
+}

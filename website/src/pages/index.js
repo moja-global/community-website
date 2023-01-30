@@ -6,8 +6,8 @@ import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import styles from './index.module.css';
 import HomepageFeatures from '../components/HomePageFeatures';
 import Contributors from '../components/Contributors';
-import features from '../../websiteData/features';
 import Sponsors from '../components/Sponsors';
+import CommunitySlideCarouselSection from '../components/CommunitySlideCarouselSection';
 
 const HomepageHeader = () => {
   const { siteConfig } = useDocusaurusContext();
@@ -47,15 +47,6 @@ const HomepageHeader = () => {
   );
 };
 
-const Feature = ({ title, description }) => {
-  return (
-    <div className={clsx('col col--4', styles.feature)}>
-      <h2>{title}</h2>
-      <div className={styles.feature__description}>{description}</div>
-    </div>
-  );
-};
-
 const Home = () => {
   const { siteConfig } = useDocusaurusContext();
   return (
@@ -73,19 +64,7 @@ const Home = () => {
             <h1 align="center">Know the Community</h1>
             <br></br>
             <br></br>
-            {features && features.length > 0 && (
-              <section className={styles.features}>
-                <div className="container">
-                  <div className="row">
-                    {features.map((props, idx) => (
-                      <Feature key={idx} {...props} />
-                    ))}
-                  </div>
-                </div>
-                <br></br>
-                <br></br>
-              </section>
-            )}
+            <CommunitySlideCarouselSection />
             <HomepageFeatures />
           </div>
         </main>
