@@ -1,3 +1,5 @@
+/* eslint-disable import/no-absolute-path */
+/* eslint-disable react/no-unescaped-entities */
 import React from 'react';
 import styles from './demodays.module.css';
 import Layout from '@theme/Layout';
@@ -6,6 +8,7 @@ import radis from '../../static/img/demo-days/radistoumpalidis.jpg';
 import palak from '../../static/img/demo-days/palaksharma.jpg';
 import Janvi from '../../static/img/demo-days/janvithakkar.jpg';
 import Sanjay from '../../static/img/demo-days/sanjayrajpoot.jpg';
+
 
 const Hello = () => {
   return (
@@ -32,6 +35,8 @@ const Hello = () => {
               We will have our graduted mentees from GSoC (Google summer of code), LFX (Linux
               Foundation), GSOD (Google season of docs) and Outreachy from the batch 2022 showcasing
               their work and learnings with the community.
+              On October 22, 12:30 PM GMT, we will have our GSoC mentees showcasing their work and
+              learnings to the community
             </p>
           </div>
           <div className={styles.descript2}>
@@ -40,6 +45,7 @@ const Hello = () => {
               <li>Get to know the community better</li>
               <li>Get familiar with the projects</li>
               <li>Oppurtunities for new contibutors</li>
+              <li>oppurtunities for new contibutors</li>
             </ol>
           </div>
         </section>
@@ -59,6 +65,8 @@ const Hello = () => {
                 content creator and with a{' '}
                 <a href="https://www.youtube.com/c/PalakSharma23/">Youtube channel</a>. Former GSoC
                 mentee at mojaglobal. In a nutshell, a tech explorer and want to experience
+                <a href="https://www.youtube.com/c/PalakSharma23/">Youtube channel</a>. Former
+                GSoC'22 mentee at mojaglobal. In a nutshell, a tech explorer and want to experience
                 everything to the fullest.
               </p>
             </div>

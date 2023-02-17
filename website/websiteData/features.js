@@ -33,13 +33,13 @@ const features = [
           <a href="/docs/FLINT-Cloud/About">FLINT Cloud</a>
         </li>
         <li>
-          <a href="/docs/FLINT-Reporting-Tool/About">FLINT Reporting Tool</a>
+          <a href="/docs/FLINT-Reporting-Tool/FLINT-Reporting-Tool">FLINT Reporting Tool</a>
         </li>
         <li>
-          <a href="/docs/FLINT-UI/About">FLINT Visualization Tool</a>
+          <a href="/docs/FLINT-UI/FLINT-UI">FLINT Visualization Tool</a>
         </li>
         <li>
-          <a href="/docs/GCBM/About">GCBM</a>
+          <a href="/docs/GCBM/GCBM">GCBM</a>
         </li>
       </ul>
     ),
@@ -68,27 +68,27 @@ const features = [
     description: (
       <ul className="features__list">
         <li>
-          <a href="https://docs.moja.global/en/latest/prerequisites/index.html">
+          <a href="https://docs.moja.global/en/master/FLINT/FLINTPrerequisites/index.html">
             FLINT Prerequisites
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/DevelopmentSetup/index.html">
+          <a href="https://docs.moja.global/en/master/FLINT/FLINTDevelopmentSetup/index.html">
             FLINT Development Setup
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/GCBMDevelopmentSetup/index.html">
+          <a href="https://docs.moja.global/en/master/GCBM/GCBMDevelopmentSetup/index.html">
             GCBM Development Setup
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/DeveloperWorkflow/index.html">
+          <a href="https://docs.moja.global/en/master/Guidelines/DeveloperWorkflow/index.html">
             GitHub Workflow
           </a>
         </li>
         <li>
-          <a href="https://docs.moja.global/en/latest/DocumentationStyleGuide/index.html">
+          <a href="https://docs.moja.global/en/master/Guidelines/DocumentationStyleGuide/index.html">
             Writing documentation
           </a>
         </li>
