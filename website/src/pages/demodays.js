@@ -9,7 +9,6 @@ import palak from '../../static/img/demo-days/palaksharma.jpg';
 import Janvi from '../../static/img/demo-days/janvithakkar.jpg';
 import Sanjay from '../../static/img/demo-days/sanjayrajpoot.jpg';
 
-
 const Hello = () => {
   return (
     <Layout title="Hello" description="Hello React Page">
@@ -34,9 +33,8 @@ const Hello = () => {
             <p className={styles.headscript}>
               We will have our graduted mentees from GSoC (Google summer of code), LFX (Linux
               Foundation), GSOD (Google season of docs) and Outreachy from the batch 2022 showcasing
-              their work and learnings with the community.
-              On October 22, 12:30 PM GMT, we will have our GSoC mentees showcasing their work and
-              learnings to the community
+              their work and learnings with the community. On October 22, 12:30 PM GMT, we will have
+              our GSoC mentees showcasing their work and learnings to the community
             </p>
           </div>
           <div className={styles.descript2}>
