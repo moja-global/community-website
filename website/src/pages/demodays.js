@@ -29,8 +29,8 @@ const Hello = () => {
           <div className={styles.descript}>
             <h1 className={styles.head}>Agenda</h1>
             <p className={styles.headscript}>
-              We will have our Graduted mentees from GSoC(Google summer of code), LFX(Linux
-              Foundation), GSOD(Google season of docs) and Outreachy from the batch 2022 showcasing
+              We will have our graduted mentees from GSoC (Google summer of code), LFX (Linux
+              Foundation), GSOD (Google season of docs) and Outreachy from the batch 2022 showcasing
               their work and learnings with the community.
             </p>
           </div>
