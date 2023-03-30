@@ -22,6 +22,7 @@ include:
 
 Examples of unacceptable behavior by participants include:
 
+<<<<<<< Updated upstream
 * The use of sexualized language or imagery and unwelcome sexual attention or
  advances
 * Trolling, insulting/derogatory comments, and personal or political attacks
@@ -30,6 +31,15 @@ Examples of unacceptable behavior by participants include:
  address, without explicit permission
 * Other conduct which could reasonably be considered inappropriate in a
  professional setting
+=======
+Unacceptable Behavior:
+-We do not tolerate any form of discrimination, harassment, or abusive behavior. This includes, but is not limited to:
+
+* Using sexualized language or imagery, making unwanted sexual advances, or engaging in other forms of sexual harassment.
+* Trolling, insulting or derogatory comments, personal attacks, or political attacks on others that are hurtful, harmful, or disrespectful.
+* Harassment in public or private, including doxing or publishing private information about others without their express permission.
+* Other inappropriate or unprofessional behaviour in a community setting.
+>>>>>>> Stashed changes
 
 ## Our Responsibilities
 
