@@ -1,4 +1,10 @@
 /** @type {import('@docusaurus/types').DocusaurusConfig} */
+
+function generateCopyright() {
+  const currentYear = new Date().getFullYear();
+  return `Copyrights © ${currentYear} moja global.`;
+}
+
 module.exports = {
   title: `Moja Global Community`,
   tagline: `Learn about moja global's projects and join our ever-growing community`,
@@ -228,7 +234,7 @@ module.exports = {
           ],
         },
       ],
-      copyright: `Copyright © ${new Date().getFullYear()} moja global.`,
+      copyright: generateCopyright(),
     },
     image: 'https://community.moja.global/img/logo.png',
     metadatas: [
